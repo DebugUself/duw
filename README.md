@@ -1,5 +1,7 @@
 # DU Weekly 小站
 
+~ [DU Weekly](https://duw.zoejane.net)
+
 - [[RDD]DU Weekly 怼周刊小站 项目，自述原案 · Issue #365 · DebugUself/du4proto](https://github.com/DebugUself/du4proto/issues/365)
 
 ## 怼周刊
