@@ -3,7 +3,7 @@
 DU Weekly 小站正式迁移至怼圈内部啦, 欢迎小伙伴一起来更新, 探索更多玩法 
 @DebugUself/du4all 
 
-- [DU Weekly 小站](https://duw.zoejane.net/)
+- [DU Weekly 小站](http://duw.zooomquiet.io/)
 - [Github 仓库](https://github.com/DebugUself/duw)
 - [Issue](https://github.com/DebugUself/du4proto/issues/380)
 
@@ -47,6 +47,7 @@ master 分支 -> content/post 目录 ->  复制 [du4proto/DUW](https://github.co
 
 ## 进展
 
+- 180413 DU Weekly 小站 启用新域名 http://duw.zoomquiet.io
 - 180412 [DU Weekly 小站](https://duw.zoejane.net/) 迁移至 [怼圈内部 repo](https://github.com/DebugUself/duw), 并启用新域名 https://duw.zoejane.net
 - 180329 DU Weekly 小站 上线
 - 180329 在 du.zoomquiet.io 右上角添加了 怼周刊 小站链接
