@@ -1,6 +1,7 @@
 <div class="logo-wrapper">
   <a href="/">
-        <img src="logo.png">
+        <img src="{{ "logo-du.png" | relURL }}">
+
     </a>
   <a href="{{ "/" | relURL }}" class="logo">
     {{- if .Site.Params.logoTitle -}}
