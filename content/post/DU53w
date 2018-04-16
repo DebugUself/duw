@@ -1,0 +1,178 @@
+---
+title: "DU53w"
+date: 2018-04-16T20:28:00+08:00
+---
+
+# 怼周刊_v53
+~ 预定 18.4.16 20:20 发布
+
+-----------------------------------------
+
+
+
+
+-----------------------------------------
+
+- 主编: [大妈](http://du.zoomquiet.io/2014-02/ac0-zq/)
+- 责编:
+    + [xpgeng](http://du.zoomquiet.io/2017-04/about-xpgeng/)
+    + [sunoonlee](http://du.zoomquiet.io/2017-04/about-sunoonlee/)
+    + [Zoe](http://du.zoomquiet.io/2017-04/about-zoe/)
+
+# 进度 Timelines
+~ 记录当周关键事件日期+证据链接
+
+- [42h[TASK]20180414 怼周会 分享及纪要 #381](https://github.com/DebugUself/du4proto/issues/381)
+- [[RDD] 儿童防丢失指北 项目，自述原案 #378 ](https://github.com/DebugUself/du4proto/issues/378)
+
+
+# 任务 Tasks
+~ 记述关键共怼任务 (如果没有, 留空)
+
+- [2w[ASK] 如何合理的嗯哼掉(怼圈*)积累的资料 #374](https://github.com/DebugUself/du4proto/issues/374)
+- [2w[新怼友]任务0 #372](https://github.com/DebugUself/du4proto/issues/372)
+
+# 进展 Progress
+~ 整体圈内活跃指标情况([st](https://github.com/DebugUself/du4proto/tree/DU_tools/st) 专用服务, 尚少使用手册)
+
+<table>
+<tr><th>allcic Commit</th><th> times</th><th>weekly Commit</th><th> times</th></tr>
+<tr><td>
+                <a href='http://github.com/ZoomQuiet'>ZoomQuiet</a></td><td>546</td>
+            <td>
+                <a href='http://github.com/leilayanhui'>leilayanhui</a></td><td>16</td>
+
+<tr><td>
+                <a href='http://github.com/liguanghe'>liguanghe</a></td><td>506</td>
+            <td>
+                <a href='http://github.com/Vwan'>Vwan</a></td><td>7</td>
+
+<tr><td>
+                <a href='http://github.com/zhangshiyinrunwithcc'>zhangshiyinrunwithcc</a></td><td>464</td>
+            <td>
+                <a href='http://github.com/zoejane'>zoejane</a></td><td>4</td>
+
+<tr><td>
+                <a href='http://github.com/leilayanhui'>leilayanhui</a></td><td>415</td>
+            <td>
+                <a href='http://github.com/sumin1123'>sumin1123</a></td><td>1</td>
+
+<tr><th>all Commit </th><th>Comments times</th><th>weekly Commit</th><th>Comments times</th></tr>
+<tr><td>
+                <a href='http://github.com/ZoomQuiet'>ZoomQuiet</a></td><td>177</td>
+            <td>
+                <a href='http://github.com/ZoomQuiet'>ZoomQuiet</a></td><td>1</td>
+
+</table>
+
+
+# 成果 Achievements
+~ 各种成品/半成品 内部知识作品
+
+## @zoejane - 怼周刊小站
+
+- 链接
+    - DU Weekly 小站 - https://duw.zoomquiet.io/
+    - GitHub 仓库 - [DebugUself/duw](https://github.com/DebugUself/duw)
+    - Issue 链接 - [3d [ANN] DU Weekly 小站迁移至怼圈内部 , 欢迎小伙伴一起来更新](https://github.com/DebugUself/du4proto/issues/380)
+- 玩法
+    - 提交最新一期周刊方式
+master 分支 -> content/post 目录 ->  复制 [du4proto/DUW](https://github.com/DebugUself/du4proto/tree/DUW) 分支里 相应的 `DU--w.md` -> 在最前面处添加标题和时间信息, 如
+    - 还可以添加任何你喜欢的内容(`content` 目录下)
+    - 或者修订成你喜欢的显示界面(`themes` 目录下)
+    - :)
+    - ...
+- 缘起
+    - 怼周刊到现在已经累计到 50 多期了，希望能为它建立一个小站，能让我们更方便的查询和阅读，也让它后续能有更多的发展空间
+    - [[RDD]DU Weekly 怼周刊小站 项目，自述原案](https://github.com/DebugUself/du4proto/issues/365)
+    - [[RDD]DU_tools ~ 怼圈运营工具箱](https://github.com/DebugUself/du4proto/issues/368)
+- 展望
+    - 希望小伙伴们如果有更好的方案的话, 一起来这个仓库里一起试验,共同玩耍
+    - 未来, 希望能慢慢做到 @ZoomQuiet  [提到的](https://github.com/DebugUself/du4proto/issues/368) `规划自动发布到 7niu 等其它 CDN 中
+并提供全文搜索功能,在对应微信号/Slack 频道`
+    - 大妈 @ZoomQuiet  [点评](https://github.com/DebugUself/du4proto/issues/381#issuecomment-381327439) `提醒: DUW 的嗯哼, 目标不是自动化发布 DUW , 而是, 怼年积累内容的再挖掘/激活....`
+
+## [DutySchedule v2](https://github.com/DebugUself/du4proto/tree/YHDutySchedule#version-2) - @leilayanhui
+
+# 故事 Stories
+~ 收集各自无法雷同的怼圈真人故事...
+
+## @zoejane - 遇到难题,发封英文邮件给客服吧
+
+- 经历
+    - 因为更换个人网站的托管商,搭建怼周刊小站,遇到一些域名和证书相关的问题,尝试搜索和查文档都没解决的了
+    - 这周尝试和 FastComet, GitHub, Netlify 的客服和支持人员都尝试了用英文邮件方式沟通,发现很快就解决了问题
+- 体验
+    - 主动用英文联系客服和支持人员也是解决问题的一个很好的方式,值得尝试
+    - 优秀的网站常常也配有很好的支持系统,遇到问题的时候可以尝试主动沟通,感觉他们的回复都挺专业的
+    - 英文不好也没关系,把遇到的难题和自己的困惑大概表达出来就行. 这时候真心感觉蹩脚的英文也对解决困难很有帮助 :)
+
+
+## DutySchedule 体验分享 - @leilayanhui
+DutySchedule v2 终于写完了，第二版的目标是实现值班人轮流二次值班。比如上个月值班一次的，这个月就值班两次，下个月再变成一次，大家轮流。大致分成七步完成，先从人数最少的周日开始编写，一共花了一个多月的时间完成，实际编程时间大概 46h。
+
+### 神器 - Jupyter Notebook
+第二版的整个开发过程都是在 JN 里完成的，不管是记录文字、编写代码、测试命令，都是在里面进行的，整个过程非常流畅，没有切换窗口这类多余的动作，可以专心编程。
+
+Jupyter Notebook 插件集 [jupyter_contrib_nbextensions](https://github.com/ipython-contrib/jupyter_contrib_nbextensions)，开启其中的 table of contents 类似书签的功能。因为会在 ipynb 跑程序，整个文件会很长，翻看起来很花时间，用了 TOC 就能快速定位。
+
+### 神器 - 探索记录
+[V2SaturdayTest.ipynb](https://github.com/DebugUself/du4proto/blob/YHDutySchedule/ipynb/V2SaturdayTest.ipynb)  整个文档就是一个探索记录，包括一开始的设想，实际操作，失败的地方和应对方法。非常建议把设想或要实现的功能变成文字写下来，能理清思路，也不怕在原来的想法上不断添加、修改。还能当做 MVP 使用，每一行都是个小任务，先实现第一行，再实现第二行。工作细分后做起来也更轻松。而且不管你进行到哪一步，都可以随时停下来，稍作注明，第二天就知道从哪里开始。有了记录后，就能在上面添砖加瓦，一点点把程序写出来。
+
+### 困难
+人脑的思维方式是启发式的，有很多跳跃和遗漏的地方。但程序需要把所有的可能都明确的写出来。我在编写的过程中经常碰到，即使打了草稿，但在把思路转变成代码的时候依然会冒出来很多问题，都是之前自己没有想到的，需要把那些缺漏的地方都补上，程序才能正确运行。
+
+数据结构比如数据如何分类，是根据星期几来分，还是根据值班人，选取哪种分类更合适。还有各种数据间的优先级。周日的值班人数时最少，所以优先级应该最高，再是周六、周五。然后在选取第二次值班人员时，要根据什么来计算。这些关系我是写到很后面才逐渐搞清楚的。
+
+### 收获
+从很多细节上体验了大妈一直在教导的东西。比如 MVP，比如笔记。之前编程课早就听大妈讲过，都只是字面上的理解，现在发现真的是一个很重要的工具。还有比如给函数加注释，到了调试阶段，有个函数我竟然想不起它是干什么的，得重新去翻它的定义。最重要的是学到很多新命令。这个程序里 90% 的命令都是我在不知道的情况下搜来的，只是我非常明确的知道这一步要干什么，所以一搜就搜到了。整个程序写下来收获满满。
+
+# 推荐 Recommedations
+~ 嗯哼各种怼路上发现的嗯哼...
+
+- 是也乎:
+    - [蠎加载 170 |蠎周刊 |汇集全球蠎事儿 !-)](http://weekly.pychina.org/importpython/importpython-170.html)
+
+## 号召
+
+- [|蠎周刊 |汇集全球蠎事儿 !-)](http://weekly.pychina.org/archives.html)
+    + 俺私人嗯哼了5年了
+    + 邀请大家一起来, 每周嗯哼
+
+
+# 后记 Postscript
+~ 怼周刊是什么以及为什么和能怎么...
+
+大妈曰过: `参差多态 才是生机`
+问题在 `参差` 的行为是无法形成团队的
+
+	Coming together is a beginning;
+	Keeping together is progress;
+	Working together is success!
+
+<--- [Henry Ford](https://www.brainyquote.com/quotes/quotes/h/henryford121997.html)
+
+- 所以, 有了 大妈 随见随怼的持续嗯哼...
+- 但是, 想象一年后, 回想几十周前自己作的那些 `图样图森破`
+- 却没现成的资料来出示给后进来嗯哼?
+- 不科学, 值得记录的, 就应当有个形式固定下来
+- 所以,有了这个 `怼周刊` (Weekly 4 DU)
+
+What is DUW?
+Why we make DUW?
+What are the possibilities of DUW?
+
+Dama said, variety brings vitality.
+But various behaviors may make us hard to cooperate as a team.
+
+	Coming together is a beginning;
+	Keeping together is progress;
+	Working together is success!
+
+<--- [Henry Ford](https://www.brainyquote.com/quotes/quotes/h/henryford121997.html)
+
+That's why Dama keeps on debugging.
+However, as time goes by, maybe you would not remember these days clearly and spread your experience difficultly.
+What a pity!
+The valuable should have a fixed form to be recorded.
+That's why we make the Weekly for DU.
