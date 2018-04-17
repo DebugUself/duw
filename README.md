@@ -3,7 +3,7 @@
 DU Weekly 小站正式迁移至怼圈内部啦, 欢迎小伙伴一起来更新, 探索更多玩法 
 @DebugUself/du4all 
 
-- [DU Weekly 小站](http://duw.zooomquiet.io/)
+- [DU Weekly 小站](http://duw.zoomquiet.io/)
 - [Github 仓库](https://github.com/DebugUself/duw)
 - Issue 讨论
     - [3d [ANN] DU Weekly 小站迁移至怼圈内部 , 欢迎小伙伴一起来更新 · Issue #380](https://github.com/DebugUself/du4proto/issues/380) by @zoejane
