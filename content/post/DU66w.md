@@ -86,7 +86,7 @@ Excluding merges, **8 authors** have pushed **1commit** to master and **22�
 	+ 有享受生活选择奋斗……
 - `(￣▽￣)`:
 	+ @liguanghe \~ 将怼圈产品化,非常嗯嗯嗯
-	+ @OMlalala \~ 从焦虑到大胆的完成转行...怼圈真心变成了转职赋能中心了
+	+ @Hansoluo \~ 从焦虑到大胆的完成转行...怼圈真心变成了转职赋能中心了
 	+ @linfeng365 \~ 不觉变成了主持专业户, 因为...
 - `leilayanhui`
 	+ 怼圈的玩法更接近实际工作情况
