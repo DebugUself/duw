@@ -1,0 +1,238 @@
+---
+title: "DU62w"
+date: 2018-06-18T20:20:00+08:00
+---
+
+# 怼周刊\_v62
+\~ 预定 18.6.18 20:20 发布
+
+\~ 实际 18.6.18 22:30 发布
+
+---- 
+
+	    信息过载
+	                --- by NBR-hugh
+	    本欲踏歌揽明月,奈何千指迷人眼.  
+	    枉遍他者万般解,无益吾心一点明.  
+	    不若立己微芒行,复问善循渐弘光.  
+	    跬步芥进破迷津,相较千指正月明.
+	
+	    The Moon
+	                --- by hansoluo
+	    I show my guts to the Moon
+	    But the Moon shines on the gutters
+	    There were so many point fingers
+	    Sorry I could not follow all
+	    Forget about the fingers
+	    Focus on my own heart
+
+---- 
+
+- 主编: [大妈][1]
+- 责编: hansoluo
+
+
+# 进度 Timelines
+\~ 记录当周关键事件日期+证据链接
+
+- 180616 [42h\[TASK]20180616 怼周会 分享及纪要 · Issue #414 · DebugUself/du4proto][2]
+
+# 任务 Tasks
+\~ 记述关键共怼任务 (如果没有, 留空)
+
+## 号召
+
+- [|蠎周刊 |汇集全球蠎事儿 !-)][3]
+	+ 俺私人嗯哼了5年了
+	+ 邀请大家一起来, 每周嗯哼
+- 每周例怼后, 无论是否列席, 大家都在 `故事->怼印象` 中追加当周 top3 感触
+
+
+
+# 进展 Progress
+\~ 整体圈内活跃指标情况([st][4] 专用服务, 尚少使用手册)
+
+<table>
+<tr><th>all Commit </th><th>Comments times</th><th>weekly Commit</th><th>Comments times</th></tr>
+<tr><td>
+                <a href='http://github.com/ZoomQuiet'>ZoomQuiet</a></td><td>177</td>
+            <td>
+                <a href='http://github.com/NBR-hugh'>NBR-hugh</a></td><td>1</td>
+                
+</table>
+
+all Commit-Comments: |  times
+:--- | :---
+[ZoomQuiet][5] | 177
+[zhangshiyinrunwithcc][6] | 59
+[zoejane][7] | 36
+[bambooom][8] | 23
+[mxclover][9] | 20
+[sunoonlee][10] | 19
+
+
+all Issue-Comments: |  times
+:--- | :---
+[liguanghe][11] | 886
+[ZoomQuiet][12] | 659
+[zhangshiyinrunwithcc][13] | 417
+[NBR-hugh][14] | 220
+[zoejane][15] | 176
+[mxclover][16] | 121
+
+## slack 活跃度
+
+- [Overview][17]
+- [Channles][18]
+- slack 各频道活跃度
+
+
+| Name | Total Channel Members | Messages posted last 30days | 
+| - | ----- | --------- |
+| kaggle2018 | 12 | 998|
+| random | 60 | 374|
+| gh | 24 | 259|
+| ia001 | 16 | 258|
+| general | 60 | 223|
+
+
+# 成果 Achievements
+\~ 各种成品/半成品 内部知识作品
+## 高效知识管理
+- [知识管理/效率提升及 Mac 使用][19] @liguanghe
+
+# 故事 Stories
+\~ 收集各自无法雷同的怼圈真人故事...
+
+## 怼印象
+
+- `(￣▽￣)`:
+	+ @leilayanhui 太猛了...什么都愿意学 ,又什么都能学出来
+	+ @沥川 坚定的在刷比赛, 也终于开始写教程/图书了
+	+ @zoejane 的音乐之旅行完全定不下来也
+
+- `zoejane`
+	- 慢慢来, 会比较快
+		- 战略上重视, 战术上藐视. 要不要做一件事, 认真思考. 决定了, 就别总纠结了, 做下去就行了.
+		- 不积跬步无以至千里. 做得再少再慢都不怕, 怕的是停. 停的话, 所有都清零, 重头来过.
+		- 学习的速度不是恒定的, 其实是螺旋上升的.
+		- 慢慢来, 其实效率是指数上升的, 可能最后瞬间就超越了. 但是如果没有慢慢来的积累, 没有前面量变到质变的过程, 是体验不到后面的加速的.
+		- 很多时候, 我们参与的各种课程,都是三分钟热度, 热血上涌, 自我感动. 头一星期的热情过去后, 后面就开始觉得忙啊难啊累啊, 每周都在找新理由说服自己不要再上这些课了.
+		- 决定了, 就做下去. 慢慢来. 你也得享受这个过程. 身心投入进来, 而不是假装练习.
+	- 不用等授权, 而是用行动去推进
+		- 很多时候我们的默认心态, 是想得到授权和指导, 而不是对自己不懂的先行进行试验
+		- 先尝试走一下, 不用等授权, 立即行动, 立即改进, 立即推进
+		- 很多想法不用等一个礼拜, 等到会上再讨论. 可以先改了先做了, 发 issue, 然后会上进一步讨论, 会更有意义.
+	- 沥川分享的转行思路
+		- 最优先考虑的, 通过比赛或者和别人合作的机会, 硬扛下来, 拿到机会. 比如比赛拿到好成绩, 可以绕过应届生的竞争, 拿到大厂 offer. 或者把别人的 AI 需求, 硬扛下来, 比如小队给做出来, 产生现实和商业效应, 通过这个拿到机会.
+		- 第二个思路, 把经历推广创区, 比如如何高效的打比赛, 快速入门 AI 等.把自己做到的, 总结分享, 做出来写教程, 写书. 这个和手上现有做的事情也不冲突.
+		- 最后的思路, 才是去投简历. 因为相对来说是处于被挑选以及信息不对称中较为劣势的一方. 这时候还是要有拿得出手的作品才能更有竞争力.
+		- 需要注意的是, 每个人的情况不同. 沥川选择这条路, 是因为有前期积蓄和家里支持, 所以可以按自己的战略来走. 
+
+- `NBE-hugh`
+	+ **信息过载**
+			本欲踏歌揽明月,奈何千指迷人眼.  
+			枉遍他者万般解,无益吾心一点明.  
+			不若立己微芒行,复问善循渐弘光.  
+			跬步芥进破迷津,相较千指正月明.  
+	-  **授权**
+			人世为客几多载? 上司学师家父母.    
+			未自同身共觉历, 万言始语转头空.  
+			等人滞事皆困腐, 何妨长啸先徐行.  
+			勇担己行主翁责, 巧思演练预恶果.  
+	- **转行**
+			比赛硬扛出作品,破困思行凝教程.
+			弃困独桥觅旷野,始问机缘随贵人.
+
+- Vwan
+
+	- 慢慢来，比较快。没有进展 没有突破的时候，不妨也想想。
+	- 不用等授权，主动先去做。
+	- 跟对人，做对事。学习也是如此，跟对人（书），有的书（人、anything)能给你醍醐灌顶的感觉，那就是它了。嗯，我不单指SICP。
+
+- `醉舟`
+	+ zoejane的音乐之旅：慢慢来，做得再少再慢都不怕，但是不能停。微行动和大时间周期。一定要持续玩音乐。
+	+ 沥川的比赛流程总结得非常好，全是干货
+	+ 转行思考：地域、贵人和自我努力
+
+# 推荐 Recommedations
+
+\~ 嗯哼各种怼路上发现的嗯哼...
+
+- 是也乎:
+	+ [蠎周刊 320: Force |蠎周刊 |汇集全球蠎事儿 !-)][20]
+	+ [蠎加载 175][21]
+	+ [蠎加载 176][22]
+
+- NBR-hugh:
+	+ [国学丛刊序-王国维][23]
+		> * 学之义不明于天下久矣。今之言学者，有新旧之争，有中西之争，有有用之学 与无用之学之争。余正告天下曰：学无新旧也，无中西也，无有用无用也。凡立此名者，均不学 之徒。即学焉，而未尝知学者也。
+	+ [荀子/劝学篇 - 维基文库，自由的图书馆][24]
+		> * 君子曰：学不可以已。
+		* 温故而知新,现在观此文与高中时背诵,完全不同的感觉...
+
+# 后记 Postscript
+\~ 怼周刊是什么以及为什么和能怎么...
+
+大妈曰过: `参差多态 才是生机`
+问题在 `参差` 的行为是无法形成团队的
+
+	Coming together is a beginning; 
+	Keeping together is progress; 
+	Working together is success!
+
+\<--- [Henry Ford][25]
+
+- 所以, 有了 大妈 随见随怼的持续嗯哼...
+- 但是, 想象一年后, 回想几十周前自己作的那些 `图样图森破` 
+- 却没现成的资料来出示给后进来嗯哼?
+- 不科学, 值得记录的, 就应当有个形式固定下来
+- 所以,有了这个 `怼周刊` (Weekly 4 DU)
+
+What is DUW?
+Why we make DUW?
+What are the possibilities of DUW?
+
+Dama said, variety brings vitality.
+But various behaviors may make us hard to cooperate as a team.
+
+	Coming together is a beginning; 
+	Keeping together is progress; 
+	Working together is success!
+
+\<--- [Henry Ford][26]
+
+That's why Dama keeps on debugging.
+However, as time goes by, maybe you would not remember these days clearly and spread your experience difficultly.
+What a pity!
+The valuable should have a fixed form to be recorded.
+That's why we make the Weekly for DU.
+
+
+
+[1]:	http://du.zoomquiet.io/2014-02/ac0-zq/
+[2]:	https://github.com/DebugUself/du4proto/issues/414
+[3]:	http://weekly.pychina.org/archives.html
+[4]:	https://github.com/DebugUself/du4proto/tree/DU_tools/st
+[5]:	http://github.com/ZoomQuiet
+[6]:	http://github.com/zhangshiyinrunwithcc
+[7]:	http://github.com/zoejane
+[8]:	http://github.com/bambooom
+[9]:	http://github.com/mxclover
+[10]:	http://github.com/sunoonlee
+[11]:	http://github.com/liguanghe
+[12]:	http://github.com/ZoomQuiet
+[13]:	http://github.com/zhangshiyinrunwithcc
+[14]:	http://github.com/NBR-hugh
+[15]:	http://github.com/zoejane
+[16]:	http://github.com/mxclover
+[17]:	https://debuguself.slack.com/stats#overview
+[18]:	https://debuguself.slack.com/stats#channels
+[19]:	https://liguanghe.github.io/2018/06/13/SHEffectionLawyer/
+[20]:	http://weekly.pychina.org/issue/issue-320.html
+[21]:	http://weekly.pychina.org/importpython/importpython-175.html
+[22]:	http://weekly.pychina.org/importpython/importpython-176.html
+[23]:	http://www.guoxue.com/master/wangguowei/w-gxckx.htm
+[24]:	https://zh.wikisource.org/zh-hans/%E8%8D%80%E5%AD%90/%E5%8B%B8%E5%AD%B8%E7%AF%87
+[25]:	https://www.brainyquote.com/quotes/quotes/h/henryford121997.html
+[26]:	https://www.brainyquote.com/quotes/quotes/h/henryford121997.html
