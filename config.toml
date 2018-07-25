@@ -43,7 +43,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   name = "自怼圈"
   weight = 200
   identifier = "du"
-  url = "http://du.zoomquiet.io/"
+  url = "https://du.zoomquiet.io/"
 # [[menu.main]]
 #  name = "Tags"
 #  weight = 30
