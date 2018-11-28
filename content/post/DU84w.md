@@ -227,7 +227,6 @@ date: 2018-11-19T20:20:00+08:00
   <div class="section v-align-top pt-2">
     <div class="js-graph graph-canvas pulse-authors-graph" data-graph-name="pulse-authors"
         data-url="https://github.com/DebugUself/du4proto/pulse_committer_data">
-      <img class="graph-loading dots" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" alt="">
     </div>
   </div>
 </div>
