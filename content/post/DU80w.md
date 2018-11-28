@@ -1,0 +1,207 @@
+---
+title: "DU80w"
+date: 2018-10-22T20:20:00+08:00
+---
+
+# 怼周刊\_v80
+\~ 预定 18.10.22 20:20 发布
+
+---- 
+
+...TODO
+
+
+---- 
+
+- 主编: [大妈][1]
+- 责编:
+
+
+# Timelines 进度
+\~ 记录当周关键事件日期+证据链接
+
+
+# Tasks 任务
+\~ 记述关键共怼任务 (如果没有, 留空)
+
+## propose 号召
+
+- [|蠎周刊 |汇集全球蠎事儿 !-)][2]
+	+ 俺私人嗯哼了5年了
+	+ 邀请大家一起来, 每周嗯哼
+- 每周例怼后, 无论是否列席, 大家都在 `故事->怼印象` 中追加当周 top3 感触
+
+
+# Progress 进展
+\~ 整体圈内活跃指标情况([st][3] 专用服务, 尚少使用手册)
+
+Excluding merges, **3 authors** have pushed **3commits** to master and **8 commits** to all branches. On master, **1 file** has changed and there have been [**17** **additions** and **10****deletions**][4].
+
+
+<table><tr><th>allcic Commit</th><th> times</th><th>weekly Commit</th><th> times</th></tr><tr><td><a href='http://github.com/ZoomQuiet'>ZoomQuiet</a></td><td>580</td><td><a href='#'>NIL</a></td><td>NIL</td><tr><td><a href='http://github.com/liguanghe'>liguanghe</a></td><td>525</td><td><a href='#'>NIL</a></td><td>NIL</td><tr><td><a href='http://github.com/leilayanhui'>leilayanhui</a></td><td>467</td><td><a href='#'>NIL</a></td><td>NIL</td><tr><td><a href='http://github.com/zhangshiyinrunwithcc'>zhangshiyinrunwithcc</a></td><td>464</td><td><a href='#'>NIL</a></td><td>NIL</td><tr><td><a href='http://github.com/zoejane'>zoejane</a></td><td>377</td><td><a href='#'>NIL</a></td><td>NIL</td><tr><td><a href='http://github.com/mxclover'>mxclover</a></td><td>240</td><td><a href='#'>NIL</a></td><td>NIL</td><tr><th>all Commit</th><th>Comments times</th><th>weekly Commit</th><th>Comments times</th></tr><tr><td><a href='http://github.com/ZoomQuiet'>ZoomQuiet</a></td><td>177</td><td><a href='#'>NIL</a></td><td>NIL</td><tr><td><a href='http://github.com/zhangshiyinrunwithcc'>zhangshiyinrunwithcc</a></td><td>59</td><td><a href='#'>NIL</a></td><td>NIL</td><tr><td><a href='http://github.com/zoejane'>zoejane</a></td><td>36</td><td><a href='#'>NIL</a></td><td>NIL</td><tr><td><a href='http://github.com/bambooom'>bambooom</a></td><td>23</td><td><a href='#'>NIL</a></td><td>NIL</td><tr><td><a href='http://github.com/mxclover'>mxclover</a></td><td>20</td><td><a href='#'>NIL</a></td><td>NIL</td><tr><td><a href='http://github.com/NBR-hugh'>NBR-hugh</a></td><td>19</td><td><a href='#'>NIL</a></td><td>NIL</td><tr><th>all Issue</th><th>Comments times</th><th>weekly Issue</th><th>Comments times</th></tr><tr><td><a href='http://github.com/liguanghe'>liguanghe</a></td><td>901</td><td><a href='#'>NIL</a></td><td>NIL</td><tr><td><a href='http://github.com/ZoomQuiet'>ZoomQuiet</a></td><td>679</td><td><a href='#'>NIL</a></td><td>NIL</td><tr><td><a href='http://github.com/zhangshiyinrunwithcc'>zhangshiyinrunwithcc</a></td><td>417</td><td><a href='#'>NIL</a></td><td>NIL</td><tr><td><a href='http://github.com/NBR-hugh'>NBR-hugh</a></td><td>239</td><td><a href='#'>NIL</a></td><td>NIL</td><tr><td><a href='http://github.com/zoejane'>zoejane</a></td><td>178</td><td><a href='#'>NIL</a></td><td>NIL</td><tr><td><a href='http://github.com/mxclover'>mxclover</a></td><td>121</td><td><a href='#'>NIL</a></td><td>NIL</td></table>
+
+
+# Achievements 成果
+\~ 各种成品/半成品 内部知识作品
+
+# Stories 故事
+\~ 收集各自无法雷同的怼圈真人故事...
+
+## impression 怼印象
+\~ 例怼中感触最嗯哼的 top3 感想
+
+- `(￣▽￣)`:
+	+ @yifan 令他人快乐也曾经是俺的理想,后来发现这是个令自己无限痛苦的道路,自私的降解为令自己...
+	+ @yifan 因为没有体验过实时透明的好处, 所以, 默认的在赞阶段成果...这可能是多数人痛苦的根源
+	+ @qilin 触发了 offcie 政治学的大坑, 是否要深入分享, 得想想
+
+## live 怼生活
+\~ 生活中带有怼范的各种 (投稿后可同时沉淀到 wiki 的2.5 怼生活下)
+
+### 熊本🐻 -\> 如何开会？
+
+#### 零、无法写会议纪要？
+- 开会两种场景，不知如何纪要：
+
+1. 内容每周组会
+	- 有固定开会流程：数据分析、选题等
+	- 主持会议的同时无法记备忘，怎么处理？
+	- 暂时：记要点，会后回忆立即发通告
+
+2. 小会：参与决策
+	- 不间断被参加临时会议：时长 30min - 2 h 不等
+	- 需要决策，无法分心做会议记录，如何处理
+
+
+#### 一、ta的观点
+- 不一定要写会议纪要。
+
+		一场会议最重要的是，帮助工作目标/方案推进。
+		推进>纪要。
+		so 俺对于会议纪要态度还是...随缘...毕竟老板发工资不是为了收获一堆会议记录，而是让俺们出成果 [流泪]。
+
+- 会议录音是极好的。
+
+		我今天开了4个会， 参与讨论决策，无法记会要；
+		如果他们能录音就好了，给执行人扔个链接。
+
+- 会议时间很划算。
+		多亏了 5 小时，我才明白了真正的需求；所以和高层一起开会，能省下自己 两天折腾时间。
+
+- 会议时头晕脑胀。
+
+		会议时，我是想听但听不懂各部门在说什么。
+
+#### 二、大妈观点
+
+- 观点1： 记要应形成法律效应
+
+		问题在, 如果连记要都没,,,,
+		那么中间被领导们带偏引发的不必要的工作量
+		就真的成为自己的幻觉了….
+		说穿了, 记要只是工具,
+		在不同阶段有不同作用
+		但是, 任何行政工具, 说穿了都是用来保护弱小的员工的
+
+- 观点2： 记要本身不应花费时间
+
+		所以, 记要本身花费的时间不应该过多,
+		在有原始记录, 比如说录音/录像时,
+		记要就只记议题和决议就好….
+		所以, 有可能一次混乱的2小时会议的记要就是:
+		时间/地点/列席
+		议题: XXX视频中标题用的 还是 地
+		决议: 用 的
+
+- 观点3： 记要记哪些？只要对自己有帮助就得记
+		图样图森破, 从功能上说记要只有两种:
+		有用的
+		没用的…
+		只要对自己有帮助就得记…至少能辅助自己集中注意力吧
+
+- 观点4： 会议大部分时间在干嘛？相互试探
+
+		图样图森破, 可是其中4.2小时都是相互试探,
+		真正的问题, 几句就能说明白的…
+		但是, 其它原因, 死活不能直接说
+
+- 观点5：任务发布得满足 5W1H https://wiki.woodpecker.org.cn/moin/5W1H
+
+#### 三、总结陈述
+- 会议困难却必要。
+- 记录困难也必要。
+- 大会小会分开记。
+- 开会技巧自己找。
+
+#### 四、相关资源
+
+- [阳志平：专业主义，从备忘录开始][5]
+- [会议33制][6]
+- [别笑，开会了！ (豆瓣)][7]
+- [大人为什么要开会 (豆瓣)][8]
+- [该死的会议 (豆瓣)][9]
+- [团队协作的五大障碍（全新修订版） - 〔美〕帕特里克·兰西奥尼 | 豆瓣阅读][10]
+- [咨询的奥秘 - 〔美〕Gerald M. Weinberg | 豆瓣阅读][11]
+- [罗伯特议事规则 (豆瓣)][12]
+- [硝烟中的Scrum和XP (豆瓣)][13]
+
+# Recommedations 推荐
+\~ 嗯哼各种怼路上发现的嗯哼...
+
+- 是也乎:
+	+ [蠎加载 184 |蠎周刊 |汇集全球蠎事儿 !-)][14]
+
+
+# Postscript 后记
+\~ 怼周刊是什么以及为什么和能怎么...
+
+大妈曰过: `参差多态 才是生机`
+问题在 `参差` 的行为是无法形成团队的
+
+	Coming together is a beginning; 
+	Keeping together is progress; 
+	Working together is success!
+
+\<--- [Henry Ford][15]
+
+- 所以, 有了 大妈 随见随怼的持续嗯哼...
+- 但是, 想象一年后, 回想几十周前自己作的那些 `图样图森破` 
+- 却没现成的资料来出示给后进来嗯哼?
+- 不科学, 值得记录的, 就应当有个形式固定下来
+- 所以,有了这个 `怼周刊` (Weekly 4 DU)
+
+What is DUW?
+Why we make DUW?
+What are the possibilities of DUW?
+
+Dama said, variety brings vitality.
+But various behaviors may make us hard to cooperate as a team.
+
+	Coming together is a beginning; 
+	Keeping together is progress; 
+	Working together is success!
+
+\<--- [Henry Ford][16]
+
+That's why Dama keeps on debugging.
+However, as time goes by, maybe you would not remember these days clearly and spread your experience difficultly.
+What a pity!
+The valuable should have a fixed form to be recorded.
+That's why we make the Weekly for DU.
+
+[1]:	http://du.zoomquiet.io/2014-02/ac0-zq/
+[2]:	http://weekly.pychina.org/archives.html
+[3]:	https://github.com/DebugUself/du4proto/tree/DU_tools/st
+[4]:	https://github.com/DebugUself/du4proto/compare/master@%7B1539673454%7D...master
+[5]:	http://mp.163.com/v2/article/detail/DK0MAST30516CB2P.html
+[6]:	https://www.xmind.net/m/irvT/
+[7]:	https://book.douban.com/subject/25846518/
+[8]:	https://book.douban.com/subject/20441867/
+[9]:	https://book.douban.com/subject/25342922/
+[10]:	https://read.douban.com/ebook/40161394/?dcs=subject-rec&dcm=douban&dct=25342922
+[11]:	https://read.douban.com/ebook/4025675/?dcs=subject-rec&dcm=douban&dct=25342922
+[12]:	https://book.douban.com/subject/3053894/
+[13]:	https://book.douban.com/subject/3390446/
+[14]:	http://weekly.pychina.org/importpython/importpython-184.html
+[15]:	https://www.brainyquote.com/quotes/quotes/h/henryford121997.html
+[16]:	https://www.brainyquote.com/quotes/quotes/h/henryford121997.html

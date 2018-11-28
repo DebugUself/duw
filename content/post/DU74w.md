@@ -1,0 +1,241 @@
+---
+title: "DU74w"
+date: 2018-09-10T20:20:00+08:00
+---
+
+# 怼周刊\_v74
+\~ 预定 18.9.10 20:20 发布
+> 18.9.10 21:40 发布
+> 无法统计出 weekly Commit，Comments，issue 次数， 数据留空
+
+---- 
+
+	少即是多
+	静才发慧
+	富在精神
+	伴随尊严
+	是也乎哉
+	       -- By DAMA
+	
+	
+	What makes a good life?
+	
+	Less is more
+	Quiet brings wisdom
+	Rich in spirit with dignity
+	Isn't it?
+	                            -- By mxclover
+
+
+---- 
+
+- 主编: [大妈][1]
+- 责编:
+
+
+# Timelines 进度
+\~ 记录当周关键事件日期+证据链接
+
+- [42h\[TASK]20180908 怼周会 分享及纪要][2]
+
+# Tasks 任务
+\~ 记述关键共怼任务 (如果没有, 留空)
+
+- [12W\[WIKI] 编写转行手册][3]
+
+
+## propose 号召
+
+- [|蠎周刊 |汇集全球蠎事儿 !-)][4]
+	+ 俺私人嗯哼了5年了
+	+ 邀请大家一起来, 每周嗯哼
+- 每周例怼后, 无论是否列席, 大家都在 `故事->怼印象` 中追加当周 top3 感触
+
+
+# Progress 进展
+\~ 整体圈内活跃指标情况([st][5] 专用服务, 尚少使用手册)
+
+<table>
+<tr><th>allcic Commit</th><th> times</th><th>weekly Commit</th><th> times</th></tr>
+<tr><td>
+                    <a href='http://github.com/ZoomQuiet'>ZoomQuiet</a></td><td>580</td>
+                <td>
+                    <a href='#'> </a></td><td> </td>
+
+<tr><td>
+                    <a href='http://github.com/liguanghe'>liguanghe</a></td><td>525</td>
+                <td>
+                    <a href='#'> </a></td><td> </td>
+
+<tr><td>
+                    <a href='http://github.com/leilayanhui'>leilayanhui</a></td><td>467</td>
+                <td>
+                    <a href='#'> </a></td><td> </td>
+
+<tr><td>
+                    <a href='http://github.com/zhangshiyinrunwithcc'>zhangshiyinrunwithcc</a></td><td>464</td>
+                <td>
+                    <a href='#'> </a></td><td> </td>
+
+<tr><td>
+                    <a href='http://github.com/zoejane'>zoejane</a></td><td>377</td>
+                <td>
+                    <a href='#'> </a></td><td> </td>
+
+<tr><td>
+                    <a href='http://github.com/mxclover'>mxclover</a></td><td>240</td>
+                <td>
+                    <a href='#'> </a></td><td> </td>
+
+<tr><th>all Commit </th><th>Comments times</th><th>weekly Commit</th><th>Comments times</th></tr>
+<tr><td>
+                    <a href='http://github.com/ZoomQuiet'>ZoomQuiet</a></td><td>177</td>
+                <td>
+                    <a href='#'> </a></td><td> </td>
+
+<tr><td>
+                    <a href='http://github.com/zhangshiyinrunwithcc'>zhangshiyinrunwithcc</a></td><td>59</td>
+                <td>
+                    <a href='#'> </a></td><td> </td>
+
+<tr><td>
+                    <a href='http://github.com/zoejane'>zoejane</a></td><td>36</td>
+                <td>
+                    <a href='#'> </a></td><td> </td>
+
+<tr><td>
+                    <a href='http://github.com/bambooom'>bambooom</a></td><td>23</td>
+                <td>
+                    <a href='#'> </a></td><td> </td>
+
+<tr><td>
+                    <a href='http://github.com/mxclover'>mxclover</a></td><td>20</td>
+                <td>
+                    <a href='#'> </a></td><td> </td>
+
+<tr><td>
+                    <a href='http://github.com/NBR-hugh'>NBR-hugh</a></td><td>19</td>
+                <td>
+                    <a href='#'> </a></td><td> </td>
+
+<tr><th>all Issue </th><th>Comments times</th><th>weekly Issue</th><th>Comments times</th></tr>
+<tr><td>
+                    <a href='http://github.com/liguanghe'>liguanghe</a></td><td>901</td>
+                <td>
+                    <a href='#'> </a></td><td> </td>
+
+<tr><td>
+                    <a href='http://github.com/ZoomQuiet'>ZoomQuiet</a></td><td>679</td>
+                <td>
+                    <a href='#'> </a></td><td> </td>
+
+<tr><td>
+                    <a href='http://github.com/zhangshiyinrunwithcc'>zhangshiyinrunwithcc</a></td><td>417</td>
+                <td>
+                    <a href='#'> </a></td><td> </td>
+
+<tr><td>
+                    <a href='http://github.com/NBR-hugh'>NBR-hugh</a></td><td>239</td>
+                <td>
+                    <a href='#'> </a></td><td> </td>
+
+<tr><td>
+                    <a href='http://github.com/zoejane'>zoejane</a></td><td>178</td>
+                <td>
+                    <a href='#'> </a></td><td> </td>
+
+<tr><td>
+                    <a href='http://github.com/mxclover'>mxclover</a></td><td>121</td>
+                <td>
+                    <a href='#'> </a></td><td> </td>
+
+</table>
+
+# Achievements 成果
+\~ 各种成品/半成品 内部知识作品
+
+# Stories 故事
+\~ 收集各自无法雷同的怼圈真人故事...
+
+## impression 怼印象
+\~ 例怼中感触最嗯哼的 top3 感想
+
+- `(￣▽￣)`:
+	+ @recaff 们并不是没的说, 而是想说的8成以上都是情绪, 反而难以嗯哼了
+	+ @NBR 们不是不理解自怼流程, 而是习惯了自责, 而自责的时间成本在加重, 反而没时间嗯哼了
+	+ @leilayanhui 们不是没有嗯哼, 而是习惯了报喜不报忧, 反而永远难以升级效率, 因为海量的无方向试错消耗的心智, 没给怼圈机会来辅助
+
+- `mxclover`:
+	+ 腹稿是知识树，是长期记忆形成的
+	+ [S5 幻灯 ][6]
+		+ [高桥流][7]
+	+ 软件工程项目
+		+ 倒推法：先预想项目的最终状态，然后倒推，需要用到哪些合适的框架、模块...
+	+ 如何快速入门一门编程语言
+		+ 第一时间调试好开发环境
+		+ 靠谱的工具包，如 IDE
+		+ 第一时间建立 编写、编译、运行和发布的流程
+		+ 一定要复用以往学编程的经验
+		+ 前期熟悉开发环境和语法，然后再明确目标，结合项目学习、产出
+- `leilayanhui`
+	+ 腹稿来自长期坚持的知识树
+	+ 入门任何一门编程语言也有套路
+	+ F -\> A B C
+
+
+# Recommedations 推荐
+\~ 嗯哼各种怼路上发现的嗯哼...
+
+- 是也乎:
+	+ [蠎加载 184 |蠎周刊 |汇集全球蠎事儿 !-)][8]
+	+ [scrapbook][9]
+
+
+# Postscript 后记
+\~ 怼周刊是什么以及为什么和能怎么...
+
+大妈曰过: `参差多态 才是生机`
+问题在 `参差` 的行为是无法形成团队的
+
+	Coming together is a beginning; 
+	Keeping together is progress; 
+	Working together is success!
+
+\<--- [Henry Ford][10]
+
+- 所以, 有了 大妈 随见随怼的持续嗯哼...
+- 但是, 想象一年后, 回想几十周前自己作的那些 `图样图森破` 
+- 却没现成的资料来出示给后进来嗯哼?
+- 不科学, 值得记录的, 就应当有个形式固定下来
+- 所以,有了这个 `怼周刊` (Weekly 4 DU)
+
+What is DUW?
+Why we make DUW?
+What are the possibilities of DUW?
+
+Dama said, variety brings vitality.
+But various behaviors may make us hard to cooperate as a team.
+
+	Coming together is a beginning; 
+	Keeping together is progress; 
+	Working together is success!
+
+\<--- [Henry Ford][11]
+
+That's why Dama keeps on debugging.
+However, as time goes by, maybe you would not remember these days clearly and spread your experience difficultly.
+What a pity!
+The valuable should have a fixed form to be recorded.
+That's why we make the Weekly for DU.
+
+[1]:	http://du.zoomquiet.io/2014-02/ac0-zq/
+[2]:	https://github.com/DebugUself/du4proto/issues/469
+[3]:	https://github.com/DebugUself/du4proto/issues/461
+[4]:	http://weekly.pychina.org/archives.html
+[5]:	https://github.com/DebugUself/du4proto/tree/DU_tools/st
+[6]:	https://meyerweb.com/eric/tools/s5/
+[7]:	http://s5.zoomquiet.top/171104-introPy/index.html
+[8]:	http://weekly.pychina.org/importpython/importpython-184.html
+[9]:	http://zoomquiet.io/collection.html
+[10]:	https://www.brainyquote.com/quotes/quotes/h/henryford121997.html
+[11]:	https://www.brainyquote.com/quotes/quotes/h/henryford121997.html

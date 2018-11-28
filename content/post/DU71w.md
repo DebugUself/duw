@@ -1,0 +1,245 @@
+---
+title: "DU71w"
+date: 2018-08-20T20:20:00+08:00
+---
+
+# 怼周刊\_v71
+\~ 预定 18.8.20 20:20 发布
+\~ 实际 18.8.21 00:43 发布
+
+---- 
+
+	意义
+	        ---- NBR-hugh
+	
+	人生朝露,百岁空忧.
+	钟针相追,死神舞镰.
+	
+	但行好事,莫问前程.
+	投石随缘,波澜自涌.
+	
+	来日苦短,去日苦多.
+	哭啼声来,当欢笑去.
+
+---- 
+
+- 主编: [大妈][1]
+- 责编: @NBR-hugh @tanchangde
+
+
+# 进度 Timelines
+\~ 记录当周关键事件日期+证据链接
+
+- [42h[TASK]20180818 怼周会 分享及纪要][2]
+
+- @fengdasuk19 清晰化月度计划的命名
+	- [1w[ASK]如何交付《时间账单任务 (原 S01E01 任务 → S01E01.2)》][3]
+
+- @XiaoYanWork 归来报道,参与怼周会
+	-  [XiaoYanWork commented 4 days ago][4]
+
+-  @izhangshiying 自主推进 S19E51 启用 
+	-  [S19E51 启用][5]
+
+- @zoejane 更新 s19e51 计划
+	+ [add(s19e51) zoejane's plan][6]
+
+- @liguanghe 更新 s19e51 log
+	- [lgh add log to s19 · DebugUself/du4proto@9815ab7][7]
+
+
+# 任务 Tasks
+\~ 记述关键共怼任务 (如果没有, 留空)
+
+- [2w [TASK][新怼友] 自怼圈之旅 - 报到篇][8]
+- [2w [TASK][新怼友] 自怼圈之旅 - 开启任务篇][9]
+- [[ASK] 有靠谱的时间记录工具否?][10]
+
+## 号召
+
+- `(￣▽￣)`:
+	+ [|蠎周刊 |汇集全球蠎事儿 !-)][11]
+		* 俺私人嗯哼了5年了
+		* 邀请大家一起来, 每周嗯哼
+	+ 每周例怼后, 无论是否列席, 大家都在 `故事->怼印象` 中追加当周 top3 感触
+
+- `NBR-hugh`:
+	- [倡议] 每周怼友共同提取当周讨论有价值的讨论点,提取到怼周刊`进度`部分
+		+ [具体说明][12]
+	- [倡议] 用 slack 的 pin 功能实现怼圈 echo 机制
+		+ [具体说明][13]
+
+
+# 进展 Progress
+\~ 整体圈内活跃指标情况([st][14] 专用服务, 尚少使用手册)
+
+## 总体活跃度
+
+<span id="thx">Welcome to Oschina Tools website</span>          <table><tr><th>allcic Commit</th><th> times</th></tr><tr><td><a href='http://github.com/ZoomQuiet'>ZoomQuiet</a></td><td>580</td><tr><td><a href='http://github.com/liguanghe'>liguanghe</a></td><td>525</td><tr><td><a href='http://github.com/leilayanhui'>leilayanhui</a></td><td>467</td><tr><td><a href='http://github.com/zhangshiyinrunwithcc'>zhangshiyinrunwithcc</a></td><td>464</td><tr><td><a href='http://github.com/zoejane'>zoejane</a></td><td>377</td><tr><td><a href='http://github.com/mxclover'>mxclover</a></td><td>240</td><tr><th>all Commit</th><th>Comments times</th></tr><tr><td><a href='http://github.com/ZoomQuiet'>ZoomQuiet</a></td><td>177</td><tr><td><a href='http://github.com/zhangshiyinrunwithcc'>zhangshiyinrunwithcc</a></td><td>59</td><tr><td><a href='http://github.com/zoejane'>zoejane</a></td><td>36</td><tr><td><a href='http://github.com/bambooom'>bambooom</a></td><td>23</td><tr><td><a href='http://github.com/mxclover'>mxclover</a></td><td>20</td><tr><td><a href='http://github.com/NBR-hugh'>NBR-hugh</a></td><td>19</td><tr><th>all Issue</th><th>Comments times</th></tr><tr><td><a href='http://github.com/liguanghe'>liguanghe</a></td><td>901</td><tr><td><a href='http://github.com/ZoomQuiet'>ZoomQuiet</a></td><td>679</td><tr><td><a href='http://github.com/zhangshiyinrunwithcc'>zhangshiyinrunwithcc</a></td><td>417</td><tr><td><a href='http://github.com/NBR-hugh'>NBR-hugh</a></td><td>239</td><tr><td><a href='http://github.com/zoejane'>zoejane</a></td><td>178</td><tr><td><a href='http://github.com/mxclover'>mxclover</a></td><td>121</td></table>
+
+
+
+## 本周活跃度
+
+![Insight Pulse][image-1]
+
+# 成果 Achievements
+\~ 各种成品/半成品 内部知识作品
+
+- @Hugo1030
+	+ [怼周会个人分享][15]
+		* 第一部分: 使用 pandas 和 jupyter做数据分析
+		* 第二部分: 用概念图提炼信息和写笔记
+
+- @Vwan
+	+ SICP 阅读笔记: 2.2.3\~2.2.4
+		* [Commits · Vwan/sicp-lamp][16]
+	+ 探讨递归小记
+		+ [du4proto/Recursion.md at sicp-lamp · DebugUself/du4proto][17]
+- @liguanghe 
+	+ 法律科技事业探索,实习体悟
+		* [25d[LOG]种一棵事业树(2) · Issue #433 · DebugUself/du4proto][18]
+		* [27d[LOG]种一棵事业树(3) · Issue #451 · DebugUself/du4proto][19]
+		* [du4proto/180813YuanJiaLog.md at lghFL · DebugUself/du4proto][20]
+
+# 故事 Stories
+\~ 收集各自无法雷同的怼圈真人故事...
+
+## 新怼怼新
+
+- `NBR-hugh` :
+	+ 情况
+		- 新一轮入怼已经2周,怼周会气氛不错,新怼友踊跃发言!\\~
+		- 但可能启动成本依然过大,只有2\~3位怼友发布了 issue ,创建了孤子分支,建立自己的怼圈阵地
+			- 许多怼友忙于工作,或者深陷信息瘫痪难以自拔,难以建立自己的探索节奏.
+			- 只是借口永远存在,困难也永远存在...
+				+ `等`? 
+				+ 太容易就 `永远不开始`
+		- 因此依然提倡大家尽最大努力保持怼圈`最小参与节奏`
+			+ 每天 10m Slack 里发发言? 
+				+ 任何困扰/障碍/感悟/心得/资源...
+			+ 每周 不管计划是否成功,来`怼周会`唠唠? 
+				+ 吸一吸进展顺利的怼友的仙气...
+		- 建立持续的,任何情况都能 Hold 住的长期参与节奏.
+			- 难,但很有价值.
+	+ 重要: 
+		+ **不要消失!!!不要消失!!!不要消失!!!**
+		+ 尽最大努力保持不要断,保持节奏,抗击负面情绪,抗击自欺自蔽.抗击羞耻玻璃心
+	- 建议:
+		- 固定时间探索,
+		- 每天发布自己的探索过程/掌握的小知识点/疑难困惑.
+			+ 早发布,多发布,早受益
+	* 以达成
+		- 培养自己的节奏,
+		- 缓解自己面对巨大未知的焦虑,
+		- 也及时给其他怼友帮助你的窗口,
+		- 一举多得.
+	- 说是建议新怼友,其实也是`自我提醒`
+	- `(๑•̀ㅂ•́)و✧`
+		-  **慢慢来,不要断,比较快.**
+
+## 怼印象
+\~ 例怼中感触最嗯哼的 top3 感想
+
+- `NBR-hugh`
+	+ @tanchangde 自带主持天赋,怼技有模有样,超长三个钟
+	+ @liuyun16 科研公众号影响力不小,正在寻求替代 word 的批量自动发布工具
+	+ @vivian 推荐亚隆的 [存在主义心理治疗 (豆瓣)][21] ,思考人生意义与焦虑本质.   
+
+- `tanchangde`
+	- 沥川为大家演示了 jupyter——python 下文学化编程的实现，文字描述与代码整合在一块儿，分析报告，思路、结果可重复；
+	- 从从的行动能力非常凶悍，已经开始撸原型了；
+	- 开了三个 40 分钟会议室，达到怼周会历史高峰。嗯，一定有我唠叨的功劳。
+
+- `liuyun16`
+	- 资深老怼出手不凡。
+
+- `liguanghe`
+	+ 新怼友们都积极的发言了, 希望能有更多 github 仓库里的尝试. 怼圈几个月前才引入 slack, 在没有 slack 之前, 大家都是用 issue 沟通的, 促进了大家文字记录和使用的能力. 最初留下的老怼们都有这个习惯. 哪怕在 slack 的讨论, 也会备份一份到相应的issue 里, 继续讨论, 形成wiki/周刊内容/新项目等等.
+
+# 推荐 Recommedations
+\~ 嗯哼各种怼路上发现的嗯哼...
+
+- `mxclover`
+	> - 信息结构化表达--工具
+	- [ CmapTools][22] \<= `概念图`
+	- [Graph Visualization][23] \<=`图表可视化`
+
+- `NBR-hugh`
+	+ [Find the best Python books - pythonbooks.org][24]
+		* Pythonbooks ranks the best Python books for beginners, intermediate programmers and 15 different specializations.
+	+ [The Key to Accelerating Your Skills While You Learn to Code][25]
+		* 学习编程技能的关键是跨过拐点期
+		* 三个阶段
+				0  The Tutorial Phase (3-8 weeks of serious coding)
+				1. The Inflection Point (2-4 weeks with the right mentality)
+				2. For the rest of your life, go outside your limits every single day
+
+# 后记 Postscript
+\~ 怼周刊是什么以及为什么和能怎么...
+
+大妈曰过: `参差多态 才是生机`
+问题在 `参差` 的行为是无法形成团队的
+
+	Coming together is a beginning; 
+	Keeping together is progress; 
+	Working together is success!
+
+\<--- [Henry Ford][26]
+
+- 所以, 有了 大妈 随见随怼的持续嗯哼...
+- 但是, 想象一年后, 回想几十周前自己作的那些 `图样图森破` 
+- 却没现成的资料来出示给后进来嗯哼?
+- 不科学, 值得记录的, 就应当有个形式固定下来
+- 所以,有了这个 `怼周刊` (Weekly 4 DU)
+
+What is DUW?
+Why we make DUW?
+What are the possibilities of DUW?
+
+Dama said, variety brings vitality.
+But various behaviors may make us hard to cooperate as a team.
+
+	Coming together is a beginning; 
+	Keeping together is progress; 
+	Working together is success!
+
+\<--- [Henry Ford][27]
+
+That's why Dama keeps on debugging.
+However, as time goes by, maybe you would not remember these days clearly and spread your experience difficultly.
+What a pity!
+The valuable should have a fixed form to be recorded.
+That's why we make the Weekly for DU.
+
+
+
+[1]:	http://du.zoomquiet.io/2014-02/ac0-zq/
+[2]:	https://github.com/DebugUself/du4proto/issues/450
+[3]:	https://github.com/DebugUself/du4proto/issues/444
+[4]:	https://github.com/DebugUself/du4proto/issues/439#issuecomment-413434305
+[5]:	https://github.com/DebugUself/du4proto/issues/449
+[6]:	https://github.com/DebugUself/du4proto/commit/8de2b60007f242ddc896372cde6df7692cb8ca19
+[7]:	https://github.com/DebugUself/du4proto/commit/9815ab7b249f552576919ff834720e9b4fa4b67c
+[8]:	https://github.com/DebugUself/du4proto/issues/440
+[9]:	https://github.com/DebugUself/du4proto/issues/439
+[10]:	https://github.com/DebugUself/du4proto/issues/3
+[11]:	http://weekly.pychina.org/archives.html
+[12]:	https://debuguself.slack.com/archives/C4T5DDZHR/p1531461903000018
+[13]:	https://debuguself.slack.com/archives/C4T5DDZHR/p1531461903000018
+[14]:	https://github.com/DebugUself/du4proto/tree/DU_tools/st
+[15]:	https://github.com/DebugUself/du4proto/issues/450#issuecomment-414065457
+[16]:	https://github.com/Vwan/sicp-lamp/commits/master
+[17]:	https://github.com/DebugUself/du4proto/blob/sicp-lamp/Recursion.md
+[18]:	https://github.com/DebugUself/du4proto/issues/433#issuecomment-412351043
+[19]:	https://github.com/DebugUself/du4proto/issues/451
+[20]:	https://github.com/DebugUself/du4proto/blob/lghFL/180813YuanJiaLog.md
+[21]:	https://book.douban.com/subject/26304954/
+[22]:	https://cmap.ihmc.us/cmaptools/
+[23]:	http://www.graphviz.org/about/
+[24]:	https://pythonbooks.org/
+[25]:	http://blog.thefirehoseproject.com/posts/learn-to-code-and-be-self-reliant/
+[26]:	https://www.brainyquote.com/quotes/quotes/h/henryford121997.html
+[27]:	https://www.brainyquote.com/quotes/quotes/h/henryford121997.html
+
+[image-1]:	https://ws3.sinaimg.cn/large/006tNbRwgy1fugkb9ugu8j30vs1eo7e4.jpg
