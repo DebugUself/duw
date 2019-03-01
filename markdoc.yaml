@@ -1,0 +1,37 @@
+wiki-name: Weekly for DebugUself Static Wiki # Set this to whatever you want
+
+## ...other settings...
+google-analytics: UA-2331528-6
+disqus_shortname: wikizoomquietio
+
+author_name: du.101.camp
+author_display_name: du.101.camp
+author_gravatar: 26221c6d3cedc50c506aa699e2765252
+author_email: i@zoomquiet.io
+author_web: http://du.101.camp
+author_github: ZoomQuiet
+author_coderwall: zoomquiet
+author_gittip: https://gratipay.com/~ZoomQuiet/
+
+# Directories
+hide-prefix: "."
+wiki-dir: "wiki"
+static-dir: "_static"
+#html-dir: ".html"
+html-dir: "docs"
+template-dir: "_templates"
+temp-dir: ".tmp"
+
+# Building
+document-extensions: [.md, .markdown]
+generate-listing: always
+listing-filename: "_list.html"
+use-default-static: true
+use-default-templates: true
+
+# Rendering
+markdown:
+  safe-mode: false
+  output-format: xhtml1
+  extensions: [codehilite, def_list, headerid, toc, wikilinks]
+
