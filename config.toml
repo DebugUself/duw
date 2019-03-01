@@ -1,4 +1,4 @@
-baseURL = "http://duw.zoomquiet.io"
+baseURL = "http://duw.101.camp"
 title = "DUW"
 theme = "jane"
 enableRobotsTXT = true
@@ -43,7 +43,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   name = "自怼圈"
   weight = 200
   identifier = "du"
-  url = "https://du.zoomquiet.io/"
+  url = "https://du.101.camp/"
 # [[menu.main]]
 #  name = "Tags"
 #  weight = 30
