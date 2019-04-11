@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/101camp_bauhaus_v4h420.ico">
+        <title>怼周刊_v8 - Debug Uself Weekly</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atelier-forest-light.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">
+
+                    <img src='/img/du_logo_v4_h32.png'/>
+                    Debug Uself Weekly
+
+                    </a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../..">Home</a>
+                            </li>
+                            <li >
+                                <a href="../../license/">License</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">2017 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../DU0w/">DU0w</a>
+</li>
+                                    
+<li >
+    <a href="../DU1w/">DU1w</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">2018 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../DU2018Weekly/DU51w/">DU51w</a>
+</li>
+                                    
+<li >
+    <a href="../../DU2018Weekly/DU52w/">DU52w</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">2019 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../DU2019Weekly/DU100w/">DU100w</a>
+</li>
+                                    
+<li >
+    <a href="../../DU2019Weekly/DU101w/">DU101w</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+<!--
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+
+-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#_v8">怼周刊_v8</a></li>
+        <li class="main "><a href="#_1">进度</a></li>
+        <li class="main "><a href="#_2">进展</a></li>
+        <li class="main "><a href="#_3">成果</a></li>
+            <li><a href="#chk4ducrx">chk4du.crx</a></li>
+            <li><a href="#zoejane-ai">zoejane: AI 作曲</a></li>
+            <li><a href="#_4">时间帐单:效能分析小队</a></li>
+        <li class="main "><a href="#_5">故事</a></li>
+            <li><a href="#0-ai-google-magenta">从 0 开始体验 AI 作曲 (Google Magenta)</a></li>
+        <li class="main "><a href="#_10">后记</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="_v8">怼周刊_v8<a class="headerlink" href="#_v8" title="Permanent link">¶</a></h1>
+<p>~ 预定 17.6.3 20:20 发布</p>
+<hr />
+<p>竹之昩</p>
+<pre><code>三有存心中
+代码矢的放
+探索未知能
+自在无兰人
+</code></pre>
+<hr />
+<ul>
+<li>主编: <a href="http://du.zoomquiet.io/2014-02/ac0-zq/">大妈</a></li>
+<li>责编:<ul>
+<li><a href="http://du.zoomquiet.io/2017-04/about-xpgeng/">xpgeng</a></li>
+<li><a href="http://du.zoomquiet.io/2017-04/about-sunoonlee/">sunoonlee</a></li>
+<li><a href="http://du.zoomquiet.io/2017-04/about-zoe/">Zoe</a></li>
+<li><a href="http://du.zoomquiet.io/2017-04/about-bambooom/">bambooom</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="_1">进度<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
+<p>~ 记录当周关键事件日期+证据链接</p>
+<ul>
+<li>170527 周会: <a href="https://github.com/DebugUself/du4proto/issues/122">纪要</a></li>
+<li>S03 启动: <a href="https://github.com/DebugUself/du4proto/blob/master/S03E51/README.md">du4proto/S03E51/README.md</a></li>
+</ul>
+<h1 id="_2">进展<a class="headerlink" href="#_2" title="Permanent link">¶</a></h1>
+<p>~ 整体上圈内部活跃指标情况</p>
+<ul>
+<li>提交(S03E051): 10 人 (1个5人小组 + 5 个个人项目)</li>
+<li>小组 @zoomquiet 时间帐单:效能分析小队<ul>
+<li>@zoomquiet </li>
+<li>@zsy</li>
+<li>@liguanghe</li>
+<li>@simpleowen </li>
+<li>@mxclover </li>
+</ul>
+</li>
+<li>@bambooom chrome 插件 &amp; Vue 学习</li>
+<li>@fatfox2016 分析当前政府招标市场信息,生成市场情况报告</li>
+<li>@sunoonlee 机器学习</li>
+<li>@xpgeng 深度学习</li>
+<li>@zoejane 体验如何能让计算机作曲 (Google Magenta)</li>
+<li>引发的作品:<ul>
+<li>@bambooom DU 统计数据 chrome 插件 release</li>
+<li>@zoejane AI 作曲一首 Magenta_01</li>
+</ul>
+</li>
+<li>状态:</li>
+</ul>
+<table>
+<tr><th>allcic Commit</th><th> times</th><th>weekly Commit</th><th> times</th></tr>
+<tr><td>
+            <a href='http://github.com/ZoomQuiet'>ZoomQuiet</a></td><td>219</td>
+        <td>
+            <a href='http://github.com/zhangshiyinrunwithcc'>zhangshiyinrunwithcc</a></td><td>24</td>
+
+<tr><td>
+            <a href='http://github.com/zoejane'>zoejane</a></td><td>180</td>
+        <td>
+            <a href='http://github.com/ZoomQuiet'>ZoomQuiet</a></td><td>20</td>
+
+<tr><td>
+            <a href='http://github.com/liguanghe'>liguanghe</a></td><td>111</td>
+        <td>
+            <a href='http://github.com/simpleowen'>simpleowen</a></td><td>14</td>
+
+<tr><td>
+            <a href='http://github.com/bambooom'>bambooom</a></td><td>103</td>
+        <td>
+            <a href='http://github.com/liguanghe'>liguanghe</a></td><td>10</td>
+
+<tr><td>
+            <a href='http://github.com/mxclover'>mxclover</a></td><td>92</td>
+        <td>
+            <a href='http://github.com/mxclover'>mxclover</a></td><td>8</td>
+
+<tr><th>all Commit </th><th>Comments times</th><th>weekly Commit</th><th>Comments times</th></tr>
+<tr><td>
+            <a href='http://github.com/ZoomQuiet'>ZoomQuiet</a></td><td>126</td>
+        <td>
+            <a href='http://github.com/ZoomQuiet'>ZoomQuiet</a></td><td>10</td>
+
+<tr><td>
+            <a href='http://github.com/zhangshiyinrunwithcc'>zhangshiyinrunwithcc</a></td><td>31</td>
+        <td>
+            <a href='http://github.com/zhangshiyinrunwithcc'>zhangshiyinrunwithcc</a></td><td>6</td>
+
+<tr><td>
+            <a href='http://github.com/zoejane'>zoejane</a></td><td>27</td>
+        <td>
+            <a href='http://github.com/simpleowen'>simpleowen</a></td><td>5</td>
+
+<tr><td>
+            <a href='http://github.com/bambooom'>bambooom</a></td><td>17</td>
+        <td>
+            <a href='http://github.com/mxclover'>mxclover</a></td><td>2</td>
+
+<tr><td>
+            <a href='http://github.com/sunoonlee'>sunoonlee</a></td><td>16</td>
+        <td>
+            <a href='http://github.com/bambooom'>bambooom</a></td><td>1</td>
+
+<tr><th>all Issue </th><th>Comments times</th><th>weekly Issue</th><th>Comments times</th></tr>
+<tr><td>
+            <a href='http://github.com/ZoomQuiet'>ZoomQuiet</a></td><td>296</td>
+        <td>
+            <a href='http://github.com/ZoomQuiet'>ZoomQuiet</a></td><td>10</td>
+
+<tr><td>
+            <a href='http://github.com/zhangshiyinrunwithcc'>zhangshiyinrunwithcc</a></td><td>135</td>
+        <td>
+            <a href='http://github.com/zhangshiyinrunwithcc'>zhangshiyinrunwithcc</a></td><td>9</td>
+
+<tr><td>
+            <a href='http://github.com/liguanghe'>liguanghe</a></td><td>120</td>
+        <td>
+            <a href='http://github.com/bambooom'>bambooom</a></td><td>9</td>
+
+<tr><td>
+            <a href='http://github.com/NBR-hugh'>NBR-hugh</a></td><td>62</td>
+        <td>
+            <a href='http://github.com/simpleowen'>simpleowen</a></td><td>4</td>
+
+<tr><td>
+            <a href='http://github.com/zoejane'>zoejane</a></td><td>57</td>
+        <td>
+            <a href='http://github.com/liguanghe'>liguanghe</a></td><td>3</td>
+
+</table>
+
+<p>-&gt; 170603 17:37</p>
+<ul>
+<li>在线(测试ing..):<ul>
+<li><code>curl du.zoomquiet.us</code></li>
+<li><code>curl du.zoomquiet.us/v0/all/cic/rank/5/</code></li>
+<li><code>curl du.zoomquiet.us/v0/all/cil/rank/5/</code></li>
+<li><code>curl du.zoomquiet.us/v0/week/cic/rank/5/</code></li>
+<li><code>curl du.zoomquiet.us/v0/week/cil/rank/5/</code></li>
+</ul>
+</li>
+</ul>
+<h1 id="_3">成果<a class="headerlink" href="#_3" title="Permanent link">¶</a></h1>
+<p>~ 各种成品/半成品 内部知识作品</p>
+<h2 id="chk4ducrx">chk4du.crx<a class="headerlink" href="#chk4ducrx" title="Permanent link">¶</a></h2>
+<p><a href="https://github.com/DebugUself/du4proto/issues/130">3d [ANN] DU 统计数据 chrome 插件 release 🎉</a></p>
+<ul>
+<li>嗯哼?花园外私人作品: <a href="https://github.com/bambooom/check4DUStat/releases">bambooom/check4DUStat release</a></li>
+</ul>
+<h2 id="zoejane-ai">zoejane: AI 作曲<a class="headerlink" href="#zoejane-ai" title="Permanent link">¶</a></h2>
+<ul>
+<li><a href="https://github.com/DebugUself/du4proto/blob/master/S03E51/du_s03e51_zoejane_plan.md">Project Plan</a></li>
+<li>1号作品: <a href="https://soundcloud.com/zoezoejane/magenta_01">magenta_01(attention_rnn) @SoundCloud</a></li>
+</ul>
+<h2 id="_4">时间帐单:效能分析小队<a class="headerlink" href="#_4" title="Permanent link">¶</a></h2>
+<ul>
+<li>组员<ul>
+<li><code>(￣▽￣)</code> -&gt; 大妈</li>
+<li>🐻 <code>熊</code> =&gt; @zhangshiyinrunwithcc</li>
+<li>🐣 <code>鹤</code> =&gt; @李广鹤</li>
+<li>🐈 <code>猫</code> =&gt; @simpleowen</li>
+<li>🐴 <code>mx</code> =&gt; @mxclover</li>
+</ul>
+</li>
+<li>目标<ul>
+<li>通过分析大妈和剑飞, 两人5年以上持续时间帐单的数据</li>
+<li>获得数据化的行为效能结论</li>
+<li>对自身行为给出几点优化策略</li>
+</ul>
+</li>
+<li><a href="https://github.com/DebugUself/du4proto/tree/atl4dama">Github 项目链接</a></li>
+<li><a href="https://github.com/DebugUself/du4proto/blob/master/S03E51/du_s03e51_zoomquiet_plan.md">Project Plan</a></li>
+</ul>
+<h1 id="_5">故事<a class="headerlink" href="#_5" title="Permanent link">¶</a></h1>
+<p>~ 收集各自无法雷同的怼圈真人故事...</p>
+<h2 id="0-ai-google-magenta">从 0 开始体验 AI 作曲 (Google Magenta)<a class="headerlink" href="#0-ai-google-magenta" title="Permanent link">¶</a></h2>
+<p>作品 </p>
+<ul>
+<li>Magenta 制作的第一段音乐 <a href="https://soundcloud.com/zoezoejane/magenta_01">在线试听 @SoundCloud</a> </li>
+</ul>
+<h3 id="_6">缘起<a class="headerlink" href="#_6" title="Permanent link">¶</a></h3>
+<ul>
+<li>Google Magenta 让我发现,原来计算机还可以作曲. 这让我惊喜的发现,音乐和编程,居然可以以这种形式结合. 写出来的音乐,也居然挺好听. <ul>
+<li><a href="https://www.youtube.com/watch?v=6ZLB2-_0Hxw">Google Magenta Music</a></li>
+</ul>
+</li>
+<li>对这个领域很感兴趣,但是总觉得太复杂. 一看到算法,数学公式就胃疼. 而且似乎还有经历数据分析再到机器学习再到深度学习,感觉是一条慢慢长路,太耗时间精力. </li>
+<li>大妈 @zoomquiet 上次周会分享的一段话触动了我. 你可以放弃理解细节,不代表不用它. 他还提到,Google I/O大会发行了一大堆人工智能应用,但给我们使用的界面,必定是异常简洁的. <ul>
+<li><a href="https://github.com/DebugUself/du4proto/issues/115#issuecomment-303004414">20170520 DU6wd6 周会 纪要</a></li>
+</ul>
+</li>
+<li>这给了我很多勇气,也决心把本月的目标定在了探索使用计算机自动作曲. 我想试试,大妈说的是真的吗?即使我不了解,我也可以一样使用好它吗?</li>
+</ul>
+<h3 id="_7">初识<a class="headerlink" href="#_7" title="Permanent link">¶</a></h3>
+<ul>
+<li>这个领域比较小众,不得不直接读英文资料. 但是很多相关的资料写得很抽象,还涉及到一些数学什么的,看不懂,怎么办?</li>
+<li>我决定先从 Youtube 的视频开始入手. <ul>
+<li>视频比文字更有趣,也更直观,更容易理解. </li>
+<li>通过搜索一些相关视频,可以了解这个领域大概包括一些什么内容.  </li>
+<li>配合 Google 搜索一些关键词,可以顺藤摸瓜发现更多东西. </li>
+<li>对这个领域有初步了解后,再读文字资料就没有那么难懂了. </li>
+</ul>
+</li>
+<li>通过 Youtube 发掘到了这个领域里,一些好玩的人,一些有趣的应用,也对 Magenta 这个项目越发感兴趣啦. <ul>
+<li><a href="https://www.youtube.com/watch?v=TgKd8_r-yl8">Attention RNN Song Sample 1 - YouTube</a></li>
+<li><a href="https://www.youtube.com/watch?v=vM5NaGoynjE">Magenta: Music and Art Generation (TensorFlow Dev Summit 2017)</a></li>
+<li><a href="https://www.youtube.com/watch?v=2FAjQ6R_bf0">Project Magenta: Music and Art with Machine Learning (Google I/O '17)</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="_8">上手<a class="headerlink" href="#_8" title="Permanent link">¶</a></h3>
+<ul>
+<li>Youtube 的文字说明里,就附上了相关的 Magenta 官方 blog,对音乐如何生成的原理,有很详细的介绍. <ul>
+<li><a href="https://magenta.tensorflow.org/2016/07/15/lookback-rnn-attention-rnn/">Generating Long-Term Structure in Songs and Stories</a></li>
+<li>经过之前的背景熟悉,让我对阅读这篇文章,包括文章中说的一些算法,不再觉得害怕了,甚至我还觉得挺有意思的. </li>
+</ul>
+</li>
+<li>相关的代码,也已经在 GitHub 上开源. 还附上了非常详尽的介绍. <ul>
+<li><a href="https://github.com/tensorflow/magenta/tree/master/magenta/models/melody_rnn">magenta/magenta/models/melody_rnn at master · tensorflow/magenta</a>  </li>
+<li>文档中,手把手教你如何安装和使用 Magenta 环境. 居然还有已经训练好的 Model 可以直接使用. </li>
+<li>
+<p>根据文档说明做好前面的所有准备工作后,生成音乐只需要这样一段代码,居然就搞定了,居然这么简单!</p>
+<p><code>melody_rnn_generate \
+--config=attention_rnn \
+--run_dir=/tmp/melody_rnn/logdir/run1 \
+--output_dir=/tmp/melody_rnn/generated \
+--num_outputs=10 \
+--num_steps=128 \
+--hparams="{'batch_size':64,'rnn_layer_sizes':[64,64]}" \
+--primer_melody="[60]"</code>
+    - 如果想要自己进行模型的训练,Magenta 项目也细致的为你提供了免费的音乐数据库,教你如何进行对 MIDI 文件数据处理,并且给出了清晰的步骤. </p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="magenta">Magenta 的第一段音乐<a class="headerlink" href="#magenta" title="Permanent link">¶</a></h3>
+<p>Magenta 生成的音乐是什么样的呢?我使用了以下方式:</p>
+<ul>
+<li>使用 Magenta 提供的已经训练好的 Model,运行程序自动生成了 20 段小的音乐片段. </li>
+<li>保留其中 5 段比较有意思的,放进 Mac 系统自带的音乐软件 GarageBand. </li>
+<li>从中选出 3 段组合起来比较协调的,给每段选择不同的乐器,组合在一起. </li>
+<li>大功告成 -&gt; Magenta01.mp3 <a href="https://soundcloud.com/zoezoejane/magenta_01">在线试听 @SoundCloud</a> </li>
+<li>我本来以为要一个月才能完成的事情,原来第二天就做完了. 大妈说得对,不懂,也并不妨碍你去用它啊. </li>
+</ul>
+<h3 id="gpu">GPU 助力数据处理<a class="headerlink" href="#gpu" title="Permanent link">¶</a></h3>
+<ul>
+<li>在自己进行数据处理的时候,发现自己的小笔记本处理数据还是挺费劲的,跑了一段时间后,滚烫烫的. 而且整个过程非常耗时间. 几万条数据根本处理不完,我只能先选择几十条数据练手. </li>
+<li>就是在这个时候,我突然想起了 @sunoonlee 上次的分享 (<a href="https://github.com/zhangshiyinrunwithcc">20170513 DU5wd6 周会 纪要</a> ). 虽然当时觉得他说的东西太高深了,但是对两段话有印象. <ul>
+<li>GPU 可以让处理数据的速度大大加快. 原来要跑一周的数据,现在一天就能跑完. </li>
+<li>Google Cloud Platform 提供 300 美元的免费试用额度.  </li>
+</ul>
+</li>
+<li>这不就是解决方案了吗!当时听得时候觉得根本不可能用上的东西,没想到半个月后居然就真的给用上了. </li>
+<li>正好 Youtube 上也有好心人录了视频给与指导. 于是一步步慢慢的跟着做. </li>
+<li><a href="https://www.youtube.com/watch?v=4tujdi8yyow">How to use Magenta and Tensorflow to generate music in a free Google Cloud instance</a> </li>
+<li>虽然不太懂,但是得益于视频的详细指导,经历了来来回回的折腾和部署后,几万条数据就在 Google Cloud Platfom 上欢快的跑了起来. 不得不说,这处理速度真是太帅了. </li>
+</ul>
+<h3 id="_9">最后的感悟<a class="headerlink" href="#_9" title="Permanent link">¶</a></h3>
+<ul>
+<li>本来觉得特别复杂的,觉得一个月都不知道搞不搞得定的事情,居然几天就搞定了,这的太出乎我的预料了. </li>
+<li>谢谢@zoomquiet 大妈的启发,让我亲身体验到了,原来不懂,真的一点也不妨碍我去使用它. 很多事情,真的要去先走走看. </li>
+<li>谢谢 @@sunoonlee 的分享. 真的是没想到,半个月后,你这段我当时觉得太高深的分享,居然解决了我的难题. 让我真的感受到什么叫意外的惊喜. </li>
+<li>谢谢 @DebugUself/du4all 每周的陪伴和分享. 没有和你们一起的每一天,我也不会想到要探索用编程来探索音乐,也不会想到去这样玩耍. </li>
+<li>谢谢 Google Magenta 项目组,提供这么多高质量的开源代码,提供详尽的官方文档指导,还提供了如此易用的相关基础环境,让这件我原来以为很难的事情,变得如此简单. </li>
+</ul>
+<h1 id="_10">后记<a class="headerlink" href="#_10" title="Permanent link">¶</a></h1>
+<p>~ 怼周刊是什么以及为什么和能怎么...</p>
+<p>大妈曰过: <code>参差多态 才是生机</code>
+问题在 <code>参差</code> 的行为是无法形成团队的</p>
+<pre><code>Coming together is a beginning; 
+Keeping together is progress; 
+Working together is success!
+</code></pre>
+<p>&lt;--- <a href="https://www.brainyquote.com/quotes/quotes/h/henryford121997.html">Henry Ford</a></p>
+<ul>
+<li>所以, 有了 大妈 随见随怼的持续嗯哼...</li>
+<li>但是, 想象一年后, 回想几十周前自己作的那些 <code>图样图森破</code> </li>
+<li>却没现成的资料来出示给后进来嗯哼?</li>
+<li>不科学, 值得记录的, 就应当有个形式固定下来</li>
+<li>所以,有了这个 <code>怼周刊</code> (Weekly 4 DU)</li>
+</ul>
+
+<hr>
+
+<!-- comments by gh-issue -->
+<script src="https://utteranc.es/client.js"
+        repo="DebugUself/duw"
+        issue-term="url"
+        label="comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>©101camp 2017</p>
+
+                <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a>
+
+This Site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+</p>
+
+
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>;-)</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
