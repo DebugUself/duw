@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/101camp_bauhaus_v4h420.ico">
+        <title>怼周刊_v11 - Debug Uself Weekly</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atelier-forest-light.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">
+
+                    <img src='/duw/img/du_logo_v4_h32.png'/>
+                    Debug Uself Weekly
+
+                    </a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../..">Home</a>
+                            </li>
+                            <li >
+                                <a href="../../license/">License</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Weekly <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../">2017</a>
+</li>
+                                    
+<li >
+    <a href="../../2018/">2018</a>
+</li>
+                                    
+<li >
+    <a href="../../2019/">2019</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+<!--
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+
+-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#_v11">怼周刊_v11</a></li>
+        <li class="main "><a href="#_1">进度</a></li>
+        <li class="main "><a href="#_2">任务</a></li>
+        <li class="main "><a href="#_3">进展</a></li>
+        <li class="main "><a href="#_4">成果</a></li>
+            <li><a href="#zoejane-ai-magenta-03">zoejane - AI 作曲 (Magenta 03)</a></li>
+            <li><a href="#_5">时间帐单:效能分析小队 推进中</a></li>
+        <li class="main "><a href="#_6">故事</a></li>
+            <li><a href="#simpleowen-">@simpleowen - 案例:如何定位与解决问题</a></li>
+            <li><a href="#zoejane-">@zoejane - 怼圈三个月体验分享</a></li>
+        <li class="main "><a href="#_11">推荐</a></li>
+        <li class="main "><a href="#_12">后记</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="_v11">怼周刊_v11<a class="headerlink" href="#_v11" title="Permanent link">¶</a></h1>
+<p>~ 预定 17.6.24 20:20 发布</p>
+<hr />
+<p>i am backing...</p>
+<pre><code>魂未离兮 往时差
+身将返兮 此周六
+例会行兮 空客中
+wifi渺兮 请自治
+归兮归兮 自怼圈
+敢不止兮 debug
+</code></pre>
+<hr />
+<ul>
+<li>主编: <a href="http://du.zoomquiet.io/2014-02/ac0-zq/">大妈</a></li>
+<li>责编:<ul>
+<li><a href="http://du.zoomquiet.io/2017-04/about-xpgeng/">xpgeng</a></li>
+<li><a href="http://du.zoomquiet.io/2017-04/about-sunoonlee/">sunoonlee</a></li>
+<li><a href="http://du.zoomquiet.io/2017-04/about-zoe/">Zoe</a></li>
+<li><a href="http://du.zoomquiet.io/2017-04/about-bambooom/">bambooom</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="_1">进度<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
+<p>~ 记录当周关键事件日期+证据链接</p>
+<ul>
+<li>170617 <a href="https://github.com/DebugUself/du4proto/issues/147">[TASK]2017-06-17 怼周会及纪要 · Issue #147 · DebugUself/du4proto</a></li>
+<li>170401 关闭报表和入密</li>
+<li>170331 om103py 毕业</li>
+</ul>
+<h1 id="_2">任务<a class="headerlink" href="#_2" title="Permanent link">¶</a></h1>
+<p>~ 记述关键共怼任务 (如果没有, 留空)</p>
+<ul>
+<li>170603 <a href="https://github.com/DebugUself/du4proto/issues/135">怼圈的二次开放 筹备中</a></li>
+<li>170527 <a href="https://github.com/DebugUself/du4proto/blob/master/S03E51/README.md">S03E51 启动</a></li>
+</ul>
+<h1 id="_3">进展<a class="headerlink" href="#_3" title="Permanent link">¶</a></h1>
+<p>~ 整体上圈内部活跃指标情况</p>
+<ul>
+<li>提交(S03E051): 12 人 (1个5人小组 + 7 个个人项目)</li>
+<li>小组 @zoomquiet 时间帐单:效能分析小队<ul>
+<li>@zoomquiet </li>
+<li>@zsy</li>
+<li>@liguanghe</li>
+<li>@simpleowen </li>
+<li>@mxclover </li>
+</ul>
+</li>
+<li>@bambooom chrome 插件 &amp; Vue 学习</li>
+<li>@fatfox2016 分析当前政府招标市场信息,生成市场情况报告</li>
+<li>@livingworld Deep Learning自学计划</li>
+<li>@sunoonlee 机器学习</li>
+<li>@xpgeng 深度学习</li>
+<li>@yuanchunrong 使用Django搭建个人博客计划</li>
+<li>@zoejane 体验如何能让计算机作曲 (Google Magenta)</li>
+<li>引发的作品:<ul>
+<li>@zoejane - AI 作曲一首 Magenta_03</li>
+</ul>
+</li>
+<li>状态:</li>
+</ul>
+<table>
+<tr><th>allcic Commit</th><th> times</th><th>weekly Commit</th><th> times</th></tr>
+<tr><td>
+            <a href='http://github.com/ZoomQuiet'>ZoomQuiet</a></td><td>254</td>
+        <td>
+            <a href='http://github.com/zoejane'>zoejane</a></td><td>9</td>
+
+<tr><td>
+            <a href='http://github.com/zoejane'>zoejane</a></td><td>212</td>
+        <td>
+            <a href='http://github.com/ZoomQuiet'>ZoomQuiet</a></td><td>7</td>
+
+<tr><td>
+            <a href='http://github.com/liguanghe'>liguanghe</a></td><td>116</td>
+        <td>
+            <a href='http://github.com/simpleowen'>simpleowen</a></td><td>3</td>
+
+<tr><td>
+            <a href='http://github.com/bambooom'>bambooom</a></td><td>106</td>
+        <td>
+            <a href='http://github.com/mxclover'>mxclover</a></td><td>2</td>
+
+<tr><th>all Issue </th><th>Comments times</th><th>weekly Issue</th><th>Comments times</th></tr>
+<tr><td>
+            <a href='http://github.com/ZoomQuiet'>ZoomQuiet</a></td><td>307</td>
+        <td>
+            <a href='http://github.com/zoejane'>zoejane</a></td><td>6</td>
+
+<tr><td>
+            <a href='http://github.com/zhangshiyinrunwithcc'>zhangshiyinrunwithcc</a></td><td>154</td>
+        <td>
+            <a href='http://github.com/Zxlon'>Zxlon</a></td><td>1</td>
+
+<tr><td>
+            <a href='http://github.com/liguanghe'>liguanghe</a></td><td>127</td>
+        <td>
+            <a href='http://github.com/NBR-hugh'>NBR-hugh</a></td><td>1</td>
+
+</table>
+
+<p>-&gt; 17.06.124 17:41</p>
+<ul>
+<li>在线(测试ing..):<ul>
+<li><code>curl du.zoomquiet.us</code></li>
+<li><code>curl du.zoomquiet.us/v0/all/cic/rank/5/</code></li>
+<li><code>curl du.zoomquiet.us/v0/all/cil/rank/5/</code></li>
+<li><code>curl du.zoomquiet.us/v0/week/cic/rank/5/</code></li>
+<li><code>curl du.zoomquiet.us/v0/week/cil/rank/5/</code></li>
+</ul>
+</li>
+</ul>
+<h1 id="_4">成果<a class="headerlink" href="#_4" title="Permanent link">¶</a></h1>
+<p>~ 各种成品/半成品 内部知识作品</p>
+<h2 id="zoejane-ai-magenta-03">zoejane - AI 作曲 (Magenta 03)<a class="headerlink" href="#zoejane-ai-magenta-03" title="Permanent link">¶</a></h2>
+<ul>
+<li><a href="https://github.com/DebugUself/du4proto/blob/master/S03E51/du_s03e51_zoejane_plan.md">Project Plan</a></li>
+<li>Magenta 写的第三首音乐<ul>
+<li><a href="https://soundcloud.com/zoezoejane/magenta_03">magenta_03(improv_rnn) @SoundCloud</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="_5">时间帐单:效能分析小队 推进中<a class="headerlink" href="#_5" title="Permanent link">¶</a></h2>
+<ul>
+<li>组员<ul>
+<li><code>(￣▽￣)</code> -&gt; 大妈</li>
+<li>🐻 <code>熊</code> =&gt; @zhangshiyinrunwithcc</li>
+<li>🐣 <code>鹤</code> =&gt; @李广鹤</li>
+<li>🐈 <code>猫</code> =&gt; @simpleowen</li>
+<li>🐴 <code>mx</code> =&gt; @mxclover</li>
+</ul>
+</li>
+<li>目标<ul>
+<li>通过分析大妈和剑飞, 两人5年以上持续时间帐单的数据</li>
+<li>获得数据化的行为效能结论</li>
+<li>对自身行为给出几点优化策略</li>
+</ul>
+</li>
+<li><a href="https://github.com/DebugUself/du4proto/tree/atl4dama">Github 项目链接</a></li>
+<li><a href="https://github.com/DebugUself/du4proto/blob/master/S03E51/du_s03e51_zoomquiet_plan.md">Project Plan</a>    </li>
+</ul>
+<h1 id="_6">故事<a class="headerlink" href="#_6" title="Permanent link">¶</a></h1>
+<p>~ 收集各自无法雷同的怼圈真人故事...</p>
+<h2 id="simpleowen-">@simpleowen - 案例:如何定位与解决问题<a class="headerlink" href="#simpleowen-" title="Permanent link">¶</a></h2>
+<h3 id="_7">背景<a class="headerlink" href="#_7" title="Permanent link">¶</a></h3>
+<p>时间账单小分队进行数据清洗中...  </p>
+<p>@mxclover: </p>
+<blockquote>
+<p>14年3月5号之后的数据类型 都变成chaos 了... ..</p>
+</blockquote>
+<h3 id="_8">分析<a class="headerlink" href="#_8" title="Permanent link">¶</a></h3>
+<ul>
+<li>重现现象<ul>
+<li>使用同一脚本 zq1actype.py</li>
+<li>任意取一份3月5号之后的数据 aTLer_140901-141001_report.csv</li>
+<li>执行 cat ../raw/zoomquiet/1302--report/aTLer_140901-141001_report.csv | python3 zq1actype.py</li>
+<li>获得重现确认</li>
+<li>每个活动分类都变成了 chaos</li>
+</ul>
+</li>
+<li>观察数据<ul>
+<li>快速查看3月5号前后的原始数据</li>
+<li>对比异同</li>
+<li>发现3月5号后的数据,每个数据项都被双引号包围</li>
+<li>"GDG","01:46","2014-03-10 10:43","2014-03-10 12:30",</li>
+<li>而3月5号之前的数据则没有双引号</li>
+<li>用餐,1.0,02/27/14 19:15,02/27/14 20:17,</li>
+</ul>
+</li>
+<li>调试代码<ul>
+<li>观察代码逻辑流程</li>
+<li>在关键位置放置 print</li>
+<li>屏蔽 print 以后的代码</li>
+<li>观察输出</li>
+<li>重复 print -&gt; 屏蔽 -&gt; 观察 的过程,直到定位到问题的源头</li>
+<li>找到原因以后修复问题就比较快了</li>
+</ul>
+</li>
+</ul>
+<h3 id="_9">结论<a class="headerlink" href="#_9" title="Permanent link">¶</a></h3>
+<p>面对纠结局面时,应将问题切片,设法创建一些单纯的场景,以单纯化解复杂</p>
+<h3 id="_10">大妈提点<a class="headerlink" href="#_10" title="Permanent link">¶</a></h3>
+<p>观察出问题... 就去调通哪...  这就是机会... </p>
+<p>异同是肉眼看出来的, 问题是怎么看 ,以及用什么问题过滤技巧来看 代码检测, 则包含了更多的技巧: 怎么追加代码? 在哪儿? 或是另外重新写代码?运行?检验数据准备? 怎么设计代码? 怎么不触动以往的即有代码? ...  每个点都是习惯</p>
+<p>所以, 看起来清洗是整个项目中最简单的 因为目标相对最简单 但是, 作起来才知道有多少事儿要作</p>
+<p>从现象到定位问题再解决, 这个过程的无阻碍自主进行, 就是编程基本功之一</p>
+<p>所以,无论多小心, 面对长期数据时,总是有意外发生 虽然具体问题都不复杂 问题是纠结在一起时, 现象是千变万化的 导致很难判定... </p>
+<p>快速设计出单纯的场景隔离其它问题,捕获指定问题, 才能进一步快速解决</p>
+<p>这就是流水线的原理哪... . 将复杂的制造过程, 分解为每个工位上简单的行为 降低工人的培训成本, 同时提高可替代性... . 对于代码而言... .就是每次只用尽可能少的代码处理尽可能单纯的运算</p>
+<p>编程, 就两种模式 复杂到看不出问题 简单到无法容纳问题... </p>
+<h2 id="zoejane-">@zoejane - 怼圈三个月体验分享<a class="headerlink" href="#zoejane-" title="Permanent link">¶</a></h2>
+<h3 id="s03e51-">S03E51 小结 - 状态不好也不影响去做<a class="headerlink" href="#s03e51-" title="Permanent link">¶</a></h3>
+<ul>
+<li>缘起<ul>
+<li>这个月觉得状态并不好,除了月初那几天真的是很投入,后来大部分都比较打酱油. </li>
+<li>但是当自己整理这个月做的东西的时候,又觉得没有那么糟糕. 三首音乐,一段视频,几篇笔记,居然感觉也还挺充实的. </li>
+</ul>
+</li>
+<li>体验<ul>
+<li>即使状态不好,也不影响自己做一件事情. <ul>
+<li>因为有时候做着做着状态就来了. </li>
+<li>即使没有状态,好歹也是练个手熟,混个眼熟,也算是在积累和练习了. 做得烂也比光想不做好. </li>
+</ul>
+</li>
+<li>更清楚的认识了自己的时间和精力. <ul>
+<li>以为自己有时间又状态好只是一种幻觉. 之前订计划时总把自己的状态想得很好,然后以为总是有意外打乱了我的节奏. </li>
+<li>真正体验过后发现大部分时间都会是面临临时加班,临时哄娃,睡眠不足,心情不好等状态. 这才是我生活中的常态. </li>
+<li>订计划时要充分考虑自己没有时间,精力不足的日常情况. 让自己可以在这种情况下也能完成任务,而不是老是订不切实际的计划打击自己. </li>
+</ul>
+</li>
+<li>以作品为导向订计划更容易完成. <ul>
+<li>把东西都学完很难. 基本看到中途就打瞌睡了. </li>
+<li>但是做出一个简单的作品还是比较容易的,总是会多少做多少. 而且也更有成就感一些. </li>
+<li>做出作品后,自己才更能体会自己之前学习的东西,更愿意去学,也更愿意学得进去,因为有实际的问题要去解决.  </li>
+<li>以作品为导向也更容易衡量本周是否完成任务了. 不然看的东西很杂,学习进度不好衡量. </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="-">三个月的收获 - 我居然可以每月探索一个自己喜欢的主题<a class="headerlink" href="#-" title="Permanent link">¶</a></h3>
+<ul>
+<li>我居然也可以完成计划了. <ul>
+<li>这三个月最让我震惊的,莫过于我居然可以给自己订月计划,并且真的完成了大部分了. 要知道,我原来这么多年订的计划就从来没有完成过,长期处于临时抱佛脚,担当各种事情救火队员的状态. </li>
+</ul>
+</li>
+<li>给自己营造一个环境. <ul>
+<li>自己做基本上自律不起来,但是在一个社群里,感觉又不同了,还是更有前进动力一些. 总之了解了自己一个人不自律的弱点后,就不要去挑战自己这个弱点,而是给自己创造好环境,自己只要懒懒的被动前进就好,哈哈. </li>
+</ul>
+</li>
+<li>我居然还可以探索那么多的事情. <ul>
+<li>另一个让我震惊的就是,我居然可以每个月探索一些不同的好玩的事情. </li>
+<li>以前我总觉得我很多事情都来不及做. 工作和家庭的双重压力,让我觉得几乎没有自我的时间了. </li>
+<li>现在我发觉,即使正常上班和哄娃,一年居然可以挤出一点时间,探索十二件我觉得有意思的事,我又觉得生活变得好玩了起来. </li>
+</ul>
+</li>
+</ul>
+<h3 id="-_1">三个月的困难 - 总是碰到低谷想放弃<a class="headerlink" href="#-_1" title="Permanent link">¶</a></h3>
+<ul>
+<li>低潮比我想象的还多. <ul>
+<li>常常觉得走不下去了,觉得自己是不是有问题. 后来发现,也不是自己有问题,大部分人都是这样的. 基本上我低谷的时候,整个怼圈也是低谷,所以自己也不用太过自责,要学会更坦然一点. </li>
+</ul>
+</li>
+<li>低谷也不见得就要停下来. </li>
+<li>想想自己连不喜欢的工作都能做下来,也没见出什么大的问题啊. 为什么面对自己喜欢的事情,反而要那么轻易说放弃. 哪怕心情麻木,哪怕感觉自己原地踏步,总之还是</li>
+<li>有波谷也会有波峰,只是正常的交替. <ul>
+<li>走过去了,就会见到下一次波峰,当然,也还会遇到下一次波谷. </li>
+<li>总之不管是什么样的节奏,能做点自己喜欢的事情,能认识一些自己欣赏的人,不也挺好嘛. </li>
+</ul>
+</li>
+</ul>
+<h1 id="_11">推荐<a class="headerlink" href="#_11" title="Permanent link">¶</a></h1>
+<p>~ 嗯哼各种怼路上发现的嗯哼...</p>
+<h1 id="_12">后记<a class="headerlink" href="#_12" title="Permanent link">¶</a></h1>
+<p>~ 怼周刊是什么以及为什么和能怎么...</p>
+<p>大妈曰过: <code>参差多态 才是生机</code>
+问题在 <code>参差</code> 的行为是无法形成团队的</p>
+<pre><code>Coming together is a beginning; 
+Keeping together is progress; 
+Working together is success!
+</code></pre>
+<p>&lt;--- <a href="https://www.brainyquote.com/quotes/quotes/h/henryford121997.html">Henry Ford</a></p>
+<ul>
+<li>所以, 有了 大妈 随见随怼的持续嗯哼...</li>
+<li>但是, 想象一年后, 回想几十周前自己作的那些 <code>图样图森破</code> </li>
+<li>却没现成的资料来出示给后进来嗯哼?</li>
+<li>不科学, 值得记录的, 就应当有个形式固定下来</li>
+<li>所以,有了这个 <code>怼周刊</code> (Weekly 4 DU)</li>
+</ul>
+
+<hr>
+
+<!-- comments by gh-issue -->
+<script src="https://utteranc.es/client.js"
+        repo="DebugUself/duw"
+        issue-term="url"
+        label="comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>©101camp 2017</p>
+
+                <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a>
+
+This Site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+</p>
+
+
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>;-)</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
