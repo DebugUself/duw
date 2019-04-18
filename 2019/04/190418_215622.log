@@ -1,8 +1,8 @@
 ../ghbr_logging_duw/2019/04
-../ghbr_logging_duw/2019/04/190418_215535.log
+../ghbr_logging_duw/2019/04/190418_215622.log
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ###::cron4duw.sh v-190416.2142 crontab action 4 auto publish DUW
-###::run@ 2019/04/18 21:55:35
+###::run@ 2019/04/18 21:56:22
 <<<   trigger by inter. EVENT srv.
 Available tasks:
 
@@ -12,5 +12,3 @@ Available tasks:
   pu       push all local fix into content rep.
   pub      MAIN COMMAND -> SEQUENCE RUN ALL NEED ACTS PUBLISH SITE
 
-###::end@ 2019/04/18 21:55:39
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
