@@ -1,0 +1,707 @@
+/opt/www/debuguself/ghbr_logging_duw/2019/04
+/opt/www/debuguself/ghbr_logging_duw/2019/04/190419_222001.log
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+###::cron4duw.sh v-190419.1642 crontab action 4 auto publish DUW
+###::run@ 2019/04/19 22:20:01
+<<<   trigger by inter. EVENT srv.
+Courtesy Notice: Pipenv found itself running within a virtual environment, so it will automatically use that environment, instead of creating its own for any project. You can set PIPENV_IGNORE_VIRTUALENVS=1 to force pipenv to ignore that environment and create its own instead. You can set PIPENV_VERBOSITY=-1 to suppress this warning.
+Available tasks:
+
+  bu    build all local doc -> site
+  gh    jump into ln -s -> site push all bulited static pages
+  pl    pull all necessary change AT FIRST...
+  pu    push all local fix into content rep.
+  pub   MAIN COMMAND -> SEQUENCE RUN ALL NEED ACTS PUBLISH SITE
+
+
+	 crt. PATH ===
+/opt/www/debuguself/br_DUW
+On branch DUW
+Your branch is up-to-date with 'origin/DUW'.
+nothing to commit, working directory clean
+Already up-to-date.
+
+	 crt. PATH ===
+/opt/www/debuguself/ghp_duw
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+From github.com:DebugUself/duw
+   92f9f59..3d47dd6  logging    -> origin/logging
+Already up-to-date.
+
+	 crt. PATH ===
+/opt/www/debuguself/br_duw_pub
+On branch duw_pub
+Your branch is up-to-date with 'origin/duw_pub'.
+nothing to commit, working directory clean
+Already up-to-date.
+
+	 crt. PATH ===
+/opt/www/debuguself/br_duw_pub
+rsync -av --delete -r ../br_DUW/2017/ ./docs/2017/
+sending incremental file list
+
+sent 968 bytes  received 12 bytes  1,960.00 bytes/sec
+total size is 635,503  speedup is 648.47
+rsync -av --delete -r ../br_DUW/2018/ ./docs/2018/
+sending incremental file list
+
+sent 763 bytes  received 12 bytes  1,550.00 bytes/sec
+total size is 412,480  speedup is 532.23
+rsync -av --delete -r ../br_DUW/2019/ ./docs/2019/
+sending incremental file list
+
+sent 377 bytes  received 12 bytes  778.00 bytes/sec
+total size is 213,981  speedup is 550.08
+rm -v ./docs/*.*
+removed './docs/000w.md'
+removed './docs/001w.md'
+removed './docs/002w.md'
+removed './docs/003w.md'
+removed './docs/004w.md'
+removed './docs/005w.md'
+removed './docs/006w.md'
+removed './docs/007w.md'
+removed './docs/008w.md'
+removed './docs/009w.md'
+removed './docs/010w.md'
+removed './docs/011w.md'
+removed './docs/012w.md'
+removed './docs/013w.md'
+removed './docs/014w.md'
+removed './docs/015w.md'
+removed './docs/016w.md'
+removed './docs/017w.md'
+removed './docs/018w.md'
+removed './docs/019w.md'
+removed './docs/020w.md'
+removed './docs/021w.md'
+removed './docs/022w.md'
+removed './docs/023w.md'
+removed './docs/024w.md'
+removed './docs/025w.md'
+removed './docs/026w.md'
+removed './docs/027w.md'
+removed './docs/028w.md'
+removed './docs/029w.md'
+removed './docs/030w.md'
+removed './docs/031w.md'
+removed './docs/032w.md'
+removed './docs/033w.md'
+removed './docs/034w.md'
+removed './docs/035w.md'
+removed './docs/036w.md'
+removed './docs/037w.md'
+removed './docs/038w.md'
+removed './docs/039w.md'
+removed './docs/040w.md'
+removed './docs/041w.md'
+removed './docs/042w.md'
+removed './docs/043w.md'
+removed './docs/044w.md'
+removed './docs/045w.md'
+removed './docs/046w.md'
+removed './docs/047w.md'
+removed './docs/048w.md'
+removed './docs/049w.md'
+removed './docs/050w.md'
+removed './docs/051w.md'
+removed './docs/052w.md'
+removed './docs/053w.md'
+removed './docs/054w.md'
+removed './docs/055w.md'
+removed './docs/056w.md'
+removed './docs/057w.md'
+removed './docs/058w.md'
+removed './docs/059w.md'
+removed './docs/060w.md'
+removed './docs/061w.md'
+removed './docs/062w.md'
+removed './docs/063w.md'
+removed './docs/064w.md'
+removed './docs/065w.md'
+removed './docs/066w.md'
+removed './docs/067w.md'
+removed './docs/068w.md'
+removed './docs/069w.md'
+removed './docs/070w.md'
+removed './docs/071w.md'
+removed './docs/072w.md'
+removed './docs/073w.md'
+removed './docs/074w.md'
+removed './docs/075w.md'
+removed './docs/076w.md'
+removed './docs/077w.md'
+removed './docs/078w.md'
+removed './docs/079w.md'
+removed './docs/080w.md'
+removed './docs/081w.md'
+removed './docs/082w.md'
+removed './docs/083w.md'
+removed './docs/084w.md'
+removed './docs/085w.md'
+removed './docs/086w.md'
+removed './docs/087w.md'
+removed './docs/088w.md'
+removed './docs/089w.md'
+removed './docs/090w.md'
+removed './docs/091w.md'
+removed './docs/092w.md'
+removed './docs/093w.md'
+removed './docs/094w.md'
+removed './docs/096w.md'
+removed './docs/097w.md'
+removed './docs/098w.md'
+removed './docs/099w.md'
+removed './docs/099w_poem.jpeg'
+removed './docs/100w.md'
+removed './docs/100w_poem.jpeg'
+removed './docs/101w.md'
+removed './docs/102w.md'
+removed './docs/103w.md'
+removed './docs/104w.md'
+removed './docs/2017.md'
+removed './docs/2018.md'
+removed './docs/2019.md'
+removed './docs/img.md'
+removed './docs/index.md'
+removed './docs/license.md'
+removed './docs/publish.md'
+cp -v ../br_DUW/2017/*.* ./docs/
+'../br_DUW/2017/000w.md' -> './docs/000w.md'
+'../br_DUW/2017/001w.md' -> './docs/001w.md'
+'../br_DUW/2017/002w.md' -> './docs/002w.md'
+'../br_DUW/2017/003w.md' -> './docs/003w.md'
+'../br_DUW/2017/004w.md' -> './docs/004w.md'
+'../br_DUW/2017/005w.md' -> './docs/005w.md'
+'../br_DUW/2017/006w.md' -> './docs/006w.md'
+'../br_DUW/2017/007w.md' -> './docs/007w.md'
+'../br_DUW/2017/008w.md' -> './docs/008w.md'
+'../br_DUW/2017/009w.md' -> './docs/009w.md'
+'../br_DUW/2017/010w.md' -> './docs/010w.md'
+'../br_DUW/2017/011w.md' -> './docs/011w.md'
+'../br_DUW/2017/012w.md' -> './docs/012w.md'
+'../br_DUW/2017/013w.md' -> './docs/013w.md'
+'../br_DUW/2017/014w.md' -> './docs/014w.md'
+'../br_DUW/2017/015w.md' -> './docs/015w.md'
+'../br_DUW/2017/016w.md' -> './docs/016w.md'
+'../br_DUW/2017/017w.md' -> './docs/017w.md'
+'../br_DUW/2017/018w.md' -> './docs/018w.md'
+'../br_DUW/2017/019w.md' -> './docs/019w.md'
+'../br_DUW/2017/020w.md' -> './docs/020w.md'
+'../br_DUW/2017/021w.md' -> './docs/021w.md'
+'../br_DUW/2017/022w.md' -> './docs/022w.md'
+'../br_DUW/2017/023w.md' -> './docs/023w.md'
+'../br_DUW/2017/024w.md' -> './docs/024w.md'
+'../br_DUW/2017/025w.md' -> './docs/025w.md'
+'../br_DUW/2017/026w.md' -> './docs/026w.md'
+'../br_DUW/2017/027w.md' -> './docs/027w.md'
+'../br_DUW/2017/028w.md' -> './docs/028w.md'
+'../br_DUW/2017/029w.md' -> './docs/029w.md'
+'../br_DUW/2017/030w.md' -> './docs/030w.md'
+'../br_DUW/2017/031w.md' -> './docs/031w.md'
+'../br_DUW/2017/032w.md' -> './docs/032w.md'
+'../br_DUW/2017/033w.md' -> './docs/033w.md'
+'../br_DUW/2017/034w.md' -> './docs/034w.md'
+'../br_DUW/2017/035w.md' -> './docs/035w.md'
+'../br_DUW/2017/036w.md' -> './docs/036w.md'
+'../br_DUW/2017/037w.md' -> './docs/037w.md'
+'../br_DUW/2017/038w.md' -> './docs/038w.md'
+'../br_DUW/2017/039w.md' -> './docs/039w.md'
+'../br_DUW/2017/040w.md' -> './docs/040w.md'
+'../br_DUW/2017/041w.md' -> './docs/041w.md'
+'../br_DUW/2017/042w.md' -> './docs/042w.md'
+'../br_DUW/2017/043w.md' -> './docs/043w.md'
+'../br_DUW/2017/044w.md' -> './docs/044w.md'
+'../br_DUW/2017/045w.md' -> './docs/045w.md'
+'../br_DUW/2017/046w.md' -> './docs/046w.md'
+'../br_DUW/2017/047w.md' -> './docs/047w.md'
+'../br_DUW/2017/048w.md' -> './docs/048w.md'
+'../br_DUW/2017/049w.md' -> './docs/049w.md'
+'../br_DUW/2017/050w.md' -> './docs/050w.md'
+cp -v ../br_DUW/2018/*.* ./docs/
+'../br_DUW/2018/051w.md' -> './docs/051w.md'
+'../br_DUW/2018/052w.md' -> './docs/052w.md'
+'../br_DUW/2018/053w.md' -> './docs/053w.md'
+'../br_DUW/2018/054w.md' -> './docs/054w.md'
+'../br_DUW/2018/055w.md' -> './docs/055w.md'
+'../br_DUW/2018/056w.md' -> './docs/056w.md'
+'../br_DUW/2018/057w.md' -> './docs/057w.md'
+'../br_DUW/2018/058w.md' -> './docs/058w.md'
+'../br_DUW/2018/059w.md' -> './docs/059w.md'
+'../br_DUW/2018/060w.md' -> './docs/060w.md'
+'../br_DUW/2018/061w.md' -> './docs/061w.md'
+'../br_DUW/2018/062w.md' -> './docs/062w.md'
+'../br_DUW/2018/063w.md' -> './docs/063w.md'
+'../br_DUW/2018/064w.md' -> './docs/064w.md'
+'../br_DUW/2018/065w.md' -> './docs/065w.md'
+'../br_DUW/2018/066w.md' -> './docs/066w.md'
+'../br_DUW/2018/067w.md' -> './docs/067w.md'
+'../br_DUW/2018/068w.md' -> './docs/068w.md'
+'../br_DUW/2018/069w.md' -> './docs/069w.md'
+'../br_DUW/2018/070w.md' -> './docs/070w.md'
+'../br_DUW/2018/071w.md' -> './docs/071w.md'
+'../br_DUW/2018/072w.md' -> './docs/072w.md'
+'../br_DUW/2018/073w.md' -> './docs/073w.md'
+'../br_DUW/2018/074w.md' -> './docs/074w.md'
+'../br_DUW/2018/075w.md' -> './docs/075w.md'
+'../br_DUW/2018/076w.md' -> './docs/076w.md'
+'../br_DUW/2018/077w.md' -> './docs/077w.md'
+'../br_DUW/2018/078w.md' -> './docs/078w.md'
+'../br_DUW/2018/079w.md' -> './docs/079w.md'
+'../br_DUW/2018/080w.md' -> './docs/080w.md'
+'../br_DUW/2018/081w.md' -> './docs/081w.md'
+'../br_DUW/2018/082w.md' -> './docs/082w.md'
+'../br_DUW/2018/083w.md' -> './docs/083w.md'
+'../br_DUW/2018/084w.md' -> './docs/084w.md'
+'../br_DUW/2018/085w.md' -> './docs/085w.md'
+'../br_DUW/2018/086w.md' -> './docs/086w.md'
+'../br_DUW/2018/087w.md' -> './docs/087w.md'
+'../br_DUW/2018/088w.md' -> './docs/088w.md'
+'../br_DUW/2018/089w.md' -> './docs/089w.md'
+'../br_DUW/2018/090w.md' -> './docs/090w.md'
+cp -v ../br_DUW/2019/*.* ./docs/
+'../br_DUW/2019/091w.md' -> './docs/091w.md'
+'../br_DUW/2019/092w.md' -> './docs/092w.md'
+'../br_DUW/2019/093w.md' -> './docs/093w.md'
+'../br_DUW/2019/094w.md' -> './docs/094w.md'
+'../br_DUW/2019/096w.md' -> './docs/096w.md'
+'../br_DUW/2019/097w.md' -> './docs/097w.md'
+'../br_DUW/2019/098w.md' -> './docs/098w.md'
+'../br_DUW/2019/099w.md' -> './docs/099w.md'
+'../br_DUW/2019/099w_poem.jpeg' -> './docs/099w_poem.jpeg'
+'../br_DUW/2019/100w.md' -> './docs/100w.md'
+'../br_DUW/2019/100w_poem.jpeg' -> './docs/100w_poem.jpeg'
+'../br_DUW/2019/101w.md' -> './docs/101w.md'
+'../br_DUW/2019/102w.md' -> './docs/102w.md'
+'../br_DUW/2019/103w.md' -> './docs/103w.md'
+'../br_DUW/2019/104w.md' -> './docs/104w.md'
+'../br_DUW/2019/105w_draft.md' -> './docs/105w_draft.md'
+'../br_DUW/2019/106w_draft.md' -> './docs/106w_draft.md'
+cp -v ./_draft/*.md ./docs/
+'./_draft/index.md' -> './docs/index.md'
+'./_draft/license.md' -> './docs/license.md'
+'./_draft/publish.md' -> './docs/publish.md'
+rm -v ./docs/*_draft.md
+removed './docs/105w_draft.md'
+removed './docs/106w_draft.md'
+
+# 2019 
+> 19 weekly report
+
+- [094w](094w)
+- [092w](092w)
+- [096w](096w)
+- [091w](091w)
+- [093w](093w)
+- [104w](104w)
+- [103w](103w)
+- [099w](099w)
+- [101w](101w)
+- [097w](097w)
+- [100w](100w)
+- [102w](102w)
+- [098w](098w)
+
+docs/2019.md
+# img 
+> g weekly report
+
+
+docs/img.md
+# 2017 
+> 17 weekly report
+
+- [021w](021w)
+- [040w](040w)
+- [038w](038w)
+- [023w](023w)
+- [015w](015w)
+- [031w](031w)
+- [011w](011w)
+- [033w](033w)
+- [000w](000w)
+- [022w](022w)
+- [013w](013w)
+- [045w](045w)
+- [008w](008w)
+- [050w](050w)
+- [048w](048w)
+- [042w](042w)
+- [030w](030w)
+- [014w](014w)
+- [024w](024w)
+- [007w](007w)
+- [036w](036w)
+- [019w](019w)
+- [020w](020w)
+- [035w](035w)
+- [001w](001w)
+- [010w](010w)
+- [027w](027w)
+- [025w](025w)
+- [041w](041w)
+- [049w](049w)
+- [004w](004w)
+- [037w](037w)
+- [039w](039w)
+- [043w](043w)
+- [026w](026w)
+- [012w](012w)
+- [044w](044w)
+- [002w](002w)
+- [029w](029w)
+- [003w](003w)
+- [047w](047w)
+- [034w](034w)
+- [017w](017w)
+- [032w](032w)
+- [028w](028w)
+- [018w](018w)
+- [046w](046w)
+- [016w](016w)
+- [005w](005w)
+- [009w](009w)
+- [006w](006w)
+
+docs/2017.md
+# 2018 
+> 18 weekly report
+
+- [073w](073w)
+- [058w](058w)
+- [067w](067w)
+- [068w](068w)
+- [085w](085w)
+- [088w](088w)
+- [060w](060w)
+- [086w](086w)
+- [059w](059w)
+- [063w](063w)
+- [072w](072w)
+- [079w](079w)
+- [056w](056w)
+- [084w](084w)
+- [080w](080w)
+- [082w](082w)
+- [089w](089w)
+- [087w](087w)
+- [062w](062w)
+- [053w](053w)
+- [054w](054w)
+- [074w](074w)
+- [066w](066w)
+- [052w](052w)
+- [065w](065w)
+- [055w](055w)
+- [077w](077w)
+- [081w](081w)
+- [083w](083w)
+- [090w](090w)
+- [071w](071w)
+- [076w](076w)
+- [078w](078w)
+- [075w](075w)
+- [064w](064w)
+- [051w](051w)
+- [070w](070w)
+- [057w](057w)
+- [069w](069w)
+- [061w](061w)
+
+docs/2018.md
+
+	gen4yml(c) mkdocs_main.yml mkdocs.yml
+2019.md
+img.md
+2017.md
+2018.md
+site_name: Debug Uself Weekly
+copyright: ©101camp 2017 
+
+theme: 
+  name: 'simplex'
+  custom_dir: '_theme/bootswatch/simplex'
+
+markdown_extensions:
+  - toc:
+      permalink: "¶"
+
+extra:
+  logo: https://du.101.camp/static/images/logo.png
+  include_toc: yes
+  extra_nav_links:
+    Fork me on GitHub: https://github.com/DebugUself/duw
+
+nav:
+  - Home: index.md
+  - Publish: publish.md
+  - License: license.md
+  - Weekly:
+    - 2019.md
+    - img.md
+    - 2017.md
+    - 2018.md
+
+
+#  - User Guide: guide.md
+
+
+/opt/www/debuguself/br_duw_pub
+INFO    -  Cleaning site directory 
+INFO    -  Building documentation to directory: /opt/www/debuguself/br_duw_pub/site 
+INFO    -  The following pages exist in the docs directory, but are not included in the "nav" configuration:
+  - 000w.md
+  - 001w.md
+  - 002w.md
+  - 003w.md
+  - 004w.md
+  - 005w.md
+  - 006w.md
+  - 007w.md
+  - 008w.md
+  - 009w.md
+  - 010w.md
+  - 011w.md
+  - 012w.md
+  - 013w.md
+  - 014w.md
+  - 015w.md
+  - 016w.md
+  - 017w.md
+  - 018w.md
+  - 019w.md
+  - 020w.md
+  - 021w.md
+  - 022w.md
+  - 023w.md
+  - 024w.md
+  - 025w.md
+  - 026w.md
+  - 027w.md
+  - 028w.md
+  - 029w.md
+  - 030w.md
+  - 031w.md
+  - 032w.md
+  - 033w.md
+  - 034w.md
+  - 035w.md
+  - 036w.md
+  - 037w.md
+  - 038w.md
+  - 039w.md
+  - 040w.md
+  - 041w.md
+  - 042w.md
+  - 043w.md
+  - 044w.md
+  - 045w.md
+  - 046w.md
+  - 047w.md
+  - 048w.md
+  - 049w.md
+  - 050w.md
+  - 051w.md
+  - 052w.md
+  - 053w.md
+  - 054w.md
+  - 055w.md
+  - 056w.md
+  - 057w.md
+  - 058w.md
+  - 059w.md
+  - 060w.md
+  - 061w.md
+  - 062w.md
+  - 063w.md
+  - 064w.md
+  - 065w.md
+  - 066w.md
+  - 067w.md
+  - 068w.md
+  - 069w.md
+  - 070w.md
+  - 071w.md
+  - 072w.md
+  - 073w.md
+  - 074w.md
+  - 075w.md
+  - 076w.md
+  - 077w.md
+  - 078w.md
+  - 079w.md
+  - 080w.md
+  - 081w.md
+  - 082w.md
+  - 083w.md
+  - 084w.md
+  - 085w.md
+  - 086w.md
+  - 087w.md
+  - 088w.md
+  - 089w.md
+  - 090w.md
+  - 091w.md
+  - 092w.md
+  - 093w.md
+  - 094w.md
+  - 096w.md
+  - 097w.md
+  - 098w.md
+  - 099w.md
+  - 100w.md
+  - 101w.md
+  - 102w.md
+  - 103w.md
+  - 104w.md
+  - 2017/000w.md
+  - 2017/001w.md
+  - 2017/002w.md
+  - 2017/003w.md
+  - 2017/004w.md
+  - 2017/005w.md
+  - 2017/006w.md
+  - 2017/007w.md
+  - 2017/008w.md
+  - 2017/009w.md
+  - 2017/010w.md
+  - 2017/011w.md
+  - 2017/012w.md
+  - 2017/013w.md
+  - 2017/014w.md
+  - 2017/015w.md
+  - 2017/016w.md
+  - 2017/017w.md
+  - 2017/018w.md
+  - 2017/019w.md
+  - 2017/020w.md
+  - 2017/021w.md
+  - 2017/022w.md
+  - 2017/023w.md
+  - 2017/024w.md
+  - 2017/025w.md
+  - 2017/026w.md
+  - 2017/027w.md
+  - 2017/028w.md
+  - 2017/029w.md
+  - 2017/030w.md
+  - 2017/031w.md
+  - 2017/032w.md
+  - 2017/033w.md
+  - 2017/034w.md
+  - 2017/035w.md
+  - 2017/036w.md
+  - 2017/037w.md
+  - 2017/038w.md
+  - 2017/039w.md
+  - 2017/040w.md
+  - 2017/041w.md
+  - 2017/042w.md
+  - 2017/043w.md
+  - 2017/044w.md
+  - 2017/045w.md
+  - 2017/046w.md
+  - 2017/047w.md
+  - 2017/048w.md
+  - 2017/049w.md
+  - 2017/050w.md
+  - 2018/051w.md
+  - 2018/052w.md
+  - 2018/053w.md
+  - 2018/054w.md
+  - 2018/055w.md
+  - 2018/056w.md
+  - 2018/057w.md
+  - 2018/058w.md
+  - 2018/059w.md
+  - 2018/060w.md
+  - 2018/061w.md
+  - 2018/062w.md
+  - 2018/063w.md
+  - 2018/064w.md
+  - 2018/065w.md
+  - 2018/066w.md
+  - 2018/067w.md
+  - 2018/068w.md
+  - 2018/069w.md
+  - 2018/070w.md
+  - 2018/071w.md
+  - 2018/072w.md
+  - 2018/073w.md
+  - 2018/074w.md
+  - 2018/075w.md
+  - 2018/076w.md
+  - 2018/077w.md
+  - 2018/078w.md
+  - 2018/079w.md
+  - 2018/080w.md
+  - 2018/081w.md
+  - 2018/082w.md
+  - 2018/083w.md
+  - 2018/084w.md
+  - 2018/085w.md
+  - 2018/086w.md
+  - 2018/087w.md
+  - 2018/088w.md
+  - 2018/089w.md
+  - 2018/090w.md
+  - 2019/091w.md
+  - 2019/092w.md
+  - 2019/093w.md
+  - 2019/094w.md
+  - 2019/096w.md
+  - 2019/097w.md
+  - 2019/098w.md
+  - 2019/099w.md
+  - 2019/100w.md
+  - 2019/101w.md
+  - 2019/102w.md
+  - 2019/103w.md
+  - 2019/104w.md
+  - 2019/105w_draft.md
+  - 2019/106w_draft.md 
+
+	 powded by pubDUW v.190419.2042
+
+	 crt. PATH ===
+/opt/www/debuguself/br_duw_pub
+On branch duw_pub
+Your branch is up-to-date with 'origin/duw_pub'.
+nothing to commit, working directory clean
+On branch duw_pub
+Your branch is up-to-date with 'origin/duw_pub'.
+nothing to commit, working directory clean
+Everything up-to-date
+
+	 crt. PATH ===
+/opt/www/debuguself/br_duw_pub
+'img/101camp_bauhaus_v4h420.ico' -> 'docs/img/101camp_bauhaus_v4h420.ico'
+'img/du_logo_v4_h100.png' -> 'docs/img/du_logo_v4_h100.png'
+'img/du_logo_v4_h16.png' -> 'docs/img/du_logo_v4_h16.png'
+'img/du_logo_v4_h32.png' -> 'docs/img/du_logo_v4_h32.png'
+'img/du_logo_v4_h64.png' -> 'docs/img/du_logo_v4_h64.png'
+'img/du_logo_v4_h80.png' -> 'docs/img/du_logo_v4_h80.png'
+/opt/www/debuguself/br_duw_pub
+
+	 crt. PATH ===
+/opt/www/debuguself/ghp_duw
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   index.html
+	modified:   sitemap.xml.gz
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[master e5b91e4] 👌 IMPROVE: pub(site) gen. by MkDocs as invoke (at 190419 2220 42.147)
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+To git@github.com:DebugUself/duw.git
+   989c01c..e5b91e4  master -> master
+
+	 powded by pubDUW v.190419.2042
+###::end@ 2019/04/19 22:20:51
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
