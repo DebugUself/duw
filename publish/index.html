@@ -498,6 +498,40 @@ inv pub
 </blockquote>
 <p><a href="https://github.com/DebugUself/duw/blob/logging/2019/04/190419_162001.log">duw/190419_162001.log at logging · DebugUself/duw</a></p>
 <p>最终想来想去, 还是通过 env 临时声明个全局变量完成路径的统一.</p>
+<blockquote>
+<p>就是不发布</p>
+</blockquote>
+<p><a href="https://github.com/DebugUself/duw/blob/logging/2019/04/190419_210001.log">duw/190419_210001.log at logging · DebugUself/duw</a></p>
+<p>关键失常:</p>
+<pre><code>...
+
+/opt/www/debuguself/br_duw_pub
+    ERROR   -  Config value: 'theme'. Error: Unrecognised theme name: 'simplex'. The available installed themes are: mkdocs, readthedocs
+
+    Aborted with 1 Configuration Errors!
+</code></pre>
+<p>才想起来, 即使有定制 theme, 在具体编译时, 也一定要事先安装好对应 theme:</p>
+<pre><code>$ pr pip install mkdocs-bootswatch
+</code></pre>
+<p>再检验一下:</p>
+<blockquote>
+<p>$ pr pip show mkdocs-bootswatch</p>
+</blockquote>
+<pre><code>Name: mkdocs-bootswatch
+Version: 1.0
+Summary: Bootswatch themes for MkDocs
+Home-page: http://www.mkdocs.org
+Author: Dougal Matthews
+Author-email: dougal@dougalmatthews.com
+License: BSD
+Location: /home/du19/.local/share/virtualenvs/br_duw_pub-XOQ-Lz1N/lib/python3.7/site-packages
+Requires: mkdocs
+</code></pre>
+<blockquote>
+<blockquote>
+<p>这下应该都好了...</p>
+</blockquote>
+</blockquote>
 <h3 id="_7">可用<a class="headerlink" href="#_7" title="Permanent link">¶</a></h3>
 <blockquote>
 <p>经过大约 10几轮调试, 终于开始定期嗯哼了</p>
