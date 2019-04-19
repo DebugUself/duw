@@ -1,0 +1,10 @@
+/opt/www/debuguself/ghbr_logging_duw/2019/04
+/opt/www/debuguself/ghbr_logging_duw/2019/04/190419_114501.log
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+###::cron4duw.sh v-190416.2142 crontab action 4 auto publish DUW
+###::run@ 2019/04/19 11:45:01
+<<<   trigger by inter. EVENT srv.
+/opt/www/debuguself/br_duw_pub/cron4duw.sh: 34: /opt/www/debuguself/br_duw_pub/cron4duw.sh: run: not found
+/opt/www/debuguself/br_duw_pub/cron4duw.sh: 35: /opt/www/debuguself/br_duw_pub/cron4duw.sh: run: not found
+###::end@ 2019/04/19 11:45:01
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
