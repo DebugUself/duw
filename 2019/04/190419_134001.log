@@ -1,0 +1,40 @@
+/opt/www/debuguself/ghbr_logging_duw/2019/04
+/opt/www/debuguself/ghbr_logging_duw/2019/04/190419_134001.log
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+###::cron4duw.sh v-190419.1242 crontab action 4 auto publish DUW
+###::run@ 2019/04/19 13:40:01
+<<<   trigger by inter. EVENT srv.
+Courtesy Notice: Pipenv found itself running within a virtual environment, so it will automatically use that environment, instead of creating its own for any project. You can set PIPENV_IGNORE_VIRTUALENVS=1 to force pipenv to ignore that environment and create its own instead. You can set PIPENV_VERBOSITY=-1 to suppress this warning.
+Available tasks:
+
+  bu       build all local doc -> site
+  gh       jump into ln -s -> site push all bulited static pages
+  pl       pull all necessary change AT FIRST...
+  pl4duw   auto pull all DUW content in right path
+  pu       push all local fix into content rep.
+  pub      MAIN COMMAND -> SEQUENCE RUN ALL NEED ACTS PUBLISH SITE
+
+On branch duw_pub
+Your branch is up-to-date with 'origin/duw_pub'.
+nothing to commit, working directory clean
+Already up-to-date.
+On branch DUW
+Your branch is up-to-date with 'origin/DUW'.
+nothing to commit, working directory clean
+Already up-to-date.
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+From github.com:DebugUself/duw
+   aafbc26..7e3f7b8  logging    -> origin/logging
+Already up-to-date.
+/opt/www/debuguself/ghp_duw
+cd ../br_DUW && pwd && git pull
+/opt/www/debuguself/br_DUW
+Already up-to-date.
+rsync -av --delete -r ../br_DUW/2017/ ./docs/2017/
+sending incremental file list
+rsync: mkdir "/opt/www/debuguself/ghp_duw/./docs/2017" failed: No such file or directory (2)
+rsync error: error in file IO (code 11) at main.c(674) [Receiver=3.1.1]
+###::end@ 2019/04/19 13:40:24
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
