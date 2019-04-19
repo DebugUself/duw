@@ -1,0 +1,14 @@
+../ghbr_logging_duw/2019/04
+../ghbr_logging_duw/2019/04/190419_101944.log
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+###::cron4duw.sh v-190416.2142 crontab action 4 auto publish DUW
+###::run@ 2019/04/19 10:19:44
+<<<   trigger by inter. EVENT srv.
+Available tasks:
+
+  bu       build all local doc -> site
+  gh       jump into ln -s -> site push all bulited static pages
+  pl4duw   auto pull all DUW content in right path
+  pu       push all local fix into content rep.
+  pub      MAIN COMMAND -> SEQUENCE RUN ALL NEED ACTS PUBLISH SITE
+
