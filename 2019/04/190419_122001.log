@@ -1,0 +1,16 @@
+/opt/www/debuguself/ghbr_logging_duw/2019/04
+/opt/www/debuguself/ghbr_logging_duw/2019/04/190419_122001.log
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+###::cron4duw.sh v-190416.2142 crontab action 4 auto publish DUW
+###::run@ 2019/04/19 12:20:01
+<<<   trigger by inter. EVENT srv.
+Courtesy Notice: Pipenv found itself running within a virtual environment, so it will automatically use that environment, instead of creating its own for any project. You can set PIPENV_IGNORE_VIRTUALENVS=1 to force pipenv to ignore that environment and create its own instead. You can set PIPENV_VERBOSITY=-1 to suppress this warning.
+No virtualenv has been created for this project yet!
+Aborted!
+Can't find any collection named 'tasks'!
+Courtesy Notice: Pipenv found itself running within a virtual environment, so it will automatically use that environment, instead of creating its own for any project. You can set PIPENV_IGNORE_VIRTUALENVS=1 to force pipenv to ignore that environment and create its own instead. You can set PIPENV_VERBOSITY=-1 to suppress this warning.
+Creating a Pipfile for this project…
+Can't find any collection named 'tasks'!
+Can't find any collection named 'tasks'!
+###::end@ 2019/04/19 12:20:02
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
