@@ -1,0 +1,34 @@
+/opt/www/debuguself/ghbr_logging_duw/2019/04
+/opt/www/debuguself/ghbr_logging_duw/2019/04/190419_130001.log
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+###::cron4duw.sh v-190419.1242 crontab action 4 auto publish DUW
+###::run@ 2019/04/19 13:00:01
+<<<   trigger by inter. EVENT srv.
+Courtesy Notice: Pipenv found itself running within a virtual environment, so it will automatically use that environment, instead of creating its own for any project. You can set PIPENV_IGNORE_VIRTUALENVS=1 to force pipenv to ignore that environment and create its own instead. You can set PIPENV_VERBOSITY=-1 to suppress this warning.
+Available tasks:
+
+  bu       build all local doc -> site
+  gh       jump into ln -s -> site push all bulited static pages
+  pl       pull all necessary change AT FIRST...
+  pl4duw   auto pull all DUW content in right path
+  pu       push all local fix into content rep.
+  pub      MAIN COMMAND -> SEQUENCE RUN ALL NEED ACTS PUBLISH SITE
+
+On branch duw_pub
+Your branch is up-to-date with 'origin/duw_pub'.
+nothing to commit, working directory clean
+Already up-to-date.
+On branch DUW
+Your branch is up-to-date with 'origin/DUW'.
+nothing to commit, working directory clean
+Already up-to-date.
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+error: cannot lock ref 'refs/remotes/origin/master': ref refs/remotes/origin/master is at cc03273890b573cc79b5aea30fcf0357c4d9f2da but expected 481d9634ef3cc555283abc869a15180d99387b31
+From github.com:DebugUself/duw
+ ! 481d963..cc03273  master     -> origin/master  (unable to update local ref)
+error: cannot lock ref 'refs/remotes/origin/logging': ref refs/remotes/origin/logging is at 896e02b690aab9a0ff52235b9830a10ed839dedc but expected 47e01b370a76b34f8fdbaacbc8e9486c00b0880b
+ ! 47e01b3..896e02b  logging    -> origin/logging  (unable to update local ref)
+###::end@ 2019/04/19 13:00:22
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
