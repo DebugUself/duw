@@ -1,0 +1,283 @@
+/opt/www/debuguself/ghbr_logging_duw/2019/04
+/opt/www/debuguself/ghbr_logging_duw/2019/04/190429_214201.log
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+###::cron4duw.sh v-190419.1642 crontab action 4 auto publish DUW
+###::run@ 2019/04/29 21:42:01
+<<<   trigger by inter. EVENT srv.
+Courtesy Notice: Pipenv found itself running within a virtual environment, so it will automatically use that environment, instead of creating its own for any project. You can set PIPENV_IGNORE_VIRTUALENVS=1 to force pipenv to ignore that environment and create its own instead. You can set PIPENV_VERBOSITY=-1 to suppress this warning.
+Available tasks:
+
+  bu    build all local doc -> site
+  gh    jump into ln -s -> site push all bulited static pages
+  pl    pull all necessary change AT FIRST...
+  pu    push all local fix into content rep.
+  pub   MAIN COMMAND -> SEQUENCE RUN ALL NEED ACTS PUBLISH SITE
+
+
+	 crt. PATH ===
+/opt/www/debuguself/br_DUW
+On branch DUW
+Your branch is up-to-date with 'origin/DUW'.
+nothing to commit, working directory clean
+Already up-to-date.
+
+	 crt. PATH ===
+/opt/www/debuguself/ghp_duw
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+From github.com:DebugUself/duw
+   205cbb4..f09ff8f  master     -> origin/master
+   d98c2fc..fcbd21a  logging    -> origin/logging
+Updating 205cbb4..f09ff8f
+Fast-forward
+ 000w/index.html            |   8 +-
+ 001w/index.html            |   8 +-
+ 002w/index.html            |   8 +-
+ 003w/index.html            |   8 +-
+ 004w/index.html            |   8 +-
+ 005w/index.html            |   8 +-
+ 006w/index.html            |   8 +-
+ 007w/index.html            |   8 +-
+ 008w/index.html            |   8 +-
+ 009w/index.html            |   8 +-
+ 010w/index.html            |  16 +-
+ 011w/index.html            |   8 +-
+ 012w/index.html            |   8 +-
+ 013w/index.html            |   8 +-
+ 014w/index.html            |   8 +-
+ 015w/index.html            |   8 +-
+ 016w/index.html            |   8 +-
+ 017w/index.html            |   8 +-
+ 018w/index.html            |   8 +-
+ 019w/index.html            |   8 +-
+ 020w/index.html            |   8 +-
+ 021w/index.html            |   8 +-
+ 022w/index.html            |   8 +-
+ 023w/index.html            |   8 +-
+ 024w/index.html            |   8 +-
+ 025w/index.html            |   8 +-
+ 026w/index.html            |   8 +-
+ 027w/index.html            |   8 +-
+ 028w/index.html            |   8 +-
+ 029w/index.html            |   8 +-
+ 030w/index.html            |   8 +-
+ 031w/index.html            |   8 +-
+ 032w/index.html            |   8 +-
+ 033w/index.html            |   8 +-
+ 034w/index.html            |   8 +-
+ 035w/index.html            |   8 +-
+ 036w/index.html            |   8 +-
+ 037w/index.html            |   8 +-
+ 038w/index.html            |   8 +-
+ 039w/index.html            |   8 +-
+ 040w/index.html            |   8 +-
+ 041w/index.html            |   8 +-
+ 042w/index.html            |   8 +-
+ 043w/index.html            |  12 +-
+ 044w/index.html            |  13 +-
+ 045w/index.html            |   8 +-
+ 046w/index.html            |   8 +-
+ 047w/index.html            |   8 +-
+ 048w/index.html            |   8 +-
+ 049w/index.html            |   8 +-
+ 050w/index.html            |   8 +-
+ 051w/index.html            |   8 +-
+ 052w/index.html            |   8 +-
+ 053w/index.html            |   8 +-
+ 054w/index.html            |   8 +-
+ 055w/index.html            |   8 +-
+ 056w/index.html            |   8 +-
+ 057w/index.html            |   8 +-
+ 058w/index.html            |   8 +-
+ 059w/index.html            |   8 +-
+ 060w/index.html            |   8 +-
+ 061w/index.html            |   8 +-
+ 062w/index.html            |   8 +-
+ 063w/index.html            |   8 +-
+ 064w/index.html            |   8 +-
+ 065w/index.html            |   8 +-
+ 066w/index.html            |   8 +-
+ 067w/index.html            |   8 +-
+ 068w/index.html            |   8 +-
+ 069w/index.html            |   8 +-
+ 070w/index.html            |   8 +-
+ 071w/index.html            |   8 +-
+ 072w/index.html            |   8 +-
+ 073w/index.html            |   8 +-
+ 074w/index.html            |   8 +-
+ 075w/index.html            |   8 +-
+ 076w/index.html            |   8 +-
+ 077w/index.html            |   8 +-
+ 078w/index.html            |   8 +-
+ 079w/index.html            |   8 +-
+ 080w/index.html            |   8 +-
+ 081w/index.html            |   8 +-
+ 082w/index.html            |   8 +-
+ 083w/index.html            |   8 +-
+ 084w/index.html            |   8 +-
+ 085w/index.html            |   8 +-
+ 086w/index.html            |   8 +-
+ 087w/index.html            |  47 +---
+ 088w/index.html            |   8 +-
+ 089w/index.html            |   8 +-
+ 090w/index.html            |   8 +-
+ 091w/index.html            |   8 +-
+ 092w/index.html            |   8 +-
+ 093w/index.html            |   8 +-
+ 094w/index.html            |   8 +-
+ 096w/index.html            |   8 +-
+ 097w/index.html            |   8 +-
+ 098w/index.html            |   8 +-
+ 099w/index.html            |   8 +-
+ 100w/index.html            |   8 +-
+ 101w/index.html            |   8 +-
+ 102w/index.html            |   8 +-
+ 103w/index.html            |   8 +-
+ 104w/index.html            |   8 +-
+ 105w/index.html            |   8 +-
+ 106w/index.html            | 585 +++++++++++++++++++++++++++++++++++++++++++++
+ 2017/000w/index.html       |   8 +-
+ 2017/001w/index.html       |   8 +-
+ 2017/002w/index.html       |   8 +-
+ 2017/003w/index.html       |   8 +-
+ 2017/004w/index.html       |   8 +-
+ 2017/005w/index.html       |   8 +-
+ 2017/006w/index.html       |   8 +-
+ 2017/007w/index.html       |   8 +-
+ 2017/008w/index.html       |   8 +-
+ 2017/009w/index.html       |   8 +-
+ 2017/010w/index.html       |  16 +-
+ 2017/011w/index.html       |   8 +-
+ 2017/012w/index.html       |   8 +-
+ 2017/013w/index.html       |   8 +-
+ 2017/014w/index.html       |   8 +-
+ 2017/015w/index.html       |   8 +-
+ 2017/016w/index.html       |   8 +-
+ 2017/017w/index.html       |   8 +-
+ 2017/018w/index.html       |   8 +-
+ 2017/019w/index.html       |   8 +-
+ 2017/020w/index.html       |   8 +-
+ 2017/021w/index.html       |   8 +-
+ 2017/022w/index.html       |   8 +-
+ 2017/023w/index.html       |   8 +-
+ 2017/024w/index.html       |   8 +-
+ 2017/025w/index.html       |   8 +-
+ 2017/026w/index.html       |   8 +-
+ 2017/027w/index.html       |   8 +-
+ 2017/028w/index.html       |   8 +-
+ 2017/029w/index.html       |   8 +-
+ 2017/030w/index.html       |   8 +-
+ 2017/031w/index.html       |   8 +-
+ 2017/032w/index.html       |   8 +-
+ 2017/033w/index.html       |   8 +-
+ 2017/034w/index.html       |   8 +-
+ 2017/035w/index.html       |   8 +-
+ 2017/036w/index.html       |   8 +-
+ 2017/037w/index.html       |   8 +-
+ 2017/038w/index.html       |   8 +-
+ 2017/039w/index.html       |   8 +-
+ 2017/040w/index.html       |   8 +-
+ 2017/041w/index.html       |   8 +-
+ 2017/042w/index.html       |   8 +-
+ 2017/043w/index.html       |  12 +-
+ 2017/044w/index.html       |  13 +-
+ 2017/045w/index.html       |   8 +-
+ 2017/046w/index.html       |   8 +-
+ 2017/047w/index.html       |   8 +-
+ 2017/048w/index.html       |   8 +-
+ 2017/049w/index.html       |   8 +-
+ 2017/050w/index.html       |   8 +-
+ 2017/index.html            |  94 ++++----
+ 2018/051w/index.html       |   8 +-
+ 2018/052w/index.html       |   8 +-
+ 2018/053w/index.html       |   8 +-
+ 2018/054w/index.html       |   8 +-
+ 2018/055w/index.html       |   8 +-
+ 2018/056w/index.html       |   8 +-
+ 2018/057w/index.html       |   8 +-
+ 2018/058w/index.html       |   8 +-
+ 2018/059w/index.html       |   8 +-
+ 2018/060w/index.html       |   8 +-
+ 2018/061w/index.html       |   8 +-
+ 2018/062w/index.html       |   8 +-
+ 2018/063w/index.html       |   8 +-
+ 2018/064w/index.html       |   8 +-
+ 2018/065w/index.html       |   8 +-
+ 2018/066w/index.html       |   8 +-
+ 2018/067w/index.html       |   8 +-
+ 2018/068w/index.html       |   8 +-
+ 2018/069w/index.html       |   8 +-
+ 2018/070w/index.html       |   8 +-
+ 2018/071w/index.html       |   8 +-
+ 2018/072w/index.html       |   8 +-
+ 2018/073w/index.html       |   8 +-
+ 2018/074w/index.html       |   8 +-
+ 2018/075w/index.html       |   8 +-
+ 2018/076w/index.html       |   8 +-
+ 2018/077w/index.html       |   8 +-
+ 2018/078w/index.html       |   8 +-
+ 2018/079w/index.html       |   8 +-
+ 2018/080w/index.html       |   8 +-
+ 2018/081w/index.html       |   8 +-
+ 2018/082w/index.html       |   8 +-
+ 2018/083w/index.html       |   8 +-
+ 2018/084w/index.html       |   8 +-
+ 2018/085w/index.html       |   8 +-
+ 2018/086w/index.html       |   8 +-
+ 2018/087w/index.html       |  47 +---
+ 2018/088w/index.html       |   8 +-
+ 2018/089w/index.html       |   8 +-
+ 2018/090w/index.html       |   8 +-
+ 2018/index.html            |  78 +++---
+ 2019/091w/index.html       |   8 +-
+ 2019/092w/index.html       |   8 +-
+ 2019/093w/index.html       |   8 +-
+ 2019/094w/index.html       |   8 +-
+ 2019/096w/index.html       |   8 +-
+ 2019/097w/index.html       |   8 +-
+ 2019/098w/index.html       |   8 +-
+ 2019/099w/index.html       |   8 +-
+ 2019/100w/index.html       |   8 +-
+ 2019/101w/index.html       |   8 +-
+ 2019/102w/index.html       |   8 +-
+ 2019/103w/index.html       |   8 +-
+ 2019/104w/index.html       |   8 +-
+ 2019/105w/index.html       |   8 +-
+ 2019/106w/index.html       | 585 +++++++++++++++++++++++++++++++++++++++++++++
+ 2019/107w_draft/index.html |   8 +-
+ 2019/108w_draft/index.html |   8 +-
+ 2019/109w_draft/index.html |   8 +-
+ 2019/110w_draft/index.html |   8 +-
+ 2019/index.html            |  34 +--
+ 404.html                   |   8 +-
+ img/index.html             |  16 +-
+ index.html                 |  10 +-
+ license/index.html         |  10 +-
+ publish/index.html         |   8 +-
+ search/search_index.json   |   2 +-
+ sitemap.xml.gz             | Bin 200 -> 200 bytes
+ 226 files changed, 2176 insertions(+), 1078 deletions(-)
+ create mode 100644 106w/index.html
+ create mode 100644 2019/106w/index.html
+
+	 crt. PATH ===
+/opt/www/debuguself/br_duw_pub
+On branch duw_pub
+Your branch is up-to-date with 'origin/duw_pub'.
+nothing to commit, working directory clean
+From github.com:DebugUself/du4proto
+   02b1f31..f67bc41  duw_pub    -> origin/duw_pub
+Updating 02b1f31..f67bc41
+Fast-forward
+ docs/2017.md | 80 ++++++++++++++++++++++++++++++------------------------------
+ docs/2018.md | 62 +++++++++++++++++++++++-----------------------
+ docs/2019.md | 20 +++++++--------
+ mkdocs.yml   |  4 +--
+ 4 files changed, 83 insertions(+), 83 deletions(-)
+/opt/www/debuguself/br_DUW/_trigger
+TRIGGER obj. -> deploy.md ~> NOT exist
+	 CANCEL build...
+TRIGGER 0
+###::end@ 2019/04/29 21:42:56
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
