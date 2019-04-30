@@ -1,0 +1,44 @@
+/opt/www/debuguself/ghbr_logging_duw/2019/04
+/opt/www/debuguself/ghbr_logging_duw/2019/04/190430_194201.log
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+###::cron4duw.sh v-190419.1642 crontab action 4 auto publish DUW
+###::run@ 2019/04/30 19:42:01
+<<<   trigger by inter. EVENT srv.
+Courtesy Notice: Pipenv found itself running within a virtual environment, so it will automatically use that environment, instead of creating its own for any project. You can set PIPENV_IGNORE_VIRTUALENVS=1 to force pipenv to ignore that environment and create its own instead. You can set PIPENV_VERBOSITY=-1 to suppress this warning.
+Available tasks:
+
+  bu    build all local doc -> site
+  gh    jump into ln -s -> site push all bulited static pages
+  pl    pull all necessary change AT FIRST...
+  pu    push all local fix into content rep.
+  pub   MAIN COMMAND -> SEQUENCE RUN ALL NEED ACTS PUBLISH SITE
+
+
+	 crt. PATH ===
+/opt/www/debuguself/br_DUW
+On branch DUW
+Your branch is up-to-date with 'origin/DUW'.
+nothing to commit, working directory clean
+Already up-to-date.
+
+	 crt. PATH ===
+/opt/www/debuguself/ghp_duw
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+From github.com:DebugUself/duw
+   d7d026a..55af056  logging    -> origin/logging
+Already up-to-date.
+
+	 crt. PATH ===
+/opt/www/debuguself/br_duw_pub
+On branch duw_pub
+Your branch is up-to-date with 'origin/duw_pub'.
+nothing to commit, working directory clean
+Already up-to-date.
+/opt/www/debuguself/br_DUW/_trigger
+TRIGGER obj. -> deploy.md ~> NOT exist
+	 CANCEL build...
+TRIGGER 0
+###::end@ 2019/04/30 19:42:17
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
