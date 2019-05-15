@@ -1,0 +1,67 @@
+/opt/www/debuguself/ghbr_logging_duw/2019/05/190515_224201.log
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+###::cron4duw.sh v-190419.1642 crontab action 4 auto publish DUW
+###::run@ 2019/05/15 22:42:01
+<<<   trigger by inter. EVENT srv.
+Courtesy Notice: Pipenv found itself running within a virtual environment, so it will automatically use that environment, instead of creating its own for any project. You can set PIPENV_IGNORE_VIRTUALENVS=1 to force pipenv to ignore that environment and create its own instead. You can set PIPENV_VERBOSITY=-1 to suppress this warning.
+Available tasks:
+
+  bu    build all local doc -> site
+  gh    jump into ln -s -> site push all bulited static pages
+  pl    pull all necessary change AT FIRST...
+  pu    push all local fix into content rep.
+  pub   MAIN COMMAND -> SEQUENCE RUN ALL NEED ACTS PUBLISH SITE
+
+
+	 crt. PATH ===
+/opt/www/debuguself/br_DUW
+On branch DUW
+Your branch is up-to-date with 'origin/DUW'.
+nothing to commit, working directory clean
+From github.com:DebugUself/du4proto
+   6fd4eb2..1290096  DUW        -> origin/DUW
+Updating 6fd4eb2..1290096
+Fast-forward
+ 2019/109w_draft.md | 13 ++------
+ 2019/110w_draft.md | 16 +++-------
+ 2019/111w_draft.md | 88 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2019/112w_draft.md | 88 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2019/113w_draft.md | 88 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2019/114w_draft.md | 88 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2019/115w_draft.md | 88 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2019/116w_draft.md | 88 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2019/117w_draft.md | 88 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2019/118w_draft.md | 88 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2019/119w_draft.md | 88 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 11 files changed, 799 insertions(+), 22 deletions(-)
+ create mode 100644 2019/111w_draft.md
+ create mode 100644 2019/112w_draft.md
+ create mode 100644 2019/113w_draft.md
+ create mode 100644 2019/114w_draft.md
+ create mode 100644 2019/115w_draft.md
+ create mode 100644 2019/116w_draft.md
+ create mode 100644 2019/117w_draft.md
+ create mode 100644 2019/118w_draft.md
+ create mode 100644 2019/119w_draft.md
+
+	 crt. PATH ===
+/opt/www/debuguself/ghp_duw
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+From github.com:DebugUself/duw
+   2ca3b7e..9f1f93b  logging    -> origin/logging
+Already up-to-date.
+
+	 crt. PATH ===
+/opt/www/debuguself/br_duw_pub
+On branch duw_pub
+Your branch is up-to-date with 'origin/duw_pub'.
+nothing to commit, working directory clean
+Already up-to-date.
+/opt/www/debuguself/br_DUW/_trigger
+TRIGGER obj. -> deploy.md ~> NOT exist
+	 CANCEL build...
+TRIGGER 0
+###::end@ 2019/05/15 22:42:23
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
