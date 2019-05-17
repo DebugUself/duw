@@ -275,17 +275,116 @@ zhangshiyinrunwithcc: ▇▇▇▇ 14.00
 <blockquote>
 <p>起初</p>
 </blockquote>
-<pre><code>editor -&gt; du4proto/DUW
+<pre><code>editor -&gt; github.com/DebugUself/du4proto/DUW
     +- chrome -&gt; print -&gt; pdf
-        +- du4proto/releases
+        +- github.com/DebugUself/du4proto/releases
         +- ggroups -&gt; debuguself@googlegroups.com
-        +- DebugUself.Slack.com -&gt; #general
+        +- DebugUself.Slack.com -&gt; #general 
+                    |
+DUr &lt;-- chk. &amp; read +
 </code></pre>
 <blockquote>
 <p>然后</p>
+</blockquote>
+<pre><code>DUr -&gt; github.com/DebugUself/du4proto/DUW
+editor -&gt; github.com/DebugUself/du4proto/duw_pub/tasks.py
+        +- 从 DUW 复制合理文件到对应目录
+        +- 用 Mkdocs 编译为网站
+        +- 输出到 github.com/DebugUself/duw
+            +- github-pages 自动发布
+                +-&gt; du.101.camp/duw
+                    |
+DUr &lt;-- chk. &amp; read +
+</code></pre>
+<blockquote>
 <p>现在</p>
+</blockquote>
+<pre><code>DUr -&gt; github.com/DebugUself/du4proto/DUW
+editor -&gt; github.com/DebugUself/du4proto/DUW/_trigger
+        +- 增加 deploy.md 激发文件
+                    |V|
+====================+ github-web-hook ===============
+    POST -&gt; hook.duw.zoomquiet.top
+                    |V|
+====================+ aliyun VPS auto matter ========
+    [Nginx] -&gt; hook.duw.zoomquiet.top
+        +- proxy &lt;- localhost:9080
+            +- [gunicorn] &lt;== [supervisord]
+                +- [bottle]
+                    +-  du4proto/duw_pub/hooksrv.py
+                        +- support hook API
+                    +- grasp '_trigger/deploy.md'
+                +- touch local trigger 
+            |- /opt/www/debuguself/br_duw_pub/_trigger4deploy.log
+                                ^
+                        check as =&gt; */5 8-23 * * *
+                                |
+    [Corntab] -&gt; /opt/www/debuguself/br_duw_pub/cron4trig2duw.sh
+                +- if _trigger4deploy.log exist
+                    +- inv pub
+                        +- 从 DUW 复制合理文件到对应目录
+                        +- 用 Mkdocs 编译为网站
+                        +- push -&gt; github.com/DebugUself/duw
+                    |V|
+=====================================================
+            +- github-pages 自动发布
+                +-&gt; du.101.camp/duw
+                    |
+DUr &lt;-- chk. &amp; read +
+</code></pre>
+<blockquote>
 <p>未来</p>
 </blockquote>
+<pre><code>DUr -&gt; github.com/DebugUself/du4proto/DUW
+    +- 指定 Issue 回复
+    +- 指定 ggroup 约定标题邮件
+    +- 指定 Slack 频道约定前缀
+    +- 指定 微信群 约定前缀
+    +- ... 更多方便渠道随时发布周刊文案
+editor -&gt; github.com/DebugUself/du4proto/DUW/_trigger
+        +- 增加 deploy.md 激发文件
+    +- 指定 Issue 回复
+    +- 指定 ggroup 约定标题邮件
+    +- 指定 Slack 频道约定前缀
+    +- 指定 微信群 约定前缀
+    +- ... 更多方便渠道随时发起 deploy
+                    |V|
+====================+ github-web-hook ===============
+    POST -&gt; hook.duw.zoomquiet.top
+                    |V|
+====================+ aliyun VPS auto matter ========
+    [Nginx] -&gt; hook.duw.zoomquiet.top
+        +- proxy &lt;- localhost:9080
+            +- [gunicorn] &lt;== [supervisord]
+                +- [bottle]
+                    +-  du4proto/duw_pub/hooksrv.py
+                        +- support hook API
+                    +- grasp '_trigger/deploy.md'
+                +- touch local trigger 
+            |- /opt/www/debuguself/br_duw_pub/_trigger4deploy.log
+                                ^
+                        check as =&gt; */5 8-23 * * *
+                                |
+    [Corntab] -&gt; /opt/www/debuguself/br_duw_pub/cron4trig2duw.sh
+                +- if _trigger4deploy.log exist
+                    +- inv pub
+                        +- 从 DUW 复制合理文件到对应目录
+                        +- 用 Mkdocs 编译为网站
+                        +- push -&gt; github.com/DebugUself/duw
+                    |V|
+=====================================================
+                    +- github-pages 自动发布
+                    |   +-&gt; du.101.camp/duw
+                    +- 更多专用 bot
+                    |   +-&gt; Slack 指定频道
+                    |   +-&gt; ggroup 约定标题邮件
+                    |   +-&gt; 微信群 约定前缀信息
+                    |   +-&gt; 公众号 
+                    |   +-&gt; 小应用
+                    |   +-&gt; ...
+                    |   |
+DUr &lt;-- pull &amp; read +++++
+</code></pre>
 <h1 id="stories">Stories 故事<a class="headerlink" href="#stories" title="Permanent link">¶</a></h1>
 <p>~ 收集各自无法雷同的怼圈真人故事...</p>
 <h2 id="impression">impression 怼印象<a class="headerlink" href="#impression" title="Permanent link">¶</a></h2>
