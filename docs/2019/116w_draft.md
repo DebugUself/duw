@@ -10,7 +10,7 @@
 - 主编: [大妈](http://du.zoomquiet.io/2014-02/ac0-zq/)
 - 责编:
 
-# Activity 活性
+## Activity 活性
 > 社区当前嗯哼程度
 
 
@@ -24,32 +24,32 @@
 
 
 
-# Achievements 成果 
+## Achievements 成果 
 ~ 各种成品/半成品 内部知识作品
 
       
-# Stories 故事 
+## Stories 故事 
 ~ 收集各自无法雷同的怼圈真人故事...
 
 
-## impression 怼印象 
+### impression 怼印象 
 ~ 例怼中感触最嗯哼的 top3 感想
 
 - `(￣▽￣)`:
     + ...
 
-## live 怼生活
+### live 怼生活
 ~ 生活中带有怼范的各种 (投稿后可同时沉淀到 wiki 的2.5 怼生活下)
 
 
-# Recommedations 推荐 
+## Recommedations 推荐 
 ~ 嗯哼各种怼路上发现的嗯哼...
 
 - 是也乎:
     + [Issue 368 ~蠎周刊 ~汇集全球蠎事儿 ;-)](http://weekly.pychina.org/issue/issue-368.html)
 
 
-# Postscript 后记 
+## Postscript 后记 
 ~ 怼周刊是什么以及为什么和能怎么...
 
 大妈曰过: `参差多态 才是生机`
