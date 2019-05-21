@@ -1,0 +1,95 @@
+# 怼周刊_v97
+~ 预定 190225 2042 发布
+
+-----------------------------------------
+
+...TODO
+
+
+-----------------------------------------
+
+- 主编: [大妈](http://du.zoomquiet.io/2014-02/ac0-zq/)
+- 责编: ???
+
+
+# Tasks 任务 
+~ 记述关键共怼任务 (如果没有, 留空)
+[42[TASK]190223 怼周会 & 怼周刊投稿 · Issue #614 · DebugUself/du4proto](https://github.com/DebugUself/du4proto/issues/614)
+
+## propose 号召
+
+- [|蠎周刊 |汇集全球蠎事儿 !-)](http://weekly.pychina.org/archives.html)
+    + 俺私人嗯哼了5年了
+    + 邀请大家一起来, 每周嗯哼
+- 每周例怼后, 无论是否列席, 大家都在 `故事->怼印象` 中追加当周 top3 感触
+
+
+# Progress 进展 
+~ 整体圈内活跃指标情况([st](https://github.com/DebugUself/du4proto/tree/DU_tools/st) 专用服务, 尚少使用手册)
+
+## 4 weekly activity:
+> total commit: **24**
+
+
+### top5 git commiter
+> gen. 190223 213428.736 (by st v190223.2133)
+
+```
+Vwan        : ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 17.00
+justin007755: ▇▇ 2.00 
+liguanghe   : ▇▇ 2.00 
+Zoe         : ▇▇ 2.00 
+zoejane     : ▇ 1.00 
+```
+
+
+# Stories 故事 
+~ 收集各自无法雷同的怼圈真人故事...
+
+## impression 怼印象 
+~ 例怼中感触最嗯哼的 top3 感想
+
+- `(￣▽￣)`:
+    + ...
+
+
+
+
+
+# Postscript 后记 
+~ 怼周刊是什么以及为什么和能怎么...
+
+大妈曰过: `参差多态 才是生机`
+问题在 `参差` 的行为是无法形成团队的
+
+    Coming together is a beginning; 
+    Keeping together is progress; 
+    Working together is success!
+
+<--- [Henry Ford](https://www.brainyquote.com/quotes/quotes/h/henryford121997.html)
+
+- 所以, 有了 大妈 随见随怼的持续嗯哼...
+- 但是, 想象一年后, 回想几十周前自己作的那些 `图样图森破` 
+- 却没现成的资料来出示给后进来嗯哼?
+- 不科学, 值得记录的, 就应当有个形式固定下来
+- 所以,有了这个 `怼周刊` (Weekly 4 DU)
+
+What is DUW?
+Why we make DUW?
+What are the possibilities of DUW?
+
+Dama said, variety brings vitality.
+But various behaviors may make us hard to cooperate as a team.
+
+    Coming together is a beginning; 
+    Keeping together is progress; 
+    Working together is success!
+
+<--- [Henry Ford](https://www.brainyquote.com/quotes/quotes/h/henryford121997.html)
+
+That's why Dama keeps on debugging.
+However, as time goes by, maybe you would not remember these days clearly and spread your experience difficultly.
+What a pity!
+The valuable should have a fixed form to be recorded.
+That's why we make the Weekly for DU.
+

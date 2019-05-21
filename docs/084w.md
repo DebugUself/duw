@@ -1,0 +1,410 @@
+# 怼周刊_v84
+~ 181119 2042 发布
+
+-----------------------------------------
+
+    挖坑不埋真君子
+    授人以渔不予鱼
+    嗟来之食无营养
+    种子自粪成珍馐
+               ----DAMA
+
+-----------------------------------------
+
+- 主编: [大妈](http://du.zoomquiet.io/2014-02/ac0-zq/)
+- 责编: [关于熊本 | DebugUself with DAMA ;-)](http://du.zoomquiet.io/2018-02/about-bear/)
+
+
+# Timelines 进度 
+~ 记录当周关键事件日期+证据链接
+
+- [7d[TASK]181117 DU84w怼务 · Issue #520 · DebugUself/du4proto](https://github.com/DebugUself/du4proto/issues/520)
+
+# Tasks 任务 
+~ 记述关键共怼任务 (如果没有, 留空)
+
+## propose 号召
+
+- [|蠎周刊 |汇集全球蠎事儿 !-)](http://weekly.pychina.org/archives.html)
+    + 俺私人嗯哼了5年了
+    + 邀请大家一起来, 每周嗯哼
+- 每周例怼后, 无论是否列席, 大家都在 `故事->怼印象` 中追加当周 top3 感触
+
+
+# Progress 进展 
+~ 整体圈内活跃指标情况([st](https://github.com/DebugUself/du4proto/tree/DU_tools/st) 专用服务, 尚少使用手册)
+
+<table>
+<tr><th>allcic Commit</th><th> times</th><th>weekly Commit</th><th> times</th></tr>
+<tr><td>
+                    <a href='http://github.com/ZoomQuiet'>ZoomQuiet</a></td><td>580</td>
+                <td>
+                    <a href='#'>NIL</a></td><td>NIL</td>
+                    
+<tr><td>
+                    <a href='http://github.com/liguanghe'>liguanghe</a></td><td>525</td>
+                <td>
+                    <a href='#'>NIL</a></td><td>NIL</td>
+                    
+<tr><td>
+                    <a href='http://github.com/leilayanhui'>leilayanhui</a></td><td>467</td>
+                <td>
+                    <a href='#'>NIL</a></td><td>NIL</td>
+                    
+<tr><td>
+                    <a href='http://github.com/zhangshiyinrunwithcc'>zhangshiyinrunwithcc</a></td><td>464</td>
+                <td>
+                    <a href='#'>NIL</a></td><td>NIL</td>
+                    
+<tr><td>
+                    <a href='http://github.com/zoejane'>zoejane</a></td><td>377</td>
+                <td>
+                    <a href='#'>NIL</a></td><td>NIL</td>
+                    
+<tr><td>
+                    <a href='http://github.com/mxclover'>mxclover</a></td><td>240</td>
+                <td>
+                    <a href='#'>NIL</a></td><td>NIL</td>
+                    
+<tr><th>all Commit </th><th>Comments times</th><th>weekly Commit</th><th>Comments times</th></tr>
+<tr><td>
+                    <a href='http://github.com/ZoomQuiet'>ZoomQuiet</a></td><td>177</td>
+                <td>
+                    <a href='#'>NIL</a></td><td>NIL</td>
+                    
+<tr><td>
+                    <a href='http://github.com/zhangshiyinrunwithcc'>zhangshiyinrunwithcc</a></td><td>59</td>
+                <td>
+                    <a href='#'>NIL</a></td><td>NIL</td>
+                    
+<tr><td>
+                    <a href='http://github.com/zoejane'>zoejane</a></td><td>36</td>
+                <td>
+                    <a href='#'>NIL</a></td><td>NIL</td>
+                    
+<tr><td>
+                    <a href='http://github.com/bambooom'>bambooom</a></td><td>23</td>
+                <td>
+                    <a href='#'>NIL</a></td><td>NIL</td>
+                    
+<tr><td>
+                    <a href='http://github.com/mxclover'>mxclover</a></td><td>20</td>
+                <td>
+                    <a href='#'>NIL</a></td><td>NIL</td>
+                    
+<tr><td>
+                    <a href='http://github.com/NBR-hugh'>NBR-hugh</a></td><td>19</td>
+                <td>
+                    <a href='#'>NIL</a></td><td>NIL</td>
+                    
+<tr><th>all Issue </th><th>Comments times</th><th>weekly Issue</th><th>Comments times</th></tr>
+<tr><td>
+                    <a href='http://github.com/liguanghe'>liguanghe</a></td><td>901</td>
+                <td>
+                    <a href='#'>NIL</a></td><td>NIL</td>
+                    
+<tr><td>
+                    <a href='http://github.com/ZoomQuiet'>ZoomQuiet</a></td><td>679</td>
+                <td>
+                    <a href='#'>NIL</a></td><td>NIL</td>
+                    
+<tr><td>
+                    <a href='http://github.com/zhangshiyinrunwithcc'>zhangshiyinrunwithcc</a></td><td>417</td>
+                <td>
+                    <a href='#'>NIL</a></td><td>NIL</td>
+                    
+<tr><td>
+                    <a href='http://github.com/NBR-hugh'>NBR-hugh</a></td><td>239</td>
+                <td>
+                    <a href='#'>NIL</a></td><td>NIL</td>
+                    
+<tr><td>
+                    <a href='http://github.com/zoejane'>zoejane</a></td><td>178</td>
+                <td>
+                    <a href='#'>NIL</a></td><td>NIL</td>
+                    
+<tr><td>
+                    <a href='http://github.com/mxclover'>mxclover</a></td><td>121</td>
+                <td>
+                    <a href='#'>NIL</a></td><td>NIL</td>
+                    
+</table>
+
+
+# Achievements 成果 
+~ 各种成品/半成品 内部知识作品
+
+</div>
+  <div class="column three-fourths">
+      
+<div class="Box">
+<div class="Box-header">
+<h3 class="Box-title">Overview</h3>
+</div>
+
+<ul>
+<li class="Box-row p-0 d-flex">
+<div class="flex-item-equal p-4">
+<div class="d-table width-full bg-gray">
+</div>
+<div class="mt-2">
+<span class="text-emphasized">0</span>
+        Active Pull Requests
+</div>
+</div>
+
+<div class="flex-item-equal p-4">
+    <div class="d-table width-full bg-gray">
+        <a href="/DebugUself/du4proto/issues?state=closed" class="d-table-cell bg-red pt-2" style="width:45.45454545454545%" aria-label="View all closed issues"></a>
+        <a href="/DebugUself/du4proto/issues?state=open" class="d-table-cell bg-green pt-2" style="width:54.54545454545454%" aria-label="View all open issues"></a>
+    </div>
+    <div class="mt-2">
+      <span class="text-emphasized">11</span>
+      Active Issues
+    </div>
+  </div>
+</li>
+
+<li class="Box-row p-0">
+<ul class="summary-stats">
+<li>
+<a href="#merged-pull-requests">
+<span class="num">
+<svg class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+                0
+</span>
+              Merged Pull Requests
+</a>
+</li>
+<li>
+<a href="#proposed-pull-requests">
+<span class="num">
+<svg class="octicon octicon-git-branch" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 5c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v.3c-.02.52-.23.98-.63 1.38-.4.4-.86.61-1.38.63-.83.02-1.48.16-2 .45V4.72a1.993 1.993 0 0 0-1-3.72C.88 1 0 1.89 0 3a2 2 0 0 0 1 1.72v6.56c-.59.35-1 .99-1 1.72 0 1.11.89 2 2 2 1.11 0 2-.89 2-2 0-.53-.2-1-.53-1.36.09-.06.48-.41.59-.47.25-.11.56-.17.94-.17 1.05-.05 1.95-.45 2.75-1.25S8.95 7.77 9 6.73h-.02C9.59 6.37 10 5.73 10 5zM2 1.8c.66 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2C1.35 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2zm0 12.41c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm6-8c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+                0
+</span>
+              Proposed Pull Requests
+            </a>
+          </li>
+          <li>
+            <a href="#closed-issues">
+              <span class="num">
+                <svg class="octicon octicon-issue-closed" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 10h2v2H7v-2zm2-6H7v5h2V4zm1.5 1.5l-1 1L12 9l4-4.5-1-1L12 7l-1.5-1.5zM8 13.7A5.71 5.71 0 0 1 2.3 8c0-3.14 2.56-5.7 5.7-5.7 1.83 0 3.45.88 4.5 2.2l.92-.92A6.947 6.947 0 0 0 8 1C4.14 1 1 4.14 1 8s3.14 7 7 7 7-3.14 7-7l-1.52 1.52c-.66 2.41-2.86 4.19-5.48 4.19v-.01z"/></svg>
+                5
+              </span>
+              Closed Issues
+            </a>
+          </li>
+          <li>
+            <a href="#new-issues">
+              <span class="num">
+                <svg class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+                6
+              </span>
+              New Issues
+            </a>
+          </li>
+        </ul>
+      </li>
+    </div>
+
+<div class="authors-and-code">
+  <div class="section diffstat-summary v-align-top pt-3">
+    Excluding merges, <strong>4 authors</strong>
+    have pushed
+    <strong><span class="text-emphasized">1</span> commit</strong> to master and
+    <strong><span class="text-emphasized">9</span> commits</strong>
+    to all branches.
+    On master, <strong>2 files</strong>
+    have changed and there have been
+    <a href="/DebugUself/du4proto/compare/master@%7B1542025392%7D...master" class="lines-changed">
+      <strong class="insertions">192</strong> <strong>additions</strong> and
+      <strong class="deletions">0</strong> <strong>deletions</strong></a>.
+  </div>
+  <div class="section v-align-top pt-2">
+    <div class="js-graph graph-canvas pulse-authors-graph" data-graph-name="pulse-authors"
+        data-url="https://github.com/DebugUself/du4proto/pulse_committer_data">
+      <img class="graph-loading dots" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" alt="">
+    </div>
+  </div>
+</div>
+
+<div class="pulse-sections">
+    <div id="releases" class="pulse-section">
+  <h3 class="conversation-list-heading" id="published-releases">
+    <span class="inner">
+      <svg class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.685 1.72a2.49 2.49 0 0 0-1.76-.726H3.48A2.5 2.5 0 0 0 .994 3.48v2.456c0 .656.269 1.292.726 1.76l6.024 6.024a.99.99 0 0 0 1.402 0l4.563-4.563a.99.99 0 0 0 0-1.402L7.685 1.72zM2.366 7.048a1.54 1.54 0 0 1-.467-1.123V3.48c0-.874.716-1.58 1.58-1.58h2.456c.418 0 .825.159 1.123.467l6.104 6.094-4.702 4.702-6.094-6.114zm.626-4.066h1.989v1.989H2.982V2.982h.01z"/></svg>
+      <span class="text-emphasized">1</span> Release
+      published by <span class="text-emphasized">1</span> person
+    </span>
+  </h3>
+  <ul class="simple-conversation-list varied-states">
+    <li>
+      <span class="State State--green">Published</span>
+      <span class="num">v18.11.12</span>
+      <a href="/DebugUself/du4proto/releases/tag/v18.11.12" class="title">DU83w</a>
+      <relative-time datetime="2018-11-12T13:57:20Z">Nov 12, 2018</relative-time>
+    </li>
+  </ul>
+</div>
+
+
+<div id="issues" class="pulse-section">
+<h3 class="conversation-list-heading" id="closed-issues">
+  <span class="inner">
+    <svg class="octicon octicon-issue-closed" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 10h2v2H7v-2zm2-6H7v5h2V4zm1.5 1.5l-1 1L12 9l4-4.5-1-1L12 7l-1.5-1.5zM8 13.7A5.71 5.71 0 0 1 2.3 8c0-3.14 2.56-5.7 5.7-5.7 1.83 0 3.45.88 4.5 2.2l.92-.92A6.947 6.947 0 0 0 8 1C4.14 1 1 4.14 1 8s3.14 7 7 7 7-3.14 7-7l-1.52 1.52c-.66 2.41-2.86 4.19-5.48 4.19v-.01z"/></svg>
+    <span class="text-emphasized">5</span> Issues
+    closed by <span class="text-emphasized">4</span> people
+  </span>
+</h3>
+<ul class="simple-conversation-list varied-states">
+  <li>
+    <span class="State State--red">Closed</span>
+    <span class="num">#516</span>
+    <a href="/DebugUself/du4proto/issues/516" class="title">[ASK]求助：如何建立专业相关方向的全局认识？有什么办法能避免陷入某一小方向？</a>
+    <relative-time datetime="2018-11-14T07:32:08Z">Nov 14, 2018</relative-time>
+  </li>
+  <li>
+    <span class="State State--red">Closed</span>
+    <span class="num">#512</span>
+    <a href="/DebugUself/du4proto/issues/512" class="title">5d[TASK]怼责编报名详情咨询</a>
+    <relative-time datetime="2018-11-13T00:39:27Z">Nov 13, 2018</relative-time>
+  </li>
+  <li>
+    <span class="State State--red">Closed</span>
+    <span class="num">#515</span>
+    <a href="/DebugUself/du4proto/issues/515" class="title">3d[TASK]20181110 DU83w怼务</a>
+    <relative-time datetime="2018-11-12T14:07:19Z">Nov 12, 2018</relative-time>
+  </li>
+  <li>
+    <span class="State State--red">Closed</span>
+    <span class="num">#518</span>
+    <a href="/DebugUself/du4proto/issues/518" class="title">4w[ANN]S22E51 启用</a>
+    <relative-time datetime="2018-11-12T12:39:03Z">Nov 12, 2018</relative-time>
+  </li>
+  <li>
+    <span class="State State--red">Closed</span>
+    <span class="num">#494</span>
+    <a href="/DebugUself/du4proto/issues/494" class="title">4w[ANN]S21E51 启用</a>
+    <relative-time datetime="2018-11-12T12:38:34Z">Nov 12, 2018</relative-time>
+  </li>
+</ul>
+
+<h3 class="conversation-list-heading" id="new-issues">
+    <span class="inner">
+      <svg class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+      <span class="text-emphasized">6</span> Issues
+      created by <span class="text-emphasized">6</span> people
+    </span>
+  </h3>
+  <ul class="simple-conversation-list varied-states">
+    <li>
+      <span class="State State--green">Opened</span>
+      <span class="num">#523</span>
+      <a href="/DebugUself/du4proto/issues/523" class="title">14d[LOG]视觉呈现学习记录</a>
+      <relative-time datetime="2018-11-18T11:45:24Z">Nov 18, 2018</relative-time>
+    </li>
+    <li>
+      <span class="State State--green">Opened</span>
+      <span class="num">#522</span>
+      <a href="/DebugUself/du4proto/issues/522" class="title">181118DUmeetingSH</a>
+      <relative-time datetime="2018-11-18T11:02:54Z">Nov 18, 2018</relative-time>
+    </li>
+    <li>
+      <span class="State State--green">Opened</span>
+      <span class="num">#521</span>
+      <a href="/DebugUself/du4proto/issues/521" class="title">10d[ASK]抛砖引玉, 如何明确定义学习目标</a>
+      <relative-time datetime="2018-11-18T10:40:41Z">Nov 18, 2018</relative-time>
+    </li>
+    <li>
+      <span class="State State--green">Opened</span>
+      <span class="num">#520</span>
+      <a href="/DebugUself/du4proto/issues/520" class="title">7d[TASK]181117 DU84w怼务</a>
+      <relative-time datetime="2018-11-13T00:57:05Z">Nov 13, 2018</relative-time>
+    </li>
+    <li>
+      <span class="State State--green">Opened</span>
+      <span class="num">#519</span>
+      <a href="/DebugUself/du4proto/issues/519" class="title">28d[LOG] 掉进兔子洞（2）</a>
+      <relative-time datetime="2018-11-12T15:23:00Z">Nov 12, 2018</relative-time>
+    </li>
+    <li>
+      <span class="State State--green">Opened</span>
+      <span class="num">#517</span>
+      <a href="/DebugUself/du4proto/issues/517" class="title">4w[ANN]S22E51 启用</a>
+      <relative-time datetime="2018-11-12T12:37:52Z">Nov 12, 2018</relative-time>
+    </li>
+  </ul>
+
+</div>
+
+
+
+      
+
+# Stories 故事 
+~ 收集各自无法雷同的怼圈真人故事...
+
+## impression 怼印象 
+~ 例怼中感触最嗯哼的 top3 感想
+
+- linfeng365:
+  + 沥川: 
+    * 情报分析 (分析行业龙头的财务情况)
+    * 事前准备功课 (会面,当前主业)
+  + 广鹤:
+    * 寻找得到帮助,也是种能力。
+
+- NBR-hugh:
+  + 怼圈发展方式: 定期面基
+    * 线下面基的启动率好高,可以尝试以月度或季度的面基方式来发展怼圈
+
+
+## live 怼生活
+~ 生活中带有怼范的各种 (投稿后可同时沉淀到 wiki 的2.5 怼生活下)
+
+
+
+# Recommedations 推荐 
+~ 嗯哼各种怼路上发现的嗯哼...
+
+- 是也乎:
+    + [蠎加载 184 |蠎周刊 |汇集全球蠎事儿 !-)](http://weekly.pychina.org/importpython/importpython-184.html)
+
+
+# Postscript 后记 
+~ 怼周刊是什么以及为什么和能怎么...
+
+大妈曰过: `参差多态 才是生机`
+问题在 `参差` 的行为是无法形成团队的
+
+    Coming together is a beginning; 
+    Keeping together is progress; 
+    Working together is success!
+
+<--- [Henry Ford](https://www.brainyquote.com/quotes/quotes/h/henryford121997.html)
+
+- 所以, 有了 大妈 随见随怼的持续嗯哼...
+- 但是, 想象一年后, 回想几十周前自己作的那些 `图样图森破` 
+- 却没现成的资料来出示给后进来嗯哼?
+- 不科学, 值得记录的, 就应当有个形式固定下来
+- 所以,有了这个 `怼周刊` (Weekly 4 DU)
+
+What is DUW?
+Why we make DUW?
+What are the possibilities of DUW?
+
+Dama said, variety brings vitality.
+But various behaviors may make us hard to cooperate as a team.
+
+    Coming together is a beginning; 
+    Keeping together is progress; 
+    Working together is success!
+
+<--- [Henry Ford](https://www.brainyquote.com/quotes/quotes/h/henryford121997.html)
+
+That's why Dama keeps on debugging.
+However, as time goes by, maybe you would not remember these days clearly and spread your experience difficultly.
+What a pity!
+The valuable should have a fixed form to be recorded.
+That's why we make the Weekly for DU.
+
