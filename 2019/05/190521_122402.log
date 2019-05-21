@@ -1,0 +1,1032 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+###::cron4trig2duw.sh v-190517.1142 crontab action 4 auto publish DUW
+###::run@ 2019/05/21 12:24:02
+<<<   trigger by /opt/www/debuguself/_trigger4deploy.log 
+Courtesy Notice: Pipenv found itself running within a virtual environment, so it will automatically use that environment, instead of creating its own for any project. You can set PIPENV_IGNORE_VIRTUALENVS=1 to force pipenv to ignore that environment and create its own instead. You can set PIPENV_VERBOSITY=-1 to suppress this warning.
+Available tasks:
+
+  bu    build all local doc -> site
+  gh    jump into ln -s -> site push all bulited static pages
+  pl    pull all necessary change AT FIRST...
+  pu    push all local fix into content rep.
+  pub   MAIN COMMAND -> SEQUENCE RUN ALL NEED ACTS PUBLISH SITE
+  ver
+
+
+	 crt. PATH ===
+/opt/www/debuguself/br_DUW
+On branch DUW
+Your branch is up-to-date with 'origin/DUW'.
+nothing to commit, working directory clean
+From github.com:DebugUself/du4proto
+   e2d807b..fc13912  DUW        -> origin/DUW
+Updating e2d807b..fc13912
+Fast-forward
+ 2019/099w.md                      |   2 +-
+ 2019/100w.md                      |   3 +-
+ 2019/109w.md                      |  19 +-
+ README.md                         |  39 ++--
+ {2019 => _draft}/099w_poem.jpeg   | Bin
+ {2019 => _draft}/100w_poem.jpeg   | Bin
+ DU_w_tpl.md => _draft/DU_w_tpl.md |   0
+ license.md                        |  27 +++
+ publish.md                        | 381 ++++++++++++++++++++++++++++++++++++++
+ 9 files changed, 437 insertions(+), 34 deletions(-)
+ rename {2019 => _draft}/099w_poem.jpeg (100%)
+ rename {2019 => _draft}/100w_poem.jpeg (100%)
+ rename DU_w_tpl.md => _draft/DU_w_tpl.md (100%)
+ create mode 100644 license.md
+ create mode 100644 publish.md
+
+	 crt. PATH ===
+/opt/www/debuguself/ghp_duw
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+From github.com:DebugUself/duw
+   3e25492..aa424b5  master     -> origin/master
+   a6e78c9..f7ab665  logging    -> origin/logging
+Updating 3e25492..aa424b5
+Fast-forward
+ 000w/index.html                              |  726 -------
+ 001w/index.html                              |  735 -------
+ 002w/index.html                              |  697 ------
+ 003w/index.html                              |  571 -----
+ 004w/index.html                              |  462 ----
+ 005w/index.html                              |  576 -----
+ 006w/index.html                              |  510 -----
+ 007w/index.html                              |  472 ----
+ 008w/index.html                              |  493 -----
+ 009w/index.html                              |  582 -----
+ 010w/index.html                              |  549 -----
+ 011w/index.html                              |  482 -----
+ 012w/index.html                              |  549 -----
+ 013w/index.html                              |  724 -------
+ 014w/index.html                              |  583 -----
+ 015w/index.html                              |  561 -----
+ 016w/index.html                              |  514 -----
+ 017w/index.html                              |  605 ------
+ 018w/index.html                              | 1166 ----------
+ 019w/index.html                              |  694 ------
+ 020w/index.html                              |  713 ------
+ 021w/index.html                              |  599 ------
+ 022w/index.html                              |  518 -----
+ 023w/index.html                              |  511 -----
+ 024w/index.html                              |  573 -----
+ 025w/index.html                              |  625 ------
+ 026w/index.html                              |  474 ----
+ 027w/index.html                              |  520 -----
+ 028w/index.html                              |  474 ----
+ 029w/index.html                              |  518 -----
+ 030w/index.html                              |  629 ------
+ 031w/index.html                              |  459 ----
+ 032w/index.html                              |  502 -----
+ 033w/index.html                              |  392 ----
+ 034w/index.html                              |  302 ---
+ 035w/index.html                              |  632 ------
+ 036w/index.html                              |  355 ---
+ 037w/index.html                              |  367 ----
+ 038w/index.html                              |  505 -----
+ 039w/index.html                              |  380 ----
+ 040w/index.html                              |  501 -----
+ 041w/index.html                              |  446 ----
+ 042w/index.html                              |  385 ----
+ 043w/index.html                              |  448 ----
+ 044w/index.html                              |  417 ----
+ 045w/index.html                              |  378 ----
+ 046w/index.html                              |  288 ---
+ 047w/index.html                              |  490 -----
+ 048w/index.html                              |  368 ----
+ 049w/index.html                              |  434 ----
+ 050w/index.html                              |  354 ---
+ 051w/index.html                              |  414 ----
+ 052w/index.html                              |  322 ---
+ 053w/index.html                              |  381 ----
+ 054w/index.html                              |  434 ----
+ 055w/index.html                              |  365 ----
+ 056w/index.html                              |  534 -----
+ 057w/index.html                              |  312 ---
+ 058w/index.html                              |  345 ---
+ 059w/index.html                              |  287 ---
+ 060w/index.html                              |  437 ----
+ 061w/index.html                              |  408 ----
+ 062w/index.html                              |  521 -----
+ 063w/index.html                              |  528 -----
+ 064w/index.html                              |  345 ---
+ 065w/index.html                              |  367 ----
+ 066w/index.html                              |  339 ---
+ 067w/index.html                              |  358 ---
+ 068w/index.html                              |  387 ----
+ 069w/index.html                              |  636 ------
+ 070w/index.html                              |  366 ----
+ 071w/index.html                              |  511 -----
+ 072w/index.html                              |  438 ----
+ 073w/index.html                              |  553 -----
+ 074w/index.html                              |  441 ----
+ 075w/index.html                              |  582 -----
+ 076w/index.html                              |  454 ----
+ 077w/index.html                              |  515 -----
+ 078w/index.html                              |  331 ---
+ 079w/index.html                              |  455 ----
+ 080w/index.html                              |  404 ----
+ 081w/index.html                              |  296 ---
+ 085w/index.html                              |  377 ----
+ 086w/index.html                              |  322 ---
+ 089w/index.html                              |  314 ---
+ 090w/index.html                              |  525 -----
+ 091w/index.html                              |  444 ----
+ 092w/index.html                              |  445 ----
+ 093w/index.html                              |  420 ----
+ 094w/index.html                              |  309 ---
+ 097w/index.html                              |  289 ---
+ 098w/index.html                              |  467 ----
+ 099w/index.html                              |  456 ----
+ 099w_poem.jpeg                               |  Bin 68609 -> 0 bytes
+ 100w/index.html                              |  473 ----
+ 100w_poem.jpeg                               |  Bin 27739 -> 0 bytes
+ 101w/index.html                              |  309 ---
+ 102w/index.html                              |  378 ----
+ 103w/index.html                              |  375 ----
+ 104w/index.html                              |  488 -----
+ 105w/index.html                              |  363 ----
+ 106w/index.html                              |  582 -----
+ 107w/index.html                              |  430 ----
+ 108w/index.html                              |  549 -----
+ 2017/000w/index.html                         |  726 -------
+ 2017/001w/index.html                         |  735 -------
+ 2017/002w/index.html                         |  697 ------
+ 2017/003w/index.html                         |  571 -----
+ 2017/004w/index.html                         |  462 ----
+ 2017/005w/index.html                         |  576 -----
+ 2017/006w/index.html                         |  510 -----
+ 2017/007w/index.html                         |  472 ----
+ 2017/008w/index.html                         |  493 -----
+ 2017/009w/index.html                         |  582 -----
+ 2017/010w/index.html                         |  549 -----
+ 2017/011w/index.html                         |  482 -----
+ 2017/012w/index.html                         |  549 -----
+ 2017/013w/index.html                         |  724 -------
+ 2017/014w/index.html                         |  583 -----
+ 2017/015w/index.html                         |  561 -----
+ 2017/016w/index.html                         |  514 -----
+ 2017/017w/index.html                         |  605 ------
+ 2017/018w/index.html                         | 1166 ----------
+ 2017/019w/index.html                         |  694 ------
+ 2017/020w/index.html                         |  713 ------
+ 2017/021w/index.html                         |  599 ------
+ 2017/022w/index.html                         |  518 -----
+ 2017/023w/index.html                         |  511 -----
+ 2017/024w/index.html                         |  573 -----
+ 2017/025w/index.html                         |  625 ------
+ 2017/026w/index.html                         |  474 ----
+ 2017/027w/index.html                         |  520 -----
+ 2017/028w/index.html                         |  474 ----
+ 2017/029w/index.html                         |  518 -----
+ 2017/030w/index.html                         |  629 ------
+ 2017/031w/index.html                         |  459 ----
+ 2017/032w/index.html                         |  502 -----
+ 2017/033w/index.html                         |  392 ----
+ 2017/034w/index.html                         |  302 ---
+ 2017/035w/index.html                         |  632 ------
+ 2017/036w/index.html                         |  355 ---
+ 2017/037w/index.html                         |  367 ----
+ 2017/038w/index.html                         |  505 -----
+ 2017/039w/index.html                         |  380 ----
+ 2017/040w/index.html                         |  501 -----
+ 2017/041w/index.html                         |  446 ----
+ 2017/042w/index.html                         |  385 ----
+ 2017/043w/index.html                         |  448 ----
+ 2017/044w/index.html                         |  417 ----
+ 2017/045w/index.html                         |  378 ----
+ 2017/046w/index.html                         |  288 ---
+ 2017/047w/index.html                         |  490 -----
+ 2017/048w/index.html                         |  368 ----
+ 2017/049w/index.html                         |  434 ----
+ 2017/050w/index.html                         |  354 ---
+ 2017/index.html                              |  270 ---
+ 2018/051w/index.html                         |  414 ----
+ 2018/052w/index.html                         |  322 ---
+ 2018/053w/index.html                         |  381 ----
+ 2018/054w/index.html                         |  434 ----
+ 2018/055w/index.html                         |  365 ----
+ 2018/056w/index.html                         |  534 -----
+ 2018/057w/index.html                         |  312 ---
+ 2018/058w/index.html                         |  345 ---
+ 2018/059w/index.html                         |  287 ---
+ 2018/060w/index.html                         |  437 ----
+ 2018/061w/index.html                         |  408 ----
+ 2018/062w/index.html                         |  521 -----
+ 2018/063w/index.html                         |  528 -----
+ 2018/064w/index.html                         |  345 ---
+ 2018/065w/index.html                         |  367 ----
+ 2018/066w/index.html                         |  339 ---
+ 2018/067w/index.html                         |  358 ---
+ 2018/068w/index.html                         |  387 ----
+ 2018/069w/index.html                         |  636 ------
+ 2018/070w/index.html                         |  366 ----
+ 2018/071w/index.html                         |  511 -----
+ 2018/072w/index.html                         |  438 ----
+ 2018/073w/index.html                         |  553 -----
+ 2018/074w/index.html                         |  441 ----
+ 2018/075w/index.html                         |  582 -----
+ 2018/076w/index.html                         |  454 ----
+ 2018/077w/index.html                         |  515 -----
+ 2018/078w/index.html                         |  331 ---
+ 2018/079w/index.html                         |  455 ----
+ 2018/080w/index.html                         |  404 ----
+ 2018/081w/index.html                         |  296 ---
+ 2018/085w/index.html                         |  377 ----
+ 2018/086w/index.html                         |  322 ---
+ 2018/089w/index.html                         |  314 ---
+ 2018/090w/index.html                         |  525 -----
+ 2018/index.html                              |  259 ---
+ 2019/091w/index.html                         |  444 ----
+ 2019/092w/index.html                         |  445 ----
+ 2019/093w/index.html                         |  420 ----
+ 2019/094w/index.html                         |  309 ---
+ 2019/097w/index.html                         |  289 ---
+ 2019/098w/index.html                         |  467 ----
+ 2019/099w/index.html                         |  456 ----
+ 2019/099w_poem.jpeg                          |  Bin 68609 -> 0 bytes
+ 2019/100w/index.html                         |  473 ----
+ 2019/100w_poem.jpeg                          |  Bin 27739 -> 0 bytes
+ 2019/101w/index.html                         |  309 ---
+ 2019/102w/index.html                         |  378 ----
+ 2019/103w/index.html                         |  375 ----
+ 2019/104w/index.html                         |  488 -----
+ 2019/105w/index.html                         |  363 ----
+ 2019/106w/index.html                         |  582 -----
+ 2019/107w/index.html                         |  430 ----
+ 2019/108w/index.html                         |  549 -----
+ 2019/110w_draft/index.html                   |  286 ---
+ 2019/index.html                              |  237 --
+ 404.html                                     |  193 --
+ css/base.css                                 |  307 ---
+ css/bootstrap-custom.min.css                 |    1 -
+ css/font-awesome.min.css                     |    4 -
+ docs/000w.md                                 |  472 ++++
+ docs/001w.md                                 |  374 ++++
+ docs/002w.md                                 |  306 +++
+ docs/003w.md                                 |  214 ++
+ docs/004w.md                                 |  227 ++
+ docs/005w.md                                 |  309 +++
+ docs/006w.md                                 |  306 +++
+ docs/007w.md                                 |  252 +++
+ docs/008w.md                                 |  271 +++
+ docs/009w.md                                 |  368 ++++
+ docs/010w.md                                 |  309 +++
+ docs/011w.md                                 |  255 +++
+ docs/012w.md                                 |  331 +++
+ docs/013w.md                                 |  514 +++++
+ docs/014w.md                                 |  378 ++++
+ docs/015w.md                                 |  313 +++
+ docs/016w.md                                 |  333 +++
+ docs/017w.md                                 |  429 ++++
+ docs/018w.md                                 |  717 +++++++
+ docs/019w.md                                 |  495 +++++
+ docs/020w.md                                 |  511 +++++
+ docs/021w.md                                 |  338 +++
+ docs/022w.md                                 |  334 +++
+ docs/023w.md                                 |  308 +++
+ docs/024w.md                                 |  344 +++
+ docs/025w.md                                 |  372 ++++
+ docs/026w.md                                 |  235 ++
+ docs/027w.md                                 |  269 +++
+ docs/028w.md                                 |  239 +++
+ docs/029w.md                                 |  290 +++
+ docs/030w.md                                 |  295 +++
+ docs/031w.md                                 |  211 ++
+ docs/032w.md                                 |  311 +++
+ docs/033w.md                                 |  169 ++
+ docs/034w.md                                 |  103 +
+ docs/035w.md                                 |  402 ++++
+ docs/036w.md                                 |  157 ++
+ docs/037w.md                                 |  170 ++
+ docs/038w.md                                 |  276 +++
+ docs/039w.md                                 |  186 ++
+ docs/040w.md                                 |  324 +++
+ docs/041w.md                                 |  216 ++
+ docs/042w.md                                 |  183 ++
+ docs/043w.md                                 |  270 +++
+ docs/044w.md                                 |  223 ++
+ docs/045w.md                                 |  157 ++
+ docs/046w.md                                 |   91 +
+ docs/047w.md                                 |  266 +++
+ docs/048w.md                                 |  167 ++
+ docs/049w.md                                 |  255 +++
+ docs/050w.md                                 |  161 ++
+ docs/051w.md                                 |  206 ++
+ docs/052w.md                                 |  130 ++
+ docs/053w.md                                 |  173 ++
+ docs/054w.md                                 |  241 +++
+ docs/055w.md                                 |  168 ++
+ docs/056w.md                                 |  294 +++
+ docs/057w.md                                 |  108 +
+ docs/058w.md                                 |  123 ++
+ docs/059w.md                                 |   95 +
+ docs/060w.md                                 |  228 ++
+ docs/061w.md                                 |  200 ++
+ docs/062w.md                                 |  213 ++
+ docs/063w.md                                 |  264 +++
+ docs/064w.md                                 |  140 ++
+ docs/065w.md                                 |  148 ++
+ docs/066w.md                                 |  143 ++
+ docs/067w.md                                 |  146 ++
+ docs/068w.md                                 |  166 ++
+ docs/069w.md                                 |  229 ++
+ docs/070w.md                                 |  169 ++
+ docs/071w.md                                 |  215 ++
+ docs/072w.md                                 |  189 ++
+ docs/073w.md                                 |  286 +++
+ docs/074w.md                                 |  226 ++
+ docs/075w.md                                 |  329 +++
+ docs/076w.md                                 |  235 ++
+ docs/077w.md                                 |  284 +++
+ docs/078w.md                                 |  137 ++
+ docs/079w.md                                 |  251 +++
+ docs/080w.md                                 |  189 ++
+ docs/081w.md                                 |  101 +
+ 082w/index.html => docs/082w.md              |  305 +--
+ 083w/index.html => docs/083w.md              |  321 +--
+ 084w/index.html => docs/084w.md              |  325 +--
+ docs/085w.md                                 |  148 ++
+ docs/086w.md                                 |  113 +
+ 087w/index.html => docs/087w.md              |  376 +---
+ 088w/index.html => docs/088w.md              |  429 +---
+ docs/089w.md                                 |  124 ++
+ docs/090w.md                                 |  331 +++
+ docs/091w.md                                 |  253 +++
+ docs/092w.md                                 |  238 ++
+ docs/093w.md                                 |  237 ++
+ docs/094w.md                                 |  108 +
+ 096w/index.html => docs/096w.md              |  405 +---
+ docs/097w.md                                 |   95 +
+ docs/098w.md                                 |  261 +++
+ docs/099w.md                                 |  257 +++
+ docs/100w.md                                 |  279 +++
+ docs/101w.md                                 |  106 +
+ docs/102w.md                                 |  175 ++
+ docs/103w.md                                 |  155 ++
+ docs/104w.md                                 |  237 ++
+ docs/105w.md                                 |  152 ++
+ docs/106w.md                                 |  318 +++
+ docs/107w.md                                 |  232 ++
+ docs/108w.md                                 |  297 +++
+ docs/109w.md                                 |  186 ++
+ docs/2017.md                                 |   54 +
+ docs/2017/000w.md                            |  472 ++++
+ docs/2017/001w.md                            |  374 ++++
+ docs/2017/002w.md                            |  306 +++
+ docs/2017/003w.md                            |  214 ++
+ docs/2017/004w.md                            |  227 ++
+ docs/2017/005w.md                            |  309 +++
+ docs/2017/006w.md                            |  306 +++
+ docs/2017/007w.md                            |  252 +++
+ docs/2017/008w.md                            |  271 +++
+ docs/2017/009w.md                            |  368 ++++
+ docs/2017/010w.md                            |  309 +++
+ docs/2017/011w.md                            |  255 +++
+ docs/2017/012w.md                            |  331 +++
+ docs/2017/013w.md                            |  514 +++++
+ docs/2017/014w.md                            |  378 ++++
+ docs/2017/015w.md                            |  313 +++
+ docs/2017/016w.md                            |  333 +++
+ docs/2017/017w.md                            |  429 ++++
+ docs/2017/018w.md                            |  717 +++++++
+ docs/2017/019w.md                            |  495 +++++
+ docs/2017/020w.md                            |  511 +++++
+ docs/2017/021w.md                            |  338 +++
+ docs/2017/022w.md                            |  334 +++
+ docs/2017/023w.md                            |  308 +++
+ docs/2017/024w.md                            |  344 +++
+ docs/2017/025w.md                            |  372 ++++
+ docs/2017/026w.md                            |  235 ++
+ docs/2017/027w.md                            |  269 +++
+ docs/2017/028w.md                            |  239 +++
+ docs/2017/029w.md                            |  290 +++
+ docs/2017/030w.md                            |  295 +++
+ docs/2017/031w.md                            |  211 ++
+ docs/2017/032w.md                            |  311 +++
+ docs/2017/033w.md                            |  169 ++
+ docs/2017/034w.md                            |  103 +
+ docs/2017/035w.md                            |  402 ++++
+ docs/2017/036w.md                            |  157 ++
+ docs/2017/037w.md                            |  170 ++
+ docs/2017/038w.md                            |  276 +++
+ docs/2017/039w.md                            |  186 ++
+ docs/2017/040w.md                            |  324 +++
+ docs/2017/041w.md                            |  216 ++
+ docs/2017/042w.md                            |  183 ++
+ docs/2017/043w.md                            |  270 +++
+ docs/2017/044w.md                            |  223 ++
+ docs/2017/045w.md                            |  157 ++
+ docs/2017/046w.md                            |   91 +
+ docs/2017/047w.md                            |  266 +++
+ docs/2017/048w.md                            |  167 ++
+ docs/2017/049w.md                            |  255 +++
+ docs/2017/050w.md                            |  161 ++
+ docs/2018.md                                 |   43 +
+ docs/2018/051w.md                            |  206 ++
+ docs/2018/052w.md                            |  130 ++
+ docs/2018/053w.md                            |  173 ++
+ docs/2018/054w.md                            |  241 +++
+ docs/2018/055w.md                            |  168 ++
+ docs/2018/056w.md                            |  294 +++
+ docs/2018/057w.md                            |  108 +
+ docs/2018/058w.md                            |  123 ++
+ docs/2018/059w.md                            |   95 +
+ docs/2018/060w.md                            |  228 ++
+ docs/2018/061w.md                            |  200 ++
+ docs/2018/062w.md                            |  213 ++
+ docs/2018/063w.md                            |  264 +++
+ docs/2018/064w.md                            |  140 ++
+ docs/2018/065w.md                            |  148 ++
+ docs/2018/066w.md                            |  143 ++
+ docs/2018/067w.md                            |  146 ++
+ docs/2018/068w.md                            |  166 ++
+ docs/2018/069w.md                            |  229 ++
+ docs/2018/070w.md                            |  169 ++
+ docs/2018/071w.md                            |  215 ++
+ docs/2018/072w.md                            |  189 ++
+ docs/2018/073w.md                            |  286 +++
+ docs/2018/074w.md                            |  226 ++
+ docs/2018/075w.md                            |  329 +++
+ docs/2018/076w.md                            |  235 ++
+ docs/2018/077w.md                            |  284 +++
+ docs/2018/078w.md                            |  137 ++
+ docs/2018/079w.md                            |  251 +++
+ docs/2018/080w.md                            |  189 ++
+ docs/2018/081w.md                            |  101 +
+ 2018/082w/index.html => docs/2018/082w.md    |  305 +--
+ 2018/083w/index.html => docs/2018/083w.md    |  321 +--
+ 2018/084w/index.html => docs/2018/084w.md    |  325 +--
+ docs/2018/085w.md                            |  148 ++
+ docs/2018/086w.md                            |  113 +
+ 2018/087w/index.html => docs/2018/087w.md    |  376 +---
+ 2018/088w/index.html => docs/2018/088w.md    |  429 +---
+ docs/2018/089w.md                            |  124 ++
+ docs/2018/090w.md                            |  331 +++
+ docs/2019.md                                 |   21 +
+ docs/2019/091w.md                            |  253 +++
+ docs/2019/092w.md                            |  238 ++
+ docs/2019/093w.md                            |  237 ++
+ docs/2019/094w.md                            |  108 +
+ 2019/096w/index.html => docs/2019/096w.md    |  405 +---
+ docs/2019/097w.md                            |   95 +
+ docs/2019/098w.md                            |  261 +++
+ docs/2019/099w.md                            |  257 +++
+ docs/2019/100w.md                            |  279 +++
+ docs/2019/101w.md                            |  106 +
+ docs/2019/102w.md                            |  175 ++
+ docs/2019/103w.md                            |  155 ++
+ docs/2019/104w.md                            |  237 ++
+ docs/2019/105w.md                            |  152 ++
+ docs/2019/106w.md                            |  318 +++
+ docs/2019/107w.md                            |  232 ++
+ docs/2019/108w.md                            |  297 +++
+ docs/2019/109w.md                            |  186 ++
+ docs/2019/110w_draft.md                      |   88 +
+ docs/2019/111w_draft.md                      |   88 +
+ docs/2019/112w_draft.md                      |   88 +
+ docs/2019/113w_draft.md                      |   88 +
+ docs/2019/114w_draft.md                      |   88 +
+ docs/2019/115w_draft.md                      |   88 +
+ docs/2019/116w_draft.md                      |   88 +
+ docs/2019/117w_draft.md                      |   88 +
+ docs/2019/118w_draft.md                      |   88 +
+ docs/2019/119w_draft.md                      |   88 +
+ docs/README.md                               |  121 ++
+ {img => docs/img}/101camp_bauhaus_v4h420.ico |  Bin
+ {img => docs/img}/du_logo_v4_h100.png        |  Bin
+ {img => docs/img}/du_logo_v4_h16.png         |  Bin
+ {img => docs/img}/du_logo_v4_h32.png         |  Bin
+ {img => docs/img}/du_logo_v4_h64.png         |  Bin
+ {img => docs/img}/du_logo_v4_h80.png         |  Bin
+ docs/license.md                              |   27 +
+ docs/publish.md                              |  381 ++++
+ fonts/fontawesome-webfont.eot                |  Bin 165742 -> 0 bytes
+ fonts/fontawesome-webfont.svg                | 2671 -----------------------
+ fonts/fontawesome-webfont.ttf                |  Bin 165548 -> 0 bytes
+ fonts/fontawesome-webfont.woff               |  Bin 98024 -> 0 bytes
+ fonts/fontawesome-webfont.woff2              |  Bin 77160 -> 0 bytes
+ fonts/glyphicons-halflings-regular.eot       |  Bin 20127 -> 0 bytes
+ fonts/glyphicons-halflings-regular.svg       |  288 ---
+ fonts/glyphicons-halflings-regular.ttf       |  Bin 45404 -> 0 bytes
+ fonts/glyphicons-halflings-regular.woff      |  Bin 23424 -> 0 bytes
+ fonts/glyphicons-halflings-regular.woff2     |  Bin 18028 -> 0 bytes
+ img/favicon.ico                              |  Bin 1150 -> 0 bytes
+ img/grid.png                                 |  Bin 1458 -> 0 bytes
+ img/index.html                               |  217 --
+ index.html                                   |  365 +---
+ js/base.js                                   |  216 --
+ js/bootstrap-3.0.3.min.js                    |    7 -
+ js/jquery-1.10.2.min.js                      |    6 -
+ license/index.html                           |  239 ---
+ package.json                                 |    9 +
+ publish/index.html                           |  662 ------
+ script.js                                    |  483 +++++
+ search/lunr.js                               | 2986 --------------------------
+ search/main.js                               |   96 -
+ search/search_index.json                     |    1 -
+ search/worker.js                             |  128 --
+ sitemap.xml                                  |   38 -
+ sitemap.xml.gz                               |  Bin 200 -> 0 bytes
+ sw.js                                        |   14 +
+ 484 files changed, 53661 insertions(+), 109217 deletions(-)
+ delete mode 100644 000w/index.html
+ delete mode 100644 001w/index.html
+ delete mode 100644 002w/index.html
+ delete mode 100644 003w/index.html
+ delete mode 100644 004w/index.html
+ delete mode 100644 005w/index.html
+ delete mode 100644 006w/index.html
+ delete mode 100644 007w/index.html
+ delete mode 100644 008w/index.html
+ delete mode 100644 009w/index.html
+ delete mode 100644 010w/index.html
+ delete mode 100644 011w/index.html
+ delete mode 100644 012w/index.html
+ delete mode 100644 013w/index.html
+ delete mode 100644 014w/index.html
+ delete mode 100644 015w/index.html
+ delete mode 100644 016w/index.html
+ delete mode 100644 017w/index.html
+ delete mode 100644 018w/index.html
+ delete mode 100644 019w/index.html
+ delete mode 100644 020w/index.html
+ delete mode 100644 021w/index.html
+ delete mode 100644 022w/index.html
+ delete mode 100644 023w/index.html
+ delete mode 100644 024w/index.html
+ delete mode 100644 025w/index.html
+ delete mode 100644 026w/index.html
+ delete mode 100644 027w/index.html
+ delete mode 100644 028w/index.html
+ delete mode 100644 029w/index.html
+ delete mode 100644 030w/index.html
+ delete mode 100644 031w/index.html
+ delete mode 100644 032w/index.html
+ delete mode 100644 033w/index.html
+ delete mode 100644 034w/index.html
+ delete mode 100644 035w/index.html
+ delete mode 100644 036w/index.html
+ delete mode 100644 037w/index.html
+ delete mode 100644 038w/index.html
+ delete mode 100644 039w/index.html
+ delete mode 100644 040w/index.html
+ delete mode 100644 041w/index.html
+ delete mode 100644 042w/index.html
+ delete mode 100644 043w/index.html
+ delete mode 100644 044w/index.html
+ delete mode 100644 045w/index.html
+ delete mode 100644 046w/index.html
+ delete mode 100644 047w/index.html
+ delete mode 100644 048w/index.html
+ delete mode 100644 049w/index.html
+ delete mode 100644 050w/index.html
+ delete mode 100644 051w/index.html
+ delete mode 100644 052w/index.html
+ delete mode 100644 053w/index.html
+ delete mode 100644 054w/index.html
+ delete mode 100644 055w/index.html
+ delete mode 100644 056w/index.html
+ delete mode 100644 057w/index.html
+ delete mode 100644 058w/index.html
+ delete mode 100644 059w/index.html
+ delete mode 100644 060w/index.html
+ delete mode 100644 061w/index.html
+ delete mode 100644 062w/index.html
+ delete mode 100644 063w/index.html
+ delete mode 100644 064w/index.html
+ delete mode 100644 065w/index.html
+ delete mode 100644 066w/index.html
+ delete mode 100644 067w/index.html
+ delete mode 100644 068w/index.html
+ delete mode 100644 069w/index.html
+ delete mode 100644 070w/index.html
+ delete mode 100644 071w/index.html
+ delete mode 100644 072w/index.html
+ delete mode 100644 073w/index.html
+ delete mode 100644 074w/index.html
+ delete mode 100644 075w/index.html
+ delete mode 100644 076w/index.html
+ delete mode 100644 077w/index.html
+ delete mode 100644 078w/index.html
+ delete mode 100644 079w/index.html
+ delete mode 100644 080w/index.html
+ delete mode 100644 081w/index.html
+ delete mode 100644 085w/index.html
+ delete mode 100644 086w/index.html
+ delete mode 100644 089w/index.html
+ delete mode 100644 090w/index.html
+ delete mode 100644 091w/index.html
+ delete mode 100644 092w/index.html
+ delete mode 100644 093w/index.html
+ delete mode 100644 094w/index.html
+ delete mode 100644 097w/index.html
+ delete mode 100644 098w/index.html
+ delete mode 100644 099w/index.html
+ delete mode 100644 099w_poem.jpeg
+ delete mode 100644 100w/index.html
+ delete mode 100644 100w_poem.jpeg
+ delete mode 100644 101w/index.html
+ delete mode 100644 102w/index.html
+ delete mode 100644 103w/index.html
+ delete mode 100644 104w/index.html
+ delete mode 100644 105w/index.html
+ delete mode 100644 106w/index.html
+ delete mode 100644 107w/index.html
+ delete mode 100644 108w/index.html
+ delete mode 100644 2017/000w/index.html
+ delete mode 100644 2017/001w/index.html
+ delete mode 100644 2017/002w/index.html
+ delete mode 100644 2017/003w/index.html
+ delete mode 100644 2017/004w/index.html
+ delete mode 100644 2017/005w/index.html
+ delete mode 100644 2017/006w/index.html
+ delete mode 100644 2017/007w/index.html
+ delete mode 100644 2017/008w/index.html
+ delete mode 100644 2017/009w/index.html
+ delete mode 100644 2017/010w/index.html
+ delete mode 100644 2017/011w/index.html
+ delete mode 100644 2017/012w/index.html
+ delete mode 100644 2017/013w/index.html
+ delete mode 100644 2017/014w/index.html
+ delete mode 100644 2017/015w/index.html
+ delete mode 100644 2017/016w/index.html
+ delete mode 100644 2017/017w/index.html
+ delete mode 100644 2017/018w/index.html
+ delete mode 100644 2017/019w/index.html
+ delete mode 100644 2017/020w/index.html
+ delete mode 100644 2017/021w/index.html
+ delete mode 100644 2017/022w/index.html
+ delete mode 100644 2017/023w/index.html
+ delete mode 100644 2017/024w/index.html
+ delete mode 100644 2017/025w/index.html
+ delete mode 100644 2017/026w/index.html
+ delete mode 100644 2017/027w/index.html
+ delete mode 100644 2017/028w/index.html
+ delete mode 100644 2017/029w/index.html
+ delete mode 100644 2017/030w/index.html
+ delete mode 100644 2017/031w/index.html
+ delete mode 100644 2017/032w/index.html
+ delete mode 100644 2017/033w/index.html
+ delete mode 100644 2017/034w/index.html
+ delete mode 100644 2017/035w/index.html
+ delete mode 100644 2017/036w/index.html
+ delete mode 100644 2017/037w/index.html
+ delete mode 100644 2017/038w/index.html
+ delete mode 100644 2017/039w/index.html
+ delete mode 100644 2017/040w/index.html
+ delete mode 100644 2017/041w/index.html
+ delete mode 100644 2017/042w/index.html
+ delete mode 100644 2017/043w/index.html
+ delete mode 100644 2017/044w/index.html
+ delete mode 100644 2017/045w/index.html
+ delete mode 100644 2017/046w/index.html
+ delete mode 100644 2017/047w/index.html
+ delete mode 100644 2017/048w/index.html
+ delete mode 100644 2017/049w/index.html
+ delete mode 100644 2017/050w/index.html
+ delete mode 100644 2017/index.html
+ delete mode 100644 2018/051w/index.html
+ delete mode 100644 2018/052w/index.html
+ delete mode 100644 2018/053w/index.html
+ delete mode 100644 2018/054w/index.html
+ delete mode 100644 2018/055w/index.html
+ delete mode 100644 2018/056w/index.html
+ delete mode 100644 2018/057w/index.html
+ delete mode 100644 2018/058w/index.html
+ delete mode 100644 2018/059w/index.html
+ delete mode 100644 2018/060w/index.html
+ delete mode 100644 2018/061w/index.html
+ delete mode 100644 2018/062w/index.html
+ delete mode 100644 2018/063w/index.html
+ delete mode 100644 2018/064w/index.html
+ delete mode 100644 2018/065w/index.html
+ delete mode 100644 2018/066w/index.html
+ delete mode 100644 2018/067w/index.html
+ delete mode 100644 2018/068w/index.html
+ delete mode 100644 2018/069w/index.html
+ delete mode 100644 2018/070w/index.html
+ delete mode 100644 2018/071w/index.html
+ delete mode 100644 2018/072w/index.html
+ delete mode 100644 2018/073w/index.html
+ delete mode 100644 2018/074w/index.html
+ delete mode 100644 2018/075w/index.html
+ delete mode 100644 2018/076w/index.html
+ delete mode 100644 2018/077w/index.html
+ delete mode 100644 2018/078w/index.html
+ delete mode 100644 2018/079w/index.html
+ delete mode 100644 2018/080w/index.html
+ delete mode 100644 2018/081w/index.html
+ delete mode 100644 2018/085w/index.html
+ delete mode 100644 2018/086w/index.html
+ delete mode 100644 2018/089w/index.html
+ delete mode 100644 2018/090w/index.html
+ delete mode 100644 2018/index.html
+ delete mode 100644 2019/091w/index.html
+ delete mode 100644 2019/092w/index.html
+ delete mode 100644 2019/093w/index.html
+ delete mode 100644 2019/094w/index.html
+ delete mode 100644 2019/097w/index.html
+ delete mode 100644 2019/098w/index.html
+ delete mode 100644 2019/099w/index.html
+ delete mode 100644 2019/099w_poem.jpeg
+ delete mode 100644 2019/100w/index.html
+ delete mode 100644 2019/100w_poem.jpeg
+ delete mode 100644 2019/101w/index.html
+ delete mode 100644 2019/102w/index.html
+ delete mode 100644 2019/103w/index.html
+ delete mode 100644 2019/104w/index.html
+ delete mode 100644 2019/105w/index.html
+ delete mode 100644 2019/106w/index.html
+ delete mode 100644 2019/107w/index.html
+ delete mode 100644 2019/108w/index.html
+ delete mode 100644 2019/110w_draft/index.html
+ delete mode 100644 2019/index.html
+ delete mode 100644 404.html
+ delete mode 100644 css/base.css
+ delete mode 100644 css/bootstrap-custom.min.css
+ delete mode 100644 css/font-awesome.min.css
+ create mode 100644 docs/000w.md
+ create mode 100644 docs/001w.md
+ create mode 100644 docs/002w.md
+ create mode 100644 docs/003w.md
+ create mode 100644 docs/004w.md
+ create mode 100644 docs/005w.md
+ create mode 100644 docs/006w.md
+ create mode 100644 docs/007w.md
+ create mode 100644 docs/008w.md
+ create mode 100644 docs/009w.md
+ create mode 100644 docs/010w.md
+ create mode 100644 docs/011w.md
+ create mode 100644 docs/012w.md
+ create mode 100644 docs/013w.md
+ create mode 100644 docs/014w.md
+ create mode 100644 docs/015w.md
+ create mode 100644 docs/016w.md
+ create mode 100644 docs/017w.md
+ create mode 100644 docs/018w.md
+ create mode 100644 docs/019w.md
+ create mode 100644 docs/020w.md
+ create mode 100644 docs/021w.md
+ create mode 100644 docs/022w.md
+ create mode 100644 docs/023w.md
+ create mode 100644 docs/024w.md
+ create mode 100644 docs/025w.md
+ create mode 100644 docs/026w.md
+ create mode 100644 docs/027w.md
+ create mode 100644 docs/028w.md
+ create mode 100644 docs/029w.md
+ create mode 100644 docs/030w.md
+ create mode 100644 docs/031w.md
+ create mode 100644 docs/032w.md
+ create mode 100644 docs/033w.md
+ create mode 100644 docs/034w.md
+ create mode 100644 docs/035w.md
+ create mode 100644 docs/036w.md
+ create mode 100644 docs/037w.md
+ create mode 100644 docs/038w.md
+ create mode 100644 docs/039w.md
+ create mode 100644 docs/040w.md
+ create mode 100644 docs/041w.md
+ create mode 100644 docs/042w.md
+ create mode 100644 docs/043w.md
+ create mode 100644 docs/044w.md
+ create mode 100644 docs/045w.md
+ create mode 100644 docs/046w.md
+ create mode 100644 docs/047w.md
+ create mode 100644 docs/048w.md
+ create mode 100644 docs/049w.md
+ create mode 100644 docs/050w.md
+ create mode 100644 docs/051w.md
+ create mode 100644 docs/052w.md
+ create mode 100644 docs/053w.md
+ create mode 100644 docs/054w.md
+ create mode 100644 docs/055w.md
+ create mode 100644 docs/056w.md
+ create mode 100644 docs/057w.md
+ create mode 100644 docs/058w.md
+ create mode 100644 docs/059w.md
+ create mode 100644 docs/060w.md
+ create mode 100644 docs/061w.md
+ create mode 100644 docs/062w.md
+ create mode 100644 docs/063w.md
+ create mode 100644 docs/064w.md
+ create mode 100644 docs/065w.md
+ create mode 100644 docs/066w.md
+ create mode 100644 docs/067w.md
+ create mode 100644 docs/068w.md
+ create mode 100644 docs/069w.md
+ create mode 100644 docs/070w.md
+ create mode 100644 docs/071w.md
+ create mode 100644 docs/072w.md
+ create mode 100644 docs/073w.md
+ create mode 100644 docs/074w.md
+ create mode 100644 docs/075w.md
+ create mode 100644 docs/076w.md
+ create mode 100644 docs/077w.md
+ create mode 100644 docs/078w.md
+ create mode 100644 docs/079w.md
+ create mode 100644 docs/080w.md
+ create mode 100644 docs/081w.md
+ rename 082w/index.html => docs/082w.md (57%)
+ rename 083w/index.html => docs/083w.md (61%)
+ rename 084w/index.html => docs/084w.md (61%)
+ create mode 100644 docs/085w.md
+ create mode 100644 docs/086w.md
+ rename 087w/index.html => docs/087w.md (58%)
+ rename 088w/index.html => docs/088w.md (61%)
+ create mode 100644 docs/089w.md
+ create mode 100644 docs/090w.md
+ create mode 100644 docs/091w.md
+ create mode 100644 docs/092w.md
+ create mode 100644 docs/093w.md
+ create mode 100644 docs/094w.md
+ rename 096w/index.html => docs/096w.md (50%)
+ create mode 100644 docs/097w.md
+ create mode 100644 docs/098w.md
+ create mode 100644 docs/099w.md
+ create mode 100644 docs/100w.md
+ create mode 100644 docs/101w.md
+ create mode 100644 docs/102w.md
+ create mode 100644 docs/103w.md
+ create mode 100644 docs/104w.md
+ create mode 100644 docs/105w.md
+ create mode 100644 docs/106w.md
+ create mode 100644 docs/107w.md
+ create mode 100644 docs/108w.md
+ create mode 100644 docs/109w.md
+ create mode 100644 docs/2017.md
+ create mode 100644 docs/2017/000w.md
+ create mode 100644 docs/2017/001w.md
+ create mode 100644 docs/2017/002w.md
+ create mode 100644 docs/2017/003w.md
+ create mode 100644 docs/2017/004w.md
+ create mode 100644 docs/2017/005w.md
+ create mode 100644 docs/2017/006w.md
+ create mode 100644 docs/2017/007w.md
+ create mode 100644 docs/2017/008w.md
+ create mode 100644 docs/2017/009w.md
+ create mode 100644 docs/2017/010w.md
+ create mode 100644 docs/2017/011w.md
+ create mode 100644 docs/2017/012w.md
+ create mode 100644 docs/2017/013w.md
+ create mode 100644 docs/2017/014w.md
+ create mode 100644 docs/2017/015w.md
+ create mode 100644 docs/2017/016w.md
+ create mode 100644 docs/2017/017w.md
+ create mode 100644 docs/2017/018w.md
+ create mode 100644 docs/2017/019w.md
+ create mode 100644 docs/2017/020w.md
+ create mode 100644 docs/2017/021w.md
+ create mode 100644 docs/2017/022w.md
+ create mode 100644 docs/2017/023w.md
+ create mode 100644 docs/2017/024w.md
+ create mode 100644 docs/2017/025w.md
+ create mode 100644 docs/2017/026w.md
+ create mode 100644 docs/2017/027w.md
+ create mode 100644 docs/2017/028w.md
+ create mode 100644 docs/2017/029w.md
+ create mode 100644 docs/2017/030w.md
+ create mode 100644 docs/2017/031w.md
+ create mode 100644 docs/2017/032w.md
+ create mode 100644 docs/2017/033w.md
+ create mode 100644 docs/2017/034w.md
+ create mode 100644 docs/2017/035w.md
+ create mode 100644 docs/2017/036w.md
+ create mode 100644 docs/2017/037w.md
+ create mode 100644 docs/2017/038w.md
+ create mode 100644 docs/2017/039w.md
+ create mode 100644 docs/2017/040w.md
+ create mode 100644 docs/2017/041w.md
+ create mode 100644 docs/2017/042w.md
+ create mode 100644 docs/2017/043w.md
+ create mode 100644 docs/2017/044w.md
+ create mode 100644 docs/2017/045w.md
+ create mode 100644 docs/2017/046w.md
+ create mode 100644 docs/2017/047w.md
+ create mode 100644 docs/2017/048w.md
+ create mode 100644 docs/2017/049w.md
+ create mode 100644 docs/2017/050w.md
+ create mode 100644 docs/2018.md
+ create mode 100644 docs/2018/051w.md
+ create mode 100644 docs/2018/052w.md
+ create mode 100644 docs/2018/053w.md
+ create mode 100644 docs/2018/054w.md
+ create mode 100644 docs/2018/055w.md
+ create mode 100644 docs/2018/056w.md
+ create mode 100644 docs/2018/057w.md
+ create mode 100644 docs/2018/058w.md
+ create mode 100644 docs/2018/059w.md
+ create mode 100644 docs/2018/060w.md
+ create mode 100644 docs/2018/061w.md
+ create mode 100644 docs/2018/062w.md
+ create mode 100644 docs/2018/063w.md
+ create mode 100644 docs/2018/064w.md
+ create mode 100644 docs/2018/065w.md
+ create mode 100644 docs/2018/066w.md
+ create mode 100644 docs/2018/067w.md
+ create mode 100644 docs/2018/068w.md
+ create mode 100644 docs/2018/069w.md
+ create mode 100644 docs/2018/070w.md
+ create mode 100644 docs/2018/071w.md
+ create mode 100644 docs/2018/072w.md
+ create mode 100644 docs/2018/073w.md
+ create mode 100644 docs/2018/074w.md
+ create mode 100644 docs/2018/075w.md
+ create mode 100644 docs/2018/076w.md
+ create mode 100644 docs/2018/077w.md
+ create mode 100644 docs/2018/078w.md
+ create mode 100644 docs/2018/079w.md
+ create mode 100644 docs/2018/080w.md
+ create mode 100644 docs/2018/081w.md
+ rename 2018/082w/index.html => docs/2018/082w.md (57%)
+ rename 2018/083w/index.html => docs/2018/083w.md (61%)
+ rename 2018/084w/index.html => docs/2018/084w.md (61%)
+ create mode 100644 docs/2018/085w.md
+ create mode 100644 docs/2018/086w.md
+ rename 2018/087w/index.html => docs/2018/087w.md (58%)
+ rename 2018/088w/index.html => docs/2018/088w.md (61%)
+ create mode 100644 docs/2018/089w.md
+ create mode 100644 docs/2018/090w.md
+ create mode 100644 docs/2019.md
+ create mode 100644 docs/2019/091w.md
+ create mode 100644 docs/2019/092w.md
+ create mode 100644 docs/2019/093w.md
+ create mode 100644 docs/2019/094w.md
+ rename 2019/096w/index.html => docs/2019/096w.md (50%)
+ create mode 100644 docs/2019/097w.md
+ create mode 100644 docs/2019/098w.md
+ create mode 100644 docs/2019/099w.md
+ create mode 100644 docs/2019/100w.md
+ create mode 100644 docs/2019/101w.md
+ create mode 100644 docs/2019/102w.md
+ create mode 100644 docs/2019/103w.md
+ create mode 100644 docs/2019/104w.md
+ create mode 100644 docs/2019/105w.md
+ create mode 100644 docs/2019/106w.md
+ create mode 100644 docs/2019/107w.md
+ create mode 100644 docs/2019/108w.md
+ create mode 100644 docs/2019/109w.md
+ create mode 100644 docs/2019/110w_draft.md
+ create mode 100644 docs/2019/111w_draft.md
+ create mode 100644 docs/2019/112w_draft.md
+ create mode 100644 docs/2019/113w_draft.md
+ create mode 100644 docs/2019/114w_draft.md
+ create mode 100644 docs/2019/115w_draft.md
+ create mode 100644 docs/2019/116w_draft.md
+ create mode 100644 docs/2019/117w_draft.md
+ create mode 100644 docs/2019/118w_draft.md
+ create mode 100644 docs/2019/119w_draft.md
+ create mode 100644 docs/README.md
+ rename {img => docs/img}/101camp_bauhaus_v4h420.ico (100%)
+ rename {img => docs/img}/du_logo_v4_h100.png (100%)
+ rename {img => docs/img}/du_logo_v4_h16.png (100%)
+ rename {img => docs/img}/du_logo_v4_h32.png (100%)
+ rename {img => docs/img}/du_logo_v4_h64.png (100%)
+ rename {img => docs/img}/du_logo_v4_h80.png (100%)
+ create mode 100644 docs/license.md
+ create mode 100644 docs/publish.md
+ delete mode 100644 fonts/fontawesome-webfont.eot
+ delete mode 100644 fonts/fontawesome-webfont.svg
+ delete mode 100644 fonts/fontawesome-webfont.ttf
+ delete mode 100644 fonts/fontawesome-webfont.woff
+ delete mode 100644 fonts/fontawesome-webfont.woff2
+ delete mode 100644 fonts/glyphicons-halflings-regular.eot
+ delete mode 100644 fonts/glyphicons-halflings-regular.svg
+ delete mode 100644 fonts/glyphicons-halflings-regular.ttf
+ delete mode 100644 fonts/glyphicons-halflings-regular.woff
+ delete mode 100644 fonts/glyphicons-halflings-regular.woff2
+ delete mode 100644 img/favicon.ico
+ delete mode 100644 img/grid.png
+ delete mode 100644 img/index.html
+ delete mode 100644 js/base.js
+ delete mode 100644 js/bootstrap-3.0.3.min.js
+ delete mode 100644 js/jquery-1.10.2.min.js
+ delete mode 100644 license/index.html
+ create mode 100644 package.json
+ delete mode 100644 publish/index.html
+ create mode 100644 script.js
+ delete mode 100644 search/lunr.js
+ delete mode 100644 search/main.js
+ delete mode 100644 search/search_index.json
+ delete mode 100644 search/worker.js
+ delete mode 100644 sitemap.xml
+ delete mode 100644 sitemap.xml.gz
+ create mode 100644 sw.js
+
+	 crt. PATH ===
+/opt/www/debuguself/br_duw_pub
+On branch duw_pub
+Your branch is up-to-date with 'origin/duw_pub'.
+nothing to commit, working directory clean
+Already up-to-date.
+/opt/www/debuguself/br_DUW/_trigger
+TRIGGER obj. -> deploy.md ~> NOT exist
+	 CANCEL build...
+TRIGGER 0
+<<<   clean /opt/www/debuguself/_trigger4deploy.log for next hooksrv act
+###::end@ 2019/05/21 12:24:20
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
