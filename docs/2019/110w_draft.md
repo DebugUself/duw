@@ -1,9 +1,17 @@
 # 怼周刊_v110
-~ 预定 190527 2042 发布
+~ 190527 2042 发布
 
 -----------------------------------------
-...TODO
 
+自怼又寸心 社区二十载
+
+    9904CMS 0409moinmoin
+    PythonUG B和C 07又组erlang队
+    10蟒会新加坡 不忿自组PyConChi
+    13珠海GDG 14开智OOC
+    17自怼与蟒营 19香洲Tensorflow
+
+> DAMADAMA 熊本
 
 -----------------------------------------
 
@@ -27,10 +35,104 @@
 ## Achievements 成果 
 ~ 各种成品/半成品 内部知识作品
 
+### @ZoomQuiet 怼圈运营故事之DU109w发布调整(上):SSG由Mkdoc变更为docute
+
+#### 背景
+
+- 怼友在3个月前,实现怼周刊自动化发布
+- [3w\[MVP\] pubDUW 实用化 · Issue #652 · DebugUself/du4proto](https://github.com/DebugUself/du4proto/issues/652)
+- 平稳运行9周后,在发布DU109w时,出现了一个小问题.
+
+#### 现象
+
+- 根据自动化log记录,DU109w看起来已经自动发布,详情见 [duw/190520_215601.log at logging · DebugUself/duw](https://github.com/DebugUself/duw/blob/logging/2019/05/190520_215601.log),如下图:
+<img width="714" alt="du109w_autopub-log-screenshot" src="https://user-images.githubusercontent.com/19412465/58143061-157fd980-7c7c-11e9-929f-a6c76eea4957.png">
+
+- 但是, [DebugUself/duw: 怼周刊 -> 自怼圈社区电子周刊](https://github.com/DebugUself/duw/tree/master) 没有 109w 的编译成果,如下图.
+
+<img height="500" alt="du109w-index" src="https://user-images.githubusercontent.com/19412465/58142309-1f540d80-7c79-11e9-9bfd-4320b7494e18.JPG">
+
+<img height="500" alt="du109w404error" src="https://user-images.githubusercontent.com/19412465/58142315-23802b00-7c79-11e9-8f48-6252a73d9579.JPG">
+
+#### 分析
+- 索引是脚本自动刷 [du4proto/docs at duw_pub · DebugUself/du4proto](https://github.com/DebugUself/du4proto/tree/duw_pub/docs)目录->生成的..
+- 所以, 问题在, DUW->duw_pub 的同步和自动整理OK 了,
+- 但是, MkDocs 的最终编译没能完成合理编译
+
+#### 解决
+- [x] :o: 硬怼 Mkdocs ~ 每次生成静态页面其实浪费
+- [x] :+1: 全新无编译发布:
+    + [x] :o: [docsify](https://docsify.js.org/#/zh-cn/)
+        * 有封面
+        * 插件丰富
+        * 社区活跃
+        * 问题: uttrances 难以简单支持
+    + [x] :+1: [egoist/docute](https://github.com/egoist/docute/tree/master/website/docs)
+        * 基于 vue
+        * 私人作品
+        * 社区不活跃
+        * 好在: 简洁可用, uttrances 直觉兼容
+- [x] demo 效果测试 ~ 7519c43cf07f4dc2039a1a33e4b14309882ccd69
+- [x] inv 兼容调整 ~ 28f7a97
+- [x] js 配置生成工具 
+    + [x] 导航生成 ~ bff1fb2
+    + [x] 边栏生成 ~ ec4a034
+- [x] inv 融合 ~ 0108e3d
+- [x] VPS 部署
+- [x] 自动化发布检验 ~ a2cfec0
+
+### @ZoomQuiet 怼圈运营故事之DU109w发布调整(下):docute搭配ZQ自制md结构调节器食用
+
+#### 背景
+
+- 上接[bug:\[pubDUW\]「 🐻熊本: 的确,目录有,但内容没有 」 · Issue #690 · DebugUself/du4proto](https://github.com/DebugUself/du4proto/issues/690)
+- 将SSG由MkDocs替换为docute,虽然发布正常,可是出现了一个小小的细节问题.
+
+#### 现象
+- 所有文章的大标题都是 `Postscript 后记` ,如下图:
+
+![ScreenShot 2019-05-21 16 20 22](https://user-images.githubusercontent.com/22494/58079764-59bf9b00-7be4-11e9-87dc-5acd3da7d837.jpg)
+
+
+#### 分析
+
+- docute 在线解析文章的标题是 md 中最后一个 # 一级标题
+- 而我们周刊模板有很多 # 一级标题
+
+#### 处置
+- 初步判断为md 本身问题.
+- 可以从两个方向下手:
+    + hacking docute?
+    + 或是 直接刷一次以往所有历史文稿?
+- 于是构建了自制md结构调节器
+    + [x] 原型 ~ [792cb1a](https://github.com/DebugUself/du4proto/commit/792cb1a36c5a0ea085daa679801cb52dffc73b40)
+    + [x] 修订所有 ~ [178bf14](https://github.com/DebugUself/du4proto/commit/178bf149ff0a7d359d115df3d04a9fadfa44e4e8)
+
+#### 解决:md 结构调节器
+- 主要代码如下:
+
+```
+                    for l in _md[1:]:
+                        if '# ' == l[:2]:
+                            print(l)
+                            _fix = '#'+l
+                            print('->', _fix)
+                            _exp += _fix
+                        else:
+                            _exp += l
+```
+
+- 利用自制调节器,调整000~109w所有md文档结构,最终发布效果正常,见下图:
+
+![ScreenShot 2019-05-21 16 46 00](https://user-images.githubusercontent.com/22494/58081602-ef105e80-7be7-11e9-8aef-fb2c7d62e6f0.jpg)
+
+#### 记录
+- 所有动作,通过issue汇总入project中的DU.support,如下
+
+![DUSupport_screenshot](https://user-images.githubusercontent.com/19412465/58142496-e49ea500-7c79-11e9-86fc-15e95159fa0c.JPG)
       
 ## Stories 故事 
 ~ 收集各自无法雷同的怼圈真人故事...
-
 
 ### impression 怼印象 
 ~ 例怼中感触最嗯哼的 top3 感想
@@ -38,9 +140,29 @@
 - `(￣▽￣)`:
     + ...
 
+- 熊本:
+    + @老朱 分享抑郁入门，比如考察咨询师的要点：专业背景、服务经验。
+    + @蕙蕙 分享纸质版日记使用体验。但的确，俺也有，纸质笔记虽然用时爽，但是复用、查询的效果并不如电子笔记的感觉。so,**笔记习惯究竟是应该向着为了获得更佳体验的方向or更恰当得被复用、提高利用率的方向走？**
+    + @ZoomQuiet 分享99年以后，这20年来技术社区经验、更替,见  http://slides.101.camp/duw110.html 。印象深刻有3点：
+        * 似乎啄木鸟公司福利很好，在养活自己同时能精进其他技术。
+        * ZPUG、GDG有能力独立承办多达500人规模的年会。
+        * 2019的TFUG又有新故事。
+        * **so,既然各大技术社区活跃期都似乎不超过4年，为啥新的社群不断涌现呢？如果社群这种组织不断消亡，那为啥又会不断诞生新的社群呢？**
+    + @zoejane 不仅醒悟要接纳自我，更开始行动。**so,是啥一直在妨碍广大民众自我接纳呢？家庭环境？天生性格？性别差异？社会文化？又是什么鼓励了自我接纳呢？经济水平提升？开放社区文化？家庭环境的改变？**
+
+- zoejane:
+    + @ZoomQuiet 大妈，听到你昨天的分享后，还想请教你，是什么样的力量能支持你，在哪怕只有一个人的时候，也能把筹备、拉赞助、宣传、报名、组织、主持、报道这一系列的事情都给干了？即使你之前已经积累了很多社区活动的经验，但是当时你一个人做的时候会怀疑自己做不下去了吗？会觉得孤单吗？因为我确实觉得这是一件非常需要勇气才能做到的事情你是如何调节自己的心态和行动的呢？希望能有机会听到大妈的分享，谢谢大妈给我带来的启发
+
 ### live 怼生活
 ~ 生活中带有怼范的各种 (投稿后可同时沉淀到 wiki 的2.5 怼生活下)
 
+#### @熊本 梅开二度,五月逢春:怼周刊热情再现.
+
+- 怼周刊又一次引发了我的热情.比如,SSG构建、自动化触发、md结构调整器脚本等.对此,朋友困惑不解.理了理脑袋,发现我大致是这么个想法.
+
+- 以前我尝试新东西的手法层次比较低.喜欢摔碎了旧的瓶瓶罐罐,直接买新的.最近,受到了各方面熏陶,同时也是被环境所制,开始走可持续、节约型路线.就是手头有什么,就将就用什么.用我自己的话说, **「住在遗迹里」.**
+
+- 麻烦的是,遗迹往往长成废墟的样儿.一个年轻人去「守陵」,的确有些惊世骇俗.但,就像我二舅说的,**「先把故事写完,以后怎么办,再想办法吧.」**
 
 ## Recommedations 推荐 
 ~ 嗯哼各种怼路上发现的嗯哼...
