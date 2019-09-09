@@ -45,7 +45,7 @@
     + ...
 
 ### live 怼生活
-~ 生活中带有怼范的各种 (投稿后可同时沉淀到 wiki 的2.5 怼生活下)
+~ 生活中带有怼范的各种 (投稿后可同时沉淀到 [wiki 的2.5 怼生活](https://github.com/DebugUself/du4proto/wiki/How2Live)下)
 
 
 ## Recommedations 推荐 
