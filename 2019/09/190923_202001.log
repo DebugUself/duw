@@ -1,0 +1,38 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+###::cron4trig2duw.sh v.190609.1803 crontab action 4 auto publish DUW
+###::run@ 2019/09/23 20:20:26
+<<<   trigger by /opt/www/debuguself/br_DUW/_trigger/deploy.md 
+
+	 crt. PATH ===
+/opt/www/debuguself/br_DUW
+On branch DUW
+Your branch is up-to-date with 'origin/DUW'.
+nothing to commit, working directory clean
+From github.com:DebugUself/du4proto
+   4378f8c..cffd5c0  DUW        -> origin/DUW
+Updating 4378f8c..cffd5c0
+Fast-forward
+ _trigger/deploy.md | 1 -
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 _trigger/deploy.md
+
+	 crt. PATH ===
+/opt/www/debuguself/ghp_duw
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+Already up-to-date.
+
+	 crt. PATH ===
+/opt/www/debuguself/br_duw_pub
+On branch duw_pub
+Your branch is up-to-date with 'origin/duw_pub'.
+nothing to commit, working directory clean
+Already up-to-date.
+/opt/www/debuguself/br_DUW/_trigger
+TRIGGER obj. -> deploy.md ~> NOT exist
+	 CANCEL build...
+TRIGGER 0
+<<<   clean /opt/www/debuguself/br_DUW/_trigger/deploy.md for next hooksrv act
+###::end@ 2019/09/23 20:20:41
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
