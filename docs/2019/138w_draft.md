@@ -27,15 +27,20 @@
     + 俺私人嗯哼了5年了
     + 邀请大家一起来, 每周嗯哼
 - 每周例怼后, 无论是否列席, 大家都在 `故事->怼印象` 中追加当周 top3 感触
+- 周刊编撰应该流程:
+    + 每天一行私人 自怼日报
+    + 每周聚合为 自怼圈周报
 
 
 
-## Achievements 成果 
-~ 各种成品/半成品 内部知识作品
+### live 怼生活
+> 凡举成果/故事/日报/...都可以收集在此
 
-      
-## Stories 故事 
-~ 收集各自无法雷同的怼圈真人故事...
+`(￣▽￣)`:
+
+
+- 191202 s0ra 上恢复配置一组老怼友, 年费降低为 70元/人;合肥项目的坑分析;Yazi进入实现期
+
 
 
 ### impression 怼印象 
@@ -44,15 +49,11 @@
 - `(￣▽￣)`:
     + ...
 
-### live 怼生活
-~ 生活中带有怼范的各种 (投稿后可同时沉淀到 [wiki 的2.5 怼生活](https://github.com/DebugUself/du4proto/wiki/How2Live)下)
-
-
 ## Recommedations 推荐 
 ~ 嗯哼各种怼路上发现的嗯哼...
 
 - 是也乎:
-    + [Issue 368 ~蠎周刊 ~汇集全球蠎事儿 ;-)](http://weekly.pychina.org/issue/issue-368.html)
+    + [pythonista-weekly : Pyw 423](http://weekly.pychina.org/python-weekly/pyw-423.html)
 
 
 ## Postscript 后记 
