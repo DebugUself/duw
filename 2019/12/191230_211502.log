@@ -1,0 +1,199 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+###::cron4trig2duw.sh v.190609.1803 crontab action 4 auto publish DUW
+###::run@ 2019/12/30 21:15:22
+<<<   trigger by /opt/www/debuguself/br_DUW/_trigger/deploy.md 
+
+	 crt. PATH ===
+/opt/www/debuguself/br_DUW
+On branch DUW
+Your branch is up-to-date with 'origin/DUW'.
+nothing to commit, working directory clean
+Already up-to-date.
+
+	 crt. PATH ===
+/opt/www/debuguself/ghp_duw
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+Already up-to-date.
+
+	 crt. PATH ===
+/opt/www/debuguself/br_duw_pub
+On branch duw_pub
+Your branch is up-to-date with 'origin/duw_pub'.
+nothing to commit, working directory clean
+Already up-to-date.
+/opt/www/debuguself/br_DUW/_trigger
+TRIGGERed by deploy.md exist
+TRIGGER 1
+
+	 crt. PATH ===
+/opt/www/debuguself/br_duw_pub
+rsync -av --delete -r ../br_DUW/2017/ ./docs/2017/
+sending incremental file list
+
+sent 1,028 bytes  received 12 bytes  2,080.00 bytes/sec
+total size is 634,828  speedup is 610.41
+rsync -av --delete -r ../br_DUW/2018/ ./docs/2018/
+sending incremental file list
+
+sent 787 bytes  received 12 bytes  1,598.00 bytes/sec
+total size is 410,176  speedup is 513.36
+rsync -av --delete -r ../br_DUW/2019/ ./docs/2019/
+sending incremental file list
+deleting 141w_draft.md
+./
+141w.md
+
+sent 6,863 bytes  received 55 bytes  13,836.00 bytes/sec
+total size is 401,209  speedup is 57.99
+cp -v ../br_DUW/2017/*.* ./docs/
+'../br_DUW/2017/000w.md' -> './docs/000w.md'
+'../br_DUW/2017/001w.md' -> './docs/001w.md'
+'../br_DUW/2017/002w.md' -> './docs/002w.md'
+'../br_DUW/2017/003w.md' -> './docs/003w.md'
+'../br_DUW/2017/004w.md' -> './docs/004w.md'
+'../br_DUW/2017/005w.md' -> './docs/005w.md'
+'../br_DUW/2017/006w.md' -> './docs/006w.md'
+'../br_DUW/2017/007w.md' -> './docs/007w.md'
+'../br_DUW/2017/008w.md' -> './docs/008w.md'
+'../br_DUW/2017/009w.md' -> './docs/009w.md'
+'../br_DUW/2017/010w.md' -> './docs/010w.md'
+'../br_DUW/2017/011w.md' -> './docs/011w.md'
+'../br_DUW/2017/012w.md' -> './docs/012w.md'
+'../br_DUW/2017/013w.md' -> './docs/013w.md'
+'../br_DUW/2017/014w.md' -> './docs/014w.md'
+'../br_DUW/2017/015w.md' -> './docs/015w.md'
+'../br_DUW/2017/016w.md' -> './docs/016w.md'
+'../br_DUW/2017/017w.md' -> './docs/017w.md'
+'../br_DUW/2017/018w.md' -> './docs/018w.md'
+'../br_DUW/2017/019w.md' -> './docs/019w.md'
+'../br_DUW/2017/020w.md' -> './docs/020w.md'
+'../br_DUW/2017/021w.md' -> './docs/021w.md'
+'../br_DUW/2017/022w.md' -> './docs/022w.md'
+'../br_DUW/2017/023w.md' -> './docs/023w.md'
+'../br_DUW/2017/024w.md' -> './docs/024w.md'
+'../br_DUW/2017/025w.md' -> './docs/025w.md'
+'../br_DUW/2017/026w.md' -> './docs/026w.md'
+'../br_DUW/2017/027w.md' -> './docs/027w.md'
+'../br_DUW/2017/028w.md' -> './docs/028w.md'
+'../br_DUW/2017/029w.md' -> './docs/029w.md'
+'../br_DUW/2017/030w.md' -> './docs/030w.md'
+'../br_DUW/2017/031w.md' -> './docs/031w.md'
+'../br_DUW/2017/032w.md' -> './docs/032w.md'
+'../br_DUW/2017/033w.md' -> './docs/033w.md'
+'../br_DUW/2017/034w.md' -> './docs/034w.md'
+'../br_DUW/2017/035w.md' -> './docs/035w.md'
+'../br_DUW/2017/036w.md' -> './docs/036w.md'
+'../br_DUW/2017/037w.md' -> './docs/037w.md'
+'../br_DUW/2017/038w.md' -> './docs/038w.md'
+'../br_DUW/2017/039w.md' -> './docs/039w.md'
+'../br_DUW/2017/040w.md' -> './docs/040w.md'
+'../br_DUW/2017/041w.md' -> './docs/041w.md'
+'../br_DUW/2017/042w.md' -> './docs/042w.md'
+'../br_DUW/2017/043w.md' -> './docs/043w.md'
+'../br_DUW/2017/044w.md' -> './docs/044w.md'
+'../br_DUW/2017/045w.md' -> './docs/045w.md'
+'../br_DUW/2017/046w.md' -> './docs/046w.md'
+'../br_DUW/2017/047w.md' -> './docs/047w.md'
+'../br_DUW/2017/048w.md' -> './docs/048w.md'
+'../br_DUW/2017/049w.md' -> './docs/049w.md'
+'../br_DUW/2017/050w.md' -> './docs/050w.md'
+cp -v ../br_DUW/2018/*.* ./docs/
+'../br_DUW/2018/051w.md' -> './docs/051w.md'
+'../br_DUW/2018/052w.md' -> './docs/052w.md'
+'../br_DUW/2018/053w.md' -> './docs/053w.md'
+'../br_DUW/2018/054w.md' -> './docs/054w.md'
+'../br_DUW/2018/055w.md' -> './docs/055w.md'
+'../br_DUW/2018/056w.md' -> './docs/056w.md'
+'../br_DUW/2018/057w.md' -> './docs/057w.md'
+'../br_DUW/2018/058w.md' -> './docs/058w.md'
+'../br_DUW/2018/059w.md' -> './docs/059w.md'
+'../br_DUW/2018/060w.md' -> './docs/060w.md'
+'../br_DUW/2018/061w.md' -> './docs/061w.md'
+'../br_DUW/2018/062w.md' -> './docs/062w.md'
+'../br_DUW/2018/063w.md' -> './docs/063w.md'
+'../br_DUW/2018/064w.md' -> './docs/064w.md'
+'../br_DUW/2018/065w.md' -> './docs/065w.md'
+'../br_DUW/2018/066w.md' -> './docs/066w.md'
+'../br_DUW/2018/067w.md' -> './docs/067w.md'
+'../br_DUW/2018/068w.md' -> './docs/068w.md'
+'../br_DUW/2018/069w.md' -> './docs/069w.md'
+'../br_DUW/2018/070w.md' -> './docs/070w.md'
+'../br_DUW/2018/071w.md' -> './docs/071w.md'
+'../br_DUW/2018/072w.md' -> './docs/072w.md'
+'../br_DUW/2018/073w.md' -> './docs/073w.md'
+'../br_DUW/2018/074w.md' -> './docs/074w.md'
+'../br_DUW/2018/075w.md' -> './docs/075w.md'
+'../br_DUW/2018/076w.md' -> './docs/076w.md'
+'../br_DUW/2018/077w.md' -> './docs/077w.md'
+'../br_DUW/2018/078w.md' -> './docs/078w.md'
+'../br_DUW/2018/079w.md' -> './docs/079w.md'
+'../br_DUW/2018/080w.md' -> './docs/080w.md'
+'../br_DUW/2018/081w.md' -> './docs/081w.md'
+'../br_DUW/2018/082w.md' -> './docs/082w.md'
+'../br_DUW/2018/083w.md' -> './docs/083w.md'
+'../br_DUW/2018/084w.md' -> './docs/084w.md'
+'../br_DUW/2018/085w.md' -> './docs/085w.md'
+'../br_DUW/2018/086w.md' -> './docs/086w.md'
+'../br_DUW/2018/087w.md' -> './docs/087w.md'
+'../br_DUW/2018/088w.md' -> './docs/088w.md'
+'../br_DUW/2018/089w.md' -> './docs/089w.md'
+'../br_DUW/2018/090w.md' -> './docs/090w.md'
+cp -v ../br_DUW/2019/*.* ./docs/
+'../br_DUW/2019/091w.md' -> './docs/091w.md'
+'../br_DUW/2019/092w.md' -> './docs/092w.md'
+'../br_DUW/2019/093w.md' -> './docs/093w.md'
+'../br_DUW/2019/094w.md' -> './docs/094w.md'
+'../br_DUW/2019/096w.md' -> './docs/096w.md'
+'../br_DUW/2019/097w.md' -> './docs/097w.md'
+'../br_DUW/2019/098w.md' -> './docs/098w.md'
+'../br_DUW/2019/099w.md' -> './docs/099w.md'
+'../br_DUW/2019/100w.md' -> './docs/100w.md'
+'../br_DUW/2019/101w.md' -> './docs/101w.md'
+'../br_DUW/2019/102w.md' -> './docs/102w.md'
+'../br_DUW/2019/103w.md' -> './docs/103w.md'
+'../br_DUW/2019/104w.md' -> './docs/104w.md'
+'../br_DUW/2019/105w.md' -> './docs/105w.md'
+'../br_DUW/2019/106w.md' -> './docs/106w.md'
+'../br_DUW/2019/107w.md' -> './docs/107w.md'
+'../br_DUW/2019/108w.md' -> './docs/108w.md'
+'../br_DUW/2019/109w.md' -> './docs/109w.md'
+'../br_DUW/2019/110w.md' -> './docs/110w.md'
+'../br_DUW/2019/111w.md' -> './docs/111w.md'
+'../br_DUW/2019/112w.md' -> './docs/112w.md'
+'../br_DUW/2019/113w.md' -> './docs/113w.md'
+'../br_DUW/2019/114w.md' -> './docs/114w.md'
+'../br_DUW/2019/115w.md' -> './docs/115w.md'
+'../br_DUW/2019/116w.md' -> './docs/116w.md'
+'../br_DUW/2019/117w.md' -> './docs/117w.md'
+'../br_DUW/2019/118w.md' -> './docs/118w.md'
+'../br_DUW/2019/119w.md' -> './docs/119w.md'
+'../br_DUW/2019/120w.md' -> './docs/120w.md'
+'../br_DUW/2019/121.md' -> './docs/121.md'
+'../br_DUW/2019/121w.md' -> './docs/121w.md'
+'../br_DUW/2019/122w.md' -> './docs/122w.md'
+'../br_DUW/2019/123w.md' -> './docs/123w.md'
+'../br_DUW/2019/124w.md' -> './docs/124w.md'
+'../br_DUW/2019/125w.md' -> './docs/125w.md'
+'../br_DUW/2019/126w.md' -> './docs/126w.md'
+'../br_DUW/2019/127w.md' -> './docs/127w.md'
+'../br_DUW/2019/128w.md' -> './docs/128w.md'
+'../br_DUW/2019/129w.md' -> './docs/129w.md'
+'../br_DUW/2019/130w.md' -> './docs/130w.md'
+'../br_DUW/2019/131w.md' -> './docs/131w.md'
+'../br_DUW/2019/132w.md' -> './docs/132w.md'
+'../br_DUW/2019/133w.md' -> './docs/133w.md'
+'../br_DUW/2019/134w.md' -> './docs/134w.md'
+'../br_DUW/2019/135w.md' -> './docs/135w.md'
+'../br_DUW/2019/136w.md' -> './docs/136w.md'
+'../br_DUW/2019/137w.md' -> './docs/137w.md'
+'../br_DUW/2019/138w.md' -> './docs/138w.md'
+'../br_DUW/2019/139w.md' -> './docs/139w.md'
+'../br_DUW/2019/140w.md' -> './docs/140w.md'
+'../br_DUW/2019/141w.md' -> './docs/141w.md'
+rm: cannot remove './docs/*_draft.md': No such file or directory
+rm -v ./docs/*_draft.md
+<<<   clean /opt/www/debuguself/br_DUW/_trigger/deploy.md for next hooksrv act
+###::end@ 2019/12/30 21:15:38
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
