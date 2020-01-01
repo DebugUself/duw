@@ -37,6 +37,10 @@ new Docute({
       {},{title: '2019',
 links: [
 {
+                              title: '141w',
+                              link: '/141w'
+                            },
+{
                               title: '140w',
                               link: '/140w'
                             },
@@ -115,10 +119,6 @@ links: [
 {
                               title: '121w',
                               link: '/121w'
-                            },
-{
-                              title: '121',
-                              link: '/121'
                             },
 {
                               title: '120w',
