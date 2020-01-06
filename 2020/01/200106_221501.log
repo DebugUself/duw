@@ -1,0 +1,46 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+###::cron4trig2duw.sh v.190609.1803 crontab action 4 auto publish DUW
+###::run@ 2020/01/06 22:15:21
+<<<   trigger by /opt/www/debuguself/br_DUW/_trigger/deploy.md 
+
+	 crt. PATH ===
+/opt/www/debuguself/br_DUW
+On branch DUW
+Your branch is up-to-date with 'origin/DUW'.
+nothing to commit, working directory clean
+Already up-to-date.
+
+	 crt. PATH ===
+/opt/www/debuguself/ghp_duw
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+Already up-to-date.
+
+	 crt. PATH ===
+/opt/www/debuguself/br_duw_pub
+On branch duw_pub
+Your branch is behind 'origin/duw_pub' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    docs/2019/141w_draft.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	docs/141w.md
+	docs/2019/141w.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+error: The following untracked working tree files would be overwritten by merge:
+	docs/141w.md
+	docs/2019/141w.md
+Please move or remove them before you can merge.
+Aborting
+Updating 129351b..1f4d549
+<<<   clean /opt/www/debuguself/br_DUW/_trigger/deploy.md for next hooksrv act
+###::end@ 2020/01/06 22:15:40
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
