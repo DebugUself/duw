@@ -20,6 +20,9 @@ new Docute({
     // A dropdown menu
     {
       title: 'Years',children: [{
+          title: '2020',
+          link: '/2020'
+        },{
           title: '2019',
           link: '/2019'
         },{
@@ -34,7 +37,13 @@ new Docute({
 
   sidebar: [
 
-      {},{title: '2019',
+      {},{title: '2020',
+links: [
+{
+                              title: '142w',
+                              link: '/142w'
+                            },
+],},{title: '2019',
 links: [
 {
                               title: '141w',
