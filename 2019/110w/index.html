@@ -1,0 +1,714 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <title>怼周刊_v110 &mdash; 怼圈周刊[DebugUself Weekly]</title>
+
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <link rel="stylesheet" href="../../css/alabaster.css" type="text/css">
+    <link rel="stylesheet" href="../../css/alabaster-overrides.css" type="text/css">
+
+    
+
+    
+      <script src="../../search/main.js"></script>
+    
+
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+    
+  
+
+
+<!--
+190916 ++tongji.baidu
+-->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?7b96768fb6a5e86ac53eae70bb5fd60b";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+</head>
+<body>
+
+  <div class="document">
+    <div class="documentwrapper">
+      <div class="bodywrapper">
+        <div class="body" role="main">
+          
+            <h1 id="_v110">怼周刊_v110<a class="headerlink" href="#_v110" title="Permanent link">¶</a></h1>
+<p>~ 190527 2042 发布</p>
+<hr />
+<pre><code>自怼又寸心 社区二十载
+
+9904CMS 0409moinmoin
+PythonUG B和C 07又组erlang队
+10蟒会新加坡 不忿自组PyConChi
+13珠海GDG 14开智OOC
+17自怼与蟒营 19香洲Tensorflow
+</code></pre>
+<blockquote>
+<p>DAMADAMA 熊本</p>
+</blockquote>
+<hr />
+<ul>
+<li>主编: <a href="http://du.zoomquiet.io/2014-02/ac0-zq/">大妈</a></li>
+<li>责编:</li>
+</ul>
+<h2 id="activity">Activity 活性<a class="headerlink" href="#activity" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>社区当前嗯哼程度</p>
+</blockquote>
+<p>简单说稳中有升...但是, </p>
+<ul>
+<li>每周坚持嗯哼的怼员, 还没超过 50%</li>
+<li>但是, 已经有至少3个项目在持续稳定嗯哼了<ul>
+<li>可惜的是 JY 的 PA 因为工作原因暂停了</li>
+<li>而大妈 22CC 又是纯粹写作项目, 对怼圈的触动不大</li>
+</ul>
+</li>
+<li>还是怼务相关的共用作品没夯实, 导致多数怼员还是没有归宿感哪...</li>
+<li>不过, 通过抑郁症的深入讨论发现叕一个潜在关联点 ~ 生活<ul>
+<li>值得展开为一系列嗯哼</li>
+</ul>
+</li>
+</ul>
+<h2 id="4-weekly-activity">4 weekly activity:<a class="headerlink" href="#4-weekly-activity" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>total commit: <strong>302</strong></p>
+</blockquote>
+<h3 id="top5-git-commiter">top5 git commiter<a class="headerlink" href="#top5-git-commiter" title="Permanent link">¶</a></h3>
+<blockquote>
+<p>gen. 190527 180754.274 (by st v 190401.1942)</p>
+</blockquote>
+<pre><code>
+ZoomQuiet : ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 123.00
+damao     : ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 66.00
+GitHub    : ▇▇▇▇▇▇▇▇▇ 34.00
+Zoom.Quiet: ▇▇▇▇▇▇▇▇ 28.00
+Leon      : ▇▇▇▇▇▇▇▇ 28.00
+
+</code></pre>
+
+<h2 id="propose">propose 号召<a class="headerlink" href="#propose" title="Permanent link">¶</a></h2>
+<ul>
+<li><a href="http://weekly.pychina.org/archives.html">|蠎周刊 |汇集全球蠎事儿 !-)</a><ul>
+<li>俺私人嗯哼了5年了</li>
+<li>邀请大家一起来, 每周嗯哼</li>
+</ul>
+</li>
+<li>每周例怼后, 无论是否列席, 大家都在 <code>故事-&gt;怼印象</code> 中追加当周 top3 感触</li>
+</ul>
+<h2 id="achievements">Achievements 成果<a class="headerlink" href="#achievements" title="Permanent link">¶</a></h2>
+<p>~ 各种成品/半成品 内部知识作品</p>
+<h3 id="zoomquiet-du109wssgmkdocdocute">@ZoomQuiet 怼圈运营故事之DU109w发布调整(上):SSG由Mkdoc变更为docute<a class="headerlink" href="#zoomquiet-du109wssgmkdocdocute" title="Permanent link">¶</a></h3>
+<h4 id="_1">背景<a class="headerlink" href="#_1" title="Permanent link">¶</a></h4>
+<ul>
+<li>怼友在3个月前,实现怼周刊自动化发布</li>
+<li><a href="https://github.com/DebugUself/du4proto/issues/652">3w[MVP] pubDUW 实用化 · Issue #652 · DebugUself/du4proto</a></li>
+<li>平稳运行9周后,在发布DU109w时,出现了一个小问题.</li>
+</ul>
+<h4 id="_2">现象<a class="headerlink" href="#_2" title="Permanent link">¶</a></h4>
+<ul>
+<li>
+<p>根据自动化log记录,DU109w看起来已经自动发布,详情见 <a href="https://github.com/DebugUself/duw/blob/logging/2019/05/190520_215601.log">duw/190520_215601.log at logging · DebugUself/duw</a>,如下图:
+<img width="714" alt="du109w_autopub-log-screenshot" src="https://user-images.githubusercontent.com/19412465/58143061-157fd980-7c7c-11e9-929f-a6c76eea4957.png"></p>
+</li>
+<li>
+<p>但是, <a href="https://github.com/DebugUself/duw/tree/master">DebugUself/duw: 怼周刊 -&gt; 自怼圈社区电子周刊</a> 没有 109w 的编译成果,如下图.</p>
+</li>
+</ul>
+<p><img height="500" alt="du109w-index" src="https://user-images.githubusercontent.com/19412465/58142309-1f540d80-7c79-11e9-9bfd-4320b7494e18.JPG"></p>
+<p><img height="500" alt="du109w404error" src="https://user-images.githubusercontent.com/19412465/58142315-23802b00-7c79-11e9-8f48-6252a73d9579.JPG"></p>
+<h4 id="_3">分析<a class="headerlink" href="#_3" title="Permanent link">¶</a></h4>
+<ul>
+<li>索引是脚本自动刷 <a href="https://github.com/DebugUself/du4proto/tree/duw_pub/docs">du4proto/docs at duw_pub · DebugUself/du4proto</a>目录-&gt;生成的..</li>
+<li>所以, 问题在, DUW-&gt;duw_pub 的同步和自动整理OK 了,</li>
+<li>但是, MkDocs 的最终编译没能完成合理编译</li>
+</ul>
+<h4 id="_4">解决<a class="headerlink" href="#_4" title="Permanent link">¶</a></h4>
+<ul>
+<li>[x] :o: 硬怼 Mkdocs ~ 每次生成静态页面其实浪费</li>
+<li>[x] :+1: 全新无编译发布:<ul>
+<li>[x] :o: <a href="https://docsify.js.org/#/zh-cn/">docsify</a><ul>
+<li>有封面</li>
+<li>插件丰富</li>
+<li>社区活跃</li>
+<li>问题: uttrances 难以简单支持</li>
+</ul>
+</li>
+<li>[x] :+1: <a href="https://github.com/egoist/docute/tree/master/website/docs">egoist/docute</a><ul>
+<li>基于 vue</li>
+<li>私人作品</li>
+<li>社区不活跃</li>
+<li>好在: 简洁可用, uttrances 直觉兼容</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>[x] demo 效果测试 ~ 7519c43cf07f4dc2039a1a33e4b14309882ccd69</li>
+<li>[x] inv 兼容调整 ~ 28f7a97</li>
+<li>[x] js 配置生成工具 <ul>
+<li>[x] 导航生成 ~ bff1fb2</li>
+<li>[x] 边栏生成 ~ ec4a034</li>
+</ul>
+</li>
+<li>[x] inv 融合 ~ 0108e3d</li>
+<li>[x] VPS 部署</li>
+<li>[x] 自动化发布检验 ~ a2cfec0</li>
+</ul>
+<h3 id="zoomquiet-du109wdocutezqmd">@ZoomQuiet 怼圈运营故事之DU109w发布调整(下):docute搭配ZQ自制md结构调节器食用<a class="headerlink" href="#zoomquiet-du109wdocutezqmd" title="Permanent link">¶</a></h3>
+<h4 id="_5">背景<a class="headerlink" href="#_5" title="Permanent link">¶</a></h4>
+<ul>
+<li>上接<a href="https://github.com/DebugUself/du4proto/issues/690">bug:[pubDUW]' 🐻熊本: 的确,目录有,但内容没有 ' · Issue #690 · DebugUself/du4proto</a></li>
+<li>将SSG由MkDocs替换为docute,虽然发布正常,可是出现了一个小小的细节问题.</li>
+</ul>
+<h4 id="_6">现象<a class="headerlink" href="#_6" title="Permanent link">¶</a></h4>
+<ul>
+<li>所有文章的大标题都是 <code>Postscript 后记</code> ,如下图:</li>
+</ul>
+<p><img alt="ScreenShot 2019-05-21 16 20 22" src="https://user-images.githubusercontent.com/22494/58079764-59bf9b00-7be4-11e9-87dc-5acd3da7d837.jpg" /></p>
+<h4 id="_7">分析<a class="headerlink" href="#_7" title="Permanent link">¶</a></h4>
+<ul>
+<li>docute 在线解析文章的标题是 md 中最后一个 # 一级标题</li>
+<li>而我们周刊模板有很多 # 一级标题</li>
+</ul>
+<h4 id="_8">处置<a class="headerlink" href="#_8" title="Permanent link">¶</a></h4>
+<ul>
+<li>初步判断为md 本身问题.</li>
+<li>可以从两个方向下手:<ul>
+<li>hacking docute?</li>
+<li>或是 直接刷一次以往所有历史文稿?</li>
+</ul>
+</li>
+<li>于是构建了自制md结构调节器<ul>
+<li>[x] 原型 ~ <a href="https://github.com/DebugUself/du4proto/commit/792cb1a36c5a0ea085daa679801cb52dffc73b40">792cb1a</a></li>
+<li>[x] 修订所有 ~ <a href="https://github.com/DebugUself/du4proto/commit/178bf149ff0a7d359d115df3d04a9fadfa44e4e8">178bf14</a></li>
+</ul>
+</li>
+</ul>
+<h4 id="md">解决:md 结构调节器<a class="headerlink" href="#md" title="Permanent link">¶</a></h4>
+<ul>
+<li>主要代码如下:</li>
+</ul>
+<pre><code>                    for l in _md[1:]:
+                        if '# ' == l[:2]:
+                            print(l)
+                            _fix = '#'+l
+                            print('-&gt;', _fix)
+                            _exp += _fix
+                        else:
+                            _exp += l
+</code></pre>
+
+<ul>
+<li>利用自制调节器,调整000~109w所有md文档结构,最终发布效果正常,见下图:</li>
+</ul>
+<p><img alt="ScreenShot 2019-05-21 16 46 00" src="https://user-images.githubusercontent.com/22494/58081602-ef105e80-7be7-11e9-8aef-fb2c7d62e6f0.jpg" /></p>
+<h4 id="_9">记录<a class="headerlink" href="#_9" title="Permanent link">¶</a></h4>
+<ul>
+<li>所有动作,通过issue汇总入project中的DU.support,如下</li>
+</ul>
+<p><img alt="DUSupport_screenshot" src="https://user-images.githubusercontent.com/19412465/58142496-e49ea500-7c79-11e9-86fc-15e95159fa0c.JPG" /></p>
+<h2 id="stories">Stories 故事<a class="headerlink" href="#stories" title="Permanent link">¶</a></h2>
+<p>~ 收集各自无法雷同的怼圈真人故事...</p>
+<h3 id="impression">impression 怼印象<a class="headerlink" href="#impression" title="Permanent link">¶</a></h3>
+<p>~ 例怼中感触最嗯哼的 top3 感想</p>
+<ul>
+<li>
+<p><code>(￣▽￣)</code>:</p>
+<ul>
+<li>抑郁不可怕, 可怕的是熟视无睹</li>
+<li>JY.PA 画风突然转变了, 还没适应过来</li>
+<li>大妈 是真的老了, 开始讲古...</li>
+</ul>
+</li>
+<li>
+<p>熊本:</p>
+<ul>
+<li>@老朱 分享抑郁入门,比如考察咨询师的要点:专业背景,服务经验. </li>
+<li>@蕙蕙 分享纸质版日记使用体验. 但的确,俺也有,纸质笔记虽然用时爽,但是复用,查询的效果并不如电子笔记的感觉. so,<strong>笔记习惯究竟是应该向着为了获得更佳体验的方向or更恰当得被复用,提高利用率的方向走?</strong></li>
+<li>@ZoomQuiet 分享99年以后,这20年来技术社区经验,更替,见  http://slides.101.camp/duw110.html . 印象深刻有3点:<ul>
+<li>似乎啄木鸟公司福利很好,在养活自己同时能精进其他技术. </li>
+<li>ZPUG,GDG有能力独立承办多达500人规模的年会. </li>
+<li>2019的TFUG又有新故事. </li>
+<li><strong>so,既然各大技术社区活跃期都似乎不超过4年,为啥新的社群不断涌现呢?如果社群这种组织不断消亡,那为啥又会不断诞生新的社群呢?</strong></li>
+</ul>
+</li>
+<li>@zoejane 不仅醒悟要接纳自我,更开始行动. <strong>so,是啥一直在妨碍广大民众自我接纳呢?家庭环境?天生性格?性别差异?社会文化?又是什么鼓励了自我接纳呢?经济水平提升?开放社区文化?家庭环境的改变?</strong></li>
+</ul>
+</li>
+<li>
+<p>zoejane:</p>
+<ul>
+<li>@ZoomQuiet 大妈,听到你昨天的分享后,还想请教你,是什么样的力量能支持你,在哪怕只有一个人的时候,也能把筹备,拉赞助,宣传,报名,组织,主持,报道这一系列的事情都给干了?即使你之前已经积累了很多社区活动的经验,但是当时你一个人做的时候会怀疑自己做不下去了吗?会觉得孤单吗?因为我确实觉得这是一件非常需要勇气才能做到的事情你是如何调节自己的心态和行动的呢?希望能有机会听到大妈的分享,谢谢大妈给我带来的启发</li>
+</ul>
+</li>
+</ul>
+<h3 id="live">live 怼生活<a class="headerlink" href="#live" title="Permanent link">¶</a></h3>
+<p>~ 生活中带有怼范的各种 (投稿后可同时沉淀到 wiki 的2.5 怼生活下)</p>
+<h4 id="_10">@熊本 梅开二度,五月逢春:怼周刊热情再现.<a class="headerlink" href="#_10" title="Permanent link">¶</a></h4>
+<ul>
+<li>
+<p>怼周刊又一次引发了我的热情.比如,SSG构建,自动化触发,md结构调整器脚本等.对此,朋友困惑不解.理了理脑袋,发现我大致是这么个想法.</p>
+</li>
+<li>
+<p>以前我尝试新东西的手法层次比较低.喜欢摔碎了旧的瓶瓶罐罐,直接买新的.最近,受到了各方面熏陶,同时也是被环境所制,开始走可持续,节约型路线.就是手头有什么,就将就用什么.用我自己的话说, <strong>'住在遗迹里'.</strong></p>
+</li>
+<li>
+<p>麻烦的是,遗迹往往长成废墟的样儿.一个年轻人去'守陵',的确有些惊世骇俗.但,就像我二舅说的,<strong>'先把故事写完,以后怎么办,再想办法吧.'</strong></p>
+</li>
+</ul>
+<h2 id="recommedations">Recommedations 推荐<a class="headerlink" href="#recommedations" title="Permanent link">¶</a></h2>
+<p>~ 嗯哼各种怼路上发现的嗯哼...</p>
+<ul>
+<li>是也乎:<ul>
+<li><a href="http://weekly.pychina.org/issue/issue-369.html">Issue 369 ~蠎周刊 ~汇集全球蠎事儿 ;-)</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="postscript">Postscript 后记<a class="headerlink" href="#postscript" title="Permanent link">¶</a></h2>
+<p>~ 怼周刊是什么以及为什么和能怎么...</p>
+<p>大妈曰过: <code>参差多态 才是生机</code>
+问题在 <code>参差</code> 的行为是无法形成团队的</p>
+<pre><code>Coming together is a beginning; 
+Keeping together is progress; 
+Working together is success!
+</code></pre>
+<p>&lt;--- <a href="https://www.brainyquote.com/quotes/quotes/h/henryford121997.html">Henry Ford</a></p>
+<ul>
+<li>所以, 有了 大妈 随见随怼的持续嗯哼...</li>
+<li>但是, 想象一年后, 回想几十周前自己作的那些 <code>图样图森破</code> </li>
+<li>却没现成的资料来出示给后进来嗯哼?</li>
+<li>不科学, 值得记录的, 就应当有个形式固定下来</li>
+<li>所以,有了这个 <code>怼周刊</code> (Weekly 4 DU)</li>
+</ul>
+<p>What is DUW?
+Why we make DUW?
+What are the possibilities of DUW?</p>
+<p>Dama said, variety brings vitality.
+But various behaviors may make us hard to cooperate as a team.</p>
+<pre><code>Coming together is a beginning; 
+Keeping together is progress; 
+Working together is success!
+</code></pre>
+<p>&lt;--- <a href="https://www.brainyquote.com/quotes/quotes/h/henryford121997.html">Henry Ford</a></p>
+<p>That's why Dama keeps on debugging.
+However, as time goes by, maybe you would not remember these days clearly and spread your experience difficultly.
+What a pity!
+The valuable should have a fixed form to be recorded.
+That's why we make the Weekly for DU.</p>
+            
+
+            <!--
+            
+          -->
+
+            <!--190910 init. comments-->
+            <hr/>
+
+<h3>精品小班4Py 按时完成 ;-)</h3>
+<h3>101camp5Py 大年初十上线</h3>
+<blockquote><p>
+    
+<ul>
+    <li>
+    开始报名: <b>2020.2.3</b>
+    </li>
+    <li>
+    报名结束: <b>2020.2.23</b>
+    </li>
+    <li>
+    正式开课: <b>2020.3.2</b>
+    </li>
+    <li>
+    课程结束: <b>2020.4.12</b>
+    </li>
+</ul>
+</p></blockquote>
+
+<hr/>
+
+<h2>蟒营</h2>
+<p>
+    伴你重享<b>学习</b>乐趣
+</p>
+<blockquote>
+<p>
+    <b>
+    101.camp
+    </b>
+</p>
+<p>
+    <i>
+    Reactivate Joy by Self-teach with You
+    </i>
+</p>
+</blockquote>
+
+
+<br/>
+任何问题可先进入知识星球<b>(免费)</b>咨询:
+<br/>
+<img alt="FAQ" 
+    src="https://ipic.zoomquiet.top/2019-08-28-FAQ101camp.jpeg"/>
+
+
+<p>关注公众号, 持续获得相关各种咨询, :
+<img alt="mainium" src="https://ipic.zoomquiet.top/2019-10-12-mainium-qr-barnner.jpg"/>
+
+<!--
+<img alt="PythoniCamp" src="http://0.zoomquiet.top/logos/101.camp/banner_101camp_h191.jpg"/>
+
+    <br/>
+实在想立即开始感受蟒营, 可以加入知识星球(免费):
+    <br/>
+
+<img alt="蟒营101camp" src="https://ipic.zoomquiet.top/2019-08-09-190809camp101.jpeg"/>
+
+-->
+</p>
+
+<hr/>
+
+<h3>追问</h3>
+<blockquote>
+<p>
+    任何问题, 随时邮件提问可也:
+<br/>
+    <i>
+    ask@101.camp
+    </i>
+</p>
+</blockquote>
+
+<hr/>
+
+
+
+
+
+            <!-- comments by gh-issue -->
+<script src="https://utteranc.es/client.js"
+        repo="DebugUself/duw"
+        issue-term="url"
+        label="✨💬✨ "
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+          
+        </div>
+      </div>
+    </div>
+    <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebarwrapper">
+        
+          
+            
+  <p class="logo">
+    <a href="../..">
+      <!--
+      src="../../https://blog.101.camp/logo.gif" 
+      -->
+      <img class="logo" 
+      src="https://blog.101.camp/logo.gif" 
+      title="Ink sketch of onion">
+    </a>
+  </p>
+  
+
+
+
+          
+            
+
+
+
+<h3>Table Of Contents</h3>
+
+<nav>
+  
+  
+    <ul>
+    
+      <li><a href="#activity">Activity 活性</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#4-weekly-activity">4 weekly activity:</a></li>
+      <ul>
+    
+      <li><a href="#top5-git-commiter">top5 git commiter</a></li>
+      <ul>
+    
+  </ul>
+    
+  </ul>
+    
+      <li><a href="#propose">propose 号召</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#achievements">Achievements 成果</a></li>
+      <ul>
+    
+      <li><a href="#zoomquiet-du109wssgmkdocdocute">@ZoomQuiet 怼圈运营故事之DU109w发布调整(上):SSG由Mkdoc变更为docute</a></li>
+      <ul>
+    
+      <li><a href="#_1">背景</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_2">现象</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_3">分析</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_4">解决</a></li>
+      <ul>
+    
+  </ul>
+    
+  </ul>
+    
+      <li><a href="#zoomquiet-du109wdocutezqmd">@ZoomQuiet 怼圈运营故事之DU109w发布调整(下):docute搭配ZQ自制md结构调节器食用</a></li>
+      <ul>
+    
+      <li><a href="#_5">背景</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_6">现象</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_7">分析</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_8">处置</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#md">解决:md 结构调节器</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_9">记录</a></li>
+      <ul>
+    
+  </ul>
+    
+  </ul>
+    
+  </ul>
+    
+      <li><a href="#stories">Stories 故事</a></li>
+      <ul>
+    
+      <li><a href="#impression">impression 怼印象</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#live">live 怼生活</a></li>
+      <ul>
+    
+      <li><a href="#_10">@熊本 梅开二度,五月逢春:怼周刊热情再现.</a></li>
+      <ul>
+    
+  </ul>
+    
+  </ul>
+    
+  </ul>
+    
+      <li><a href="#recommedations">Recommedations 推荐</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#postscript">Postscript 后记</a></li>
+      <ul>
+    
+  </ul>
+    
+  </ul>
+  
+
+  
+    <hr>
+    <ul>
+      
+      <!--
+        <li class="toctree-l1"><a href="https://github.com/DebugUself/duw">Fork me on GitHub</a></li>
+      -->
+        <li class="toctree-l1"><a href="https://github.com/101camp/blog/tree/master/docs/2019/110w.md">Fork me on GitHub</a></li>
+
+      
+    </ul>
+  
+</nav>
+          
+            
+
+          
+            <!--
+<div id="searchbox" style="display: none;" role="search">
+  <h3>Quick search</h3>
+  <form class="search" action="../../search.html" method="get">
+    <input name="q" type="text">
+    <input value="Go" type="submit">
+  </form>
+  <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+  </p>
+</div>
+<script type="text/javascript">
+  document.getElementById("searchbox").style.display = "block";
+</script>
+
+-->
+          
+        
+
+        <!--190910 init. comments-->
+        <h3>Years</h3>
+<ul>
+    <li><a href="2020/">2020 怼周刊</a></li>
+    <li><a href="2019/">2019 怼周刊</a></li>
+    <li><a href="2018/">2018 怼周刊</a></li>
+    <li><a href="2017/">2017 怼周刊</a></li>
+</ul>
+
+  <h3>Navigation</h3>
+
+
+<ul>
+  
+      
+        <li>
+          <a href="/duw/">Home</a>
+        </li>
+      
+    
+      
+        <li>
+          <a href="/duw/publish/">Publish</a>
+        </li>
+      
+    
+      
+        <li>
+          <a href="/duw/license/">License</a>
+        </li>
+      
+    
+  </ul>
+
+<h3>Powered by</h3>
+
+    <li>
+        <a href="https://du.101.camp/">自怼圈</a>
+    </li>
+    <li>
+        <a href="https://du.101.camp/PoDU/">怼力通证</a>
+    </li>
+
+<ul>
+    <li>
+        <a href="https://101.camp/">蟒营™</a>
+<ul>
+    <li>
+        <a href="https://py.101.camp/">Python 入门班</a>
+    </li>
+    <li>
+        <a href="https://io.101.camp/">图谱</a>
+    </li>
+    <li>
+        <a href="https://slides.101.camp/">幻灯</a>
+    </li>
+    <li>
+        <a href="https://wiki.101.camp/">维基</a>
+    </li>
+    <li>
+        <a href="https://github.com/101camp/comments/issues">评注</a>
+    </li>
+</ul>
+    </li>
+    <li>
+        <a href="http://weekly.pychina.org/">蟒周刊</a>
+    </li>
+    <li>
+        "大妈"们
+<ul>
+    <li>
+        <a href="https://yixuan.li/">Yixuan</a>
+    </li>
+
+    <li>
+        <a href="https://www.douban.com/people/Azeril/">Azeril</a>
+    </li>
+    <li>
+        <a href="https://zoomquiet.io/">Zoom.Quiet</a>
+    </li>
+    <li>
+        ...
+    </li>
+</ul>
+    <li>
+        <a href="http://mainium.icu">昧因科技®</a>
+    </li>
+    </li>
+</ul>
+
+      </div>
+    </div>
+    <div class="clearer"></div>
+  </div>
+
+  
+    <div class="footer">
+      
+        &copy; ©101camp 2017
+      
+      
+        |
+        Powered by <a href="http://www.mkdocs.org">mkdocs 1.0.4</a>
+        &amp; <a href="https://github.com/iamale/mkdocs-alabaster">mkdocs-alabaster</a>
+      
+    </div>
+  
+
+  <!--
+  MkDocs version      : 1.0.4
+  Docs Build Date UTC : 2020-01-14 15:08:34
+  -->
+</body>
+</html>
