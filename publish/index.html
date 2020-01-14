@@ -1,0 +1,839 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <title>Publish &mdash; 怼圈周刊[DebugUself Weekly]</title>
+
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../css/alabaster.css" type="text/css">
+    <link rel="stylesheet" href="../css/alabaster-overrides.css" type="text/css">
+
+    
+
+    
+      <script src="../search/main.js"></script>
+    
+
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+    
+  
+
+
+<!--
+190916 ++tongji.baidu
+-->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?7b96768fb6a5e86ac53eae70bb5fd60b";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+</head>
+<body>
+
+  <div class="document">
+    <div class="documentwrapper">
+      <div class="bodywrapper">
+        <div class="body" role="main">
+          
+            <h1 id="_1">发布怼周刊<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
+<blockquote>
+<p>一个长长的小故事</p>
+</blockquote>
+<h2 id="_2">背景<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>170401 自怼圈启动</p>
+</blockquote>
+<p>作为 <code>自学习型社区</code> 以作品为驱动,
+那么, 作为社区整体应该有什么通用作品以便所有成员可以参与?</p>
+<h2 id="_3">开始<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>自然, 是内部刊物了</p>
+</blockquote>
+<ul>
+<li>目的: 节奏小结社区的嗯哼</li>
+<li>作用: 作为仪式所有成员可参与</li>
+<li>内容: <a href="https://github.com/DebugUself/du4proto/tree/DUW">DebugUself/du4proto at DUW</a><ul>
+<li>专用分支中</li>
+<li>以周数为名 .md 文档</li>
+<li>编辑期间 <code>XXX_draft.md</code></li>
+<li>发布后 -&gt; <code>XXX.md</code></li>
+</ul>
+</li>
+<li>操作: 完全人工进行<ul>
+<li>值班主编整合好内容:<ul>
+<li>定场诗</li>
+<li>一周进展</li>
+<li>怼故事</li>
+<li>...</li>
+</ul>
+</li>
+<li>本地打印为 .pdf<ul>
+<li>一般使用 chrome 打开</li>
+<li>利用插件完成 GFM 渲染</li>
+<li>再用内置 PDF 打印机输出</li>
+</ul>
+</li>
+<li>利用 github 仓库的 release 功能<ul>
+<li>给分支作一个 weekly 标签</li>
+<li>包含周刊期数, 比如: <a href="https://github.com/DebugUself/du4proto/releases/tag/v19.03.25">Release DU101w · DebugUself/du4proto</a></li>
+<li>并附件上 .pdf</li>
+</ul>
+</li>
+<li>同时将此消息通过 ggoups 通告全体</li>
+</ul>
+</li>
+</ul>
+<h2 id="_4">然后<a class="headerlink" href="#_4" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>内容得和社区现状更加紧密的结合</p>
+</blockquote>
+<ul>
+<li>毕竟, 社区是以 github 协作为核心来嗯哼的</li>
+<li>那么, github 中各种协作行为本身的数据就应该是周刊的客观内容</li>
+<li>虽然, 官方给了越来越多的可视化统计</li>
+<li>但是, 和社区关注的并不吻合:<ul>
+<li>当周 top5 commit 提交是谁?</li>
+<li>当周 top5 commit-comments 点评是谁?</li>
+<li>当周 top5 issue 创建是谁?</li>
+<li>当周 top5 issue-comments 回复是谁?</li>
+<li>全历史累计 top5 ...</li>
+</ul>
+</li>
+<li>所以, 根据 github API 开发了 <a href="https://github.com/DebugUself/du4proto/tree/DU_tools/st">st</a> ~ 活性统计工具<ul>
+<li>其中 <a href="https://github.com/DebugUself/du4proto/tree/ZQ4mDjango/heroku">heroku</a> 版本, 部署在 PaaS 中</li>
+<li>通过 github 事件激发 web hook, 来持续记录各种事件到 Redis 中</li>
+<li>这样就能通过 RESTful 接口随时返回当前的统计数据</li>
+<li>并格式化到 周刊中</li>
+<li>而怼员们甚至于随手写了 chrome 插件:<ul>
+<li><a href="https://github.com/bambooom/crx-intro-demo">bambooom/crx-intro-demo: a little tutorial about the first chrome extension</a></li>
+<li>可以通过点击就自动获得报表</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<blockquote>
+<p>然而, 其它主要周刊发布行为, 还是要人工来...</p>
+</blockquote>
+</blockquote>
+<h2 id="_5">后来<a class="headerlink" href="#_5" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>180412 @zoejane <a href="https://github.com/DebugUself/duw/commit/23be3a1b8fc76fe59946d9b1972e5d55b29334c2">init(hugo site) with theme jane · DebugUself/duw@23be3a1</a></p>
+</blockquote>
+<p>著名的 Zoe 教练, 为了学习 SSG(静态网站生成器),</p>
+<ul>
+<li>想将内部 怼周刊, 变成外部可访问的网站</li>
+<li>自主创建仓库:<ul>
+<li>github.com/DebugUself/duw/</li>
+</ul>
+</li>
+<li>使用: <a href="https://github.com/gohugoio/hugo">gohugoio/hugo: The world’s fastest framework for building websites.</a> 完成自动构建</li>
+<li>发布: du.zoomquiet.io/duw</li>
+<li>问题:<ul>
+<li><a href="https://github.com/DebugUself/du4proto/tree/DUW">DUW</a> 分支中的文稿都是纯净版 .md</li>
+<li>没有任何头部 meta 信息</li>
+<li>而类似 hugo 的 <a href="https://github.com/pinceladasdaweb/Static-Site-Generators">Static-Site-Generators: A definitive list of tools for generating static websites.</a> 多数是面向 blog 的</li>
+<li>都要求有一定 meta 信息列在头部</li>
+<li>以便引擎提取并自动化处理</li>
+<li>所以, Zoe 自行完成了基本的头信息追加</li>
+<li>但是, 整个过程, 暂时只能人工在本地构建好环境来进行转换</li>
+<li>进一步的, hugo 本身是 golang 构建的:<ul>
+<li>而 golang 运行环境在本地的构建</li>
+<li>或是利用 CI/CD 服务来远程构建</li>
+<li>都不是件容易的事儿</li>
+</ul>
+</li>
+<li>而且, 和自怼圈默认的 Python 技术桟也不吻合</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>所以,就停止了...</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2 id="_6">现在<a class="headerlink" href="#_6" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>是也乎,(￣▽￣) 方法有三...</p>
+</blockquote>
+<p>怼圈第三年, 大家都感觉怼周刊已经连载超过 100 期, 值得真正变成社区作品:</p>
+<ul>
+<li>完全自动化发布</li>
+<li>自动化统计数据</li>
+<li>自动收集各种来源内容</li>
+<li>自动合成 .md</li>
+<li>自动发布为 .pdf 以及 release + ggroups</li>
+<li>...</li>
+</ul>
+<h3 id="vwan">@Vwan<a class="headerlink" href="#vwan" title="Permanent link">¶</a></h3>
+<p>&lt;~ <a href="https://github.com/DebugUself/du4proto/issues/626">1m [Task] 怼周刊自动化发布流程进展 · Issue #626 · DebugUself/du4proto</a></p>
+<p>叕一位伟大的怼员, 直接撸袖子开始:</p>
+<ul>
+<li>分支: <a href="https://github.com/DebugUself/du4proto/tree/duw_pub">duw_pub</a></li>
+<li>尝试:<ul>
+<li>md -&gt; pdf </li>
+<li>release 自动提交</li>
+<li>email 自动发布</li>
+<li>...</li>
+</ul>
+</li>
+<li>但是:<ul>
+<li>核心自动化 =&gt; 将 <a href="https://github.com/DebugUself/du4proto/tree/duw_pub">DUW</a> 分支内容<ul>
+<li>合理发布为友好访问的网站</li>
+<li>一直没进展</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="dama">DAMA<a class="headerlink" href="#dama" title="Permanent link">¶</a></h3>
+<blockquote>
+<p>那么作为可展开的基础, 得提供一个完整的思路和过程哈?... </p>
+</blockquote>
+<h4 id="mvp">MVP<a class="headerlink" href="#mvp" title="Permanent link">¶</a></h4>
+<blockquote>
+<p>从简化目标开始</p>
+</blockquote>
+<ul>
+<li>既然决定自动化发布了</li>
+<li>那么, 所有对内的人工发布行为, 能忽略就忽略:<ul>
+<li>pdf 打印</li>
+<li>release 标签附件</li>
+<li>ggroups 邮件</li>
+<li>... 都先搁置</li>
+</ul>
+</li>
+<li>单单完成:<ul>
+<li>将文稿从<ul>
+<li>分支:<a href="https://github.com/DebugUself/du4proto/tree/duw_pub">DUW</a></li>
+</ul>
+</li>
+<li>发布到<ul>
+<li>仓库:<a href="github.com/DebugUself/duw/">duw</a></li>
+</ul>
+</li>
+<li>访问为: du.101.camp</li>
+<li>自动化过程工具在:<ul>
+<li>分支:<a href="https://github.com/DebugUself/du4proto/tree/duw_pub">duw_pub</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="markdoc"><a href="https://pypi.org/project/Markdoc/#history">Markdoc</a><a class="headerlink" href="#markdoc" title="Permanent link">¶</a></h4>
+<blockquote>
+<p>11年停止开发的优秀类 wiki SSG</p>
+</blockquote>
+<ul>
+<li>非常小</li>
+<li>功能也非常单一<ul>
+<li>就是将约定目录中所有 .md 以原样目录结构发布为 wiki </li>
+</ul>
+</li>
+<li>一直有在用:<ul>
+<li><a href="http://wiki.pychina.org/">华蠎 维基 | PyChina.org Static Wiki</a></li>
+<li><a href="http://wiki.zhgdg.org/">珠海GDG 维基 | ZHGDG Static Wiki</a></li>
+<li><a href="http://wiki.zoomquiet.io/">Index | Zoom.Quiet Personal Static Wiki</a></li>
+<li><a href="http://wiki.101.camp/">Index _ 101Camp Static Wiki</a></li>
+<li>...</li>
+</ul>
+</li>
+<li>所以, 快速重构:<ul>
+<li>仓库:<a href="github.com/DebugUself/duw/">duw</a> 切换为 Markdoc 发布</li>
+<li>配置 ghihub-pages 用指定域名发布</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<blockquote>
+<p>但是, 开始自动化时遇到历史问题</p>
+</blockquote>
+</blockquote>
+<p><a href="https://github.com/DebugUself/du4proto/issues/635">2d[Help] pip install Markdoc 出错 · Issue #635 · DebugUself/du4proto</a></p>
+<p>由于年代久远, Python 也早已进入 3.0 时代, </p>
+<p>Markdoc 依赖的几个模块也都放弃了 py2 环境升级到 py3 了,</p>
+<p>导致即便使用 Pyenv 等手段, 将所有环境降级到当前,</p>
+<p>也难以安装...</p>
+<h4 id="mkdocs"><a href="https://pypi.org/project/mkdocs/#history">Mkdocs</a><a class="headerlink" href="#mkdocs" title="Permanent link">¶</a></h4>
+<blockquote>
+<p>唯二的不需要 meta 额外信息支持的 SSG </p>
+</blockquote>
+<p>好在很早也用过另外一种静态网站生成引擎: <a href="https://pypi.org/project/mkdocs/#history">Mkdocs</a></p>
+<ul>
+<li>不象 Markdoc 是类似 wiki 样, 自动根据原有目标结构输出</li>
+<li>而是一种标准文档网站思路, 由 <code>mkdocs.yml</code> 逐一声明发布结构来构建</li>
+<li>而且, 一直勤劳的维护并良好兼容 py3</li>
+<li>进一步的, 有丰富的样式可以选择</li>
+<li>唯一要解决的就是自动生成吻合自然目录结构的 <code>mkdocs.yml</code></li>
+</ul>
+<blockquote>
+<blockquote>
+<p>操作文本, 这可是 Python 的强项哪...</p>
+</blockquote>
+</blockquote>
+<p>def gen4idx(c):</p>
+<pre><code>...
+
+for root, dirs, files in os.walk(DOC):
+    _exp = ''
+    _idx = ''
+    if not dirs:
+        _sub = root.split('/')[1]
+        _idx = _sub#[:-5]
+        _exp += '# {} \n'.format(_sub)
+        _exp += '&gt; {} weekly report\n\n'.format(_sub[2:6])
+        for md in files:
+            if '_draft' in md: pass
+            elif 'md' == md.split('.')[-1]:
+                _exp += '- [{}]({})\n'.format(md[:-3],md[:-3])
+    print(_exp)
+</code></pre>
+<p>果然, 10多行就完成了自动索引构建.</p>
+<h4 id="cicd">CI/CD<a class="headerlink" href="#cicd" title="Permanent link">¶</a></h4>
+<blockquote>
+<p>在本地可以一键完成所有自动化发布操作后, 如何真正无人值守完成发布?</p>
+</blockquote>
+<p>这在业界当然是标准 -&gt; 持续集成/部署 而已,</p>
+<p>但是, 先 MVP 定义一下:</p>
+<ul>
+<li>用 <a href="https://pypi.org/project/invoke/">invoke</a> 构建自动指令</li>
+<li>用 shell 脚本包装</li>
+<li>用 crontab 自动定期执行</li>
+<li>将以上部署到一台主机中即完成最间 CI/CD<ul>
+<li>当然, 这台主机最好是外网可访问</li>
+<li>7x24 小时稳定运行</li>
+<li>空间/计算能力足够</li>
+<li>...</li>
+</ul>
+</li>
+</ul>
+<p><a href="https://pypi.org/project/invoke/">invoke</a> 是 fabric 1.0 的升级版,</p>
+<ul>
+<li>拆分为专注本地指令执行管理的模块, </li>
+<li>写自然的 Python 代码, 但是, 可以自由调用系统各种指令,</li>
+<li>所以, 很快完成关键行为的定义和构建</li>
+<li>因为, 都可以在本地快速调试而已</li>
+</ul>
+<blockquote>
+<p>༄  inv -l</p>
+</blockquote>
+<pre><code>Available tasks:
+
+  bu    build all local doc -&gt; site
+  gh    jump into ln -s -&gt; site push all bulited static pages
+  pl    pull all necessary change AT FIRST...
+  pu    push all local fix into content rep.
+  pub   MAIN COMMAND -&gt; SEQUENCE RUN ALL NEED ACTS PUBLISH SITE
+</code></pre>
+<p>发布行为:</p>
+<pre><code>crontab -e 声明定期事务:
+
+    */20 5-23 * * * /PATH/2/cron4duw.sh &gt;&gt; /dev/null 2&gt;&amp;1
+
+cron4duw.sh ~&gt; 定期事务脚本
+    +- 初始化日志目录 =&gt; ghbr_logging_duw
+    +- 合理执行 inv pub
+    +- 将最新处理日志 push 到 github
+
+inv pub 
+    === +- pl -&gt; 先同步所有仓库/分支
+        |       +- br_DUW
+        |       +- br_duw_pub
+        |       +- ghp_duw
+        +- bu -&gt; 用 Mkdocs 构建网站
+        |       +- br_duw_pub/site 链接到 ghp_duw
+        |       +- mkdocs build 时自动输出所有网页到 site 中
+        +- pu -&gt; 将 br_duw_pub 变化检入仓库
+        +- gh -&gt; 将 最终成果 push 给 github-pages 发布
+</code></pre>
+<p>其中平行部署的几个目录:</p>
+<ul>
+<li>br_DUW ~&gt; orphan 分支:<a href="https://github.com/DebugUself/du4proto/tree/duw_pub">DUW</a><ul>
+<li>周刊底稿</li>
+<li>成员通过 git 自由编程</li>
+</ul>
+</li>
+<li>br_duw_pub ~&gt; orphan 分支:<a href="https://github.com/DebugUself/du4proto/tree/duw_pub">duw_pub</a><ul>
+<li>周刊发布工程</li>
+<li>理论上只应该由机器人/管理员嗯哼</li>
+</ul>
+</li>
+<li>ghp_duw ~&gt; 独立 仓库:<a href="github.com/DebugUself/duw/">duw</a><ul>
+<li>周刊 github-pages 发布仓库</li>
+<li>使用 master 发布策略, 利用 github 的空间/流量完成免费发布</li>
+</ul>
+</li>
+<li>ghbr_logging_duw ~&gt; orphan 分支:<a href="https://github.com/DebugUself/duw/tree/logging">logging</a><ul>
+<li>收集自动化过程中关键处置信息</li>
+<li>由自动化脚本完成 git 操作, 追加新日志到仓库中</li>
+<li>这样所有成员, 就可以不用登录主机也知道周刊发布进行了什么过程/操作</li>
+</ul>
+</li>
+</ul>
+<h3 id="pipenvconda">pipenv+conda<a class="headerlink" href="#pipenvconda" title="Permanent link">¶</a></h3>
+<blockquote>
+<p>python 运行时环境的科学管理</p>
+</blockquote>
+<ul>
+<li>Miniconda3 完成基本隔离运行时</li>
+<li>然后, 在其中安装 pipenv</li>
+<li>并通过 pipenv install 来自动化构建项目专用虚拟环境</li>
+</ul>
+<h3 id="crontab">crontab<a class="headerlink" href="#crontab" title="Permanent link">¶</a></h3>
+<blockquote>
+<p>特殊的无一切环境变量加持的 shell 运行时</p>
+</blockquote>
+<p>最终, 部署环境是 aliyun 最小 VPS</p>
+<ul>
+<li>Ubuntu 16.04.3 LTS<ul>
+<li>4.4.0-105-generic #128-Ubuntu SMP </li>
+<li>Thu Dec 14 12:42:11 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux</li>
+</ul>
+</li>
+<li>单核</li>
+<li>256M 内存</li>
+<li>50G 空间</li>
+</ul>
+<blockquote>
+<p>开始调试</p>
+</blockquote>
+<p><a href="https://github.com/DebugUself/duw/blob/logging/2019/04/190418_215045.log">duw/190418_215045.log at logging · DebugUself/duw</a></p>
+<p>各种找不到</p>
+<blockquote>
+<p>git 失常</p>
+</blockquote>
+<p><a href="https://github.com/DebugUself/duw/blob/logging/2019/04/190419_122501.log">duw/190419_122501.log at logging · DebugUself/duw</a></p>
+<p>因为相对路径在 crontab 中是被嫌弃的...</p>
+<blockquote>
+<p>路径出问题</p>
+</blockquote>
+<p><a href="https://github.com/DebugUself/duw/blob/logging/2019/04/190419_162001.log">duw/190419_162001.log at logging · DebugUself/duw</a></p>
+<p>最终想来想去, 还是通过 env 临时声明个全局变量完成路径的统一.</p>
+<blockquote>
+<p>就是不发布</p>
+</blockquote>
+<p><a href="https://github.com/DebugUself/duw/blob/logging/2019/04/190419_210001.log">duw/190419_210001.log at logging · DebugUself/duw</a></p>
+<p>关键失常:</p>
+<pre><code>...
+
+/opt/www/debuguself/br_duw_pub
+    ERROR   -  Config value: 'theme'. Error: Unrecognised theme name: 'simplex'. The available installed themes are: mkdocs, readthedocs
+
+    Aborted with 1 Configuration Errors!
+</code></pre>
+<p>才想起来, 即使有定制 theme, 在具体编译时, 也一定要事先安装好对应 theme:</p>
+<pre><code>$ pr pip install mkdocs-bootswatch
+</code></pre>
+<p>再检验一下:</p>
+<blockquote>
+<p>$ pr pip show mkdocs-bootswatch</p>
+</blockquote>
+<pre><code>Name: mkdocs-bootswatch
+Version: 1.0
+Summary: Bootswatch themes for MkDocs
+Home-page: http://www.mkdocs.org
+Author: Dougal Matthews
+Author-email: dougal@dougalmatthews.com
+License: BSD
+Location: /home/du19/.local/share/virtualenvs/br_duw_pub-XOQ-Lz1N/lib/python3.7/site-packages
+Requires: mkdocs
+</code></pre>
+<blockquote>
+<blockquote>
+<p>这下应该都好了...</p>
+</blockquote>
+</blockquote>
+<h3 id="_7">可用<a class="headerlink" href="#_7" title="Permanent link">¶</a></h3>
+<blockquote>
+<p>经过大约 10几轮调试, 终于开始定期嗯哼了</p>
+</blockquote>
+<p><a href="https://github.com/DebugUself/duw/blob/logging/2019/04/190419_170001.log">duw/190419_170001.log at logging · DebugUself/duw</a></p>
+<p>每天 5点~23点, 每隔 20 分钟, 自动构建一次.</p>
+<h3 id="todo">TODO<a class="headerlink" href="#todo" title="Permanent link">¶</a></h3>
+<ul>
+<li>将定期变成指定仓库事务响应<ul>
+<li>190420 快速通过仓库约定文件来触发</li>
+</ul>
+</li>
+<li>使用 ChatOps 将运维对话化</li>
+<li>追加内容撰写渠道:<ul>
+<li>通过 Issue 指定标题/首行 来完成提交?</li>
+<li>通过 Slack 指定频道指定 /commands ?</li>
+<li>通过微信动作号指定前缀对话?</li>
+<li>通过 ggoups 指定标题前缀来嗯哼?</li>
+<li>通过...</li>
+</ul>
+</li>
+<li>是的, 可以也应该通过各种不受限定的场景高速为周刊贡献嗯哼</li>
+</ul>
+<h2 id="_8">嗯哼<a class="headerlink" href="#_8" title="Permanent link">¶</a></h2>
+<ul>
+<li>190419 DUr init.<ul>
+<li>1300 debug full auto public</li>
+<li>1642 fix path chaos</li>
+<li>1842 main story publish </li>
+</ul>
+</li>
+</ul>
+            
+
+            
+
+            <!--190910 init. comments-->
+            <hr/>
+
+<h3>精品小班4Py 按时完成 ;-)</h3>
+<h3>101camp5Py 大年初十上线</h3>
+<blockquote><p>
+    
+<ul>
+    <li>
+    开始报名: <b>2020.2.3</b>
+    </li>
+    <li>
+    报名结束: <b>2020.2.23</b>
+    </li>
+    <li>
+    正式开课: <b>2020.3.2</b>
+    </li>
+    <li>
+    课程结束: <b>2020.4.12</b>
+    </li>
+</ul>
+</p></blockquote>
+
+<hr/>
+
+<h2>蟒营</h2>
+<p>
+    伴你重享<b>学习</b>乐趣
+</p>
+<blockquote>
+<p>
+    <b>
+    101.camp
+    </b>
+</p>
+<p>
+    <i>
+    Reactivate Joy by Self-teach with You
+    </i>
+</p>
+</blockquote>
+
+
+<br/>
+任何问题可先进入知识星球<b>(免费)</b>咨询:
+<br/>
+<img alt="FAQ" 
+    src="https://ipic.zoomquiet.top/2019-08-28-FAQ101camp.jpeg"/>
+
+
+<p>关注公众号, 持续获得相关各种咨询, :
+<img alt="mainium" src="https://ipic.zoomquiet.top/2019-10-12-mainium-qr-barnner.jpg"/>
+
+<!--
+<img alt="PythoniCamp" src="http://0.zoomquiet.top/logos/101.camp/banner_101camp_h191.jpg"/>
+
+    <br/>
+实在想立即开始感受蟒营, 可以加入知识星球(免费):
+    <br/>
+
+<img alt="蟒营101camp" src="https://ipic.zoomquiet.top/2019-08-09-190809camp101.jpeg"/>
+
+-->
+</p>
+
+<hr/>
+
+<h3>追问</h3>
+<blockquote>
+<p>
+    任何问题, 随时邮件提问可也:
+<br/>
+    <i>
+    ask@101.camp
+    </i>
+</p>
+</blockquote>
+
+<hr/>
+
+
+
+
+
+            <!-- comments by gh-issue -->
+<script src="https://utteranc.es/client.js"
+        repo="DebugUself/duw"
+        issue-term="url"
+        label="✨💬✨ "
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+          
+        </div>
+      </div>
+    </div>
+    <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebarwrapper">
+        
+          
+            
+  <p class="logo">
+    <a href="..">
+      <img class="logo" src="../https://du.101.camp/static/images/logo.png" title="怼圈周刊[DebugUself Weekly]">
+    </a>
+  </p>
+  
+
+
+
+          
+            
+
+
+
+<h3>Table Of Contents</h3>
+
+<nav>
+  
+  
+    <ul>
+    
+      <li><a href="#_2">背景</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_3">开始</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_4">然后</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_5">后来</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_6">现在</a></li>
+      <ul>
+    
+      <li><a href="#vwan">@Vwan</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#dama">DAMA</a></li>
+      <ul>
+    
+      <li><a href="#mvp">MVP</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#markdoc">Markdoc</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#mkdocs">Mkdocs</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#cicd">CI/CD</a></li>
+      <ul>
+    
+  </ul>
+    
+  </ul>
+    
+      <li><a href="#pipenvconda">pipenv+conda</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#crontab">crontab</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_7">可用</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#todo">TODO</a></li>
+      <ul>
+    
+  </ul>
+    
+  </ul>
+    
+      <li><a href="#_8">嗯哼</a></li>
+      <ul>
+    
+  </ul>
+    
+  </ul>
+  
+
+  
+    <hr>
+    <ul>
+      
+      <!--
+        <li class="toctree-l1"><a href="https://github.com/DebugUself/duw">Fork me on GitHub</a></li>
+      -->
+        <li class="toctree-l1"><a href="https://github.com/101camp/blog/tree/master/docs/publish.md">Fork me on GitHub</a></li>
+
+      
+    </ul>
+  
+</nav>
+          
+            
+  <h3>Related Topics</h3>
+  <ul>
+    
+      <li>Previous: <a href=".." title="previous chapter">
+        Home
+      </a></li>
+    
+    
+      <li>Next: <a href="../license/" title="next chapter">
+        License
+      </a></li>
+    
+  </ul>
+
+
+          
+            <!--
+<div id="searchbox" style="display: none;" role="search">
+  <h3>Quick search</h3>
+  <form class="search" action="../search.html" method="get">
+    <input name="q" type="text">
+    <input value="Go" type="submit">
+  </form>
+  <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+  </p>
+</div>
+<script type="text/javascript">
+  document.getElementById("searchbox").style.display = "block";
+</script>
+
+-->
+          
+        
+
+        <!--190910 init. comments-->
+        <h4>column</h4>
+<ul>
+    <li><a href="/2020/">2020 怼周刊</a></li>
+    <li><a href="/2019/">2019 怼周刊</a></li>
+    <li><a href="/2018/">2018 怼周刊</a></li>
+    <li><a href="/2017/">2017 怼周刊</a></li>
+</ul>
+
+<h3>Powered by</h3>
+
+    <li>
+        <a href="https://du.101.camp/">自怼圈</a>
+    </li>
+
+<ul>
+    <li>
+        <a href="https://101.camp/">蟒营™</a>
+<ul>
+    <li>
+        <a href="https://py.101.camp/">Python 入门班</a>
+    </li>
+    <li>
+        <a href="https://io.101.camp/">图谱</a>
+    </li>
+    <li>
+        <a href="https://slides.101.camp/">幻灯</a>
+    </li>
+    <li>
+        <a href="https://wiki.101.camp/">维基</a>
+    </li>
+    <li>
+        <a href="https://github.com/101camp/comments/issues">评注</a>
+    </li>
+</ul>
+    </li>
+    <li>
+        <a href="http://weekly.pychina.org/">蟒周刊</a>
+    </li>
+    <li>
+        "大妈"们
+<ul>
+    <li>
+        <a href="https://yixuan.li/">Yixuan</a>
+    </li>
+
+    <li>
+        <a href="https://www.douban.com/people/Azeril/">Azeril</a>
+    </li>
+    <li>
+        <a href="https://zoomquiet.io/">Zoom.Quiet</a>
+    </li>
+    <li>
+        ...
+    </li>
+</ul>
+    <li>
+        <a href="http://mainium.icu">昧因科技®</a>
+    </li>
+    </li>
+</ul>
+
+      </div>
+    </div>
+    <div class="clearer"></div>
+  </div>
+
+  
+    <div class="footer">
+      
+        &copy; ©101camp 2017
+      
+      
+        |
+        Powered by <a href="http://www.mkdocs.org">mkdocs 1.0.4</a>
+        &amp; <a href="https://github.com/iamale/mkdocs-alabaster">mkdocs-alabaster</a>
+      
+    </div>
+  
+
+  <!--
+  MkDocs version      : 1.0.4
+  Docs Build Date UTC : 2020-01-14 10:19:14
+  -->
+</body>
+</html>
