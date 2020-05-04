@@ -1,0 +1,319 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+###::cron4trig2duw.sh v.200114.2200 crontab action 4 auto publish DUW
+###::run@ 2020/05/04 22:45:20
+<<<   trigger by /opt/www/debuguself/br_DUW/_trigger/deploy.md 
+/opt/www/debuguself
+
+	 crt. PATH ===
+/opt/www/debuguself/br_duw_pub
+/opt/www/debuguself/br_DUW
+/opt/www/debuguself/br_DUW/_trigger
+
+	TRIGGERed by deploy.md exist
+auto deplo NOW:
+/opt/www/debuguself/br_DUW
+/opt/www/debuguself/br_duw_pub/docs
+cp -f /opt/www/debuguself/br_DUW/*.md /opt/www/debuguself/br_duw_pub/docs/
+cp -rf /opt/www/debuguself/br_DUW/20* /opt/www/debuguself/br_duw_pub/docs/
+find /opt/www/debuguself/br_duw_pub/docs -name "*_draft.md"  | xargs rm -vf 
+removed '/opt/www/debuguself/br_duw_pub/docs/2020/162w_draft.md'
+removed '/opt/www/debuguself/br_duw_pub/docs/2020/163w_draft.md'
+removed '/opt/www/debuguself/br_duw_pub/docs/2020/160w_draft.md'
+removed '/opt/www/debuguself/br_duw_pub/docs/2020/161w_draft.md'
+
+	 powded by blog101CAMP v.200115.1642
+'/opt/www/debuguself/br_duw_pub/docs/2019'
+start inject
+- [ 怼周刊_v120](120w.md)
+- [ 怼周刊_v131](131w.md)
+- [ 怼周刊_v94](094w.md)
+- [ 怼周刊_v117](117w.md)
+- [ 怼周刊_v133](133w.md)
+- [ 怼周刊_v129](129w.md)
+- [ 怼周刊_v92](092w.md)
+- [ 怼周刊_v96](096w.md)
+- [ 怼周刊_v91](091w.md)
+- [ 怼周刊_v135](135w.md)
+- [ 怼周刊_v93](093w.md)
+- [ 怼周刊_v109](109w.md)
+- [ 怼周刊_v122](122w.md)
+- [ 怼周刊_v137](137w.md)
+- [ 怼周刊_v126](126w.md)
+- [ 怼周刊_v141](141w.md)
+- [ 怼周刊_v132](132w.md)
+- [ 怼周刊_v112](112w.md)
+- [ 怼周刊_v104](104w.md)
+- [ 怼周刊_v106](106w.md)
+- [ 怼周刊_v103](103w.md)
+- [ 怼周刊_v123](123w.md)
+- [ 怼周刊_v140](140w.md)
+- [ 怼周刊_v130](130w.md)
+- [ 怼周刊_v119](119w.md)
+- [ 怼周刊_v99](099w.md)
+- [ 怼周刊_v116](116w.md)
+- [ 怼周刊_v113](113w.md)
+- [ 怼周刊_v138](138w.md)
+- [ 怼周刊_v101](101w.md)
+- [ 怼周刊_v136](136w.md)
+- [ 怼周刊_v114](114w.md)
+- [ 怼周刊_v97](097w.md)
+- [ 怼周刊_v127](127w.md)
+- [ 怼周刊_v125](125w.md)
+- [ 怼周刊_v139](139w.md)
+- [ 怼周刊_v107](107w.md)
+- [ 怼周刊_v121](121w.md)
+- [ 怼周刊_v124](124w.md)
+- [ 怼周刊_v100](100w.md)
+- [ 怼周刊_v105](105w.md)
+- [ 怼周刊_v128](128w.md)
+- [ 怼周刊_v118](118w.md)
+- [ 怼周刊_v102](102w.md)
+- [ 怼周刊_v134](134w.md)
+- [ 怼周刊_v110](110w.md)
+- [ 怼周刊_v115](115w.md)
+- [ 怼周刊_v98](098w.md)
+- [ 怼周刊_v111](111w.md)
+- [ 怼周刊_v108](108w.md)
+end inject
+'/opt/www/debuguself/br_duw_pub/docs/2017'
+start inject
+- [ 怼周刊_v21](021w.md)
+- [ 怼周刊_v40](040w.md)
+- [ 怼周刊_v38](038w.md)
+- [ 怼周刊_v23](023w.md)
+- [ 怼周刊_v15](015w.md)
+- [ 怼周刊_v31](031w.md)
+- [ 怼周刊_v11](011w.md)
+- [ 怼周刊_v33](033w.md)
+- [ 怼周刊_v0](000w.md)
+- [ 怼周刊_v22](022w.md)
+- [ 怼周刊_v13](013w.md)
+- [ 怼周刊_v45](045w.md)
+- [ 怼周刊_v8](008w.md)
+- [ 怼周刊_v50](050w.md)
+- [ 怼周刊_v48](048w.md)
+- [ 怼周刊_v42](042w.md)
+- [ 怼周刊_v30](030w.md)
+- [ 怼周刊_v14 ](014w.md)
+- [ 怼周刊_v24](024w.md)
+- [ 怼周刊_v7](007w.md)
+- [ 怼周刊_v36](036w.md)
+- [ 怼周刊_v19](019w.md)
+- [ 怼周刊_v20](020w.md)
+- [ 怼周刊_v35](035w.md)
+- [ 怼周刊_v1](001w.md)
+- [ 怼周刊_v10](010w.md)
+- [ 怼周刊_v27](027w.md)
+- [ 怼周刊_v25](025w.md)
+- [ 怼周刊_v41](041w.md)
+- [ 怼周刊_v49](049w.md)
+- [ 怼周刊_v4](004w.md)
+- [ 怼周刊_v37](037w.md)
+- [ 怼周刊_v39](039w.md)
+- [ 怼周刊\_v43](043w.md)
+- [ 怼周刊_v26](026w.md)
+- [ 怼周刊_v12](012w.md)
+- [ 怼周刊_v44](044w.md)
+- [ 怼周刊_v2](002w.md)
+- [ 怼周刊_v29](029w.md)
+- [ 怼周刊\_v3](003w.md)
+- [ 怼周刊_v47](047w.md)
+- [ 怼周刊_v34](034w.md)
+- [ 怼周刊_v17](017w.md)
+- [ 怼周刊_v32](032w.md)
+- [ 怼周刊_v28](028w.md)
+- [ 怼周刊_v18](018w.md)
+- [ 怼周刊_v46](046w.md)
+- [ 怼周刊_v16](016w.md)
+- [ 怼周刊_v5](005w.md)
+- [ 怼周刊_v9](009w.md)
+- [ 怼周刊_v6](006w.md)
+end inject
+'/opt/www/debuguself/br_duw_pub/docs/2020'
+start inject
+- [ 怼周刊_v146](146w.md)
+- [ 怼周刊_v147](147w.md)
+- [ 怼周刊_v148](148w.md)
+- [ 怼周刊_v150](150w.md)
+- [ 怼周刊_v156](156w.md)
+- [ 怼周刊_v153](153w.md)
+- [ 怼周刊_v151](151w.md)
+- [ 怼周刊_v144](144w.md)
+- [ 怼周刊_v157](157w.md)
+- [ 怼周刊_v142](142w.md)
+- [ 怼周刊_v145](145w.md)
+- [ 怼周刊_v149](149w.md)
+- [ 怼周刊_v155](155w.md)
+- [ 怼周刊_v154](154w.md)
+- [ 怼周刊_v143](143w.md)
+- [ 怼周刊_v159](159w.md)
+- [ 怼周刊_v152](152w.md)
+- [ 怼周刊_v158](158w.md)
+end inject
+'/opt/www/debuguself/br_duw_pub/docs/2018'
+start inject
+- [ 怼周刊_v73](073w.md)
+- [ 怼周刊_v58](058w.md)
+- [ 怼周刊_v67](067w.md)
+- [ 怼周刊_v68](068w.md)
+- [ 怼周刊_v85](085w.md)
+- [ 怼周刊_v88](088w.md)
+- [ 怼周刊_v60](060w.md)
+- [ 怼周刊_v86](086w.md)
+- [ 怼周刊_v59](059w.md)
+- [ 怼周刊_v63](063w.md)
+- [ 怼周刊_v72](072w.md)
+- [ 怼周刊_v79](079w.md)
+- [ 怼周刊_v56](056w.md)
+- [ 怼周刊_v84](084w.md)
+- [ 怼周刊_v80](080w.md)
+- [ 怼周刊_v82](082w.md)
+- [ 怼周刊_v89](089w.md)
+- [ 怼周刊_v87](087w.md)
+- [ 怼周刊_v62](062w.md)
+- [ 怼周刊_v53](053w.md)
+- [ 怼周刊_v54](054w.md)
+- [ 怼周刊_v74](074w.md)
+- [ 怼周刊_v66](066w.md)
+- [ 怼周刊_v52](052w.md)
+- [ 怼周刊_v65](065w.md)
+- [ 怼周刊_v55](055w.md)
+- [ 怼周刊_v77](077w.md)
+- [ 怼周刊_v81](081w.md)
+- [ 怼周刊_v83](083w.md)
+- [ 怼周刊_v90](090w.md)
+- [ 怼周刊_v71](071w.md)
+- [ 怼周刊_v76](076w.md)
+- [ 怼周刊_v78](078w.md)
+- [ 怼周刊_v75](075w.md)
+- [ 怼周刊_v64](064w.md)
+- [ 怼周刊_v51](051w.md)
+- [ 怼周刊_v70](070w.md)
+- [ 怼周刊_v57](057w.md)
+- [ 怼周刊_v69](069w.md)
+- [ 怼周刊_v61](061w.md)
+end inject
+
+	 _injector /opt/www/debuguself/br_duw_pub/docs/index.md
+start inject
+- [ 怼周刊_v159](2020/159w.md)
+- [ 怼周刊_v158](2020/158w.md)
+- [ 怼周刊_v157](2020/157w.md)
+- [ 怼周刊_v156](2020/156w.md)
+- [ 怼周刊_v155](2020/155w.md)
+- [ 怼周刊_v154](2020/154w.md)
+- [ 怼周刊_v153](2020/153w.md)
+end inject
+/opt/www/debuguself/br_duw_pub
+
+	 powded by blog101CAMP v.200115.1642
+/opt/www/debuguself/br_DUW
+/opt/www/debuguself/br_DUW/_trigger/deploy.md
+removed '/opt/www/debuguself/br_DUW/_trigger/deploy.md'
+total 4.0K
+-rw-rw-r-- 1 1.2K Apr 20  2019 .gitignore
+
+	 crt. PATH ===
+/opt/www/debuguself/br_DUW
+On branch DUW
+Your branch is up-to-date with 'origin/DUW'.
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    _trigger/deploy.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[DUW 4327664] 🐛 FIX: (pubDUW) recover trigger obj. wait NEXT deploy
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 _trigger/deploy.md
+To git@github.com:DebugUself/du4proto.git
+   93f7ae1..4327664  DUW -> DUW
+/opt/www/debuguself/br_duw_pub
+
+	 crt. PATH ===
+/opt/www/debuguself/br_duw_pub
+TRIGGER obj. recover -> waiting human deploy again
+/opt/www/debuguself/br_duw_pub
+On branch duw_pub
+Your branch is up-to-date with 'origin/duw_pub'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   docs/2017/index.md
+	modified:   docs/2018/index.md
+	modified:   docs/2019/112w.md
+	modified:   docs/2019/125w.md
+	modified:   docs/2019/126w.md
+	modified:   docs/2019/128w.md
+	modified:   docs/2019/129w.md
+	modified:   docs/2019/index.md
+	modified:   docs/2020/index.md
+	modified:   docs/index.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	docs/2020/159w.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[duw_pub 165bbc5] 👌 IMPROVE: deploy fresh duw by MkDocs (at 200504 2245 41.466)
+ 11 files changed, 1277 insertions(+), 914 deletions(-)
+ create mode 100644 docs/2020/159w.md
+To git@github.com:DebugUself/du4proto.git
+   f4149e5..165bbc5  duw_pub -> duw_pub
+cp: cannot stat 'CNAME': No such file or directory
+/opt/www/debuguself
+2017
+2018
+2019
+2020
+css
+index.html
+js
+license
+publish
+search
+sitemap.xml
+sitemap.xml.gz
+/opt/www/debuguself/br_duw_pub
+
+	 crt. PATH ===
+/opt/www/debuguself/ghp_duw
+2017
+2018
+2019
+2020
+css
+index.html
+js
+license
+publish
+search
+sitemap.xml
+sitemap.xml.gz
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   2017/index.html
+	modified:   2018/index.html
+	modified:   2019/index.html
+	modified:   2020/index.html
+	modified:   index.html
+	modified:   search/search_index.json
+	modified:   sitemap.xml
+	modified:   sitemap.xml.gz
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[master 97fa14e] 👌 IMPROVE: pub.(duw) gen. by MkDocs as invoke (at 200504 2245 54.092)
+ 8 files changed, 127 insertions(+), 126 deletions(-)
+To git@github.com:DebugUself/duw.git
+   23c76a7..97fa14e  master -> master
+
+	 powded by blog101CAMP v.200115.1642
+###::end@ 2020/05/04 22:46:03
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
