@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>None</loc>
-<<<<<<< HEAD
      <lastmod>2020-05-18</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -11,17 +10,6 @@
     </url><url>
      <loc>None</loc>
      <lastmod>2020-05-18</lastmod>
-=======
-     <lastmod>2020-05-17</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>None</loc>
-     <lastmod>2020-05-17</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>None</loc>
-     <lastmod>2020-05-17</lastmod>
->>>>>>> 61e96454d02fd19b39e61a9211a2ed44da78fff7
      <changefreq>daily</changefreq>
     </url>
 </urlset>
