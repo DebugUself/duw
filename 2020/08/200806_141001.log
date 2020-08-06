@@ -1,0 +1,6 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DEPRECATION: The default format will switch to columns in the future. You can use --format=(legacy|columns) (or define a format=(legacy|columns) in your pip.conf under the [list] section) to disable this warning.
+mercurial (4.5.3)
+pip (9.0.1)
+youtube-dl (2020.3.24)
+/opt/scm/srv/pol4du/yahooo/cron4trig2duw.sh: line 40: inv: command not found
