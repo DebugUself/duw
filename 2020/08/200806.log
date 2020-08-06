@@ -89,3 +89,23 @@ Available tasks:
   gl8pub     8: gen. Poling site pages+img. [ |--pol ]
   ver        print help and version info.
 
+[logging d50c2a6] (crontab) logging auto publish as 2020-08-06 14:20:04
+ 1 file changed, 50 insertions(+)
+To github.com:DebugUself/duw.git
+   9c4d240..d50c2a6  logging -> logging
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+###::cron4trig2duw.sh v.200806.2142 crontab action 4 auto POL4DU/W
+###::run@ 2020/08/06 14:20:12
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Available tasks:
+
+  gh0brs     GraphQL got all branchs
+  gh6bkdb    bkup SQLite3
+  gh7upd     update all DU matter
+  ghpub      $ inv ghpub du ~ pub. Pol for DU matter
+  gl3redb    3: bkup and relfush SQLite DB
+  gl4incer   4: increment append date into SQLite DB
+  gl5pol     5: Poling for weekly report
+  gl8pub     8: gen. Poling site pages+img. [ |--pol ]
+  ver        print help and version info.
+
