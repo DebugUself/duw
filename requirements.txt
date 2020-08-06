@@ -1,0 +1,13 @@
+#   PoW Srv.
+supervisor
+gunicorn
+bottle
+
+invoke
+requests
+ipaddress
+
+pandas
+#   PoW export
+termgraph
+

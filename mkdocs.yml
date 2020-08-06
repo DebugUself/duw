@@ -1,0 +1,31 @@
+site_name: 怼圈周刊[DebugUself Weekly]
+copyright: 101camp 2017 
+
+theme: 
+  name: null
+  custom_dir: _theme/mkdocs_alabaster
+
+markdown_extensions:
+  - toc:
+      permalink: "¶"
+
+extra:
+  logo: https://blog.101.camp/logo-panda4tree-w420.png
+  logo_title: Ink sketch of onion
+  include_toc: yes
+  uri_root: https://du.101.camp/duw
+  extra_nav_links:
+    Fork me on GitHub: https://github.com/DebugUself/duw
+
+nav:
+  - Home: index.md
+  - Publish: publish.md
+  - License: license.md
+#  - Weekly:
+#    - 2020.md
+#    - 2019.md
+#    - 2018.md
+#    - 2017.md
+
+
+#  - User Guide: guide.md
