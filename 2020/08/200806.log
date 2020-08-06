@@ -109,3 +109,1636 @@ Available tasks:
   gl8pub     8: gen. Poling site pages+img. [ |--pol ]
   ver        print help and version info.
 
+[logging e00db41] (crontab) logging auto publish as 2020-08-06 14:25:03
+ 1 file changed, 20 insertions(+)
+To github.com:DebugUself/duw.git
+   d50c2a6..e00db41  logging -> logging
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+###::cron4trig2duw.sh v.200806.2142 crontab action 4 auto POL4DU/W
+###::run@ 2020/08/06 14:25:08
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Available tasks:
+
+  gh0brs     GraphQL got all branchs
+  gh6bkdb    bkup SQLite3
+  gh7upd     update all DU matter
+  ghpub      $ inv ghpub du ~ pub. Pol for DU matter
+  gl3redb    3: bkup and relfush SQLite DB
+  gl4incer   4: increment append date into SQLite DB
+  gl8pub     8: gen. Poling site pages+img. [ |--pol ]
+  ver        print help and version info.
+
+
+	 crt. PATH ===
+/opt/scm/srv/pol4du/_sites/du/proto.wiki
+Already up to date.
+
+	 crt. PATH ===
+/opt/scm/srv/pol4du/yahooo
+2020-08-06 14:30:07.871 | INFO     | mod.loc_wiki:commit2csv:101 - /opt/scm/srv/pol4du/_tmp/tmp.wiki.csv
+b''
+upd. DB for wiki events /opt/scm/srv/pol4du/_tmp/tmp.wiki.csv
+2020-08-06 14:30:07,880 INFO sqlalchemy.engine.base.Engine SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1
+2020-08-06 14:30:07,880 INFO sqlalchemy.engine.base.Engine ()
+2020-08-06 14:30:07,881 INFO sqlalchemy.engine.base.Engine SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1
+2020-08-06 14:30:07,881 INFO sqlalchemy.engine.base.Engine ()
+2020-08-06 14:30:07,882 INFO sqlalchemy.engine.base.Engine PRAGMA main.table_info("user")
+2020-08-06 14:30:07,883 INFO sqlalchemy.engine.base.Engine ()
+2020-08-06 14:30:07,884 INFO sqlalchemy.engine.base.Engine PRAGMA main.table_info("pol")
+2020-08-06 14:30:07,884 INFO sqlalchemy.engine.base.Engine ()
+['']
+['1596563763.000', '31', '2020-08-04', 'du', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:07,889 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:07,891 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:07,891 INFO sqlalchemy.engine.base.Engine ('1596563763.000', 'du', 'WI')
+	 EVENT already injected...
+	 stop now
+
+2020-08-06 14:30:07,894 INFO sqlalchemy.engine.base.Engine ROLLBACK
+
+	 all totalCount commit: 9910
+
+	 Branch -> 22cc
+22cc
+Traceback (most recent call last):
+  File "/home/zoomq/.pyenv/versions/3.8.5/envs/s0ra385/bin/inv", line 8, in <module>
+    sys.exit(program.run())
+  File "/home/zoomq/.pyenv/versions/3.8.5/envs/s0ra385/lib/python3.8/site-packages/invoke/program.py", line 384, in run
+    self.execute()
+  File "/home/zoomq/.pyenv/versions/3.8.5/envs/s0ra385/lib/python3.8/site-packages/invoke/program.py", line 566, in execute
+    executor.execute(*self.tasks)
+  File "/home/zoomq/.pyenv/versions/3.8.5/envs/s0ra385/lib/python3.8/site-packages/invoke/executor.py", line 129, in execute
+    result = call.task(*args, **call.kwargs)
+  File "/home/zoomq/.pyenv/versions/3.8.5/envs/s0ra385/lib/python3.8/site-packages/invoke/tasks.py", line 127, in __call__
+    result = self.body(*args, **kwargs)
+  File "/opt/scm/srv/pol4du/yahooo/tasks.py", line 250, in gh7upd
+    GH.upd_events2db()
+  File "/opt/scm/srv/pol4du/yahooo/mod/gh_api.py", line 557, in upd_events2db
+    _upd_ci(br)
+  File "/opt/scm/srv/pol4du/yahooo/mod/gh_api.py", line 695, in _upd_ci
+    result = GQL.run_query(_query, variables) #execute query
+  File "/opt/scm/srv/pol4du/yahooo/mod/gh_gql.py", line 44, in run_query
+    raise Exception("Query failed to run by returning code of {}. {}".format(request.status_code, query))
+Exception: Query failed to run by returning code of 401. query ($owner: String!, $name: String!, $branchCursor: String!) {
+  repository(owner: $owner, name: $name) {
+    branch0: ref(qualifiedName: $branchCursor) {
+      target {
+        ... on Commit {
+
+     
+                history(first: 100) {
+             
+            ...CommitFragment
+          }
+        }
+      }
+    }
+  }
+}
+
+fragment CommitFragment on CommitHistoryConnection {
+  totalCount
+  pageInfo {
+    hasNextPage
+    endCursor
+  }
+  nodes {
+    oid
+    committedDate
+    additions
+    deletions
+    author {
+      user {
+        login
+        email
+      }
+    }
+  }
+}
+
+    
+
+	 crt. PATH ===
+/opt/scm/srv/pol4du/_sites/9py/playground.wiki
+Already up to date.
+
+	 crt. PATH ===
+/opt/scm/srv/pol4du/yahooo
+
+	 crt. PATH ===
+/opt/scm/srv/pol4du/_sites/9py/tasks.wiki
+Already up to date.
+
+	 crt. PATH ===
+/opt/scm/srv/pol4du/yahooo
+2020-08-06 14:30:15.403 | INFO     | mod.loc_wiki:commit2csv:101 - /opt/scm/srv/pol4du/_tmp/tmp.wiki.csv
+b''
+b''
+upd. DB for wiki events /opt/scm/srv/pol4du/_tmp/tmp.wiki.csv
+2020-08-06 14:30:15,411 INFO sqlalchemy.engine.base.Engine SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1
+2020-08-06 14:30:15,412 INFO sqlalchemy.engine.base.Engine ()
+2020-08-06 14:30:15,412 INFO sqlalchemy.engine.base.Engine SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1
+2020-08-06 14:30:15,413 INFO sqlalchemy.engine.base.Engine ()
+2020-08-06 14:30:15,414 INFO sqlalchemy.engine.base.Engine PRAGMA main.table_info("user")
+2020-08-06 14:30:15,414 INFO sqlalchemy.engine.base.Engine ()
+2020-08-06 14:30:15,415 INFO sqlalchemy.engine.base.Engine PRAGMA temp.table_info("user")
+2020-08-06 14:30:15,415 INFO sqlalchemy.engine.base.Engine ()
+2020-08-06 14:30:15,415 INFO sqlalchemy.engine.base.Engine PRAGMA main.table_info("pol")
+2020-08-06 14:30:15,416 INFO sqlalchemy.engine.base.Engine ()
+2020-08-06 14:30:15,416 INFO sqlalchemy.engine.base.Engine PRAGMA temp.table_info("pol")
+2020-08-06 14:30:15,416 INFO sqlalchemy.engine.base.Engine ()
+2020-08-06 14:30:15,417 INFO sqlalchemy.engine.base.Engine 
+CREATE TABLE user (
+	id INTEGER NOT NULL, 
+	name VARCHAR NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (name)
+)
+
+
+2020-08-06 14:30:15,418 INFO sqlalchemy.engine.base.Engine ()
+2020-08-06 14:30:15,425 INFO sqlalchemy.engine.base.Engine COMMIT
+2020-08-06 14:30:15,426 INFO sqlalchemy.engine.base.Engine 
+CREATE TABLE pol (
+	id INTEGER NOT NULL, 
+	ts FLOAT NOT NULL, 
+	week SMALLINT NOT NULL, 
+	date VARCHAR NOT NULL, 
+	camp VARCHAR NOT NULL, 
+	uid VARCHAR NOT NULL, 
+	uname VARCHAR NOT NULL, 
+	etype VARCHAR NOT NULL, 
+	diff SMALLINT NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2020-08-06 14:30:15,426 INFO sqlalchemy.engine.base.Engine ()
+2020-08-06 14:30:15,433 INFO sqlalchemy.engine.base.Engine COMMIT
+['']
+['1593178790.000', '25', '2020-06-26', '9py', 'NIL', 'peace101', 'WI', '1']
+2020-08-06 14:30:15,437 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,440 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,440 INFO sqlalchemy.engine.base.Engine ('1593178790.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,442 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,442 INFO sqlalchemy.engine.base.Engine (1593178790.0, '25', '2020-06-26', '9py', 'NIL', 'peace101', 'WI', 1)
+2020-08-06 14:30:15,443 INFO sqlalchemy.engine.base.Engine COMMIT
+['1590061114.000', '20', '2020-05-21', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:15,453 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,455 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,455 INFO sqlalchemy.engine.base.Engine ('1590061114.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,456 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,456 INFO sqlalchemy.engine.base.Engine (1590061114.0, '20', '2020-05-21', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:15,457 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593969856.000', '27', '2020-07-05', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:15,463 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,464 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,464 INFO sqlalchemy.engine.base.Engine ('1593969856.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,465 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,466 INFO sqlalchemy.engine.base.Engine (1593969856.0, '27', '2020-07-05', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:15,466 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593969752.000', '27', '2020-07-05', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:15,473 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,474 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,474 INFO sqlalchemy.engine.base.Engine ('1593969752.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,475 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,475 INFO sqlalchemy.engine.base.Engine (1593969752.0, '27', '2020-07-05', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:15,476 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593969725.000', '27', '2020-07-05', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:15,481 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,482 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,483 INFO sqlalchemy.engine.base.Engine ('1593969725.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,484 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,484 INFO sqlalchemy.engine.base.Engine (1593969725.0, '27', '2020-07-05', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:15,484 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593969578.000', '27', '2020-07-05', '9py', 'NIL', 'hefe1205', 'WI', '1']
+2020-08-06 14:30:15,494 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,495 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,495 INFO sqlalchemy.engine.base.Engine ('1593969578.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,496 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,496 INFO sqlalchemy.engine.base.Engine (1593969578.0, '27', '2020-07-05', '9py', 'NIL', 'hefe1205', 'WI', 1)
+2020-08-06 14:30:15,497 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593968872.000', '27', '2020-07-05', '9py', 'NIL', 'hefe1205', 'WI', '1']
+2020-08-06 14:30:15,502 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,504 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,504 INFO sqlalchemy.engine.base.Engine ('1593968872.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,505 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,505 INFO sqlalchemy.engine.base.Engine (1593968872.0, '27', '2020-07-05', '9py', 'NIL', 'hefe1205', 'WI', 1)
+2020-08-06 14:30:15,506 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593944372.000', '27', '2020-07-05', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:15,511 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,512 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,512 INFO sqlalchemy.engine.base.Engine ('1593944372.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,513 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,513 INFO sqlalchemy.engine.base.Engine (1593944372.0, '27', '2020-07-05', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:15,514 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593944324.000', '27', '2020-07-05', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:15,525 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,526 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,526 INFO sqlalchemy.engine.base.Engine ('1593944324.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,527 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,527 INFO sqlalchemy.engine.base.Engine (1593944324.0, '27', '2020-07-05', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:15,528 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593882987.000', '26', '2020-07-04', '9py', 'NIL', 'wangmeixi', 'WI', '1']
+2020-08-06 14:30:15,534 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,535 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,535 INFO sqlalchemy.engine.base.Engine ('1593882987.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,536 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,536 INFO sqlalchemy.engine.base.Engine (1593882987.0, '26', '2020-07-04', '9py', 'NIL', 'wangmeixi', 'WI', 1)
+2020-08-06 14:30:15,537 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593882754.000', '26', '2020-07-04', '9py', 'NIL', 'wangmeixi', 'WI', '1']
+2020-08-06 14:30:15,543 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,544 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,544 INFO sqlalchemy.engine.base.Engine ('1593882754.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,545 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,545 INFO sqlalchemy.engine.base.Engine (1593882754.0, '26', '2020-07-04', '9py', 'NIL', 'wangmeixi', 'WI', 1)
+2020-08-06 14:30:15,546 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593852820.000', '26', '2020-07-04', '9py', 'NIL', 'wangmeixi', 'WI', '1']
+2020-08-06 14:30:15,554 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,555 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,555 INFO sqlalchemy.engine.base.Engine ('1593852820.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,556 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,557 INFO sqlalchemy.engine.base.Engine (1593852820.0, '26', '2020-07-04', '9py', 'NIL', 'wangmeixi', 'WI', 1)
+2020-08-06 14:30:15,557 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593817312.000', '26', '2020-07-03', '9py', 'NIL', 'liuying101', 'WI', '1']
+2020-08-06 14:30:15,563 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,564 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,564 INFO sqlalchemy.engine.base.Engine ('1593817312.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,565 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,565 INFO sqlalchemy.engine.base.Engine (1593817312.0, '26', '2020-07-03', '9py', 'NIL', 'liuying101', 'WI', 1)
+2020-08-06 14:30:15,566 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593816547.000', '26', '2020-07-03', '9py', 'NIL', 'liuying101', 'WI', '1']
+2020-08-06 14:30:15,571 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,572 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,572 INFO sqlalchemy.engine.base.Engine ('1593816547.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,573 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,574 INFO sqlalchemy.engine.base.Engine (1593816547.0, '26', '2020-07-03', '9py', 'NIL', 'liuying101', 'WI', 1)
+2020-08-06 14:30:15,574 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593815384.000', '26', '2020-07-03', '9py', 'NIL', 'chenjia101', 'WI', '1']
+2020-08-06 14:30:15,582 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,583 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,583 INFO sqlalchemy.engine.base.Engine ('1593815384.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,584 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,584 INFO sqlalchemy.engine.base.Engine (1593815384.0, '26', '2020-07-03', '9py', 'NIL', 'chenjia101', 'WI', 1)
+2020-08-06 14:30:15,585 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593814355.000', '26', '2020-07-03', '9py', 'NIL', 'liuying101', 'WI', '1']
+2020-08-06 14:30:15,593 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,594 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,594 INFO sqlalchemy.engine.base.Engine ('1593814355.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,595 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,595 INFO sqlalchemy.engine.base.Engine (1593814355.0, '26', '2020-07-03', '9py', 'NIL', 'liuying101', 'WI', 1)
+2020-08-06 14:30:15,596 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593813943.000', '26', '2020-07-03', '9py', 'NIL', 'liuying101', 'WI', '1']
+2020-08-06 14:30:15,604 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,605 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,605 INFO sqlalchemy.engine.base.Engine ('1593813943.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,606 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,606 INFO sqlalchemy.engine.base.Engine (1593813943.0, '26', '2020-07-03', '9py', 'NIL', 'liuying101', 'WI', 1)
+2020-08-06 14:30:15,607 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593683375.000', '26', '2020-07-02', '9py', 'NIL', 'huxmu', 'WI', '1']
+2020-08-06 14:30:15,617 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,617 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,618 INFO sqlalchemy.engine.base.Engine ('1593683375.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,619 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,619 INFO sqlalchemy.engine.base.Engine (1593683375.0, '26', '2020-07-02', '9py', 'NIL', 'huxmu', 'WI', 1)
+2020-08-06 14:30:15,620 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593626637.000', '26', '2020-07-01', '9py', 'NIL', 'huxmu', 'WI', '1']
+2020-08-06 14:30:15,629 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,630 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,630 INFO sqlalchemy.engine.base.Engine ('1593626637.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,631 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,632 INFO sqlalchemy.engine.base.Engine (1593626637.0, '26', '2020-07-01', '9py', 'NIL', 'huxmu', 'WI', 1)
+2020-08-06 14:30:15,632 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593594800.000', '26', '2020-07-01', '9py', 'NIL', 'huxmu', 'WI', '1']
+2020-08-06 14:30:15,638 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,639 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,639 INFO sqlalchemy.engine.base.Engine ('1593594800.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,640 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,640 INFO sqlalchemy.engine.base.Engine (1593594800.0, '26', '2020-07-01', '9py', 'NIL', 'huxmu', 'WI', 1)
+2020-08-06 14:30:15,641 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593467694.000', '26', '2020-06-29', '9py', 'NIL', 'peace101', 'WI', '1']
+2020-08-06 14:30:15,650 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,652 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,652 INFO sqlalchemy.engine.base.Engine ('1593467694.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,653 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,653 INFO sqlalchemy.engine.base.Engine (1593467694.0, '26', '2020-06-29', '9py', 'NIL', 'peace101', 'WI', 1)
+2020-08-06 14:30:15,654 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593438262.000', '26', '2020-06-29', '9py', 'NIL', 'peace101', 'WI', '1']
+2020-08-06 14:30:15,664 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,665 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,665 INFO sqlalchemy.engine.base.Engine ('1593438262.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,666 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,666 INFO sqlalchemy.engine.base.Engine (1593438262.0, '26', '2020-06-29', '9py', 'NIL', 'peace101', 'WI', 1)
+2020-08-06 14:30:15,667 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593466906.000', '26', '2020-06-29', '9py', 'NIL', 'peace101', 'WI', '1']
+2020-08-06 14:30:15,675 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,676 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,677 INFO sqlalchemy.engine.base.Engine ('1593466906.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,678 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,678 INFO sqlalchemy.engine.base.Engine (1593466906.0, '26', '2020-06-29', '9py', 'NIL', 'peace101', 'WI', 1)
+2020-08-06 14:30:15,678 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593435598.000', '26', '2020-06-29', '9py', 'NIL', 'peace101', 'WI', '1']
+2020-08-06 14:30:15,685 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,686 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,686 INFO sqlalchemy.engine.base.Engine ('1593435598.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,688 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,688 INFO sqlalchemy.engine.base.Engine (1593435598.0, '26', '2020-06-29', '9py', 'NIL', 'peace101', 'WI', 1)
+2020-08-06 14:30:15,688 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593435518.000', '26', '2020-06-29', '9py', 'NIL', 'peace101', 'WI', '1']
+2020-08-06 14:30:15,695 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,696 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,697 INFO sqlalchemy.engine.base.Engine ('1593435518.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,698 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,698 INFO sqlalchemy.engine.base.Engine (1593435518.0, '26', '2020-06-29', '9py', 'NIL', 'peace101', 'WI', 1)
+2020-08-06 14:30:15,699 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593435448.000', '26', '2020-06-29', '9py', 'NIL', 'peace101', 'WI', '1']
+2020-08-06 14:30:15,705 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,706 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,706 INFO sqlalchemy.engine.base.Engine ('1593435448.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,708 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,709 INFO sqlalchemy.engine.base.Engine (1593435448.0, '26', '2020-06-29', '9py', 'NIL', 'peace101', 'WI', 1)
+2020-08-06 14:30:15,709 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593438466.000', '26', '2020-06-29', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:15,714 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,714 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,715 INFO sqlalchemy.engine.base.Engine ('1593438466.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,716 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,716 INFO sqlalchemy.engine.base.Engine (1593438466.0, '26', '2020-06-29', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:15,716 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593428788.000', '26', '2020-06-29', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:15,725 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,726 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,726 INFO sqlalchemy.engine.base.Engine ('1593428788.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,727 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,727 INFO sqlalchemy.engine.base.Engine (1593428788.0, '26', '2020-06-29', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:15,728 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593331937.000', '26', '2020-06-28', '9py', 'NIL', 'shanshand', 'WI', '1']
+2020-08-06 14:30:15,736 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,737 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,737 INFO sqlalchemy.engine.base.Engine ('1593331937.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,738 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,738 INFO sqlalchemy.engine.base.Engine (1593331937.0, '26', '2020-06-28', '9py', 'NIL', 'shanshand', 'WI', 1)
+2020-08-06 14:30:15,739 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593331910.000', '26', '2020-06-28', '9py', 'NIL', 'shanshand', 'WI', '1']
+2020-08-06 14:30:15,745 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,746 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,746 INFO sqlalchemy.engine.base.Engine ('1593331910.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,747 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,747 INFO sqlalchemy.engine.base.Engine (1593331910.0, '26', '2020-06-28', '9py', 'NIL', 'shanshand', 'WI', 1)
+2020-08-06 14:30:15,748 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593331869.000', '26', '2020-06-28', '9py', 'NIL', 'shanshand', 'WI', '1']
+2020-08-06 14:30:15,758 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,759 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,760 INFO sqlalchemy.engine.base.Engine ('1593331869.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,761 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,761 INFO sqlalchemy.engine.base.Engine (1593331869.0, '26', '2020-06-28', '9py', 'NIL', 'shanshand', 'WI', 1)
+2020-08-06 14:30:15,762 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593360331.000', '26', '2020-06-28', '9py', 'NIL', 'shanshand', 'WI', '1']
+2020-08-06 14:30:15,768 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,769 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,769 INFO sqlalchemy.engine.base.Engine ('1593360331.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,771 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,771 INFO sqlalchemy.engine.base.Engine (1593360331.0, '26', '2020-06-28', '9py', 'NIL', 'shanshand', 'WI', 1)
+2020-08-06 14:30:15,771 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593359902.000', '26', '2020-06-28', '9py', 'NIL', 'shaobingtian', 'WI', '1']
+2020-08-06 14:30:15,776 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,777 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,777 INFO sqlalchemy.engine.base.Engine ('1593359902.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,778 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,778 INFO sqlalchemy.engine.base.Engine (1593359902.0, '26', '2020-06-28', '9py', 'NIL', 'shaobingtian', 'WI', 1)
+2020-08-06 14:30:15,779 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593359749.000', '26', '2020-06-28', '9py', 'NIL', 'shaobingtian', 'WI', '1']
+2020-08-06 14:30:15,787 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,788 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,788 INFO sqlalchemy.engine.base.Engine ('1593359749.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,789 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,789 INFO sqlalchemy.engine.base.Engine (1593359749.0, '26', '2020-06-28', '9py', 'NIL', 'shaobingtian', 'WI', 1)
+2020-08-06 14:30:15,790 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593344567.000', '26', '2020-06-28', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:15,798 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,799 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,799 INFO sqlalchemy.engine.base.Engine ('1593344567.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,800 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,800 INFO sqlalchemy.engine.base.Engine (1593344567.0, '26', '2020-06-28', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:15,801 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593344043.000', '26', '2020-06-28', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:15,809 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,810 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,810 INFO sqlalchemy.engine.base.Engine ('1593344043.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,811 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,811 INFO sqlalchemy.engine.base.Engine (1593344043.0, '26', '2020-06-28', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:15,812 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593342511.000', '26', '2020-06-28', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:15,819 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,820 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,820 INFO sqlalchemy.engine.base.Engine ('1593342511.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,821 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,822 INFO sqlalchemy.engine.base.Engine (1593342511.0, '26', '2020-06-28', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:15,822 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593342501.000', '26', '2020-06-28', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:15,830 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,832 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,832 INFO sqlalchemy.engine.base.Engine ('1593342501.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,833 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,833 INFO sqlalchemy.engine.base.Engine (1593342501.0, '26', '2020-06-28', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:15,834 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593270793.000', '25', '2020-06-27', '9py', 'NIL', 'mymbbzm', 'WI', '1']
+2020-08-06 14:30:15,842 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,843 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,843 INFO sqlalchemy.engine.base.Engine ('1593270793.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,844 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,844 INFO sqlalchemy.engine.base.Engine (1593270793.0, '25', '2020-06-27', '9py', 'NIL', 'mymbbzm', 'WI', 1)
+2020-08-06 14:30:15,844 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593298679.000', '25', '2020-06-27', '9py', 'NIL', 'longjianfeng', 'WI', '1']
+2020-08-06 14:30:15,855 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,856 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,856 INFO sqlalchemy.engine.base.Engine ('1593298679.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,857 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,857 INFO sqlalchemy.engine.base.Engine (1593298679.0, '25', '2020-06-27', '9py', 'NIL', 'longjianfeng', 'WI', 1)
+2020-08-06 14:30:15,858 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593297416.000', '25', '2020-06-27', '9py', 'NIL', 'longjianfeng', 'WI', '1']
+2020-08-06 14:30:15,864 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,865 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,865 INFO sqlalchemy.engine.base.Engine ('1593297416.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,866 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,866 INFO sqlalchemy.engine.base.Engine (1593297416.0, '25', '2020-06-27', '9py', 'NIL', 'longjianfeng', 'WI', 1)
+2020-08-06 14:30:15,867 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593296107.000', '25', '2020-06-27', '9py', 'NIL', 'liuying101', 'WI', '1']
+2020-08-06 14:30:15,873 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,875 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,875 INFO sqlalchemy.engine.base.Engine ('1593296107.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,876 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,876 INFO sqlalchemy.engine.base.Engine (1593296107.0, '25', '2020-06-27', '9py', 'NIL', 'liuying101', 'WI', 1)
+2020-08-06 14:30:15,877 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593261937.000', '25', '2020-06-27', '9py', 'NIL', 'wangmeixi', 'WI', '1']
+2020-08-06 14:30:15,883 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,884 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,884 INFO sqlalchemy.engine.base.Engine ('1593261937.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,885 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,885 INFO sqlalchemy.engine.base.Engine (1593261937.0, '25', '2020-06-27', '9py', 'NIL', 'wangmeixi', 'WI', 1)
+2020-08-06 14:30:15,886 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593277067.000', '25', '2020-06-27', '9py', 'NIL', 'Alex', 'WI', '1']
+2020-08-06 14:30:15,892 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,893 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,893 INFO sqlalchemy.engine.base.Engine ('1593277067.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,894 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,894 INFO sqlalchemy.engine.base.Engine (1593277067.0, '25', '2020-06-27', '9py', 'NIL', 'Alex', 'WI', 1)
+2020-08-06 14:30:15,895 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593277000.000', '25', '2020-06-27', '9py', 'NIL', 'Alex', 'WI', '1']
+2020-08-06 14:30:15,901 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,902 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,903 INFO sqlalchemy.engine.base.Engine ('1593277000.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,904 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,904 INFO sqlalchemy.engine.base.Engine (1593277000.0, '25', '2020-06-27', '9py', 'NIL', 'Alex', 'WI', 1)
+2020-08-06 14:30:15,904 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593276961.000', '25', '2020-06-27', '9py', 'NIL', 'Alex', 'WI', '1']
+2020-08-06 14:30:15,911 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,912 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,913 INFO sqlalchemy.engine.base.Engine ('1593276961.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,914 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,914 INFO sqlalchemy.engine.base.Engine (1593276961.0, '25', '2020-06-27', '9py', 'NIL', 'Alex', 'WI', 1)
+2020-08-06 14:30:15,915 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593262003.000', '25', '2020-06-27', '9py', 'NIL', 'jenny101', 'WI', '1']
+2020-08-06 14:30:15,922 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,923 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,924 INFO sqlalchemy.engine.base.Engine ('1593262003.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,925 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,925 INFO sqlalchemy.engine.base.Engine (1593262003.0, '25', '2020-06-27', '9py', 'NIL', 'jenny101', 'WI', 1)
+2020-08-06 14:30:15,925 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593258419.000', '25', '2020-06-27', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:15,933 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,934 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,934 INFO sqlalchemy.engine.base.Engine ('1593258419.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,936 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,936 INFO sqlalchemy.engine.base.Engine (1593258419.0, '25', '2020-06-27', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:15,937 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593256221.000', '25', '2020-06-27', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:15,943 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,945 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,945 INFO sqlalchemy.engine.base.Engine ('1593256221.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,946 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,946 INFO sqlalchemy.engine.base.Engine (1593256221.0, '25', '2020-06-27', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:15,947 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593256214.000', '25', '2020-06-27', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:15,953 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,954 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,954 INFO sqlalchemy.engine.base.Engine ('1593256214.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,955 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,956 INFO sqlalchemy.engine.base.Engine (1593256214.0, '25', '2020-06-27', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:15,956 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593251805.000', '25', '2020-06-27', '9py', 'NIL', 'pc940329', 'WI', '1']
+2020-08-06 14:30:15,964 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,970 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,970 INFO sqlalchemy.engine.base.Engine ('1593251805.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,971 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,971 INFO sqlalchemy.engine.base.Engine (1593251805.0, '25', '2020-06-27', '9py', 'NIL', 'pc940329', 'WI', 1)
+2020-08-06 14:30:15,971 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593212986.000', '25', '2020-06-26', '9py', 'NIL', '364887511@qq.com', 'WI', '1']
+2020-08-06 14:30:15,978 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,979 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,979 INFO sqlalchemy.engine.base.Engine ('1593212986.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,980 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,980 INFO sqlalchemy.engine.base.Engine (1593212986.0, '25', '2020-06-26', '9py', 'NIL', '364887511@qq.com', 'WI', 1)
+2020-08-06 14:30:15,980 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593179021.000', '25', '2020-06-26', '9py', 'NIL', 'peace101', 'WI', '1']
+2020-08-06 14:30:15,988 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,989 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,989 INFO sqlalchemy.engine.base.Engine ('1593179021.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,990 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,990 INFO sqlalchemy.engine.base.Engine (1593179021.0, '25', '2020-06-26', '9py', 'NIL', 'peace101', 'WI', 1)
+2020-08-06 14:30:15,991 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593204152.000', '25', '2020-06-26', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:15,995 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:15,996 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:15,996 INFO sqlalchemy.engine.base.Engine ('1593204152.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:15,997 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:15,997 INFO sqlalchemy.engine.base.Engine (1593204152.0, '25', '2020-06-26', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:15,998 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593204144.000', '25', '2020-06-26', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:16,003 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,004 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,005 INFO sqlalchemy.engine.base.Engine ('1593204144.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,006 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,006 INFO sqlalchemy.engine.base.Engine (1593204144.0, '25', '2020-06-26', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:16,007 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593203678.000', '25', '2020-06-26', '9py', 'NIL', 'shanshand', 'WI', '1']
+2020-08-06 14:30:16,012 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,013 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,013 INFO sqlalchemy.engine.base.Engine ('1593203678.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,014 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,015 INFO sqlalchemy.engine.base.Engine (1593203678.0, '25', '2020-06-26', '9py', 'NIL', 'shanshand', 'WI', 1)
+2020-08-06 14:30:16,015 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593153539.000', '25', '2020-06-26', '9py', 'NIL', 'peace101', 'WI', '1']
+2020-08-06 14:30:16,024 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,025 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,026 INFO sqlalchemy.engine.base.Engine ('1593153539.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,027 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,027 INFO sqlalchemy.engine.base.Engine (1593153539.0, '25', '2020-06-26', '9py', 'NIL', 'peace101', 'WI', 1)
+2020-08-06 14:30:16,028 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593153353.000', '25', '2020-06-26', '9py', 'NIL', 'peace101', 'WI', '1']
+2020-08-06 14:30:16,038 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,040 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,040 INFO sqlalchemy.engine.base.Engine ('1593153353.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,041 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,042 INFO sqlalchemy.engine.base.Engine (1593153353.0, '25', '2020-06-26', '9py', 'NIL', 'peace101', 'WI', 1)
+2020-08-06 14:30:16,042 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593177009.000', '25', '2020-06-26', '9py', 'NIL', 'sunhl', 'WI', '1']
+2020-08-06 14:30:16,050 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,051 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,051 INFO sqlalchemy.engine.base.Engine ('1593177009.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,053 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,053 INFO sqlalchemy.engine.base.Engine (1593177009.0, '25', '2020-06-26', '9py', 'NIL', 'sunhl', 'WI', 1)
+2020-08-06 14:30:16,053 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593176632.000', '25', '2020-06-26', '9py', 'NIL', 'sunhl', 'WI', '1']
+2020-08-06 14:30:16,060 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,061 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,061 INFO sqlalchemy.engine.base.Engine ('1593176632.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,062 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,063 INFO sqlalchemy.engine.base.Engine (1593176632.0, '25', '2020-06-26', '9py', 'NIL', 'sunhl', 'WI', 1)
+2020-08-06 14:30:16,063 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593146308.000', '25', '2020-06-26', '9py', 'NIL', 'sunhl', 'WI', '1']
+2020-08-06 14:30:16,070 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,071 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,072 INFO sqlalchemy.engine.base.Engine ('1593146308.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,073 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,074 INFO sqlalchemy.engine.base.Engine (1593146308.0, '25', '2020-06-26', '9py', 'NIL', 'sunhl', 'WI', 1)
+2020-08-06 14:30:16,074 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593146293.000', '25', '2020-06-26', '9py', 'NIL', 'sunhl', 'WI', '1']
+2020-08-06 14:30:16,081 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,082 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,083 INFO sqlalchemy.engine.base.Engine ('1593146293.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,084 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,084 INFO sqlalchemy.engine.base.Engine (1593146293.0, '25', '2020-06-26', '9py', 'NIL', 'sunhl', 'WI', 1)
+2020-08-06 14:30:16,085 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593144579.000', '25', '2020-06-26', '9py', 'NIL', 'sunhl', 'WI', '1']
+2020-08-06 14:30:16,089 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,090 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,090 INFO sqlalchemy.engine.base.Engine ('1593144579.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,091 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,092 INFO sqlalchemy.engine.base.Engine (1593144579.0, '25', '2020-06-26', '9py', 'NIL', 'sunhl', 'WI', 1)
+2020-08-06 14:30:16,092 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593144569.000', '25', '2020-06-26', '9py', 'NIL', 'sunhl', 'WI', '1']
+2020-08-06 14:30:16,101 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,102 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,102 INFO sqlalchemy.engine.base.Engine ('1593144569.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,103 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,103 INFO sqlalchemy.engine.base.Engine (1593144569.0, '25', '2020-06-26', '9py', 'NIL', 'sunhl', 'WI', 1)
+2020-08-06 14:30:16,104 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593172504.000', '25', '2020-06-26', '9py', 'NIL', 'sunhl', 'WI', '1']
+2020-08-06 14:30:16,113 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,114 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,114 INFO sqlalchemy.engine.base.Engine ('1593172504.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,115 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,115 INFO sqlalchemy.engine.base.Engine (1593172504.0, '25', '2020-06-26', '9py', 'NIL', 'sunhl', 'WI', 1)
+2020-08-06 14:30:16,116 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593171804.000', '25', '2020-06-26', '9py', 'NIL', 'sunhl', 'WI', '1']
+2020-08-06 14:30:16,123 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,124 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,124 INFO sqlalchemy.engine.base.Engine ('1593171804.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,125 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,125 INFO sqlalchemy.engine.base.Engine (1593171804.0, '25', '2020-06-26', '9py', 'NIL', 'sunhl', 'WI', 1)
+2020-08-06 14:30:16,126 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593167991.000', '25', '2020-06-26', '9py', 'NIL', 'peace101', 'WI', '1']
+2020-08-06 14:30:16,135 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,136 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,136 INFO sqlalchemy.engine.base.Engine ('1593167991.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,137 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,137 INFO sqlalchemy.engine.base.Engine (1593167991.0, '25', '2020-06-26', '9py', 'NIL', 'peace101', 'WI', 1)
+2020-08-06 14:30:16,138 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593126491.000', '25', '2020-06-25', '9py', 'NIL', 'machenxu101', 'WI', '1']
+2020-08-06 14:30:16,144 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,145 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,145 INFO sqlalchemy.engine.base.Engine ('1593126491.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,146 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,147 INFO sqlalchemy.engine.base.Engine (1593126491.0, '25', '2020-06-25', '9py', 'NIL', 'machenxu101', 'WI', 1)
+2020-08-06 14:30:16,147 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593118248.000', '25', '2020-06-25', '9py', 'NIL', 'shanshand', 'WI', '1']
+2020-08-06 14:30:16,154 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,156 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,157 INFO sqlalchemy.engine.base.Engine ('1593118248.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,158 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,158 INFO sqlalchemy.engine.base.Engine (1593118248.0, '25', '2020-06-25', '9py', 'NIL', 'shanshand', 'WI', 1)
+2020-08-06 14:30:16,159 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593110356.000', '25', '2020-06-25', '9py', 'NIL', 'nydaym', 'WI', '1']
+2020-08-06 14:30:16,169 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,170 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,170 INFO sqlalchemy.engine.base.Engine ('1593110356.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,171 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,171 INFO sqlalchemy.engine.base.Engine (1593110356.0, '25', '2020-06-25', '9py', 'NIL', 'nydaym', 'WI', 1)
+2020-08-06 14:30:16,172 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593110208.000', '25', '2020-06-25', '9py', 'NIL', 'nydaym', 'WI', '1']
+2020-08-06 14:30:16,180 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,181 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,181 INFO sqlalchemy.engine.base.Engine ('1593110208.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,182 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,182 INFO sqlalchemy.engine.base.Engine (1593110208.0, '25', '2020-06-25', '9py', 'NIL', 'nydaym', 'WI', 1)
+2020-08-06 14:30:16,183 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593104871.000', '25', '2020-06-25', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:16,189 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,190 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,190 INFO sqlalchemy.engine.base.Engine ('1593104871.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,191 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,192 INFO sqlalchemy.engine.base.Engine (1593104871.0, '25', '2020-06-25', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:16,192 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593104862.000', '25', '2020-06-25', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:16,197 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,198 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,198 INFO sqlalchemy.engine.base.Engine ('1593104862.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,199 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,200 INFO sqlalchemy.engine.base.Engine (1593104862.0, '25', '2020-06-25', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:16,200 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593004421.000', '25', '2020-06-24', '9py', 'NIL', 'rabbit-jump', 'WI', '1']
+2020-08-06 14:30:16,205 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,206 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,206 INFO sqlalchemy.engine.base.Engine ('1593004421.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,208 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,208 INFO sqlalchemy.engine.base.Engine (1593004421.0, '25', '2020-06-24', '9py', 'NIL', 'rabbit-jump', 'WI', 1)
+2020-08-06 14:30:16,209 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593001512.000', '25', '2020-06-24', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:16,215 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,216 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,216 INFO sqlalchemy.engine.base.Engine ('1593001512.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,217 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,218 INFO sqlalchemy.engine.base.Engine (1593001512.0, '25', '2020-06-24', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:16,218 INFO sqlalchemy.engine.base.Engine COMMIT
+['1593001505.000', '25', '2020-06-24', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:16,225 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,226 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,226 INFO sqlalchemy.engine.base.Engine ('1593001505.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,227 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,228 INFO sqlalchemy.engine.base.Engine (1593001505.0, '25', '2020-06-24', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:16,228 INFO sqlalchemy.engine.base.Engine COMMIT
+['1592873990.000', '25', '2020-06-23', '9py', 'NIL', 'janet', 'WI', '1']
+2020-08-06 14:30:16,235 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,236 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,236 INFO sqlalchemy.engine.base.Engine ('1592873990.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,237 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,237 INFO sqlalchemy.engine.base.Engine (1592873990.0, '25', '2020-06-23', '9py', 'NIL', 'janet', 'WI', 1)
+2020-08-06 14:30:16,238 INFO sqlalchemy.engine.base.Engine COMMIT
+['1592832601.000', '25', '2020-06-22', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:16,244 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,245 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,245 INFO sqlalchemy.engine.base.Engine ('1592832601.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,246 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,247 INFO sqlalchemy.engine.base.Engine (1592832601.0, '25', '2020-06-22', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:16,247 INFO sqlalchemy.engine.base.Engine COMMIT
+['1592832480.000', '25', '2020-06-22', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:16,254 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,255 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,255 INFO sqlalchemy.engine.base.Engine ('1592832480.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,256 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,256 INFO sqlalchemy.engine.base.Engine (1592832480.0, '25', '2020-06-22', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:16,257 INFO sqlalchemy.engine.base.Engine COMMIT
+['1592830020.000', '25', '2020-06-22', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:16,264 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,265 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,265 INFO sqlalchemy.engine.base.Engine ('1592830020.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,266 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,266 INFO sqlalchemy.engine.base.Engine (1592830020.0, '25', '2020-06-22', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:16,267 INFO sqlalchemy.engine.base.Engine COMMIT
+['1592828409.000', '25', '2020-06-22', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:16,272 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,273 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,274 INFO sqlalchemy.engine.base.Engine ('1592828409.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,275 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,275 INFO sqlalchemy.engine.base.Engine (1592828409.0, '25', '2020-06-22', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:16,275 INFO sqlalchemy.engine.base.Engine COMMIT
+['1592828372.000', '25', '2020-06-22', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:16,283 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,284 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,284 INFO sqlalchemy.engine.base.Engine ('1592828372.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,285 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,286 INFO sqlalchemy.engine.base.Engine (1592828372.0, '25', '2020-06-22', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:16,286 INFO sqlalchemy.engine.base.Engine COMMIT
+['1592828337.000', '25', '2020-06-22', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:16,293 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,294 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,294 INFO sqlalchemy.engine.base.Engine ('1592828337.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,295 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,295 INFO sqlalchemy.engine.base.Engine (1592828337.0, '25', '2020-06-22', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:16,296 INFO sqlalchemy.engine.base.Engine COMMIT
+['1592828220.000', '25', '2020-06-22', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:16,304 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,305 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,306 INFO sqlalchemy.engine.base.Engine ('1592828220.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,307 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,307 INFO sqlalchemy.engine.base.Engine (1592828220.0, '25', '2020-06-22', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:16,307 INFO sqlalchemy.engine.base.Engine COMMIT
+['1592826823.000', '25', '2020-06-22', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:16,314 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,315 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,315 INFO sqlalchemy.engine.base.Engine ('1592826823.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,317 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,317 INFO sqlalchemy.engine.base.Engine (1592826823.0, '25', '2020-06-22', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:16,318 INFO sqlalchemy.engine.base.Engine COMMIT
+['1592826678.000', '25', '2020-06-22', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:16,324 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,325 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,325 INFO sqlalchemy.engine.base.Engine ('1592826678.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,326 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,327 INFO sqlalchemy.engine.base.Engine (1592826678.0, '25', '2020-06-22', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:16,327 INFO sqlalchemy.engine.base.Engine COMMIT
+['1592822174.000', '25', '2020-06-22', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:16,338 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,339 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,339 INFO sqlalchemy.engine.base.Engine ('1592822174.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,340 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,341 INFO sqlalchemy.engine.base.Engine (1592822174.0, '25', '2020-06-22', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:16,341 INFO sqlalchemy.engine.base.Engine COMMIT
+['1592821773.000', '25', '2020-06-22', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:16,347 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,348 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,348 INFO sqlalchemy.engine.base.Engine ('1592821773.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,350 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,350 INFO sqlalchemy.engine.base.Engine (1592821773.0, '25', '2020-06-22', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:16,350 INFO sqlalchemy.engine.base.Engine COMMIT
+['1592745158.000', '25', '2020-06-21', '9py', 'NIL', 'hefe9py', 'WI', '1']
+2020-08-06 14:30:16,357 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,358 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,358 INFO sqlalchemy.engine.base.Engine ('1592745158.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,359 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,360 INFO sqlalchemy.engine.base.Engine (1592745158.0, '25', '2020-06-21', '9py', 'NIL', 'hefe9py', 'WI', 1)
+2020-08-06 14:30:16,360 INFO sqlalchemy.engine.base.Engine COMMIT
+['1592741165.000', '25', '2020-06-21', '9py', 'NIL', 'hefe9py', 'WI', '1']
+2020-08-06 14:30:16,365 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,366 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,367 INFO sqlalchemy.engine.base.Engine ('1592741165.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,368 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,368 INFO sqlalchemy.engine.base.Engine (1592741165.0, '25', '2020-06-21', '9py', 'NIL', 'hefe9py', 'WI', 1)
+2020-08-06 14:30:16,368 INFO sqlalchemy.engine.base.Engine COMMIT
+['1592740051.000', '25', '2020-06-21', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:16,374 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,375 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,376 INFO sqlalchemy.engine.base.Engine ('1592740051.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,377 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,377 INFO sqlalchemy.engine.base.Engine (1592740051.0, '25', '2020-06-21', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:16,377 INFO sqlalchemy.engine.base.Engine COMMIT
+['1592739713.000', '25', '2020-06-21', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:16,387 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,388 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,388 INFO sqlalchemy.engine.base.Engine ('1592739713.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,390 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,390 INFO sqlalchemy.engine.base.Engine (1592739713.0, '25', '2020-06-21', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:16,391 INFO sqlalchemy.engine.base.Engine COMMIT
+['1592739639.000', '25', '2020-06-21', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:16,395 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,396 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,396 INFO sqlalchemy.engine.base.Engine ('1592739639.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,397 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,398 INFO sqlalchemy.engine.base.Engine (1592739639.0, '25', '2020-06-21', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:16,398 INFO sqlalchemy.engine.base.Engine COMMIT
+['1592739548.000', '25', '2020-06-21', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:16,410 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,412 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,412 INFO sqlalchemy.engine.base.Engine ('1592739548.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,413 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,413 INFO sqlalchemy.engine.base.Engine (1592739548.0, '25', '2020-06-21', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:16,414 INFO sqlalchemy.engine.base.Engine COMMIT
+['1592739097.000', '25', '2020-06-21', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:16,425 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,426 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,426 INFO sqlalchemy.engine.base.Engine ('1592739097.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,427 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,428 INFO sqlalchemy.engine.base.Engine (1592739097.0, '25', '2020-06-21', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:16,428 INFO sqlalchemy.engine.base.Engine COMMIT
+['1592738903.000', '25', '2020-06-21', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:16,435 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,436 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,437 INFO sqlalchemy.engine.base.Engine ('1592738903.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,438 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,438 INFO sqlalchemy.engine.base.Engine (1592738903.0, '25', '2020-06-21', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:16,438 INFO sqlalchemy.engine.base.Engine COMMIT
+['1592738747.000', '25', '2020-06-21', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:16,446 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,447 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,448 INFO sqlalchemy.engine.base.Engine ('1592738747.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,449 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,449 INFO sqlalchemy.engine.base.Engine (1592738747.0, '25', '2020-06-21', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:16,450 INFO sqlalchemy.engine.base.Engine COMMIT
+['1592738625.000', '25', '2020-06-21', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:16,455 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,456 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,456 INFO sqlalchemy.engine.base.Engine ('1592738625.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,457 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,458 INFO sqlalchemy.engine.base.Engine (1592738625.0, '25', '2020-06-21', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:16,458 INFO sqlalchemy.engine.base.Engine COMMIT
+['1592705872.000', '25', '2020-06-21', '9py', 'NIL', 'huxmu', 'WI', '1']
+2020-08-06 14:30:16,464 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,465 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,465 INFO sqlalchemy.engine.base.Engine ('1592705872.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,467 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,467 INFO sqlalchemy.engine.base.Engine (1592705872.0, '25', '2020-06-21', '9py', 'NIL', 'huxmu', 'WI', 1)
+2020-08-06 14:30:16,467 INFO sqlalchemy.engine.base.Engine COMMIT
+['1592705537.000', '25', '2020-06-21', '9py', 'NIL', 'huxmu', 'WI', '1']
+2020-08-06 14:30:16,472 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,473 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,473 INFO sqlalchemy.engine.base.Engine ('1592705537.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,474 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,474 INFO sqlalchemy.engine.base.Engine (1592705537.0, '25', '2020-06-21', '9py', 'NIL', 'huxmu', 'WI', 1)
+2020-08-06 14:30:16,475 INFO sqlalchemy.engine.base.Engine COMMIT
+['1592567142.000', '24', '2020-06-19', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:16,481 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,482 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,482 INFO sqlalchemy.engine.base.Engine ('1592567142.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,483 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,483 INFO sqlalchemy.engine.base.Engine (1592567142.0, '24', '2020-06-19', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:16,484 INFO sqlalchemy.engine.base.Engine COMMIT
+['1592567137.000', '24', '2020-06-19', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:16,490 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,491 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,491 INFO sqlalchemy.engine.base.Engine ('1592567137.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,492 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,492 INFO sqlalchemy.engine.base.Engine (1592567137.0, '24', '2020-06-19', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:16,493 INFO sqlalchemy.engine.base.Engine COMMIT
+['1592483300.000', '24', '2020-06-18', '9py', 'NIL', 'huxmu', 'WI', '1']
+2020-08-06 14:30:16,498 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,499 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,499 INFO sqlalchemy.engine.base.Engine ('1592483300.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,500 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,501 INFO sqlalchemy.engine.base.Engine (1592483300.0, '24', '2020-06-18', '9py', 'NIL', 'huxmu', 'WI', 1)
+2020-08-06 14:30:16,501 INFO sqlalchemy.engine.base.Engine COMMIT
+['1592465608.000', '24', '2020-06-18', '9py', 'NIL', 'huxmu', 'WI', '1']
+2020-08-06 14:30:16,508 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,510 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,510 INFO sqlalchemy.engine.base.Engine ('1592465608.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,512 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,512 INFO sqlalchemy.engine.base.Engine (1592465608.0, '24', '2020-06-18', '9py', 'NIL', 'huxmu', 'WI', 1)
+2020-08-06 14:30:16,513 INFO sqlalchemy.engine.base.Engine COMMIT
+['1592440053.000', '24', '2020-06-18', '9py', 'NIL', 'huxmu', 'WI', '1']
+2020-08-06 14:30:16,520 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,521 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,521 INFO sqlalchemy.engine.base.Engine ('1592440053.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,522 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,522 INFO sqlalchemy.engine.base.Engine (1592440053.0, '24', '2020-06-18', '9py', 'NIL', 'huxmu', 'WI', 1)
+2020-08-06 14:30:16,523 INFO sqlalchemy.engine.base.Engine COMMIT
+['1592439757.000', '24', '2020-06-18', '9py', 'NIL', 'huxmu', 'WI', '1']
+2020-08-06 14:30:16,532 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,532 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,533 INFO sqlalchemy.engine.base.Engine ('1592439757.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,534 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,534 INFO sqlalchemy.engine.base.Engine (1592439757.0, '24', '2020-06-18', '9py', 'NIL', 'huxmu', 'WI', 1)
+2020-08-06 14:30:16,535 INFO sqlalchemy.engine.base.Engine COMMIT
+['1592439708.000', '24', '2020-06-18', '9py', 'NIL', 'huxmu', 'WI', '1']
+2020-08-06 14:30:16,542 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,543 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,544 INFO sqlalchemy.engine.base.Engine ('1592439708.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,545 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,545 INFO sqlalchemy.engine.base.Engine (1592439708.0, '24', '2020-06-18', '9py', 'NIL', 'huxmu', 'WI', 1)
+2020-08-06 14:30:16,546 INFO sqlalchemy.engine.base.Engine COMMIT
+['1592439503.000', '24', '2020-06-18', '9py', 'NIL', 'huxmu', 'WI', '1']
+2020-08-06 14:30:16,553 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,554 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,554 INFO sqlalchemy.engine.base.Engine ('1592439503.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,555 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,555 INFO sqlalchemy.engine.base.Engine (1592439503.0, '24', '2020-06-18', '9py', 'NIL', 'huxmu', 'WI', 1)
+2020-08-06 14:30:16,556 INFO sqlalchemy.engine.base.Engine COMMIT
+['1592401536.000', '24', '2020-06-17', '9py', 'NIL', 'huxmu', 'WI', '1']
+2020-08-06 14:30:16,563 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,564 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,564 INFO sqlalchemy.engine.base.Engine ('1592401536.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,565 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,565 INFO sqlalchemy.engine.base.Engine (1592401536.0, '24', '2020-06-17', '9py', 'NIL', 'huxmu', 'WI', 1)
+2020-08-06 14:30:16,566 INFO sqlalchemy.engine.base.Engine COMMIT
+['1592417005.000', '24', '2020-06-17', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:16,574 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,575 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,575 INFO sqlalchemy.engine.base.Engine ('1592417005.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,576 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,577 INFO sqlalchemy.engine.base.Engine (1592417005.0, '24', '2020-06-17', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:16,577 INFO sqlalchemy.engine.base.Engine COMMIT
+['1592416775.000', '24', '2020-06-17', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:16,583 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,584 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,584 INFO sqlalchemy.engine.base.Engine ('1592416775.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,585 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,585 INFO sqlalchemy.engine.base.Engine (1592416775.0, '24', '2020-06-17', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:16,586 INFO sqlalchemy.engine.base.Engine COMMIT
+['1592411341.000', '24', '2020-06-17', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:16,599 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,600 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,601 INFO sqlalchemy.engine.base.Engine ('1592411341.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,602 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,602 INFO sqlalchemy.engine.base.Engine (1592411341.0, '24', '2020-06-17', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:16,602 INFO sqlalchemy.engine.base.Engine COMMIT
+['1592326478.000', '24', '2020-06-16', '9py', 'NIL', 'Alex', 'WI', '1']
+2020-08-06 14:30:16,608 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,609 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,610 INFO sqlalchemy.engine.base.Engine ('1592326478.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,611 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,611 INFO sqlalchemy.engine.base.Engine (1592326478.0, '24', '2020-06-16', '9py', 'NIL', 'Alex', 'WI', 1)
+2020-08-06 14:30:16,611 INFO sqlalchemy.engine.base.Engine COMMIT
+['1592057112.000', '23', '2020-06-13', '9py', 'NIL', 'Nanrou', 'WI', '1']
+2020-08-06 14:30:16,617 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,618 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,619 INFO sqlalchemy.engine.base.Engine ('1592057112.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,619 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,620 INFO sqlalchemy.engine.base.Engine (1592057112.0, '23', '2020-06-13', '9py', 'NIL', 'Nanrou', 'WI', 1)
+2020-08-06 14:30:16,620 INFO sqlalchemy.engine.base.Engine COMMIT
+['1591696794.000', '23', '2020-06-09', '9py', 'NIL', 'kkjiayu', 'WI', '1']
+2020-08-06 14:30:16,626 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,628 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,628 INFO sqlalchemy.engine.base.Engine ('1591696794.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,629 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,629 INFO sqlalchemy.engine.base.Engine (1591696794.0, '23', '2020-06-09', '9py', 'NIL', 'kkjiayu', 'WI', 1)
+2020-08-06 14:30:16,630 INFO sqlalchemy.engine.base.Engine COMMIT
+['1591696322.000', '23', '2020-06-09', '9py', 'NIL', 'kkjiayu', 'WI', '1']
+2020-08-06 14:30:16,634 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,636 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,636 INFO sqlalchemy.engine.base.Engine ('1591696322.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,637 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,637 INFO sqlalchemy.engine.base.Engine (1591696322.0, '23', '2020-06-09', '9py', 'NIL', 'kkjiayu', 'WI', 1)
+2020-08-06 14:30:16,638 INFO sqlalchemy.engine.base.Engine COMMIT
+['1590061208.000', '20', '2020-05-21', '9py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:16,649 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:16,650 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:16,651 INFO sqlalchemy.engine.base.Engine ('1590061208.000', '9py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:16,652 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:16,652 INFO sqlalchemy.engine.base.Engine (1590061208.0, '20', '2020-05-21', '9py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:16,652 INFO sqlalchemy.engine.base.Engine COMMIT
+2020-08-06 14:30:16.695 | DEBUG    | mod.netools:get4URI:78 - Sending request to https://gitlab.com/api/v4/projects/18907382/events?per_page=20
+2020-08-06 14:30:16.954 | DEBUG    | mod.netools:get4URI:103 - >>> message
+	  {"message":"404 Project Not Found"}
+{'end': '2020-08-09',
+ 'grpid': 7516140,
+ 'load': '2020-05-31',
+ 'repos': {'main': {'id': 18907382, 'path': 'tasks'},
+           'ply': {'id': 18907311, 'path': 'playground'}},
+ 'subgrp': {'id': 7986005},
+ 'wiki': {'main': 'tasks.wiki', 'ply': 'playground.wiki'}}
+https://gitlab.com/api/v4/projects/18907382/events?per_page=20
+srv. break
+
+PoL4DU ~ Proof of Learnning for DebugUself
+	(v.200806.2142) by:ZoomQuiet
+
+
+	 crt. PATH ===
+/opt/scm/srv/pol4du/_sites/10py/playground.wiki
+Already up to date.
+
+	 crt. PATH ===
+/opt/scm/srv/pol4du/yahooo
+
+	 crt. PATH ===
+/opt/scm/srv/pol4du/_sites/10py/tasks.wiki
+Already up to date.
+
+	 crt. PATH ===
+/opt/scm/srv/pol4du/yahooo
+2020-08-06 14:30:22.491 | INFO     | mod.loc_wiki:commit2csv:101 - /opt/scm/srv/pol4du/_tmp/tmp.wiki.csv
+b''
+b''
+upd. DB for wiki events /opt/scm/srv/pol4du/_tmp/tmp.wiki.csv
+2020-08-06 14:30:22,499 INFO sqlalchemy.engine.base.Engine SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1
+2020-08-06 14:30:22,500 INFO sqlalchemy.engine.base.Engine ()
+2020-08-06 14:30:22,501 INFO sqlalchemy.engine.base.Engine SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1
+2020-08-06 14:30:22,501 INFO sqlalchemy.engine.base.Engine ()
+2020-08-06 14:30:22,502 INFO sqlalchemy.engine.base.Engine PRAGMA main.table_info("user")
+2020-08-06 14:30:22,502 INFO sqlalchemy.engine.base.Engine ()
+2020-08-06 14:30:22,503 INFO sqlalchemy.engine.base.Engine PRAGMA main.table_info("pol")
+2020-08-06 14:30:22,503 INFO sqlalchemy.engine.base.Engine ()
+['']
+['1592933942.000', '25', '2020-06-23', '10py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:22,508 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:22,509 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:22,510 INFO sqlalchemy.engine.base.Engine ('1592933942.000', '10py', 'WI')
+	 EVENT already injected...
+	 stop now
+
+2020-08-06 14:30:22,511 INFO sqlalchemy.engine.base.Engine ROLLBACK
+2020-08-06 14:30:22.544 | DEBUG    | mod.netools:get4URI:78 - Sending request to https://gitlab.com/api/v4/projects/19427539/events?per_page=20
+2020-08-06 14:30:22.787 | DEBUG    | mod.netools:get4URI:103 - >>> message
+	  {"message":"404 Project Not Found"}
+{'end': '2020-09-06',
+ 'grpid': 7516190,
+ 'load': '2020-06-29',
+ 'repos': {'main': {'id': 19427539, 'path': 'tasks'},
+           'ply': {'id': 19427552, 'path': 'playground'}},
+ 'subgrp': {'id': 8325563},
+ 'wiki': {'main': 'tasks.wiki', 'ply': 'playground.wiki'}}
+https://gitlab.com/api/v4/projects/19427539/events?per_page=20
+srv. break
+
+PoL4DU ~ Proof of Learnning for DebugUself
+	(v.200806.2142) by:ZoomQuiet
+
+
+	 crt. PATH ===
+/opt/scm/srv/pol4du/_sites/11py/playground.wiki
+Already up to date.
+
+	 crt. PATH ===
+/opt/scm/srv/pol4du/yahooo
+
+	 crt. PATH ===
+/opt/scm/srv/pol4du/_sites/11py/tasks.wiki
+Already up to date.
+
+	 crt. PATH ===
+/opt/scm/srv/pol4du/yahooo
+2020-08-06 14:30:28.126 | INFO     | mod.loc_wiki:commit2csv:101 - /opt/scm/srv/pol4du/_tmp/tmp.wiki.csv
+b''
+b''
+upd. DB for wiki events /opt/scm/srv/pol4du/_tmp/tmp.wiki.csv
+2020-08-06 14:30:28,134 INFO sqlalchemy.engine.base.Engine SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1
+2020-08-06 14:30:28,134 INFO sqlalchemy.engine.base.Engine ()
+2020-08-06 14:30:28,135 INFO sqlalchemy.engine.base.Engine SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1
+2020-08-06 14:30:28,136 INFO sqlalchemy.engine.base.Engine ()
+2020-08-06 14:30:28,137 INFO sqlalchemy.engine.base.Engine PRAGMA main.table_info("user")
+2020-08-06 14:30:28,137 INFO sqlalchemy.engine.base.Engine ()
+2020-08-06 14:30:28,138 INFO sqlalchemy.engine.base.Engine PRAGMA temp.table_info("user")
+2020-08-06 14:30:28,138 INFO sqlalchemy.engine.base.Engine ()
+2020-08-06 14:30:28,138 INFO sqlalchemy.engine.base.Engine PRAGMA main.table_info("pol")
+2020-08-06 14:30:28,138 INFO sqlalchemy.engine.base.Engine ()
+2020-08-06 14:30:28,139 INFO sqlalchemy.engine.base.Engine PRAGMA temp.table_info("pol")
+2020-08-06 14:30:28,139 INFO sqlalchemy.engine.base.Engine ()
+2020-08-06 14:30:28,141 INFO sqlalchemy.engine.base.Engine 
+CREATE TABLE user (
+	id INTEGER NOT NULL, 
+	name VARCHAR NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (name)
+)
+
+
+2020-08-06 14:30:28,141 INFO sqlalchemy.engine.base.Engine ()
+2020-08-06 14:30:28,144 INFO sqlalchemy.engine.base.Engine COMMIT
+2020-08-06 14:30:28,145 INFO sqlalchemy.engine.base.Engine 
+CREATE TABLE pol (
+	id INTEGER NOT NULL, 
+	ts FLOAT NOT NULL, 
+	week SMALLINT NOT NULL, 
+	date VARCHAR NOT NULL, 
+	camp VARCHAR NOT NULL, 
+	uid VARCHAR NOT NULL, 
+	uname VARCHAR NOT NULL, 
+	etype VARCHAR NOT NULL, 
+	diff SMALLINT NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2020-08-06 14:30:28,145 INFO sqlalchemy.engine.base.Engine ()
+2020-08-06 14:30:28,148 INFO sqlalchemy.engine.base.Engine COMMIT
+['']
+['1595419176.000', '29', '2020-07-22', '11py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:28,152 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:28,154 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:28,154 INFO sqlalchemy.engine.base.Engine ('1595419176.000', '11py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:28,156 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:28,156 INFO sqlalchemy.engine.base.Engine (1595419176.0, '29', '2020-07-22', '11py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:28,157 INFO sqlalchemy.engine.base.Engine COMMIT
+['1596535738.000', '31', '2020-08-04', '11py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:28,160 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:28,161 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:28,161 INFO sqlalchemy.engine.base.Engine ('1596535738.000', '11py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:28,162 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:28,162 INFO sqlalchemy.engine.base.Engine (1596535738.0, '31', '2020-08-04', '11py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:28,163 INFO sqlalchemy.engine.base.Engine COMMIT
+['1595419732.000', '29', '2020-07-22', '11py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:30:28,166 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:30:28,167 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:30:28,167 INFO sqlalchemy.engine.base.Engine ('1595419732.000', '11py', 'WI')
+	 new EVENTs need appendding...
+
+2020-08-06 14:30:28,168 INFO sqlalchemy.engine.base.Engine INSERT INTO pol (ts, week, date, camp, uid, uname, etype, diff) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2020-08-06 14:30:28,169 INFO sqlalchemy.engine.base.Engine (1595419732.0, '29', '2020-07-22', '11py', 'NIL', 'ZoomQuiet', 'WI', 1)
+2020-08-06 14:30:28,169 INFO sqlalchemy.engine.base.Engine COMMIT
+2020-08-06 14:30:28.211 | DEBUG    | mod.netools:get4URI:78 - Sending request to https://gitlab.com/api/v4/projects/19427943/events?per_page=20
+2020-08-06 14:30:28.492 | DEBUG    | mod.netools:get4URI:103 - >>> message
+	  {"message":"404 Project Not Found"}
+{'end': '2020-07-23',
+ 'grpid': 8325579,
+ 'load': '2020-10-11',
+ 'repos': {'main': {'id': 19427943, 'path': 'tasks'},
+           'ply': {'id': 19427954, 'path': 'playground'}},
+ 'subgrp': {'id': 8325586},
+ 'wiki': {'main': 'tasks.wiki', 'ply': 'playground.wiki'}}
+https://gitlab.com/api/v4/projects/19427943/events?per_page=20
+srv. break
+
+PoL4DU ~ Proof of Learnning for DebugUself
+	(v.200806.2142) by:ZoomQuiet
+
