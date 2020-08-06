@@ -4,3 +4,12 @@ mercurial (4.5.3)
 pip (9.0.1)
 youtube-dl (2020.3.24)
 /opt/scm/srv/pol4du/yahooo/cron4trig2duw.sh: line 40: inv: command not found
+[logging 1ea6c44] (crontab) logging auto publish as 2020-08-06 14:10:02
+ 1 file changed, 6 insertions(+)
+ create mode 100644 2020/08/200806_141001.log
+Warning: Permanently added the RSA host key for IP address '13.114.40.48' to the list of known hosts.
+To github.com:DebugUself/duw.git
+   70657ac..1ea6c44  logging -> logging
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+###::cron4trig2duw.sh v.200806.2142 crontab action 4 auto POL4DU/W
+###::run@ 2020/08/06 14:10:08
