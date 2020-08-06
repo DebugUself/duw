@@ -1742,3 +1742,273 @@ srv. break
 PoL4DU ~ Proof of Learnning for DebugUself
 	(v.200806.2142) by:ZoomQuiet
 
+[logging 86ae1a2] (crontab) logging auto publish as 2020-08-06 14:30:28
+ 1 file changed, 1633 insertions(+)
+To github.com:DebugUself/duw.git
+   e00db41..86ae1a2  logging -> logging
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+###::cron4trig2duw.sh v.200806.2142 crontab action 4 auto POL4DU/W
+###::run@ 2020/08/06 14:30:34
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Available tasks:
+
+  gh0brs     GraphQL got all branchs
+  gh6bkdb    bkup SQLite3
+  gh7upd     update all DU matter
+  ghpub      $ inv ghpub du ~ pub. Pol for DU matter
+  gl3redb    3: bkup and relfush SQLite DB
+  gl4incer   4: increment append date into SQLite DB
+  gl8pub     8: gen. Poling site pages+img. [ |--pol ]
+  ver        print help and version info.
+
+
+	 crt. PATH ===
+/opt/scm/srv/pol4du/_sites/du/proto.wiki
+Warning: Permanently added the RSA host key for IP address '140.82.113.4' to the list of known hosts.
+Already up to date.
+
+	 crt. PATH ===
+/opt/scm/srv/pol4du/yahooo
+2020-08-06 14:35:07.684 | INFO     | mod.loc_wiki:commit2csv:101 - /opt/scm/srv/pol4du/_tmp/tmp.wiki.csv
+b''
+upd. DB for wiki events /opt/scm/srv/pol4du/_tmp/tmp.wiki.csv
+2020-08-06 14:35:07,692 INFO sqlalchemy.engine.base.Engine SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1
+2020-08-06 14:35:07,693 INFO sqlalchemy.engine.base.Engine ()
+2020-08-06 14:35:07,693 INFO sqlalchemy.engine.base.Engine SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1
+2020-08-06 14:35:07,694 INFO sqlalchemy.engine.base.Engine ()
+2020-08-06 14:35:07,694 INFO sqlalchemy.engine.base.Engine PRAGMA main.table_info("user")
+2020-08-06 14:35:07,695 INFO sqlalchemy.engine.base.Engine ()
+2020-08-06 14:35:07,695 INFO sqlalchemy.engine.base.Engine PRAGMA main.table_info("pol")
+2020-08-06 14:35:07,696 INFO sqlalchemy.engine.base.Engine ()
+['']
+['1596563763.000', '31', '2020-08-04', 'du', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:35:07,700 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:35:07,702 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:35:07,702 INFO sqlalchemy.engine.base.Engine ('1596563763.000', 'du', 'WI')
+	 EVENT already injected...
+	 stop now
+
+2020-08-06 14:35:07,705 INFO sqlalchemy.engine.base.Engine ROLLBACK
+
+	 all totalCount commit: 9910
+
+	 Branch -> 22cc
+22cc
+Traceback (most recent call last):
+  File "/home/zoomq/.pyenv/versions/3.8.5/envs/s0ra385/bin/inv", line 8, in <module>
+    sys.exit(program.run())
+  File "/home/zoomq/.pyenv/versions/3.8.5/envs/s0ra385/lib/python3.8/site-packages/invoke/program.py", line 384, in run
+    self.execute()
+  File "/home/zoomq/.pyenv/versions/3.8.5/envs/s0ra385/lib/python3.8/site-packages/invoke/program.py", line 566, in execute
+    executor.execute(*self.tasks)
+  File "/home/zoomq/.pyenv/versions/3.8.5/envs/s0ra385/lib/python3.8/site-packages/invoke/executor.py", line 129, in execute
+    result = call.task(*args, **call.kwargs)
+  File "/home/zoomq/.pyenv/versions/3.8.5/envs/s0ra385/lib/python3.8/site-packages/invoke/tasks.py", line 127, in __call__
+    result = self.body(*args, **kwargs)
+  File "/opt/scm/srv/pol4du/yahooo/tasks.py", line 250, in gh7upd
+    GH.upd_events2db()
+  File "/opt/scm/srv/pol4du/yahooo/mod/gh_api.py", line 557, in upd_events2db
+    _upd_ci(br)
+  File "/opt/scm/srv/pol4du/yahooo/mod/gh_api.py", line 695, in _upd_ci
+    result = GQL.run_query(_query, variables) #execute query
+  File "/opt/scm/srv/pol4du/yahooo/mod/gh_gql.py", line 44, in run_query
+    raise Exception("Query failed to run by returning code of {}. {}".format(request.status_code, query))
+Exception: Query failed to run by returning code of 401. query ($owner: String!, $name: String!, $branchCursor: String!) {
+  repository(owner: $owner, name: $name) {
+    branch0: ref(qualifiedName: $branchCursor) {
+      target {
+        ... on Commit {
+
+     
+                history(first: 100) {
+             
+            ...CommitFragment
+          }
+        }
+      }
+    }
+  }
+}
+
+fragment CommitFragment on CommitHistoryConnection {
+  totalCount
+  pageInfo {
+    hasNextPage
+    endCursor
+  }
+  nodes {
+    oid
+    committedDate
+    additions
+    deletions
+    author {
+      user {
+        login
+        email
+      }
+    }
+  }
+}
+
+    
+
+	 crt. PATH ===
+/opt/scm/srv/pol4du/_sites/9py/playground.wiki
+Already up to date.
+
+	 crt. PATH ===
+/opt/scm/srv/pol4du/yahooo
+
+	 crt. PATH ===
+/opt/scm/srv/pol4du/_sites/9py/tasks.wiki
+Already up to date.
+
+	 crt. PATH ===
+/opt/scm/srv/pol4du/yahooo
+2020-08-06 14:35:14.818 | INFO     | mod.loc_wiki:commit2csv:101 - /opt/scm/srv/pol4du/_tmp/tmp.wiki.csv
+b''
+b''
+upd. DB for wiki events /opt/scm/srv/pol4du/_tmp/tmp.wiki.csv
+2020-08-06 14:35:14,826 INFO sqlalchemy.engine.base.Engine SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1
+2020-08-06 14:35:14,827 INFO sqlalchemy.engine.base.Engine ()
+2020-08-06 14:35:14,828 INFO sqlalchemy.engine.base.Engine SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1
+2020-08-06 14:35:14,828 INFO sqlalchemy.engine.base.Engine ()
+2020-08-06 14:35:14,829 INFO sqlalchemy.engine.base.Engine PRAGMA main.table_info("user")
+2020-08-06 14:35:14,829 INFO sqlalchemy.engine.base.Engine ()
+2020-08-06 14:35:14,830 INFO sqlalchemy.engine.base.Engine PRAGMA main.table_info("pol")
+2020-08-06 14:35:14,830 INFO sqlalchemy.engine.base.Engine ()
+['']
+['1593178790.000', '25', '2020-06-26', '9py', 'NIL', 'peace101', 'WI', '1']
+2020-08-06 14:35:14,835 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:35:14,837 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:35:14,837 INFO sqlalchemy.engine.base.Engine ('1593178790.000', '9py', 'WI')
+	 EVENT already injected...
+	 stop now
+
+2020-08-06 14:35:14,838 INFO sqlalchemy.engine.base.Engine ROLLBACK
+2020-08-06 14:35:14.872 | DEBUG    | mod.netools:get4URI:78 - Sending request to https://gitlab.com/api/v4/projects/18907382/events?per_page=20
+2020-08-06 14:35:15.123 | DEBUG    | mod.netools:get4URI:103 - >>> message
+	  {"message":"404 Project Not Found"}
+{'end': '2020-08-09',
+ 'grpid': 7516140,
+ 'load': '2020-05-31',
+ 'repos': {'main': {'id': 18907382, 'path': 'tasks'},
+           'ply': {'id': 18907311, 'path': 'playground'}},
+ 'subgrp': {'id': 7986005},
+ 'wiki': {'main': 'tasks.wiki', 'ply': 'playground.wiki'}}
+https://gitlab.com/api/v4/projects/18907382/events?per_page=20
+srv. break
+
+PoL4DU ~ Proof of Learnning for DebugUself
+	(v.200806.2142) by:ZoomQuiet
+
+
+	 crt. PATH ===
+/opt/scm/srv/pol4du/_sites/10py/playground.wiki
+Already up to date.
+
+	 crt. PATH ===
+/opt/scm/srv/pol4du/yahooo
+
+	 crt. PATH ===
+/opt/scm/srv/pol4du/_sites/10py/tasks.wiki
+Already up to date.
+
+	 crt. PATH ===
+/opt/scm/srv/pol4du/yahooo
+2020-08-06 14:35:20.447 | INFO     | mod.loc_wiki:commit2csv:101 - /opt/scm/srv/pol4du/_tmp/tmp.wiki.csv
+b''
+b''
+upd. DB for wiki events /opt/scm/srv/pol4du/_tmp/tmp.wiki.csv
+2020-08-06 14:35:20,458 INFO sqlalchemy.engine.base.Engine SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1
+2020-08-06 14:35:20,458 INFO sqlalchemy.engine.base.Engine ()
+2020-08-06 14:35:20,459 INFO sqlalchemy.engine.base.Engine SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1
+2020-08-06 14:35:20,460 INFO sqlalchemy.engine.base.Engine ()
+2020-08-06 14:35:20,461 INFO sqlalchemy.engine.base.Engine PRAGMA main.table_info("user")
+2020-08-06 14:35:20,462 INFO sqlalchemy.engine.base.Engine ()
+2020-08-06 14:35:20,463 INFO sqlalchemy.engine.base.Engine PRAGMA main.table_info("pol")
+2020-08-06 14:35:20,463 INFO sqlalchemy.engine.base.Engine ()
+['']
+['1592933942.000', '25', '2020-06-23', '10py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:35:20,470 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:35:20,473 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:35:20,473 INFO sqlalchemy.engine.base.Engine ('1592933942.000', '10py', 'WI')
+	 EVENT already injected...
+	 stop now
+
+2020-08-06 14:35:20,475 INFO sqlalchemy.engine.base.Engine ROLLBACK
+2020-08-06 14:35:20.520 | DEBUG    | mod.netools:get4URI:78 - Sending request to https://gitlab.com/api/v4/projects/19427539/events?per_page=20
+2020-08-06 14:35:20.810 | DEBUG    | mod.netools:get4URI:103 - >>> message
+	  {"message":"404 Project Not Found"}
+{'end': '2020-09-06',
+ 'grpid': 7516190,
+ 'load': '2020-06-29',
+ 'repos': {'main': {'id': 19427539, 'path': 'tasks'},
+           'ply': {'id': 19427552, 'path': 'playground'}},
+ 'subgrp': {'id': 8325563},
+ 'wiki': {'main': 'tasks.wiki', 'ply': 'playground.wiki'}}
+https://gitlab.com/api/v4/projects/19427539/events?per_page=20
+srv. break
+
+PoL4DU ~ Proof of Learnning for DebugUself
+	(v.200806.2142) by:ZoomQuiet
+
+
+	 crt. PATH ===
+/opt/scm/srv/pol4du/_sites/11py/playground.wiki
+Already up to date.
+
+	 crt. PATH ===
+/opt/scm/srv/pol4du/yahooo
+
+	 crt. PATH ===
+/opt/scm/srv/pol4du/_sites/11py/tasks.wiki
+Already up to date.
+
+	 crt. PATH ===
+/opt/scm/srv/pol4du/yahooo
+2020-08-06 14:35:26.099 | INFO     | mod.loc_wiki:commit2csv:101 - /opt/scm/srv/pol4du/_tmp/tmp.wiki.csv
+b''
+b''
+upd. DB for wiki events /opt/scm/srv/pol4du/_tmp/tmp.wiki.csv
+2020-08-06 14:35:26,107 INFO sqlalchemy.engine.base.Engine SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1
+2020-08-06 14:35:26,107 INFO sqlalchemy.engine.base.Engine ()
+2020-08-06 14:35:26,108 INFO sqlalchemy.engine.base.Engine SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1
+2020-08-06 14:35:26,109 INFO sqlalchemy.engine.base.Engine ()
+2020-08-06 14:35:26,110 INFO sqlalchemy.engine.base.Engine PRAGMA main.table_info("user")
+2020-08-06 14:35:26,110 INFO sqlalchemy.engine.base.Engine ()
+2020-08-06 14:35:26,111 INFO sqlalchemy.engine.base.Engine PRAGMA main.table_info("pol")
+2020-08-06 14:35:26,111 INFO sqlalchemy.engine.base.Engine ()
+['']
+['1595419176.000', '29', '2020-07-22', '11py', 'NIL', 'ZoomQuiet', 'WI', '1']
+2020-08-06 14:35:26,116 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+2020-08-06 14:35:26,118 INFO sqlalchemy.engine.base.Engine SELECT pol.id AS pol_id, pol.ts AS pol_ts, pol.week AS pol_week, pol.date AS pol_date, pol.camp AS pol_camp, pol.uid AS pol_uid, pol.uname AS pol_uname, pol.etype AS pol_etype, pol.diff AS pol_diff 
+FROM pol 
+WHERE pol.ts = ? AND pol.camp = ? AND pol.etype = ?
+2020-08-06 14:35:26,118 INFO sqlalchemy.engine.base.Engine ('1595419176.000', '11py', 'WI')
+	 EVENT already injected...
+	 stop now
+
+2020-08-06 14:35:26,120 INFO sqlalchemy.engine.base.Engine ROLLBACK
+2020-08-06 14:35:26.158 | DEBUG    | mod.netools:get4URI:78 - Sending request to https://gitlab.com/api/v4/projects/19427943/events?per_page=20
+2020-08-06 14:35:26.427 | DEBUG    | mod.netools:get4URI:103 - >>> message
+	  {"message":"404 Project Not Found"}
+{'end': '2020-07-23',
+ 'grpid': 8325579,
+ 'load': '2020-10-11',
+ 'repos': {'main': {'id': 19427943, 'path': 'tasks'},
+           'ply': {'id': 19427954, 'path': 'playground'}},
+ 'subgrp': {'id': 8325586},
+ 'wiki': {'main': 'tasks.wiki', 'ply': 'playground.wiki'}}
+https://gitlab.com/api/v4/projects/19427943/events?per_page=20
+srv. break
+
+PoL4DU ~ Proof of Learnning for DebugUself
+	(v.200806.2142) by:ZoomQuiet
+
