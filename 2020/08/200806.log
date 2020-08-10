@@ -2012,3 +2012,10 @@ srv. break
 PoL4DU ~ Proof of Learnning for DebugUself
 	(v.200806.2142) by:ZoomQuiet
 
+[logging 1af765b] (crontab) logging auto publish as 2020-08-06 14:35:26
+ 1 file changed, 270 insertions(+)
+To github.com:DebugUself/duw.git
+   86ae1a2..1af765b  logging -> logging
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+###::cron4trig2duw.sh v.200806.2142 crontab action 4 auto POL4DU/W
+###::run@ 2020/08/06 14:35:31
