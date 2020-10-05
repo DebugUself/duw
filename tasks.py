@@ -59,7 +59,7 @@ from invoke import task
 #from fabric.context_managers import cd
 from textwrap import dedent as dedentxt
 
-CAMPROOT = os.environ.get("DU19SRC_ROOT")
+CAMPROOT = "/opt/scm/srv/pol4du/_sites/du" #os.environ.get("DU19SRC_ROOT")
 CSITES = {'duw':{'ori':'br_duw_pub'
                 , 'src':'br_DUW'
                 , 'ghp':'ghp_duw'
