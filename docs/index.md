@@ -18,9 +18,7 @@
 - [ 怼周刊_v180](2020/180w.md)
 - [ 怼周刊_v179](2020/179w.md)
 
-(auto index injected by 
-PoL4DU v.200808.2342 by:ZoomQuiet
-)
+(auto index injected by blog101CAMP v.200115.1642) 
 
 .::
 
