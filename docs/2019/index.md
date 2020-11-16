@@ -57,7 +57,9 @@
 - [ 怼周刊_v140](140w.md)
 - [ 怼周刊_v141](141w.md)
 
-(auto index injected by blog101CAMP v.200115.1642) 
+(auto index injected by 
+PoL4DU v.200808.2342 by:ZoomQuiet
+)
 
 .::
 

@@ -50,8 +50,11 @@
 - [ 怼周刊_v183](183w.md)
 - [ 怼周刊_v184](184w.md)
 - [ 怼周刊_v185](185w.md)
+- [ 怼周刊_v187](187w.md)
 
-(auto index injected by blog101CAMP v.200115.1642) 
+(auto index injected by 
+PoL4DU v.200808.2342 by:ZoomQuiet
+)
 
 .::
 

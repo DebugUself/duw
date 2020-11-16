@@ -58,7 +58,9 @@
 - [ 怼周刊_v49](049w.md)
 - [ 怼周刊_v50](050w.md)
 
-(auto index injected by blog101CAMP v.200115.1642) 
+(auto index injected by 
+PoL4DU v.200808.2342 by:ZoomQuiet
+)
 
 .::
 
