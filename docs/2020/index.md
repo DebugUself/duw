@@ -56,6 +56,7 @@
 - [ 怼周刊_v189](189w.md)
 - [ 怼周刊_v190](190w.md)
 - [ 怼周刊_v191](191w.md)
+- [ 怼周刊_v192](192w.md)
 
 (auto index injected by 
 PoL4DU v.200808.2342 by:ZoomQuiet
