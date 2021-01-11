@@ -7,6 +7,7 @@
 ::.
 
 - [ 怼周刊-W194](194w.md)
+- [ 怼周刊-W195](195w.md)
 
 (auto index injected by 
 PoL4DU v.200808.2342 by:ZoomQuiet
