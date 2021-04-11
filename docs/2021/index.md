@@ -20,6 +20,7 @@
 - [ 怼周刊-W205](205w.md)
 - [ 怼周刊-W206](206w.md)
 - [ 怼周刊-W207](207w.md)
+- [ 怼周刊-W208](208w.md)
 
 (auto index injected by 
 PoL4DU v.200808.2342 by:ZoomQuiet
