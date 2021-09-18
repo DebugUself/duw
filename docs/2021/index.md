@@ -42,6 +42,7 @@
 - [ 怼周刊-W227](227w.md)
 - [ 怼周刊-W228](228w.md)
 - [ 怼周刊-W229](229w.md)
+- [ 怼周刊-W230](230w.md)
 
 (auto index injected by 
 PoL4DU v.200808.2342 by:ZoomQuiet
