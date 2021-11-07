@@ -50,6 +50,7 @@
 - [ 怼周刊-W235](235w.md)
 - [ 怼周刊-W236](236w.md)
 - [ 怼周刊-W237](237w.md)
+- [ 怼周刊-W238](238w.md)
 
 (auto index injected by 
 PoL4DU v.200808.2342 by:ZoomQuiet
