@@ -9,6 +9,7 @@
 - [ 怼周刊-W247](247w.md)
 - [ 怼周刊-W246](246w.md)
 - [ 怼周刊-W248](248w.md)
+- [ 怼周刊-W249](249w.md)
 
 (auto index injected by 
 PoL4DU v.200808.2342 by:ZoomQuiet
