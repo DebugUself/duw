@@ -274,7 +274,6 @@ py ,0.35,7月 07 08:36 am,7月 07 08:57 am,Csv样本
 pyb ,0.04,7月 06 03:52 pm,7月 06 03:55 pm,Shortcuts
 
 </code></pre>
-
 <p>2 常规管道
 2.1 去除空行</p>
 <pre><code>with open('sample03.csv') as f:
@@ -293,7 +292,6 @@ py ,0.35,7月 07 08:36 am,7月 07 08:57 am,Csv样本
 pyb ,0.04,7月 06 03:52 pm,7月 06 03:55 pm,Shortcut
 48
 </code></pre>
-
 <p>2.2 去掉表头</p>
 <pre><code>with open('sample03.csv') as f:
     for line in f:
@@ -308,7 +306,6 @@ py ,0.35,7月 07 08:36 am,7月 07 08:57 am,Csv样本
 pyb ,0.04,7月 06 03:52 pm,7月 06 03:55 pm,Shortcut
 
 </code></pre>
-
 <p>3 特殊管道
 3.1 去除多余空格
     3.1.1 把str用分隔符裂为list
@@ -327,7 +324,6 @@ with open('sample03.csv') as f:
 ['py ', '0.35', '7月 07 08:36 am', '7月 07 08:57 am', 'Csv样本']
 ['pyb ', '0.04', '7月 06 03:52 pm', '7月 06 03:55 pm', 'Shortcut']
 </code></pre>
-
 <pre><code>## 方案2: 分隔符: ' '
 with open('sample03.csv') as f:
     for line in f:
@@ -341,7 +337,6 @@ with open('sample03.csv') as f:
 ['py', ',0.35,7月', '07', '08:36', 'am,7月', '07', '08:57', 'am,Csv样本']
 ['pyb', ',0.04,7月', '06', '03:52', 'pm,7月', '06', '03:55', 'pm,Shortcut']
 </code></pre>
-
 <p>(熊🐻:很明显分隔符为','的方案看起来比较整齐...)</p>
 <p>3.2 去除多余空格
     3.2.2 把list中每个元素的多余空格去掉
@@ -369,7 +364,6 @@ pyb
 7月 06 03:55 pm
 Shortcut                                       
 </code></pre>
-
 <p>(熊🐻:粗暴strip()后, 元素内依然残留大量空格...)</p>
 <pre><code>## 方案2: split()
 with open('sample03.csv') as f:
@@ -394,7 +388,6 @@ with open('sample03.csv') as f:
 ['7月', '06', '03:55', 'pm']
 ['Shortcut']
 </code></pre>
-
 <p>(熊🐻:split()后, 完美...)</p>
 <h3 id="_7">小结<a class="headerlink" href="#_7" title="Permanent link">¶</a></h3>
 <p>以功能/线索为导向拆解代码的方法<br>
@@ -817,14 +810,14 @@ That's why we make the Weekly for DU.</p>
       
       
         |
-        Powered by <a href="http://www.mkdocs.org">mkdocs 1.1.2</a>
+        Powered by <a href="http://www.mkdocs.org">mkdocs 1.3.0</a>
         &amp; <a href="https://github.com/iamale/mkdocs-alabaster">mkdocs-alabaster</a>
       
     </div>
   
 
   <!--
-  MkDocs version      : 1.1.2
+  MkDocs version      : 1.3.0
   -->
 </body>
 </html>

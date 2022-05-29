@@ -105,14 +105,15 @@ var _hmt = _hmt || [];
 <li>mxclover - 用 Jekyll 搭建 <a href="http://mxclover.github.io">私人博客</a></li>
 </ul>
 </li>
-<li>状态:
+<li>状态:</li>
+</ul>
 <table>
 <tr><th>allcic Commit</th><th> times</th><th>weekly Commit</th><th> times</th></tr>
 <tr><td>
             <a href='http://github.com/ZoomQuiet'>ZoomQuiet</a></td><td>191</td>
         <td>
-            <a href='http://github.com/sunoonlee'>sunoonlee</a></td><td>29</td></li>
-</ul>
+            <a href='http://github.com/sunoonlee'>sunoonlee</a></td><td>29</td>
+
 <tr><td>
             <a href='http://github.com/zoejane'>zoejane</a></td><td>168</td>
         <td>
@@ -187,170 +188,164 @@ var _hmt = _hmt || [];
 
 </table>
 
-<-- v17.5.20.1439
-
-- 在线(测试ing..):
-    + `curl du.zoomquiet.us`
-    + `curl du.zoomquiet.us/v0/all/cic/rank/5/`
-    + `curl du.zoomquiet.us/v0/all/cil/rank/5/`
-    + `curl du.zoomquiet.us/v0/week/cic/rank/5/`
-    + `curl du.zoomquiet.us/v0/week/cil/rank/5/`
-
-
-## 成果
-~ 各种成品/半成品 内部知识作品
-
-##  sunoonlee - 利用神经网络实现文本自动摘要 
-
-- [GitHub 仓库](https://github.com/DebugUself/du4proto/tree/deepNLP/DL101/sunoonlee/final) 
-- [幻灯](https://sunoonlee.github.io/seq2seq/#/) seq2seq 应用探索: 从文本摘要到机器翻译
-* 文本摘要问题探索: [textsum](textsum/)
-* 翻译模型改进:
-  - 语料
-    + 来源: [United Nations Parallel Corpus](https://conferences.unite.un.org/UNCorpus)
-    + 筛选和处理: [data.ipynb](data.ipynb), 辅助函数 [data_helpers.py](data_helpers.py)
-  - 模型训练和测试: [seq2seq_nmt.ipynb](seq2seq_nmt.ipynb)
-  - 封装的类: [nmt_model.py](nmt_model.py) (暂时只用来 restore 和 decode)
-* 接入 API 和微信机器人
-  * 用 `flask-restful` 创建翻译 API: [api.py](api.py)
-  * 用 `wxpy` 实现微信机器人: [bot.py](bot.py)
-
-## mxclover - 用 Jekyll 搭建私人博客
-
-- 这是我的第一个blog:[mxclover.github.io](https://mxclover.github.io/), 欢迎大家去踩踩
-- blog用`Jekyll`搭建,托管在`Github`上. 要发布的文章在本地用`Markdown`编辑后push到Github上,生成网页后就可以看到自己的blog 文章啦~
-- 参考 [自怼圈](http://du.zoomquiet.io/) 搭建,以及 [为毛要这样发布 Blog?](http://du.zoomquiet.io/2017-03/hello-world/)
-
-## 新的自己
-
-可能跟上 `自怼圈` 系列任务的怼员们并没有意识到自己已经变化了多少:
-
-- 从不知道 git 到每天习惯性的用 git 进行代码/维基的更新
-- 从不知道 github 那么多功能,到现在习惯的在各种场景中回复/评注怼友们的各种嗯哼
-- 从从未作计划, 到通过观察自己的行为规律到有针对性的分解产品目标变成可执行的计划,并主动坚持输出
-- 从...到...
-- 这一系列的变化, 因为发生的时间超过两周, 大家都没有意识到变化已经产了
-
-和放弃也是一样的:
-
-- 今天太忙了,明天一定补上
-- 今天也是, 明天一起补
-- ...
-- 嚓,已经一个月了, 死也补不回来了
-- 好吧, 俺不适合这个方向 --> 换一个方向学习吧
-
-其实,所有令自己惊叹/羞愧的变化,都是渐进式积累起来的..
-
-- 各种报道中的顿悟,开窃, 其实也少不了之前痛苦的长期积累,才可能形成瓶颈, 并终于突破
-- 所以, 不以善小而不为
-- 对的, 不能因为平时的进步太少,而自我否认
-- 开发语言, 为什么称作语言?
-    + 除了其作用和自然语言一样,只是对方永远是沉默的计算机而已外
-    + 对开发语言的学习也和自决语言学习一样
-    + 持续的困惑的复杂的纠结的反复尝试
-    + 直到突然有一天, 我们才发现自己已经在使用这语言和父母/朋友们聊天儿了
-    + 没有哪个小孩是沉默5年, 然后突然开口说流利中文的...
-    + 如果有, 一定是穿越客夺了舍!
-
-所以,我们能清晰的将已经融入到自己意识中的新习惯/能力的形成过程分解出来, 分享出去嘛?
-
-- 太不可能了
-- 除非我们有电脑日志一样的系统,可以支持我们可以回到任意一个时间点的自己
-- 这才能和现在对比,伪造出成长史...
-- 所以, 坚持及时的将自己新的获得记录下来, 
-- 敏感的意识到自己的新进展
-- 在那个瞬间, 自己才能知道自己比之前的自己更加 NB 了什么
-
-是也乎,(￣▽￣):
-
-- 这也是时间帐单的另外一层作用了
-- 当然的, 和其它工具一样
-- 主要功能之外的所有拓展作用
-- 都是要自己创造的, 不是工具定义/发明/制造者当初设计的,这是不可能的
-- 所有的可能性只有在使用过程中, 被最认真的那一群用户发明出来,持续的!
-
-所以, `自怼圈` 虽然是大妈无意间发起的
-
-- 但是,和以往 om103py 课程一样
-- 真正的主角是怼员们大家自己
-- 俺和教练们其实在享受大家成长过程中散发出来的自信之辉
-
-
-
-
-
-
-## 故事
-~ 收集各自无法雷同的怼圈真人故事...
-
-## DU_s02e01_plan开发指南
-
-`导语:少年不要再抑郁了, 你要像一个神经病一样活泼开朗`
-
-### tip 自制万岁
-
-出处 [du_s02e01_YCR007_plan](https://github.com/DebugUself/du4proto/commit/c16d17485ff81743071a9a4b39124be7b7c36cb5)
-
-- 发觉日常自己的工作/学习过程中,有什么问题是 `没有对应软件` 可以解决的?
-- 自制吧!
-
-### tip 对标竞品
-
-出处 [zhangshiying_s02_plan](https://github.com/DebugUself/du4proto/commit/6def905d3dc9aecf53eae904995c1e4b285f46c9)
-
-- 在享受自制工具乐趣的同时, 也要注意到 `期待使用的工具是否已经存在着世界上啦`
-- 追查当前[对标竞品](https://github.com/DebugUself/du4proto/blob/zsy/Glossary/brenchmark_product.md)也是开发者的必要功课 
-
-### tip 全民共享
-
-出处 [bamboo plan](https://github.com/DebugUself/du4proto/commit/7b7ba065d681d60bfd16087aee56890880644212)
-
-- 就不能开发出大家都可以共享的应用吗?
-  + 发布为可以安装使用的 chrome 插件
-  + 部署为 heroku 的应用, 可以远程通过 CLI/web 来使用
-
-### tip 迁仓入库
-
-出处 [du_s02e01_YCR007_plan](https://github.com/DebugUself/du4proto/commit/c16d17485ff81743071a9a4b39124be7b7c36cb5)
-
-- 学习所有进展, 如在DU仓外, 大家无法直接感知, 自娱自乐多寂寞
-- 迁仓入库, 尽快在DU仓建立自己的项目分支, 独乐乐不如众乐乐
-
-### tip 莫张冠李戴
-
-出处 [zhangshiying_s02_plan](https://github.com/DebugUself/du4proto/commit/6def905d3dc9aecf53eae904995c1e4b285f46c9)
-
-- 存放在S02E01目录下的是`开发plan`, 记录的是S02E01 4周任务的规划和进展追踪
-- `产品说明书`则在对应工程分支/目录的 README中
-
-## zoejane - 在放弃边缘曾发生的故事
-- Issue 链接 - [72h [DUW] 一起聊聊在放弃边缘曾发生的故事 · Issue #114 · DebugUself/du4proto](https://github.com/DebugUself/du4proto/issues/114)
-- 原来放弃并不偶然
-    - 自己一个非常常见的放弃模式就是,重感冒发烧,精神恍惚,再碰到密集的加班,中断几天后,基本上就走不下去了. 
-    - 一直以为只是偶然的重感冒碰上了偶然的加班,导致了偶然的放弃. 直到今天我才发觉,这个模式出现的频率特别高. 原来这是一种我未曾察觉的模式. 
-- Solution
-    - 身体:用新装扮带动自己对精神状况和身体状况的关注
-    - 加班:挑战边缘的游戏
-    - 环境:创造和同伴一起的环境
-    - 行动:运用惯性 
-
-## 后记
-~ 怼周刊是什么以及为什么和能怎么...
-
-大妈曰过: `参差多态 才是生机`
-问题在 `参差` 的行为是无法形成团队的
-
-    Coming together is a beginning; 
-    Keeping together is progress; 
-    Working together is success!
-
-<--- [Henry Ford](https://www.brainyquote.com/quotes/quotes/h/henryford121997.html)
-
-- 所以, 有了 大妈 随见随怼的持续嗯哼...
-- 但是, 想象一年后, 回想几十周前自己作的那些 `图样图森破` 
-- 却没现成的资料来出示给后进来嗯哼?
-- 不科学, 值得记录的, 就应当有个形式固定下来
-- 所以,有了这个 `怼周刊` (Weekly 4 DU)
+<p>&lt;-- v17.5.20.1439</p>
+<ul>
+<li>在线(测试ing..):<ul>
+<li><code>curl du.zoomquiet.us</code></li>
+<li><code>curl du.zoomquiet.us/v0/all/cic/rank/5/</code></li>
+<li><code>curl du.zoomquiet.us/v0/all/cil/rank/5/</code></li>
+<li><code>curl du.zoomquiet.us/v0/week/cic/rank/5/</code></li>
+<li><code>curl du.zoomquiet.us/v0/week/cil/rank/5/</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="_4">成果<a class="headerlink" href="#_4" title="Permanent link">¶</a></h2>
+<p>~ 各种成品/半成品 内部知识作品</p>
+<h2 id="sunoonlee-">sunoonlee - 利用神经网络实现文本自动摘要<a class="headerlink" href="#sunoonlee-" title="Permanent link">¶</a></h2>
+<ul>
+<li><a href="https://github.com/DebugUself/du4proto/tree/deepNLP/DL101/sunoonlee/final">GitHub 仓库</a> </li>
+<li><a href="https://sunoonlee.github.io/seq2seq/#/">幻灯</a> seq2seq 应用探索: 从文本摘要到机器翻译</li>
+<li>文本摘要问题探索: <a href="textsum/">textsum</a></li>
+<li>翻译模型改进:</li>
+<li>语料<ul>
+<li>来源: <a href="https://conferences.unite.un.org/UNCorpus">United Nations Parallel Corpus</a></li>
+<li>筛选和处理: <a href="data.ipynb">data.ipynb</a>, 辅助函数 <a href="data_helpers.py">data_helpers.py</a></li>
+</ul>
+</li>
+<li>模型训练和测试: <a href="seq2seq_nmt.ipynb">seq2seq_nmt.ipynb</a></li>
+<li>封装的类: <a href="nmt_model.py">nmt_model.py</a> (暂时只用来 restore 和 decode)</li>
+<li>接入 API 和微信机器人</li>
+<li>用 <code>flask-restful</code> 创建翻译 API: <a href="api.py">api.py</a></li>
+<li>用 <code>wxpy</code> 实现微信机器人: <a href="bot.py">bot.py</a></li>
+</ul>
+<h2 id="mxclover-jekyll">mxclover - 用 Jekyll 搭建私人博客<a class="headerlink" href="#mxclover-jekyll" title="Permanent link">¶</a></h2>
+<ul>
+<li>这是我的第一个blog:<a href="https://mxclover.github.io/">mxclover.github.io</a>, 欢迎大家去踩踩</li>
+<li>blog用<code>Jekyll</code>搭建,托管在<code>Github</code>上. 要发布的文章在本地用<code>Markdown</code>编辑后push到Github上,生成网页后就可以看到自己的blog 文章啦~</li>
+<li>参考 <a href="http://du.zoomquiet.io/">自怼圈</a> 搭建,以及 <a href="http://du.zoomquiet.io/2017-03/hello-world/">为毛要这样发布 Blog?</a></li>
+</ul>
+<h2 id="_5">新的自己<a class="headerlink" href="#_5" title="Permanent link">¶</a></h2>
+<p>可能跟上 <code>自怼圈</code> 系列任务的怼员们并没有意识到自己已经变化了多少:</p>
+<ul>
+<li>从不知道 git 到每天习惯性的用 git 进行代码/维基的更新</li>
+<li>从不知道 github 那么多功能,到现在习惯的在各种场景中回复/评注怼友们的各种嗯哼</li>
+<li>从从未作计划, 到通过观察自己的行为规律到有针对性的分解产品目标变成可执行的计划,并主动坚持输出</li>
+<li>从...到...</li>
+<li>这一系列的变化, 因为发生的时间超过两周, 大家都没有意识到变化已经产了</li>
+</ul>
+<p>和放弃也是一样的:</p>
+<ul>
+<li>今天太忙了,明天一定补上</li>
+<li>今天也是, 明天一起补</li>
+<li>...</li>
+<li>嚓,已经一个月了, 死也补不回来了</li>
+<li>好吧, 俺不适合这个方向 --&gt; 换一个方向学习吧</li>
+</ul>
+<p>其实,所有令自己惊叹/羞愧的变化,都是渐进式积累起来的..</p>
+<ul>
+<li>各种报道中的顿悟,开窃, 其实也少不了之前痛苦的长期积累,才可能形成瓶颈, 并终于突破</li>
+<li>所以, 不以善小而不为</li>
+<li>对的, 不能因为平时的进步太少,而自我否认</li>
+<li>开发语言, 为什么称作语言?<ul>
+<li>除了其作用和自然语言一样,只是对方永远是沉默的计算机而已外</li>
+<li>对开发语言的学习也和自决语言学习一样</li>
+<li>持续的困惑的复杂的纠结的反复尝试</li>
+<li>直到突然有一天, 我们才发现自己已经在使用这语言和父母/朋友们聊天儿了</li>
+<li>没有哪个小孩是沉默5年, 然后突然开口说流利中文的...</li>
+<li>如果有, 一定是穿越客夺了舍!</li>
+</ul>
+</li>
+</ul>
+<p>所以,我们能清晰的将已经融入到自己意识中的新习惯/能力的形成过程分解出来, 分享出去嘛?</p>
+<ul>
+<li>太不可能了</li>
+<li>除非我们有电脑日志一样的系统,可以支持我们可以回到任意一个时间点的自己</li>
+<li>这才能和现在对比,伪造出成长史...</li>
+<li>所以, 坚持及时的将自己新的获得记录下来, </li>
+<li>敏感的意识到自己的新进展</li>
+<li>在那个瞬间, 自己才能知道自己比之前的自己更加 NB 了什么</li>
+</ul>
+<p>是也乎,(￣▽￣):</p>
+<ul>
+<li>这也是时间帐单的另外一层作用了</li>
+<li>当然的, 和其它工具一样</li>
+<li>主要功能之外的所有拓展作用</li>
+<li>都是要自己创造的, 不是工具定义/发明/制造者当初设计的,这是不可能的</li>
+<li>所有的可能性只有在使用过程中, 被最认真的那一群用户发明出来,持续的!</li>
+</ul>
+<p>所以, <code>自怼圈</code> 虽然是大妈无意间发起的</p>
+<ul>
+<li>但是,和以往 om103py 课程一样</li>
+<li>真正的主角是怼员们大家自己</li>
+<li>俺和教练们其实在享受大家成长过程中散发出来的自信之辉</li>
+</ul>
+<h2 id="_6">故事<a class="headerlink" href="#_6" title="Permanent link">¶</a></h2>
+<p>~ 收集各自无法雷同的怼圈真人故事...</p>
+<h2 id="du_s02e01_plan">DU_s02e01_plan开发指南<a class="headerlink" href="#du_s02e01_plan" title="Permanent link">¶</a></h2>
+<p><code>导语:少年不要再抑郁了, 你要像一个神经病一样活泼开朗</code></p>
+<h3 id="tip">tip 自制万岁<a class="headerlink" href="#tip" title="Permanent link">¶</a></h3>
+<p>出处 <a href="https://github.com/DebugUself/du4proto/commit/c16d17485ff81743071a9a4b39124be7b7c36cb5">du_s02e01_YCR007_plan</a></p>
+<ul>
+<li>发觉日常自己的工作/学习过程中,有什么问题是 <code>没有对应软件</code> 可以解决的?</li>
+<li>自制吧!</li>
+</ul>
+<h3 id="tip_1">tip 对标竞品<a class="headerlink" href="#tip_1" title="Permanent link">¶</a></h3>
+<p>出处 <a href="https://github.com/DebugUself/du4proto/commit/6def905d3dc9aecf53eae904995c1e4b285f46c9">zhangshiying_s02_plan</a></p>
+<ul>
+<li>在享受自制工具乐趣的同时, 也要注意到 <code>期待使用的工具是否已经存在着世界上啦</code></li>
+<li>追查当前<a href="https://github.com/DebugUself/du4proto/blob/zsy/Glossary/brenchmark_product.md">对标竞品</a>也是开发者的必要功课 </li>
+</ul>
+<h3 id="tip_2">tip 全民共享<a class="headerlink" href="#tip_2" title="Permanent link">¶</a></h3>
+<p>出处 <a href="https://github.com/DebugUself/du4proto/commit/7b7ba065d681d60bfd16087aee56890880644212">bamboo plan</a></p>
+<ul>
+<li>就不能开发出大家都可以共享的应用吗?</li>
+<li>发布为可以安装使用的 chrome 插件</li>
+<li>部署为 heroku 的应用, 可以远程通过 CLI/web 来使用</li>
+</ul>
+<h3 id="tip_3">tip 迁仓入库<a class="headerlink" href="#tip_3" title="Permanent link">¶</a></h3>
+<p>出处 <a href="https://github.com/DebugUself/du4proto/commit/c16d17485ff81743071a9a4b39124be7b7c36cb5">du_s02e01_YCR007_plan</a></p>
+<ul>
+<li>学习所有进展, 如在DU仓外, 大家无法直接感知, 自娱自乐多寂寞</li>
+<li>迁仓入库, 尽快在DU仓建立自己的项目分支, 独乐乐不如众乐乐</li>
+</ul>
+<h3 id="tip_4">tip 莫张冠李戴<a class="headerlink" href="#tip_4" title="Permanent link">¶</a></h3>
+<p>出处 <a href="https://github.com/DebugUself/du4proto/commit/6def905d3dc9aecf53eae904995c1e4b285f46c9">zhangshiying_s02_plan</a></p>
+<ul>
+<li>存放在S02E01目录下的是<code>开发plan</code>, 记录的是S02E01 4周任务的规划和进展追踪</li>
+<li><code>产品说明书</code>则在对应工程分支/目录的 README中</li>
+</ul>
+<h2 id="zoejane-">zoejane - 在放弃边缘曾发生的故事<a class="headerlink" href="#zoejane-" title="Permanent link">¶</a></h2>
+<ul>
+<li>Issue 链接 - <a href="https://github.com/DebugUself/du4proto/issues/114">72h [DUW] 一起聊聊在放弃边缘曾发生的故事 · Issue #114 · DebugUself/du4proto</a></li>
+<li>原来放弃并不偶然<ul>
+<li>自己一个非常常见的放弃模式就是,重感冒发烧,精神恍惚,再碰到密集的加班,中断几天后,基本上就走不下去了. </li>
+<li>一直以为只是偶然的重感冒碰上了偶然的加班,导致了偶然的放弃. 直到今天我才发觉,这个模式出现的频率特别高. 原来这是一种我未曾察觉的模式. </li>
+</ul>
+</li>
+<li>Solution<ul>
+<li>身体:用新装扮带动自己对精神状况和身体状况的关注</li>
+<li>加班:挑战边缘的游戏</li>
+<li>环境:创造和同伴一起的环境</li>
+<li>行动:运用惯性 </li>
+</ul>
+</li>
+</ul>
+<h2 id="_7">后记<a class="headerlink" href="#_7" title="Permanent link">¶</a></h2>
+<p>~ 怼周刊是什么以及为什么和能怎么...</p>
+<p>大妈曰过: <code>参差多态 才是生机</code>
+问题在 <code>参差</code> 的行为是无法形成团队的</p>
+<pre><code>Coming together is a beginning; 
+Keeping together is progress; 
+Working together is success!
+</code></pre>
+<p>&lt;--- <a href="https://www.brainyquote.com/quotes/quotes/h/henryford121997.html">Henry Ford</a></p>
+<ul>
+<li>所以, 有了 大妈 随见随怼的持续嗯哼...</li>
+<li>但是, 想象一年后, 回想几十周前自己作的那些 <code>图样图森破</code> </li>
+<li>却没现成的资料来出示给后进来嗯哼?</li>
+<li>不科学, 值得记录的, 就应当有个形式固定下来</li>
+<li>所以,有了这个 <code>怼周刊</code> (Weekly 4 DU)</li>
+</ul>
             
 
             <!--
@@ -504,6 +499,71 @@ var _hmt = _hmt || [];
     
   </ul>
     
+      <li><a href="#_4">成果</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#sunoonlee-">sunoonlee - 利用神经网络实现文本自动摘要</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#mxclover-jekyll">mxclover - 用 Jekyll 搭建私人博客</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_5">新的自己</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_6">故事</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#du_s02e01_plan">DU_s02e01_plan开发指南</a></li>
+      <ul>
+    
+      <li><a href="#tip">tip 自制万岁</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#tip_1">tip 对标竞品</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#tip_2">tip 全民共享</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#tip_3">tip 迁仓入库</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#tip_4">tip 莫张冠李戴</a></li>
+      <ul>
+    
+  </ul>
+    
+  </ul>
+    
+      <li><a href="#zoejane-">zoejane - 在放弃边缘曾发生的故事</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#_7">后记</a></li>
+      <ul>
+    
+  </ul>
+    
   </ul>
   
 
@@ -649,14 +709,14 @@ var _hmt = _hmt || [];
       
       
         |
-        Powered by <a href="http://www.mkdocs.org">mkdocs 1.1.2</a>
+        Powered by <a href="http://www.mkdocs.org">mkdocs 1.3.0</a>
         &amp; <a href="https://github.com/iamale/mkdocs-alabaster">mkdocs-alabaster</a>
       
     </div>
   
 
   <!--
-  MkDocs version      : 1.1.2
+  MkDocs version      : 1.3.0
   -->
 </body>
 </html>

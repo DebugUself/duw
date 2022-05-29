@@ -225,7 +225,6 @@ Alice verwirrt alle
     ~=
     (TOTa/LOTa)*(1-TBI)
 </code></pre>
-
 <pre><code>- 数据: 时间账单原始数据 -&gt; 数据清洗 -&gt; SET4 算法
 </code></pre>
 <pre><code>2013,10,0.7680911558109835
@@ -235,7 +234,6 @@ Alice verwirrt alle
 2013,14,0.35046302012594144
 ...
 </code></pre>
-
 <pre><code>- 可视化: 通过 pandas 在 jupyter notebook 中实现
 </code></pre>
 <pre><code>tr = pd.read_csv('/Users/liguanghe/du4proto/src/_atl2log/atl2SET4dama_all.csv')
@@ -244,7 +242,6 @@ ax = tr.plot.line(x='week',y='set4')
 ax
 plt.show()
 </code></pre>
-
 <p><img alt="" src="https://ws2.sinaimg.cn/large/006tNc79gy1fjnd6x39l3j30mc0f4whb.jpg" /></p>
 <h2 id="liguanghe">@liguanghe<a class="headerlink" href="#liguanghe" title="Permanent link">¶</a></h2>
 <ul>
@@ -298,7 +295,6 @@ O(∩<em>∩)O哈哈~</em>)<br></p>
 <p>时间账单项目(branch: atl4dama), 尝试用 pandas 可视化的小鹤终于弄懂了想要的数据类型, 即一张 set4 的列表. 回头翻小明的尝试文档发现, 小明同学用时 6 小时, 手动生成2014年52周 set4 数据. 如何将其中手动部分转成自动生成表格呢? 小鹤再这里进行了尝试, 怼出pandas 的平均数代码等等. 只一处不过, 遇到报错:</p>
 <pre><code>TypeError: cannot do slice indexing on &lt;class 'pandas.core.indexes.numeric.Int64Index'&gt; with these indexers [otn] of &lt;class 'str'&gt;
 </code></pre>
-
 <p>因对 int 和 'str' 不敏感, (恩恩, 不知道 int 是什么), 便误以为是上位概念 variable 整个不支持, 在此处折腾两天, 遍查不到(google/github/slackflow), 差点要去 pandas官方 github 处开 issue, 留下污点. 好在大妈云, 自然查不到, 因为 pandas 支持 variable, 那里需要填的是个整数(int)而已. 于是 遂将 otn 改成 int(otn),即解决. </p>
 <p>这个故事告诉我们, bug不在别人在自己, 要相信模块是高手智慧的结晶, 错的一定是自己. 也告诉我们, 千万不要忽略报错信息, 详读报错信息, 了解每一个字的含义. </p>
 <p>(细节在此: <a href="https://github.com/DebugUself/du4proto/issues/221">6h[QUESTION][atl4dama]pandas 想选取的行数是个变量, 如何实现? </a>)</p>
@@ -686,14 +682,14 @@ That's why we make the Weekly for DU.</p>
       
       
         |
-        Powered by <a href="http://www.mkdocs.org">mkdocs 1.1.2</a>
+        Powered by <a href="http://www.mkdocs.org">mkdocs 1.3.0</a>
         &amp; <a href="https://github.com/iamale/mkdocs-alabaster">mkdocs-alabaster</a>
       
     </div>
   
 
   <!--
-  MkDocs version      : 1.1.2
+  MkDocs version      : 1.3.0
   -->
 </body>
 </html>

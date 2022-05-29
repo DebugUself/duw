@@ -279,7 +279,6 @@ Eating much tofu lead to calculus
 多问需求为何有
 自筹因果入二酉(二酉:古代指丰富的藏书)
 </code></pre>
-
 <h2 id="liguanghe-bug">@liguanghe 数据 bug, 脚本改进<a class="headerlink" href="#liguanghe-bug" title="Permanent link">¶</a></h2>
 <p>项目遇到bug怎么办? </p>
 <h2 id="bug">bug<a class="headerlink" href="#bug" title="Permanent link">¶</a></h2>
@@ -310,7 +309,6 @@ Eating much tofu lead to calculus
 <pre><code>x=df4LOTa_drop_top1sleep[df4LOTa_drop_top1sleep.du_time &gt; 0]
 TBT = x.du_time.sum()
 </code></pre>
-
 <h2 id="changelog">changelog<a class="headerlink" href="#changelog" title="Permanent link">¶</a></h2>
 <ul>
 <li>
@@ -337,15 +335,12 @@ TBT = x.du_time.sum()
     * (TBT/TBC)/(8*60*60) -&gt; 平均中断时长 占有效工作时间比例 -&gt; TBI 
     * 即,每天平均中断时长占有效工作时间的比例, 记为: `xx.xTBI`
 </code></pre>
-
 <p>结合代码</p>
 <pre><code>df4LOTa_drop_top1sleep = df4LOTa.drop(_top1sleeps, axis=0)
 </code></pre>
-
 <p>这是去掉 睡眠 数据的表格</p>
 <pre><code>TBT = df4LOTa_drop_top1sleep.du_time.sum()
 </code></pre>
-
 <p>意思应该是: 除了第一睡眠数据和输出时间之外的其他时长的总和</p>
 <p>TBC 应该是 除了第一睡眠数据和输出时间之外的其他数据的次数
 TBI 应该是 其他时间/其他次数/8小时(工作时长)</p>
@@ -784,14 +779,14 @@ That's why we make the Weekly for DU.</p>
       
       
         |
-        Powered by <a href="http://www.mkdocs.org">mkdocs 1.1.2</a>
+        Powered by <a href="http://www.mkdocs.org">mkdocs 1.3.0</a>
         &amp; <a href="https://github.com/iamale/mkdocs-alabaster">mkdocs-alabaster</a>
       
     </div>
   
 
   <!--
-  MkDocs version      : 1.1.2
+  MkDocs version      : 1.3.0
   -->
 </body>
 </html>

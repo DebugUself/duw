@@ -419,7 +419,6 @@ http://blog.zoejane.net/open-source-guide/</p>
 为自己今后岁月注定将反复涌现的SHI作
 留作纪念...
 </code></pre>
-
 <h3 id="1-1csv">1. 只容纳1周数据的csv<a class="headerlink" href="#1-1csv" title="Permanent link">¶</a></h3>
 <p><strong>问: 为啥只能容纳1周数据?</strong></p>
 <p>答: 因为这csv乃本熊手动录入st3</p>
@@ -428,7 +427,6 @@ http://blog.zoejane.net/open-source-guide/</p>
 <pre><code>&quot;play&quot;,&quot;0.6&quot;,&quot;2017-06-01 21:15&quot;,&quot;2017-06-01 21:41&quot;
 &quot;Py&quot;,&quot;3.3&quot;,&quot;2017-06-01 21:11&quot;,&quot;2017-06-01 21:14&quot;
 </code></pre>
-
 <p><strong>问: atimelogger2导出的csv格式需要2点调整</strong></p>
 <p>答1: 相同的<code>活动类别</code> 需要合并</p>
 <p>答2: <code>持续时间</code> 和 <code>日期</code> 都需要调整为统一口径的unix秒数 </p>
@@ -437,7 +435,6 @@ http://blog.zoejane.net/open-source-guide/</p>
 <pre><code>1483228080.0  livin   30120.0
 1483231380.0  livin   3300.0
 </code></pre>
-
 <p><strong>问: 本熊手工录入的csv是怎样的?</strong></p>
 <p>答: 如下(63=63%, 1天=24hrs=100%)</p>
 <pre><code>cost,py,read,eco,play,pyb,gf,fit
@@ -448,7 +445,6 @@ http://blog.zoejane.net/open-source-guide/</p>
 65.5,14.2,0,10.2,3.1,1,2.9,3.1
 77.5,0,7.2,0,5.9,0,4.9,4.6
 </code></pre>
-
 <h3 id="2-indexdataframe">2. 无法设置index的dataframe<a class="headerlink" href="#2-indexdataframe" title="Permanent link">¶</a></h3>
 <p><strong>问: 为啥dataframe需要index?</strong></p>
 <p>答: 因为可以做selection, 相当于表格切割/选中</p>
@@ -456,7 +452,6 @@ http://blog.zoejane.net/open-source-guide/</p>
 <p>答: 因为本熊用了1条命令, 从csv直接生成dataframe</p>
 <pre><code>df = pd.read_csv('sample.csv')
 </code></pre>
-
 <p><img alt="dataframe" src="https://user-images.githubusercontent.com/19412465/27952570-555e8058-633b-11e7-9888-b8610bcf9c7d.png" /></p>
 <h3 id="3-indexdataframe">3. 设置index却丢失数据的dataframe<a class="headerlink" href="#3-indexdataframe" title="Permanent link">¶</a></h3>
 <p><strong>问: 为啥会丢失数据?</strong></p>
@@ -464,7 +459,6 @@ http://blog.zoejane.net/open-source-guide/</p>
 <pre><code>index=pd.date_range('2017/06/26', periods=5, freq='B')
  df = pd.DataFrame(pd.read_csv('sample.csv'), index=index)
 </code></pre>
-
 <p><img alt="dataframe_nan" src="https://user-images.githubusercontent.com/19412465/27953309-e301b8a6-633d-11e7-878c-3c88639a660c.png" /></p>
 <h3 id="4-plot">4. 无法体现差异化的plot图<a class="headerlink" href="#4-plot" title="Permanent link">¶</a></h3>
 <p><strong>问: 为啥无法体现差异化?</strong></p>
@@ -1012,14 +1006,14 @@ Working together is success!
       
       
         |
-        Powered by <a href="http://www.mkdocs.org">mkdocs 1.1.2</a>
+        Powered by <a href="http://www.mkdocs.org">mkdocs 1.3.0</a>
         &amp; <a href="https://github.com/iamale/mkdocs-alabaster">mkdocs-alabaster</a>
       
     </div>
   
 
   <!--
-  MkDocs version      : 1.1.2
+  MkDocs version      : 1.3.0
   -->
 </body>
 </html>
