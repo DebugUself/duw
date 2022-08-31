@@ -65,7 +65,7 @@
 - 想将内部 怼周刊, 变成外部可访问的网站
 - 自主创建仓库:
     + github.com/DebugUself/duw/
-- 使用: [gohugoio/hugo: The world’s fastest framework for building websites.](https://github.com/gohugoio/hugo) 完成自动构建
+- 使用: [gohugoio/hugo: The world's fastest framework for building websites.](https://github.com/gohugoio/hugo) 完成自动构建
 - 发布: du.zoomquiet.io/duw
 - 问题:
     + [DUW](https://github.com/DebugUself/du4proto/tree/DUW) 分支中的文稿都是纯净版 .md
