@@ -60,9 +60,7 @@
 - [ 怼周刊-W216](216w.md)
 - [ 怼周刊-W202](202w.md)
 
-(auto index injected by 
-PoL4DU v.200808.2342 by:ZoomQuiet
-)
+(auto index injected by blog101CAMP v.200115.1642) 
 
 .::
 
