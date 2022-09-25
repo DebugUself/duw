@@ -12,6 +12,7 @@
 - [ 怼周刊-W279](279w.md)
 - [ 怼周刊-W253](253w.md)
 - [ 怼周刊-W247](247w.md)
+- [ 怼周刊-W284](284w.md)
 - [ 怼周刊-W246](246w.md)
 - [ 怼周刊-W252](252w.md)
 - [ 怼周刊-W256](256w.md)
@@ -44,7 +45,7 @@
 - [ 怼周刊-W275](275w.md)
 - [ 怼周刊-W261](261w.md)
 
-(auto index injected by blog101CAMP v.200115.1642) 
+(auto index injected by blog101CAMP v.220925.1642) 
 
 .::
 

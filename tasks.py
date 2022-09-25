@@ -2,9 +2,9 @@
 '''inv matter for auto pub. 101.camp
 '''
 
-__version__ = 'blog101CAMP v.200115.1642'
+__version__ = 'blog101CAMP v.220925.1642'
 __author__ = 'Zoom.Quiet'
-__license__ = 'CC-by-nc-nd@2019-09'
+__license__ = 'CC-by-nc-nd@2022.9'
 
 #import io
 import os
@@ -16,6 +16,7 @@ import time
 #import marshal as msh
 #import subprocess
 #import logging
+from textwrap import dedent as dedentxt
 
 #import sys
 import logging
@@ -57,7 +58,13 @@ from pprint import pformat
 
 from invoke import task
 #from fabric.context_managers import cd
-from textwrap import dedent as dedentxt
+
+from invoke import task
+#import requests
+from icecream import install
+install()
+ic.configureOutput(prefix='ic|>')
+
 
 CAMPROOT = "/opt/scm/srv/pol4du/_sites/du" #os.environ.get("DU19SRC_ROOT")
 CSITES = {'duw':{'ori':'br_duw_pub'
@@ -147,13 +154,16 @@ def pl(c, site):
     chktri(c)
 
 #@task 
-def sync(c, site):
+def sync(c, site, crtweek):
     '''$ inv sync duw <- auto cp all need .md from DUW branch
+    删除还没完成记要的准备模板 *_draft.md
     '''
     _src = '%s/%s'%(CAMPROOT, CSITES[site]['src'])
     print(_src)
+
     _self = '%s/%s/docs'%(CAMPROOT, CSITES[site]['ori'])
     print(_self)
+    #return None
     cmd_cp = 'cp -f %s/*.md %s/'%(_src, _self)
     print(cmd_cp)
     c.run(cmd_cp)
@@ -166,7 +176,15 @@ def sync(c, site):
     print(cmd_rm)
     c.run(cmd_rm)
 
-    ver(c)
+    cmd_rnf = f'cp -vf {_src}/{crtweek}w_draft.md {_self}/{crtweek}w.md'
+    print(cmd_rnf)
+    c.run(cmd_rnf)
+    
+    cmd_mvs = f'mv -v {_src}/{crtweek}w_draft.md {_src}/{crtweek}w.md'
+    print(cmd_mvs)
+    c.run(cmd_mvs)
+
+    #ver(c)
     return None
 
     
@@ -189,14 +207,14 @@ def pu(c, site):
     '''push original branch...
     '''
     _ts = '{}.{}'.format(time.strftime('%y%m%d %H%M %S')
-                     , str(time.time()).split('.')[1][:3] )
+                        , str(time.time()).split('.')[1][:3] )
 
     c.run('pwd')
     c.run('git st', hide=False, warn=True)
     #c.run('git add .', hide=False, warn=True)
     #c.run('git ci -am '
     c.run('git imp '
-          '"deploy fresh %s by MkDocs (at %s)"'%(site,_ts)
+            '"deploy fresh %s by MkDocs (at %s)"'%(site,_ts)
                     , hide=False, warn=True)
     #c.run('git pu', hide=False, warn=True)
 
@@ -213,7 +231,7 @@ def gh(c, site):
     #sync4media(c)
     
     _ts = '{}.{}'.format(time.strftime('%y%m%d %H%M %S')
-                     , str(time.time()).split('.')[1][:3] )
+                        , str(time.time()).split('.')[1][:3] )
     
     _aim = '%s/%s'%(CAMPROOT, CSITES[site]['ghp'])
     cd(c, _aim)
@@ -225,7 +243,7 @@ def gh(c, site):
     #c.run('git add .', hide=False, warn=True)
     #c.run('git ci -am '
     c.run('git imp '
-          '"pub.(%s) gen. by MkDocs as invoke (at %s)"'%(site, _ts)
+            '"pub.(%s) gen. by MkDocs as invoke (at %s)"'%(site, _ts)
                     , hide=False, warn=True)
     #c.run('git pu', hide=False, warn=True)
 
@@ -235,19 +253,22 @@ def chktri(c, site):
     '''
     global TRIGGER
     global _TRIP, _TOBJ
-    _from = '%s/%s'%(CAMPROOT, CSITES[site]['src'])
-    print(_from)
+    _aimp = '%s/%s'%(CAMPROOT, CSITES[site]['src'])
+    #ic(_aimp)
     #cd(c, '%s/%s/%s'%(_DU19, PUB, _TRI))
-    _path =  '%s/%s'%(_from, _TRIP)
-    print(_path)
+    _p2tri =  '%s/%s'%(_aimp, _TRIP)
+    #print(_p2tri)
     #print(os.listdir(_path))
     #print(type(os.listdir(_path)))
-    if _TOBJ in os.listdir(_path):
+    if _TOBJ in os.listdir(_p2tri):
         print('\n\tTRIGGERed by %s exist'% _TOBJ)
         TRIGGER = 1
     else:
         print('\n\tTRIGGER obj. -> %s ~> NOT exist\n\t CANCEL build...'% _TOBJ)
         TRIGGER = 0
+
+    ic(open(f"{_p2tri}/deploy.md","r").read())
+    return open(f"{_p2tri}/deploy.md","r").read()[:-1]
 
 #@task
 def recover(c,site):
@@ -285,7 +306,7 @@ def _injector(aim, drug):
     .::
     '''
     _TS = '{}.{}'.format(time.strftime('%y%m%d %H%M %S')
-                 , str(time.time()).split('.')[1][:3] )
+                    , str(time.time()).split('.')[1][:3] )
     #print(aim,drug)
     _exp = ''
     _replace = 0
@@ -409,18 +430,20 @@ def pub(c, site):
     #pl(c, site)
     
     cd(c, _crt)
-    chktri(c, site)
+    _crtweek = chktri(c, site)
+    #print(TRIGGER)
+    ic(f"{_crtweek}w_draft.md")
+    #return None
     
     if TRIGGER:
         print('auto deplo NOW:')
         #return None
-        sync(c, site)
+        sync(c, site, _crtweek)
         bu(c, site)
         recover(c, site)
-
         pu(c, site)
-        #ccname(c)
-        #sync4media(c)
+        # ccname(c)
+        # sync4media(c)
         gh(c, site)
     else:
         print('nothing need deploy')

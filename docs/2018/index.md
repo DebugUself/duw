@@ -47,7 +47,7 @@
 - [ 怼周刊_v77](077w.md)
 - [ 怼周刊_v63](063w.md)
 
-(auto index injected by blog101CAMP v.200115.1642) 
+(auto index injected by blog101CAMP v.220925.1642) 
 
 .::
 

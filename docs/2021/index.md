@@ -60,7 +60,7 @@
 - [ 怼周刊-W216](216w.md)
 - [ 怼周刊-W202](202w.md)
 
-(auto index injected by blog101CAMP v.200115.1642) 
+(auto index injected by blog101CAMP v.220925.1642) 
 
 .::
 

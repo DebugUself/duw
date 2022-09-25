@@ -59,7 +59,7 @@
 - [ 怼周刊_v160](160w.md)
 - [ 怼周刊_v174](174w.md)
 
-(auto index injected by blog101CAMP v.200115.1642) 
+(auto index injected by blog101CAMP v.220925.1642) 
 
 .::
 
